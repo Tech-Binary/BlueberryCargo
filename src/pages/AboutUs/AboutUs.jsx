@@ -8,13 +8,13 @@ import CustomBanner from "../../components/CustomBanner/CustomBanner";
 function AboutUs() {
   return (
     <>
-      <CustomBanner/>
+      <CustomBanner img="/images/about-banner.png" title="About Us" desc="Built to move Africa's most critical cargo" />
       <AboutSec1 />
-      <AboutSec2/>
-      <HomeSec3/>
-      <AboutSec4/>
-      <HomeSec6/>
-      <AboutSec5/>
+      <AboutSec2 />
+      <HomeSec3 />
+      <AboutSec4 />
+      <HomeSec6 />
+      <AboutSec5 />
     </>
   );
 }
