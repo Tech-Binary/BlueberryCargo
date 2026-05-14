@@ -1,0 +1,155 @@
+/* =========================
+   HOME SEC 2 — AboutSec1 US
+========================= */
+
+.AboutSec1-section {
+  background-color: var(--white-color);
+}
+
+/* Image Grid */
+.AboutSec1-image-grid {
+  display: flex;
+  gap: 10px;
+}
+
+.AboutSec1-img-tall {
+  flex: 1;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.AboutSec1-img-tall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.AboutSec1-img-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.AboutSec1-img-small {
+  flex: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.AboutSec1-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.AboutSec1-button {
+  margin-top: 40px;
+}
+
+.AboutSec1-button .primary-btn {
+    display: inline-block;
+    background-color: #E69C24;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.primary-btn:hover {
+  background-color: #E69C24;
+  color: #fff;
+}
+/* Content */
+.AboutSec1-content {
+  padding-left: 40px;
+}
+
+.AboutSec1-title {
+  color: var(--secondary-color);
+  font-size: 40px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-bar {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.AboutSec1-description {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+/* Feature Icons Row */
+.AboutSec1-features {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.AboutSec1-feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.AboutSec1-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.AboutSec1-icon-wrap:hover {
+  background-color: #fef3dc;
+}
+
+.AboutSec1-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.AboutSec1-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #6B7280;
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .AboutSec1-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .AboutSec1-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .AboutSec1-title {
+    font-size: 28px;
+  }
+}

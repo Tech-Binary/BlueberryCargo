@@ -1,0 +1,103 @@
+/* =========================
+   HOME SEC 3 — AboutSec4 CHOOSE US
+========================= */
+
+/* Header */
+.AboutSec4-choose-header {
+  margin-bottom: 45px;
+}
+
+.AboutSec4-choose-title {
+  color: var(--secondary-color);
+  font-size: 42px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.AboutSec4-choose-description {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.slide-item {}
+
+/* CARD */
+.team-card {
+  background: #fff;
+  border-radius: 10px;
+  padding-top: 210px;
+  margin-top: 70px;
+  position: relative;
+  border: 1px solid #eee;
+  margin-left: 8px;
+  margin-right: 8px;
+  max-width: 315px;
+  display: flex;
+  justify-self: center;
+}
+
+/* IMAGE */
+.team-img {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 90%;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.team-content {
+  padding: 20px;
+}
+
+.role {
+  color: #E69C24;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.team-content h4 {
+  margin: 5px 0;
+  color: #111928;
+  font-size: 22px;
+  font-family: 'Aptos';
+}
+
+.team-content p {
+  font-size: 14px;
+  color: #6B7280;
+}
+
+/* ===================== */
+/* 📱 RESPONSIVE */
+/* ===================== */
+
+@media (max-width: 992px) {
+  .AboutSec4-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 767px) {}

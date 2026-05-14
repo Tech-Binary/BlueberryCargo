@@ -1,0 +1,131 @@
+/* =========================
+   HOME SEC 3 — AboutSec3 CHOOSE US
+========================= */
+
+/* Header */
+.AboutSec3-choose-header {
+  margin-bottom: 45px;
+}
+
+.AboutSec3-choose-title {
+  color: var(--secondary-color);
+  font-size: 42px;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.AboutSec3-choose-description {
+  color: var(--text-color);
+  font-size: 15px;
+  line-height: 1.4;
+  margin: 0;
+}
+
+.AboutSec3-box {
+  width: 60px;
+  height: 62px;
+  background-color: #285D80;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px;
+}
+
+.AboutSec3-choose-section {
+  padding-bottom: 210px !important;
+  background-color: #CDDAE633;
+}
+
+/* Feature Grid */
+.AboutSec3-choose-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+/* Card */
+.AboutSec3-choose-card {
+  background: white;
+  border: 1px solid #1212121A;
+  padding: 20px;
+}
+
+.AboutSec3-choose-card:hover {
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transform: translateY(-4px);
+}
+
+.AboutSec3-card-icon-wrap {
+  width: 80px;
+  height: 80px;
+  margin: 0 0 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.AboutSec3-card-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.AboutSec3-card-title {
+  font-family: "Myriad", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  color: #121212;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
+.AboutSec3-card-description {
+  font-size: 15px;
+  color: #6B7280;
+  line-height: 1.2;
+  font-weight: 400;
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {
+  .AboutSec3-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 991px) {
+  .AboutSec3-choose-title {
+    font-size: 34px;
+  }
+
+  .AboutSec3-choose-header {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 767px) {
+  .AboutSec3-choose-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .AboutSec3-choose-title {
+    font-size: 28px;
+  }
+
+  .AboutSec3-choose-card {
+    padding: 28px 20px;
+  }
+}
+
+@media(max-width: 576px) {
+ .AboutSec3-choose-section {
+    padding-bottom: 100px !important;
+}
+}
