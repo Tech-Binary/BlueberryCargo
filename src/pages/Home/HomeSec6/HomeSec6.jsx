@@ -1,14 +1,24 @@
 import "../HomeSec6/HomeSec6.css";
 import ctaBanner from "../../../assets/Images/cta-banner.jpg";
 import containerImg from "../../../assets/Images/cta-containers.jpg";
+import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
+import { useLocation } from "react-router-dom";
 
 function HomeSec6() {
+  const location = useLocation();
+
+  const isAboutPage = location.pathname === "/about";
   return (
     <section className="cta-section">
       {/* Top: Full-width banner image */}
-      <div className="cta-banner-image">
-        <img src={ctaBanner} alt="Cargo Port" />
-      </div>
+      {/* Conditional Rendering */}
+      {isAboutPage ? (
+        <AboutSec3 />
+      ) : (
+        <div className="cta-banner-image">
+          <img src={ctaBanner} alt="Cargo Port" />
+        </div>
+      )}
 
       {/* Bottom: Dark blue content strip */}
       <div className="cta-content-strip">
@@ -26,7 +36,7 @@ function HomeSec6() {
               <button className="cta-quote-btn">Request a Quote</button>
             </div>
 
-         
+
           </div>
         </div>
       </div>

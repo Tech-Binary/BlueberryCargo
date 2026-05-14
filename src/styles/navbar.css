@@ -4,7 +4,9 @@
   width: 100%;
   z-index: 999;
   padding: 18px 0 !important;
-  background: transparent !important;
+  background: white !important;
+  position: sticky !important;
+  box-shadow: 0px 1px 2px 0px #00000014;
 }
 
 .logo {
@@ -60,7 +62,7 @@
 .dropdown-icon {
   font-size: 20px;
   margin-left: 5px !important;
-margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 /* Navbar Toggler */

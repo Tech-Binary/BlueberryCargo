@@ -1,7 +1,7 @@
 .hero-banner {
   position: relative;
   width: 100%;
-  height: 100vh;
+  height: 88vh;
   overflow: hidden;
 }
 
@@ -9,7 +9,7 @@
 
 .hero-image {
   width: 100%;
-  height: 100vh;
+  height: auto;
   object-fit: cover;
 }
 
@@ -61,10 +61,12 @@
   transition: 0.3s;
   color: #285D80 !important;
 }
-.airplan-icon{
-width: 53px;
-height: 18px;
+
+.airplan-icon {
+  width: 53px;
+  height: 18px;
 }
+
 .explore-btn:hover {
   background: transparent;
 

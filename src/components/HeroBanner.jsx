@@ -7,7 +7,7 @@ function HeroBanner() {
   return (
     <section className="hero-banner">
       {/* Navbar Inside Banner */}
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Banner Image */}
       <img src={heroImage} alt="Cargo Banner" className="hero-image" />
