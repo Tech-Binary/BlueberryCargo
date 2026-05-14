@@ -1,0 +1,153 @@
+/* =========================
+   HOME SEC 2 — ABOUT US
+========================= */
+
+.about-section {
+  background-color: var(--white-color);
+}
+
+/* Image Grid */
+.about-image-grid {
+  display: flex;
+  gap: 10px;
+  height: 380px;
+}
+
+.about-img-tall {
+  flex: 1;
+  border-radius: 0px;
+  overflow: hidden;
+}
+
+.about-img-tall img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-img-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.about-img-small {
+  flex: 1;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.about-img-small img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Content */
+.about-content {
+  padding-left: 99px;
+}
+
+.about-title {
+  color: var(--secondary-color);
+  font-size: 42px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.title-bar {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-bottom: 19px;
+}
+
+.about-description {
+  color: var(--text-color);
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 26px;
+}
+
+/* Feature Icons Row */
+.about-features {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.about-feature-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+  background-color: #F6F7F9;
+  border: 1px solid #00000012;
+  width: 200px;
+  height: 130px;
+}
+
+.feature-icon-wrap {
+  width: 64px;
+  height: 64px;
+  background-color: var(--light-bg);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.feature-icon-wrap:hover {
+  background-color: #fef3dc;
+}
+
+.feature-icon-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.feature-label {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--secondary-color);
+  margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .about-content {
+    padding-left: 0;
+    margin-top: 20px;
+  }
+
+  .about-title {
+    font-size: 34px;
+  }
+
+  .about-image-grid {
+    height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-image-grid {
+    height: 240px;
+  }
+
+  .about-title {
+    font-size: 28px;
+  }
+
+  .about-features {
+    gap: 24px;
+  }
+}

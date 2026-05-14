@@ -1,0 +1,107 @@
+.hero-banner {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Banner Image */
+
+.hero-image {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Overlay */
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+}
+
+/* Content */
+
+.hero-content {
+  max-width: 600px;
+  padding-top: 100px;
+}
+
+.small-text {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #285D80;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 {
+  font-size: 62px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.hero-description {
+  font-size: 18px;
+  color: #3D3D3D;
+  font-weight: 600;
+  max-width: 520px;
+  line-height: 1.2;
+}
+
+.explore-btn {
+  background: transparent;
+  border: 1px solid #285D80;
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: 4px;
+  transition: 0.3s;
+  color: #285D80 !important;
+}
+.airplan-icon{
+width: 53px;
+height: 18px;
+}
+.explore-btn:hover {
+  background: transparent;
+
+}
+
+/* Responsive */
+
+@media (max-width: 991px) {
+
+  .hero-banner {
+    height: auto;
+  }
+
+  .hero-image {
+    height: 700px;
+  }
+
+  .hero-content h1 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .hero-image {
+    height: 650px;
+  }
+
+  .hero-content {
+    padding-top: 120px;
+  }
+
+  .hero-content h1 {
+    font-size: 38px;
+  }
+
+  .hero-description {
+    font-size: 15px;
+  }
+}

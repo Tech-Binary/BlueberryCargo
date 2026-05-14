@@ -1,0 +1,143 @@
+/* =========================
+   HOME SEC 5 — CTA BANNER
+========================= */
+
+.cta-section {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Top Banner Image */
+.cta-banner-image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.cta-banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+/* Dark Blue Strip */
+.cta-content-strip {
+  background-color: #1e3a5f;
+  background-image: url("../../../assets/Images/cta-containers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 48px 0 48px 48px;;
+  position: relative;
+  bottom: 135px;
+  margin: 0 112px;
+}
+
+.cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+
+/* Left Text */
+.cta-text {
+  flex: 1;
+  max-width: 460px;
+}
+
+.cta-heading {
+  font-family: "Myriad", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  margin-bottom: 14px;
+}
+
+.cta-description {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.7;
+  margin-bottom: 28px;
+}
+
+/* Quote Button */
+.cta-quote-btn {
+  background-color: transparent;
+  color: #ffffff;
+  border: 1.5px solid #ffffff;
+  padding: 10px 24px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Aptos", sans-serif;
+}
+
+.cta-quote-btn:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+  color: #ffffff;
+}
+
+/* Right: Container Image */
+.cta-container-img {
+  flex-shrink: 0;
+  width: 340px;
+}
+
+.cta-container-img img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .cta-banner-image {
+    height: 200px;
+  }
+
+  .cta-inner {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cta-text {
+    max-width: 100%;
+  }
+
+  .cta-container-img {
+    width: 260px;
+  }
+
+  .cta-heading {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cta-banner-image {
+    height: 160px;
+  }
+
+  .cta-content-strip {
+    padding: 36px 0; 
+  }
+
+  .cta-heading {
+    font-size: 22px;
+  }
+
+  .cta-container-img {
+    width: 200px;
+  }
+}

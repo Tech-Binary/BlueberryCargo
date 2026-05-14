@@ -1,0 +1,157 @@
+/* =========================
+   APTOS FONT
+========================= */
+
+@font-face {
+  font-family: "Aptos";
+  src: url("../fonts/Aptos.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   MYRIAD FONT
+========================= */
+
+@font-face {
+  font-family: "Myriad";
+  src: url("../fonts/Myriad Variable Concept.ttf")
+    format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* =========================
+   ROOT VARIABLES
+========================= */
+
+:root {
+  --primary-color: #E69C24;
+  --secondary-color: #262626;
+  --text-color: #6B7280;
+  --white-color: #ffffff;
+  --light-bg: #f8f9fa;
+}
+
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Aptos", sans-serif;
+  color: var(--text-color);
+  background-color: #ffffff;
+}
+
+/* =========================
+   GLOBAL HEADINGS
+========================= */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Myriad", sans-serif;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+p,
+span,
+li,
+a,
+button,
+input,
+textarea {
+  font-family: "Aptos", sans-serif;
+}
+
+/* =========================
+   COMMON STYLES
+========================= */
+
+.section-padding {
+  padding: 80px 0;
+}
+
+.section-title {
+  font-size: 38px;
+  margin-bottom: 18px;
+  line-height: 100%;
+}
+
+.common-btn {
+  background-color: var(--primary-color) !important;
+  color: var(--white-color) !important;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.common-btn:hover {
+  background-color: #E69C24;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+  .section-padding {
+    padding: 60px 0;
+  }
+
+  .section-title {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 767px) {
+  .section-padding {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 28px;
+  }
+
+  .common-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+  }
+}
