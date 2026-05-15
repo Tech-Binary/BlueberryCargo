@@ -3,13 +3,7 @@ import HeroBanner from "../../components/HeroBanner";
 function ContactUs() {
   return (
     <>
-      <HeroBanner />
-
-      {/* About Section */}
-      {/* Services Section */}
-      {/* Why Choose Us */}
-      {/* Operations */}
-      {/* Contact */}
+      <CustomBanner img="/images/contact-banner.png" title="Get In Touch" desc="Our team responds within one business day. Whether it's a quote, a question, or an emergency shipment — we're ready." />
     </>
   );
 }
