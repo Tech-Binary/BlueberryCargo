@@ -1,13 +1,13 @@
 import HeroBanner from "../../components/HeroBanner";
 import ContactFaq from "./ContactFAQ";
-
+import ContactOperate from "./ContactOperate";
 
 function ContactUs() {
   return (
     <>
       <HeroBanner />
-      <ContactFaq/>
-    
+      <ContactOperate />
+      <ContactFaq />
 
       {/* About Section */}
       {/* Services Section */}
