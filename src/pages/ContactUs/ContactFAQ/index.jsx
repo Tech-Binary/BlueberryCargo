@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./ContactFaq.css";
 import { FiPlus, FiMinus } from "react-icons/fi";
+import { useLocation } from "react-router-dom";
 
 const faqData = [
   {
@@ -68,9 +69,11 @@ const FAQItem = ({ item, index, activeIndex, setActiveIndex }) => {
 
 const ContactFaq = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const location = useLocation();
+  const isNetworkPage = location.pathname === "/network";
 
   return (
-    <section className="faq-section section-padding">
+    <section className="faq-section section-padding" style={{ backgroundColor: isNetworkPage ? "" : "#f8f8f8" }}>
       <div className="faq-container container">
         
         {/* Top Content */}
