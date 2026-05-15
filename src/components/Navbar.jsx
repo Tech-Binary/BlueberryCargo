@@ -5,7 +5,6 @@ import "../styles/navbar.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
 function Navbar() {
-
   const navbarLinks = [
     {
       id: 1,
@@ -22,6 +21,18 @@ function Navbar() {
       label: "SERVICES",
       path: "/services",
       dropdown: true,
+      submenu: [
+        {
+          id: 1,
+          label: "Charter Plane Services",
+          path: "/charter-plane-services",
+        },
+        {
+          id: 2,
+          label: "Cargo Services",
+          path: "/cargo-services",
+        },
+      ],
     },
     {
       id: 4,
@@ -37,9 +48,8 @@ function Navbar() {
 
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
-
       <div className="container">
-
+        
         {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="Blueberry Cargo" className="logo" />
@@ -56,37 +66,53 @@ function Navbar() {
         </button>
 
         {/* Nav Items */}
-        <div className="collapse navbar-collapse custom-navbar-collapse" id="navbarContent">
-
+        <div
+          className="collapse navbar-collapse custom-navbar-collapse"
+          id="navbarContent"
+        >
           <ul className="navbar-nav mx-auto custom-navbar-nav">
-
             {navbarLinks.map((item) => (
-              <li className="nav-item custom-nav-item" key={item.id}>
-
-                <Link className="nav-link custom-nav-link" to={item.path}>
-
+              <li
+                className={`nav-item custom-nav-item ${
+                  item.dropdown ? "dropdown" : ""
+                }`}
+                key={item.id}
+              >
+                <Link
+                  className="nav-link custom-nav-link"
+                  to={item.path}
+                >
                   {item.label}
 
                   {item.dropdown && (
-                   <MdOutlineKeyboardArrowDown className="dropdown-icon" />
-
+                    <MdOutlineKeyboardArrowDown className="dropdown-icon" />
                   )}
-
                 </Link>
 
+                {/* Dropdown Menu */}
+                {item.dropdown && (
+                  <ul className="dropdown-menu custom-dropdown-menu">
+                    {item.submenu.map((subItem) => (
+                      <li key={subItem.id}>
+                        <Link
+                          className="dropdown-item"
+                          to={subItem.path}
+                        >
+                          {subItem.label}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                )}
               </li>
             ))}
-
           </ul>
 
           <button className="common-btn">
             Get a Quote
           </button>
-
         </div>
-
       </div>
-
     </nav>
   );
 }

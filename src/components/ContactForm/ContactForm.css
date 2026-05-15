@@ -4,6 +4,7 @@
 
 .contact-section {
   background-color: var(--white-color);
+  padding-top: 0px !important;
 }
 
 /* Left Column */
@@ -13,18 +14,15 @@
 
 .contact-title {
   color: var(--secondary-color);
-  font-size: 38px;
-  margin-bottom: 14px;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: 12px;
-  line-height: 1.3;
 }
 
 .contact-subtitle {
   color: var(--text-color);
   font-size: 14px;
-  line-height: 1.7;
+  line-height: 1.2;
   margin-bottom: 28px;
 }
 
@@ -40,10 +38,11 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  background-color: var(--light-bg);
+  background-color: #ffffff;
   border-radius: 4px;
   padding: 16px 18px;
   transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
 }
 
 .contact-card:hover {
@@ -53,7 +52,7 @@
 .contact-card-icon {
   width: 44px;
   height: 44px;
-  background-color: var(--secondary-color);
+  background-color: #19325C;
   border-radius: 4px;
   display: flex;
   align-items: center;
@@ -78,12 +77,12 @@
 .contact-card-label {
   font-size: 13px;
   font-weight: 700;
-  color: var(--secondary-color);
+  color: #102566;
 }
 
 .contact-card-value {
   font-size: 12px;
-  color: var(--text-color);
+  color:#686868;
   line-height: 1.4;
 }
 
@@ -92,7 +91,10 @@
   border-radius: 4px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
-  height: 220px;
+  margin-top: 56px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
+
+  /* height: 220px; */
 }
 
 .contact-map img {
@@ -107,10 +109,9 @@
 
 .contact-form-wrap {
   background-color: #fff;
-  border: 1px solid #e8eaed;
-  border-radius: 12px;
-  padding: 40px 36px;
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+  padding: 26px 36px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
 .form-heading {
@@ -197,6 +198,7 @@
   letter-spacing: 0.3px;
   border-radius: 6px;
   margin-top: 4px;
+  background-color: #E69C24 !important;
 }
 
 /* =========================

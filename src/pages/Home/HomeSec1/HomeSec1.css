@@ -59,9 +59,9 @@
 }
 
 .title-bar {
-  color: var(--primary-color);
+  color: #EA6F2F;
   font-weight: 700;
-  margin-bottom: 19px;
+  margin-bottom: 14px;
 }
 
 .about-description {
