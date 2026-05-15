@@ -13,7 +13,7 @@
     justify-content: center;
 }
 .banner-title-bar {
-    width: 4px;
+    width: 6px;
     background: var(--primary-color);
     font-weight: 700;
     height: auto;

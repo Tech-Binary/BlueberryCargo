@@ -7,12 +7,14 @@ import AboutUs from "./pages/AboutUs/AboutUs";
 import CharterPlaneServices from "./CharterPlaneServices";
 import CargoServices from "./CargoServices";
 import Navbar from "./components/Navbar";
+import Network from "./pages/Network/Network";
 function App() {
   return (
     <BrowserRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/network" element={<Network />} />
         <Route path="/about" element={<AboutUs />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/charter-plane-services" element={<CharterPlaneServices/>} />

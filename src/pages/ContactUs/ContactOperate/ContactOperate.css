@@ -1,0 +1,294 @@
+.operate-section {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+}
+
+.operate {
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 80px 100px;
+}
+
+/* ================= HEADER ================= */
+
+.operate-header {
+  margin-bottom: 22px;
+}
+
+.operate-header h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #111111;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.operate-header h2 span {
+  width: 4px;
+  height: 32px;
+  background: #f4a019;
+  border-radius: 10px;
+}
+
+.operate-header p {
+  font-size: 14px;
+  color: #8a8a8a;
+  line-height: 1.6;
+  max-width: 760px;
+  margin: 0;
+}
+
+/* ================= LAYOUT ================= */
+
+.operate-wrapper {
+  display: flex;
+  gap: 18px;
+  align-items: stretch;
+}
+
+/* ================= LEFT IMAGE ================= */
+
+.operate-image {
+  width: 64%;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.operate-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= RIGHT CARDS ================= */
+
+.operate-cards {
+  width: 36%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ================= CARD ================= */
+
+.country-card {
+  background: #eef3f7;
+  padding: 8px;
+  flex: 1;
+  border-radius: 3px;
+}
+
+.country-top {
+  background: #ffffff;
+  border: 1px solid #edf0f2;
+  padding: 18px 18px 16px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.country-top h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #1c1c1c;
+  margin: 0px 0 15px;
+}
+
+.country-top h3 span {
+  font-size: 18px;
+}
+
+.country-top p {
+  font-size: 13px;
+  line-height: 1.7;
+  color: #121212CC;
+  margin: 0 0 10px;
+}
+
+/* ================= STATS ================= */
+
+.stats-row {
+  display: flex;
+  gap: 12px;
+  margin-top: auto;
+}
+
+.stat-box {
+  flex: 1 1;
+  border: 1px solid #ebebeb;
+  border-radius: 6px;
+  padding: 8px 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.stat-icon {
+  width: 20px;
+}
+
+.stat-box div {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-box h4 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #183b56;
+  margin: 0;
+}
+
+.stat-box span {
+  font-size: 10px;
+  color: #8c8c8c;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+  .operate-header h2 {
+    font-size: 34px;
+  }
+
+  .country-top h3 {
+    font-size: 22px;
+  }
+
+  .operate {
+    padding: 80px 45px;
+  }
+
+  .stats-row {
+    flex-wrap: wrap;
+  }
+
+  .stat-box {
+    min-width: calc(50% - 6px);
+  }
+}
+
+@media (max-width: 992px) {
+  .operate-wrapper {
+    flex-direction: column;
+  }
+
+  .operate {
+    padding: 50px 40px;
+  }
+
+  .operate-image,
+  .operate-cards {
+    width: 100%;
+  }
+
+  .operate-image {
+    height: auto;
+  }
+
+  .operate-image img {
+    height: auto;
+  }
+
+  .operate-cards {
+    height: auto;
+  }
+
+  .operate-header h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 768px) {
+  .operate-section {
+    padding: 18px;
+  }
+
+  .operate-header {
+    margin-bottom: 18px;
+  }
+
+  .operate-header h2 {
+    font-size: 28px;
+    gap: 10px;
+  }
+
+  .operate-header h2 span {
+    height: 24px;
+  }
+
+  .operate-header p {
+    font-size: 14px;
+  }
+
+  .operate-image {
+    height: auto;
+  }
+
+  .country-top {
+    padding: 16px;
+  }
+
+  .country-top h3 {
+    font-size: 22px;
+  }
+
+  .operate {
+    padding: 30px 15px;
+  }
+
+  .country-top p {
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+
+  .stats-row {
+    flex-direction: column;
+  }
+
+  .stat-box {
+    width: 100%;
+    min-height: 64px;
+  }
+}
+
+@media (max-width: 480px) {
+  .operate-section {
+    padding: 14px;
+  }
+
+  .operate-header h2 {
+    font-size: 24px;
+  }
+
+  .operate-header p {
+    font-size: 13px;
+  }
+
+  .country-top h3 {
+    font-size: 20px;
+  }
+
+  .stat-box {
+    padding: 10px;
+  }
+
+  .stat-box h4 {
+    font-size: 16px;
+  }
+
+  .stat-box span {
+    font-size: 10px;
+  }
+}
