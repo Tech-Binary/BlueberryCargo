@@ -45,7 +45,7 @@
 
 html,
 body {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   scroll-behavior: smooth;
 }
 
@@ -127,6 +127,44 @@ ul {
 }
 
 
+/* SLIDER CONTROLS */
+.slick-dots li button:before {
+  display: none;
+}
+/* DOT CONTAINER */
+.slick-dots {
+  bottom: -40px;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+/* DEFAULT DOT */
+.slick-dots li {
+  width: auto;
+  height: auto;
+  margin: 0;
+}
+
+.slick-dots li button {
+    width: 8px;
+    height: 8px;
+    background: #0f172a;
+    border-radius: 50%;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+/* ACTIVE DOT (pill shape like Figma) */
+.slick-dots li.slick-active button {
+    width: 22px;
+    height: 8px;
+    border-radius: 20px;
+    background: transparent;
+    border: 1px solid #0f172a;
+}
+
 /* =========================
    RESPONSIVE
 ========================= */
@@ -141,7 +179,7 @@ ul {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 900px) {
   .section-padding {
     padding: 50px 0;
   }
@@ -149,7 +187,9 @@ ul {
   .section-title {
     font-size: 28px;
   }
-
+.slick-dots {
+    bottom: -30px;
+}
   .common-btn {
     padding: 10px 22px;
     font-size: 14px;

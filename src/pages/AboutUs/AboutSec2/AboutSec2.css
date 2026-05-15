@@ -1,0 +1,126 @@
+.AboutSec2-section {
+    width: 100%;
+    background: #f8f9fb;
+}
+
+.AboutSec2-wrapper {
+    display: flex;
+    min-height: 500px;
+}
+
+/* LEFT SIDEBAR */
+.AboutSec2-sidebar {
+    width: 28%;
+    background: #19325C;
+    display: flex;
+    flex-direction: column;
+    padding: 105px 0 0 120px;
+}
+
+.tab {
+    padding: 20px 15px;
+    color: #fff;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    font-weight: 500;
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tab.active {
+    background: #E69C24;
+    color: #fff;
+    border-radius: 8px 0 0 8px;
+}
+
+/* RIGHT SIDE */
+.AboutSec2-content {
+    flex: 1;
+    background: url("./../../../../public/images/about-plane-bg.png") no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding: 0;
+}
+
+/* CARD */
+.content-card {
+    background: #fff;
+    padding: 59px 80px;
+    border-radius: 0 8px 8px 0;
+    max-width: 660px;
+}
+
+.content-card h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    color: #111928;
+
+}
+
+.content-card p {
+    color: #000000;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN */
+/* ========================= */
+@media(max-width: 1200px) {
+ .AboutSec2-sidebar {
+    padding: 105px 0 0 50px;
+}
+}
+@media (max-width: 992px) {
+    .AboutSec2-wrapper {
+        flex-direction: column;
+    }
+
+    .tab.active {
+        border-radius: 0;
+    }
+
+    .AboutSec2-sidebar {
+        width: 100%;
+        flex-direction: row;
+        overflow-x: auto;
+        padding: 0;
+    }
+
+    .tab {
+        flex: 1;
+        text-align: center;
+        white-space: nowrap;
+    }
+
+    .AboutSec2-content {
+        padding: 20px;
+    }
+
+    .content-card {
+        padding: 25px;
+    }
+}
+
+@media (max-width: 576px) {
+    .content-card h3 {
+        font-size: 18px;
+    }
+
+    .AboutSec2-sidebar .arrow {
+        display: none;
+    }
+    .tab {
+        justify-content: center;
+    }
+    .content-card {
+        padding: 20px;
+    }
+}
