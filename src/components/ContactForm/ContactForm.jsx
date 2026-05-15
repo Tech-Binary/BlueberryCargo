@@ -5,6 +5,7 @@ import PhoneIcon from "../../assets/Icons/phone-icon.png";
 import OpsIcon from "../../assets/Icons/ops-icon.png";
 import SupportIcon from "../../assets/Icons/support-icon.png";
 import ContactMap from "../../assets/Images/contact-map.png";
+import { useLocation } from "react-router-dom";
 
 const contactCards = [
   {
@@ -50,6 +51,8 @@ const shippingMethods = [
 ];
 
 function ContactForm() {
+  const location = useLocation();
+  const isContactPage = location.pathname === "/contact";
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -76,7 +79,7 @@ function ContactForm() {
   };
 
   return (
-    <section className="contact-section section-padding">
+    <section className={isContactPage ? "contact-section section-padding" : "contact-section section-padding pt-0"}>
       <div className="container">
         <div className="row g-5">
           {/* Left: Info + Map */}

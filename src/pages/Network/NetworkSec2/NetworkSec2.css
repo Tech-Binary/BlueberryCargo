@@ -1,0 +1,177 @@
+/* =========================
+   HOME SEC 2 — NetworkSec2 US
+========================= */
+
+.NetworkSec2-section {
+    background-color: var(--white-color);
+}
+
+/* Image Grid */
+.NetworkSec2-image-grid {
+    display: flex;
+    gap: 10px;
+}
+
+.NetworkSec2-img-tall {
+    flex: 1;
+    border-radius: 0px;
+    overflow: hidden;
+}
+
+.NetworkSec2-contact-link {
+    color: #285D80;
+    font-weight: 500;
+    text-decoration: underline;
+}
+
+.NetworkSec2-img-tall img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.NetworkSec2-img-stack {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.NetworkSec2-img-small {
+    flex: 1;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.NetworkSec2-img-small img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Content */
+.NetworkSec2-content {}
+
+.NetworkSec2-col-left {
+    padding-right: 50px !important;
+}
+
+.NetworkSec2-col-right {
+    padding-left: 20px !important;
+}
+
+.NetworkSec2-title {
+    color: var(--secondary-color);
+    font-size: 42px;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.title-bar {
+    color: #EA6F2F;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.NetworkSec2-description {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 26px;
+}
+
+/* Feature Icons Row */
+.NetworkSec2-features {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.NetworkSec2-feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #F5F8FA;
+    border: 1px solid #D8E2F0;
+    width: 48.8%;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    padding: 13px 20px;
+}
+
+.NetworkSec2-icon-wrap {
+    width: 20px;
+    height: 20px;
+    background-color: var(--light-bg);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background-color 0.3s ease;
+}
+
+.NetworkSec2-icon-wrap:hover {
+    background-color: #fef3dc;
+}
+
+.NetworkSec2-icon-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.NetworkSec2-label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #6B7280;
+    margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 991px) {
+    .NetworkSec2-content {
+        padding-left: 0;
+        margin-top: 20px;
+    }
+
+    .NetworkSec2-title {
+        font-size: 34px;
+    }
+
+    .NetworkSec2-col-right {
+        padding: 0px !important;
+    }
+
+    .NetworkSec2-col-left {
+        padding: 0px !important;
+    }
+
+    .NetworkSec2-image-grid {
+        height: 300px;
+    }
+}
+
+@media (max-width: 767px) {
+    .NetworkSec2-image-grid {
+        height: 240px;
+    }
+
+    .NetworkSec2-section {
+        padding: 50px 12px !important;
+    }
+
+    .NetworkSec2-title {
+        font-size: 28px;
+    }
+
+    .NetworkSec2-feature-item {
+        width: 100%;
+    }
+}

@@ -46,11 +46,22 @@
   gap: 20px;
 }
 
+.AboutSec3-choose-grid-new {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 /* Card */
 .AboutSec3-choose-card {
   background: white;
   border: 1px solid #1212121A;
   padding: 20px;
+}
+
+.AboutSec3-choose-card-new {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .AboutSec3-choose-card:hover {
@@ -125,7 +136,7 @@
 }
 
 @media(max-width: 576px) {
- .AboutSec3-choose-section {
+  .AboutSec3-choose-section {
     padding-bottom: 100px !important;
-}
+  }
 }

@@ -4,16 +4,16 @@ import containerImg from "../../../assets/Images/cta-containers.jpg";
 import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
 import { useLocation } from "react-router-dom";
 
-function HomeSec6() {
+function HomeSec6({ data, title, desc, newClass }) {
   const location = useLocation();
 
-  const isAboutPage = location.pathname === "/about";
+  const isAboutPage = location.pathname === "/about" || location.pathname === "/network";
   return (
     <section className="cta-section">
       {/* Top: Full-width banner image */}
       {/* Conditional Rendering */}
       {isAboutPage ? (
-        <AboutSec3 />
+        <AboutSec3 data={data} title={title} desc={desc} newClass={newClass} />
       ) : (
         <div className="cta-banner-image">
           <img src={ctaBanner} alt="Cargo Port" />
