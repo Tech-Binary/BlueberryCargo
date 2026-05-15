@@ -80,7 +80,7 @@ function ContactForm() {
       <div className="container">
         <div className="row g-5">
           {/* Left: Info + Map */}
-          <div className="col-lg-5 col-md-12">
+          <div className="col-lg-6 col-md-12">
             <div className="contact-left">
               <h2 className="section-title contact-title">
                 <span className="title-bar">|</span> Let's Move Your Cargo,
@@ -114,7 +114,7 @@ function ContactForm() {
           </div>
 
           {/* Right: Inquiry Form */}
-          <div className="col-lg-7 col-md-12">
+          <div className="col-lg-6 col-md-12">
             <div className="contact-form-wrap">
               <h3 className="form-heading">Send an inquiry</h3>
               <p className="form-subheading">We respond within one business day.</p>

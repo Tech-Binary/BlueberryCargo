@@ -12,12 +12,12 @@ import CharterImg2 from "../../../assets/Images/general-cargo.png";
 import CharterImg3 from "../../../assets/Images/freight-forwarding.png";
 
 // Service icons
-import CargoIcon1 from "../../../assets/Icons/general-cargo-icon.png";
-import CargoIcon2 from "../../../assets/Icons/freight-icon.png.png";
-import CargoIcon3 from "../../../assets/Icons/logistics-support-icon.png";
-import CharterIcon1 from "../../../assets/Icons/general-cargo-icon.png";
-import CharterIcon2 from "../../../assets/Icons/general-cargo-icon.png";
-import CharterIcon3 from "../../../assets/Icons/general-cargo-icon.png";
+import CargoIcon1 from "../../../assets/Icons/CargoIcon1.svg";
+import CargoIcon2 from "../../../assets/Icons/CargoIcon2.svg";
+import CargoIcon3 from "../../../assets/Icons/CargoIcon3.svg";
+import CharterIcon1 from "../../../assets/Icons/CargoIcon1.svg";
+import CharterIcon2 from "../../../assets/Icons/CargoIcon1.svg";
+import CharterIcon3 from "../../../assets/Icons/CargoIcon1.svg";
 
 const servicesData = {
   Cargo: [
@@ -96,19 +96,19 @@ function HomeSec2() {
         {/* Tabs Row */}
         <div className="services-tabs-row">
           <div className="service-tabs-main">
-             <div className="services-tabs">
-            {tabs.map((tab) => (
-              <button
-                key={tab}
-                className={`services-tab-btn  ${activeTab === tab ? "active" : ""}`}
-                onClick={() => setActiveTab(tab)}
-              >
-                {tab}
-              </button>
-            ))}
-          </div> 
+            <div className="services-tabs">
+              {tabs.map((tab) => (
+                <button
+                  key={tab}
+                  className={`services-tab-btn ${activeTab === tab ? "active" : ""}`}
+                  onClick={() => setActiveTab(tab)}
+                >
+                  {tab}
+                </button>
+              ))}
+            </div>
           </div>
-         
+
           <a href="/services" className="services-explore-link">
             Explore More
           </a>
@@ -118,14 +118,19 @@ function HomeSec2() {
         <div className="services-grid">
           {servicesData[activeTab].map((service, index) => (
             <div className="service-card" key={index}>
-              {/* Image */}
+              {/* Image with title overlay */}
               <div className="service-card-img-wrap">
-                <img src={service.image} alt={service.title} className="service-card-img" />
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="service-card-img"
+                />
+                {/* Title overlaid on image bottom */}
+                <h4 className="service-card-img-title">{service.title}</h4>
               </div>
 
               {/* Body */}
               <div className="service-card-body">
-                <h4 className="service-card-title">{service.title}</h4>
                 <p className="service-card-desc">{service.description}</p>
 
                 {/* Tags + Icon Row */}

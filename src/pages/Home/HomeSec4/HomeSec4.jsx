@@ -1,11 +1,11 @@
 import { useState } from "react";
-import "../styles/HomeSec8.css";
-import WorldMap from "../assets/images/world-map-dots.png";
-import GhanaFlag from "../assets/Icons/ghana-flag.png";
-import MadagascarFlag from "../assets/Icons/madagascar-flag.png";
-import RoutesIcon from "../assets/Icons/routes-icon.png";
-import CapacityIcon from "../assets/Icons/capacity-icon.png";
-import PartnersIcon from "../assets/Icons/partners-icon.png";
+import "../HomeSec4/HomeSec4.css";
+import WorldMap from "../../../assets/Images/world-map-dots.jpg";
+import GhanaFlag from "../../../assets/Icons/ghana-flag.svg";
+import MadagascarFlag from "../../../assets/Icons/madagascar-flag.svg";
+import RoutesIcon from "../../../assets/Icons/routes-icon.svg";
+import CapacityIcon from "../../../assets/Icons/capacity-icon.svg";
+import PartnersIcon from "../../../assets/Icons/partners-icon.svg";
 
 const locations = [
   {
@@ -43,7 +43,7 @@ const locations = [
   },
 ];
 
-function HomeSec8() {
+function HomeSec4() {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = locations[activeIndex];
 
@@ -123,4 +123,4 @@ function HomeSec8() {
   );
 }
 
-export default HomeSec8;
+export default HomeSec4;

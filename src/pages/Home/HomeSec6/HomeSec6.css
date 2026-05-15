@@ -50,7 +50,7 @@
 
 .cta-heading {
   font-family: "Myriad", sans-serif;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   color: #ffffff;
   line-height: 1.35;
@@ -66,12 +66,12 @@
 
 /* Quote Button */
 .cta-quote-btn {
-  background-color: transparent;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #285D80 !important;
   border: 1.5px solid #ffffff;
   padding: 10px 24px;
   border-radius: 4px;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease, color 0.3s ease;
@@ -79,9 +79,9 @@
 }
 
 .cta-quote-btn:hover {
-  background-color: var(--primary-color);
-  border-color: var(--primary-color);
-  color: #ffffff;
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color:#285D80;
 }
 
 /* Right: Container Image */

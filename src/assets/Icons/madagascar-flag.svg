@@ -1,0 +1,26 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g clip-path="url(#clip0_704_18)">
+<g filter="url(#filter0_d_704_18)">
+<rect width="32" height="32" rx="16" fill="url(#pattern0_704_18)" shape-rendering="crispEdges"/>
+</g>
+</g>
+<defs>
+<filter id="filter0_d_704_18" x="-4" y="0" width="40" height="40" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="4"/>
+<feGaussianBlur stdDeviation="2"/>
+<feComposite in2="hardAlpha" operator="out"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_704_18"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_704_18" result="shape"/>
+</filter>
+<pattern id="pattern0_704_18" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_704_18" transform="translate(-0.25188) scale(0.0075188)"/>
+</pattern>
+<clipPath id="clip0_704_18">
+<rect width="32" height="32" rx="16" fill="white"/>
+</clipPath>
+<image id="image0_704_18" width="200" height="133" preserveAspectRatio="none" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAACFCAIAAACR/CB7AAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAyKADAAQAAAABAAAAhQAAAAA7OKFtAAADbklEQVR4Ae3UwW1VYRBD4TzECqpIn2wQ1VAFEk3QDOJRwWziLBzru9vR/BofH93H8/l8+fjfv9+//n7/9vFz7CT4tBNFkiYCxGpqY+gWYg2V2RSFWE1tDN1CrKEym6IQq6mNoVuINVRmUxRiNbUxdAuxhspsikKspjaGbiHWUJlNUYjV1MbQLcQaKrMpCrGa2hi6hVhDZTZFIVZTG0O3EGuozKYoxGpqY+gWYg2V2RSFWE1tDN1CrKEym6IQq6mNoVuINVRmUxRiNbUxdAuxhspsikKspjaGbiHWUJlNUYjV1MbQLcQaKrMpCrGa2hi6hVhDZTZFIVZTG0O3EGuozKYoxGpqY+gWYg2V2RSFWE1tDN1CrKEym6IQq6mNoVuINVRmUxRiNbUxdAuxhspsikKspjaGbiHWUJlNUYjV1MbQLcQaKrMpCrGa2hi6hVhDZTZFIVZTG0O3EGuozKYoxGpqY+gWYg2V2RSFWE1tDN1CrKEym6IQq6mNoVuINVRmUxRiNbUxdAuxhspsikKspjaGbiHWUJlNUYjV1MbQLcQaKrMpCrGa2hi6hVhDZTZFIVZTG0O3EGuozKYon5uOefstf76+/Hx9vH3f5nsTWBHry+PHq7/ve9sRvKeMAJ7VmwCxbjYmAQFiBfCs3gSIdbMxCQgQK4Bn9SZArJuNSUCAWAE8qzcBYt1sTAICxArgWb0JEOtmYxIQIFYAz+pNgFg3G5OAALECeFZvAsS62ZgEBIgVwLN6EyDWzcYkIECsAJ7VmwCxbjYmAQFiBfCs3gSIdbMxCQgQK4Bn9SZArJuNSUCAWAE8qzcBYt1sTAICxArgWb0JEOtmYxIQIFYAz+pNgFg3G5OAALECeFZvAsS62ZgEBIgVwLN6EyDWzcYkIECsAJ7VmwCxbjYmAQFiBfCs3gSIdbMxCQgQK4Bn9SZArJuNSUCAWAE8qzcBYt1sTAICxArgWb0JEOtmYxIQIFYAz+pNgFg3G5OAALECeFZvAsS62ZgEBIgVwLN6EyDWzcYkIECsAJ7VmwCxbjYmAQFiBfCs3gSIdbMxCQgQK4Bn9SZArJuNSUCAWAE8qzcBYt1sTAICxArgWb0JEOtmYxIQIFYAz+pNgFg3G5OAALECeFZvAsS62ZgEBIgVwLN6EyDWzcYkIECsAJ7Vm8B/u+ALuI2Gq+QAAAAASUVORK5CYII="/>
+</defs>
+</svg>
