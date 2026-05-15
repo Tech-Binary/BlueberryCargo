@@ -6,6 +6,7 @@ import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import CharterPlaneServices from "./CharterPlaneServices";
 import CargoServices from "./CargoServices";
+import Navbar from "./components/Navbar";
 function App() {
   return (
     <BrowserRouter>

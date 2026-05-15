@@ -148,7 +148,9 @@
 }
 
 @media (max-width: 767px) {
-
+.title-bar {
+    margin-bottom: 8px;
+}
   .AboutSec1-title {
     font-size: 28px;
   }
