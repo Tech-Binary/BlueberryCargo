@@ -23,7 +23,7 @@ const servicesData = {
   Cargo: [
     {
       image: CargoImg1,
-      icon: CargoIcon1,
+      icon: "/images/cargo-icon1.png",
       title: "General Cargo Handling",
       description:
         "Professional management of all cargo types with full documentation, warehousing, loading, and secure delivery support at every stage.",
@@ -31,7 +31,7 @@ const servicesData = {
     },
     {
       image: CargoImg2,
-      icon: CargoIcon2,
+      icon: "/images/cargo-icon2.png",
       title: "Fright Forwarding Solutions",
       description:
         "Seamless import and export freight management including customs clearance, documentation, and coordination with global shipping.",
@@ -39,7 +39,7 @@ const servicesData = {
     },
     {
       image: CargoImg3,
-      icon: CargoIcon3,
+      icon: "/images/cargo-icon3.png",
       title: "End-to-End Logistics Support",
       description:
         "Complete supply chain solutions from origin to destination coordinating every touchpoint to ensure cargo arrives on time and intact.",
@@ -125,12 +125,12 @@ function HomeSec2() {
                   alt={service.title}
                   className="service-card-img"
                 />
-                {/* Title overlaid on image bottom */}
-                <h4 className="service-card-img-title">{service.title}</h4>
               </div>
 
               {/* Body */}
               <div className="service-card-body">
+                {/* Title overlaid on image bottom */}
+                <h4 className="service-card-img-title">{service.title}</h4>
                 <p className="service-card-desc">{service.description}</p>
 
                 {/* Tags + Icon Row */}
@@ -142,9 +142,7 @@ function HomeSec2() {
                       </span>
                     ))}
                   </div>
-                  <div className="service-icon-badge">
-                    <img src={service.icon} alt={service.title} />
-                  </div>
+                    <img className="service-icon-badge" src={service.icon} alt={service.title} />
                 </div>
               </div>
             </div>
