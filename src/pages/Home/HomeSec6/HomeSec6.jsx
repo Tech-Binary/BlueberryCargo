@@ -1,6 +1,5 @@
 import "../HomeSec6/HomeSec6.css";
 import ctaBanner from "../../../assets/Images/cta-banner.jpg";
-import containerImg from "../../../assets/Images/cta-containers.jpg";
 import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
 import { useLocation } from "react-router-dom";
 

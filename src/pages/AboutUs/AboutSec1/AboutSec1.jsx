@@ -1,10 +1,5 @@
 import "./AboutSec1.css";
-import aboutImg1 from "../../../assets/Images/about-1.png";
-import aboutImg2 from "../../../assets/Images/about-2.png";
-import aboutImg3 from "../../../assets/Images/about-3.png";
-import IndustryIcon from "../../../assets/Icons/industry-expertise.png";
-import GlobalIcon from "../../../assets/Icons/global-network.png";
-import ReliableIcon from "../../../assets/Icons/reliable-operations.png";
+
 
 function AboutSec1() {
   return (

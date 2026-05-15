@@ -1,203 +1,266 @@
 /* CargoServicesSec2.css */
 
-.css2-wrapper {
-  width: 100%;
-  font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
-  background-color: #ffffff;
+.cargo-services-sec2 {
+  background: #ffffff;
+  overflow: hidden;
+  padding-top: 40px !important;
+  padding-bottom: 0px !important;
 }
 
-/* ── Single Service Block ── */
-.css2-service-block {
+.cargo-service-wrapper {
   display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  padding: 48px 60px;
-  gap: 48px;
-  border-bottom: 1px solid #e8e8e8;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+  margin-bottom: 85px;
 }
 
-/* Alternate: image on left */
-.css2-service-block.image-left {
+.reverse-layout {
   flex-direction: row-reverse;
 }
 
-/* ── Image Side ── */
-.css2-image-side {
-  flex: 0 0 340px;
-  max-width: 340px;
+.cargo-service-content {
+  width: 50%;
+}
+
+.cargo-service-image {
+  width: 50%;
   position: relative;
 }
 
-.css2-image-side img.main-img {
+.cargo-service-image img {
   width: 100%;
-  height: 100%;
-  min-height: 260px;
   object-fit: cover;
   border-radius: 4px;
-  display: block;
 }
 
-/* Large number badge */
-.css2-number-badge {
+.cargo-number {
   position: absolute;
-  top: -16px;
-  right: -20px;
-  font-size: 72px;
-  font-weight: 800;
-  color: #e8e8e8;
-  line-height: 1;
-  user-select: none;
-  z-index: 0;
-  letter-spacing: -4px;
-}
-
-.image-left .css2-number-badge {
-  right: auto;
-  left: -20px;
-}
-
-/* ── Text Side ── */
-.css2-text-side {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
-  z-index: 1;
-}
-
-.css2-service-title {
-  font-size: 26px;
+  top: -40px;
+  left: -25px;
+  font-size: 82px;
   font-weight: 700;
-  color: #1a2b4a;
-  margin: 0 0 12px 0;
+  color: #dbe4f1;
+  font-family: "Myriad", sans-serif;
+  z-index: 2;
+  line-height: 1;
 }
 
-/* Amber underline on heading */
-.css2-service-title::after {
-  content: '';
-  display: block;
-  width: 48px;
-  height: 3px;
-  background-color: #e8a020;
-  margin-top: 8px;
-  border-radius: 2px;
+.reverse-layout .cargo-number {
+  left: auto;
+  right: -25px;
 }
 
-.css2-service-desc {
-  font-size: 13.5px;
-  color: #555;
-  line-height: 1.7;
-  margin: 0 0 24px 0;
-  max-width: 480px;
+.cargo-service-title {
+  font-size: 54px;
+  color: #111827;
+  margin-bottom: 22px;
+  line-height: 1.1;
 }
 
-/* ── Feature Grid (2×2) ── */
-.css2-features-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 16px 32px;
-  margin-bottom: 28px;
+.cargo-service-desc {
+  font-size: 18px;
+  line-height: 1.9;
+  color: #6b7280;
+  margin-bottom: 35px;
+  max-width: 95%;
 }
 
-.css2-feature-card {
+.cargo-card-row {
+  margin-bottom: 18px;
+}
+
+.cargo-small-card {
+  background: #F5F8FA;
+  border: 1px solid #dce2ea;
+  border-radius: 4px;
+  padding: 18px 18px;
   display: flex;
   align-items: flex-start;
-  gap: 12px;
+  gap: 16px;
+  height: 100%;
+  transition: 0.3s ease;
 }
 
-.css2-feature-icon {
-  width: 36px;
-  height: 36px;
-  flex-shrink: 0;
-  background-color: #f0f3f8;
-  border-radius: 6px;
+.cargo-small-card:hover {
+  transform: translateY(-4px);
+}
+
+.cargo-icon-box {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background: #EAEDF2;
+  border-radius: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.css2-feature-icon svg {
-  width: 18px;
-  height: 18px;
-  stroke: #1a2b4a;
-  fill: none;
-  stroke-width: 1.8;
-  stroke-linecap: round;
-  stroke-linejoin: round;
+.cargo-icon-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
-.css2-feature-info h4 {
-  margin: 0 0 2px 0;
-  font-size: 13px;
-  font-weight: 700;
-  color: #1a2b4a;
+.cargo-small-card h5 {
+  font-size: 18px;
+  color:#102566;
+  margin-bottom: 2px;
 }
 
-.css2-feature-info p {
-  margin: 0;
-  font-size: 12px;
-  color: #777;
-  line-height: 1.5;
+.cargo-small-card p {
+  font-size: 14px;
+  color: #686868;
+  line-height: 1.2;
+  margin-bottom: 0px !important;
 }
 
-/* ── Stats Row ── */
-.css2-stats-row {
+.cargo-stats-wrapper {
   display: flex;
-  gap: 32px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
-.css2-stat {
-  display: flex;
-  flex-direction: column;
+.cargo-stat-box {
+    display: flex;
+    align-items: center;
+    gap:12px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+  border-radius: 10px;
+  padding: 20px 24px;
+  min-width: 270px;
+  border-left: 2px solid var(--primary-color);
 }
 
-.css2-stat-value {
-  font-size: 22px;
-  font-weight: 800;
-  color: #1a2b4a;
-  line-height: 1;
+.cargo-stat-box h3 {
+  font-size: 30px;
+  color: #102566;
 }
 
-.css2-stat-label {
-  font-size: 11.5px;
-  color: #888;
-  margin-top: 4px;
+.cargo-stat-box span {
+  font-size: 16px;
+  color: #313131;
+  line-height: 24px;
 }
 
-/* ── Responsive ── */
-@media (max-width: 900px) {
-  .css2-service-block,
-  .css2-service-block.image-left {
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1199px) {
+  .cargo-service-title {
+    font-size: 44px;
+  }
+
+  .cargo-service-image img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 991px) {
+  .cargo-service-wrapper,
+  .reverse-layout {
     flex-direction: column;
-    padding: 32px 24px;
-    gap: 28px;
+    gap: 40px;
   }
 
-  .css2-image-side {
-    flex: none;
+  .cargo-service-content,
+  .cargo-service-image {
+    width: 100%;
+  }
+
+  .cargo-service-title {
+    font-size: 38px;
+  }
+
+  .cargo-service-desc {
     max-width: 100%;
-    height: 220px;
+    font-size: 16px;
   }
 
-  .css2-number-badge {
-    font-size: 52px;
-    top: -10px;
-    right: 8px;
+  .cargo-number {
+    font-size: 70px;
+    top: -28px;
+    left: 0;
   }
 
-  .image-left .css2-number-badge {
-    left: 8px;
-    right: auto;
+  .reverse-layout .cargo-number {
+    right: 0;
   }
 
-  .css2-features-grid {
-    grid-template-columns: 1fr;
+  .cargo-service-image img {
+    height: 360px;
+  }
+}
+
+@media (max-width: 767px) {
+  .cargo-service-wrapper {
+    margin-bottom: 55px;
   }
 
-  .css2-service-title {
-    font-size: 22px;
+  .cargo-service-title {
+    font-size: 30px;
+  }
+
+  .cargo-service-desc {
+    font-size: 15px;
+    line-height: 1.8;
+  }
+
+  .cargo-small-card {
+    padding: 18px 16px;
+  }
+
+  .cargo-small-card h5 {
+    font-size: 17px;
+  }
+
+  .cargo-small-card p {
+    font-size: 14px;
+  }
+
+  .cargo-stat-box {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .cargo-service-image img {
+    height: 300px;
+  }
+
+  .cargo-number {
+    font-size: 54px;
+  }
+}
+
+@media (max-width: 575px) {
+  .cargo-service-image img {
+    height: 240px;
+  }
+
+  .cargo-service-title {
+    font-size: 26px;
+  }
+
+  .cargo-number {
+    font-size: 44px;
+    top: -18px;
+  }
+
+  .cargo-icon-box {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+  }
+
+  .cargo-icon-box img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .cargo-stat-box h3 {
+    font-size: 28px;
   }
 }

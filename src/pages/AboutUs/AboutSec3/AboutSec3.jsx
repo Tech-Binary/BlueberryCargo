@@ -1,8 +1,5 @@
 import "./AboutSec3.css";
-import DeliveryIcon from "../../../assets/Icons/delivery-icon.png";
-import RegionalIcon from "../../../assets/Icons/regional-icon.png";
-import LogisticsIcon from "../../../assets/Icons/logistics-icon.png";
-import ScalableIcon from "../../../assets/Icons/scalable-icon.png";
+
 
 const features = [
   {
