@@ -5,7 +5,8 @@ import AboutSec3 from "./../AboutUs/AboutSec3/AboutSec3"
 import HomeSec6 from "../Home/HomeSec6/HomeSec6";
 import Footer from "../../components/Footer";
 import CustomBanner from "../../components/CustomBanner/CustomBanner";
-
+import ContactFAQ from "./../ContactUs/ContactFAQ";
+import ContactOperate from "../ContactUs/ContactOperate";
 function Network() {
 
     const features = [
@@ -72,11 +73,13 @@ function Network() {
 
     return (
         <>
-            <CustomBanner img="/images/network-banner.png" title="Our operational network" desc="Africa's critical cargo corridors, covered" />
+            <CustomBanner img="/images/network-banner.png" title="Our Operational Network" desc="Africa's critical cargo corridors, covered" />
+            <ContactOperate />
             <NetworkSec1 />
             <NetworkSec2 />
             <HomeSec6 data={features2} title="Our ecosystem" newClass="true"
                 desc="The airlines, ground handlers, and freight agents that power our network in each market." />
+            <ContactFAQ />
             <AboutSec3 data={features} title="What We Handle" marginClass="true"
                 desc="From standard general cargo to time-critical, oversized, and specialist freight — here's what our network can handle." />
             <Footer />

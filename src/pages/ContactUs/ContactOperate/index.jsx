@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactOperate.css";
+import { useLocation } from "react-router-dom";
 
 const locations = [
   {
@@ -33,8 +34,10 @@ const stats = [
 ];
 
 const ContactOperate = () => {
+  const location = useLocation();
+  const isNetworkPage = location.pathname === "/network";
   return (
-    <section className="container section-padding">
+    <section className="operate" style={{backgroundImage: isNetworkPage ? "url(/images/network-bg.png)" : "none"}}>
       <div className="operate-section">
         <div className="operate-header">
           <h2>
@@ -71,9 +74,7 @@ const ContactOperate = () => {
                   <div className="stats-row">
                     {stats.map((stat, i) => (
                       <div className="stat-box" key={i}>
-                        <div className="stat-icon">
-                          <img src={stat.icon} alt={stat.label} />
-                        </div>
+                          <img className="stat-icon" src={stat.icon} alt={stat.label} />
 
                         <div>
                           <h4>{stat.number}</h4>

@@ -7,6 +7,13 @@
   border-radius: 6px;
 }
 
+.operate {
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+  padding: 80px 100px;
+}
+
 /* ================= HEADER ================= */
 
 .operate-header {
@@ -50,7 +57,6 @@
 
 .operate-image {
   width: 64%;
-  height: 430px;
   overflow: hidden;
   border-radius: 4px;
 }
@@ -68,7 +74,7 @@
   width: 36%;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 25px;
 }
 
 /* ================= CARD ================= */
@@ -93,10 +99,10 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 700;
   color: #1c1c1c;
-  margin: 0 0 10px;
+  margin: 0px 0 15px;
 }
 
 .country-top h3 span {
@@ -106,8 +112,8 @@
 .country-top p {
   font-size: 13px;
   line-height: 1.7;
-  color: rgba(18, 18, 18, 1);
-  margin: 0 0 22px;
+  color: #121212CC;
+  margin: 0 0 10px;
 }
 
 /* ================= STATS ================= */
@@ -119,33 +125,34 @@
 }
 
 .stat-box {
-  flex: 1;
+  flex: 1 1;
   border: 1px solid #ebebeb;
   border-radius: 6px;
-  padding: 10px 8px;
+  padding: 8px 15px;
   display: flex;
   align-items: center;
-  gap: 10px;
-  min-height: 70px;
+  gap: 20px;
 }
 
 .stat-icon {
-  font-size: 18px;
-  line-height: 1;
+  width: 20px;
+}
+
+.stat-box div {
+  display: flex;
+  flex-direction: column;
 }
 
 .stat-box h4 {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 700;
   color: #183b56;
-  margin: 0 0 2px;
-  line-height: 1;
+  margin: 0;
 }
 
 .stat-box span {
-  font-size: 11px;
+  font-size: 10px;
   color: #8c8c8c;
-  line-height: 1.3;
 }
 
 /* ================= RESPONSIVE ================= */
@@ -157,6 +164,10 @@
 
   .country-top h3 {
     font-size: 22px;
+  }
+
+  .operate {
+    padding: 80px 45px;
   }
 
   .stats-row {
@@ -171,6 +182,10 @@
 @media (max-width: 992px) {
   .operate-wrapper {
     flex-direction: column;
+  }
+
+  .operate {
+    padding: 50px 40px;
   }
 
   .operate-image,
@@ -227,6 +242,10 @@
 
   .country-top h3 {
     font-size: 22px;
+  }
+
+  .operate {
+    padding: 30px 15px;
   }
 
   .country-top p {
