@@ -30,8 +30,7 @@
   color: #111;
 }
 
-.title-bar {
-}
+
 
 .faq-subtext {
   font-size: 17px;
@@ -170,9 +169,6 @@
     padding: 22px 0;
   }
 
-  .faq-question h4 {
-    font-size: 20px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -181,10 +177,6 @@
     padding: 18px 0;
   }
 
-  .faq-question h4 {
-    font-size: 17px;
-    line-height: 1.5;
-  }
 
   .faq-icon {
     min-width: 36px;
@@ -221,9 +213,7 @@
     font-size: 40px;
   }
 
-  .faq-question h4 {
-    font-size: 22px;
-  }
+  
 }
 
 @media (max-width: 576px) {
@@ -236,7 +226,7 @@
 
 
   .faq-question h4 {
-    font-size: 18px;
+    font-size: 14px;
   }
 
   .faq-contact-box {
