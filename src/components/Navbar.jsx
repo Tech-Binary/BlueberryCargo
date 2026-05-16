@@ -19,7 +19,6 @@ function Navbar() {
     {
       id: 3,
       label: "SERVICES",
-      path: "/services",
       dropdown: true,
       submenu: [
         {
@@ -49,7 +48,7 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container">
-        
+
         {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="Blueberry Cargo" className="logo" />
@@ -73,9 +72,8 @@ function Navbar() {
           <ul className="navbar-nav mx-auto custom-navbar-nav">
             {navbarLinks.map((item) => (
               <li
-                className={`nav-item custom-nav-item ${
-                  item.dropdown ? "dropdown" : ""
-                }`}
+                className={`nav-item custom-nav-item ${item.dropdown ? "dropdown" : ""
+                  }`}
                 key={item.id}
               >
                 <Link

@@ -78,7 +78,9 @@ function Network() {
             <NetworkSec1 />
             <NetworkSec2 />
             <HomeSec6 data={features2} title="Our ecosystem" newClass="true"
-                desc="The airlines, ground handlers, and freight agents that power our network in each market." />
+                desc="The airlines, ground handlers, and freight agents that power our network in each market."
+                 title2="Need to ship cargo to Madagascar or Ghana?"
+        desc2="Tell us your route, cargo type, and timeline — our team will get back to you with a tailored solution within 24 hours." />
             <ContactFAQ />
             <AboutSec3 data={features} title="What We Handle" marginClass="true"
                 desc="From standard general cargo to time-critical, oversized, and specialist freight — here's what our network can handle." />
