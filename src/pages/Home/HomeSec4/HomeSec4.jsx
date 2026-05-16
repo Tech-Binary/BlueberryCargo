@@ -1,126 +1,204 @@
-import { useState } from "react";
-import "../HomeSec4/HomeSec4.css";
-import WorldMap from "../../../assets/Images/world-map-dots.jpg";
+import React, { useState } from "react";
+import "./HomeSec4.css";
+
+import WorldMap from "../../../assets/Images/world-map.png";
+
 import GhanaFlag from "../../../assets/Icons/ghana-flag.svg";
 import MadagascarFlag from "../../../assets/Icons/madagascar-flag.svg";
-import RoutesIcon from "../../../assets/Icons/routes-icon.svg";
-import CapacityIcon from "../../../assets/Icons/capacity-icon.svg";
-import PartnersIcon from "../../../assets/Icons/partners-icon.svg";
 
-const locations = [
+import RouteIcon from "../../../assets/Icons/routes-icon.svg";
+import CapacityIcon from "../../../assets/Icons/capacity-icon.svg";
+import PartnerIcon from "../../../assets/Icons/partners-icon.svg";
+
+import LocationPin from "../../../assets/Icons/loca-ghanna.svg";
+
+const hubs = [
   {
     id: "ghana",
     tabLabel: "Ghana West Africa Hub",
     regionLabel: "WEST AFRICA HUB",
-    flag: GhanaFlag,
     countryName: "Ghana",
+    flag: GhanaFlag,
+
     description:
       "Gateway for ECOWAS trade routes serving 400M+ consumers across West Africa.",
+
     stats: [
-      { icon: RoutesIcon, value: "32+", label: "Routes" },
-      { icon: CapacityIcon, value: "850T", label: "Capacity" },
-      { icon: PartnersIcon, value: "120+", label: "Partners" },
+      {
+        icon: RouteIcon,
+        value: "32+",
+        label: "Routes",
+      },
+      {
+        icon: CapacityIcon,
+        value: "850T",
+        label: "Capacity",
+      },
+      {
+        icon: PartnerIcon,
+        value: "120+",
+        label: "Partners",
+      },
     ],
-    // Map pin position (percentage of map container)
-    pinX: "38%",
-    pinY: "52%",
+
+    pin: {
+      top: "61%",
+      left: "47%",
+    },
+
+    mapPosition: {
+      scale: 1.22,
+      translateX: "8%",
+      translateY: "0%",
+    },
   },
+
   {
     id: "madagascar",
     tabLabel: "Madagascar Indian Ocean",
     regionLabel: "INDIAN OCEAN HUB",
-    flag: MadagascarFlag,
     countryName: "Madagascar",
+    flag: MadagascarFlag,
+
     description:
-      "Strategic hub for Indian Ocean trade routes connecting East Africa and global markets.",
+      "Strategic hub connecting Indian Ocean trade corridors and island markets.",
+
     stats: [
-      { icon: RoutesIcon, value: "18+", label: "Routes" },
-      { icon: CapacityIcon, value: "620T", label: "Capacity" },
-      { icon: PartnersIcon, value: "80+", label: "Partners" },
+      {
+        icon: RouteIcon,
+        value: "18+",
+        label: "Routes",
+      },
+      {
+        icon: CapacityIcon,
+        value: "420T",
+        label: "Capacity",
+      },
+      {
+        icon: PartnerIcon,
+        value: "65+",
+        label: "Partners",
+      },
     ],
-    pinX: "46%",
-    pinY: "61%",
+
+    pin: {
+      top: "75%",
+      left: "60%",
+    },
+
+    mapPosition: {
+      scale: 1.22,
+      translateX: "-8%",
+      translateY: "0%",
+    },
   },
 ];
 
-function HomeSec4() {
-  const [activeIndex, setActiveIndex] = useState(0);
-  const active = locations[activeIndex];
+export default function HomeSec4() {
+  const [activeHub, setActiveHub] = useState("ghana");
+
+  const activeData = hubs.find((item) => item.id === activeHub);
 
   return (
-    <section className="operate-section section-padding">
+    <section className="homeSec4">
       <div className="container">
-        <div className="operate-inner">
-          {/* Left: Info Card */}
-          <div className="operate-card">
-            <h2 className="operate-card-heading">Where We Operate</h2>
+        <div className="homeSec4-wrapper">
+          <div className="row align-items-center">
+            {/* LEFT CONTENT */}
+            <div className="col-12 col-lg-5">
+              <div className="homeSec4-left">
+                <h2 className="homeSec4-title">Where We Operate</h2>
 
-            {/* Tabs */}
-            <div className="operate-tabs">
-              {locations.map((loc, i) => (
-                <button
-                  key={loc.id}
-                  className={`operate-tab-btn ${activeIndex === i ? "active" : ""}`}
-                  onClick={() => setActiveIndex(i)}
-                >
-                  {loc.tabLabel}
-                </button>
-              ))}
-            </div>
-
-            {/* Content */}
-            <div className="operate-content">
-              <span className="operate-region-label">{active.regionLabel}</span>
-
-              <div className="operate-country-row">
-                <img
-                  src={active.flag}
-                  alt={`${active.countryName} flag`}
-                  className="operate-flag"
-                />
-                <h3 className="operate-country-name">{active.countryName}</h3>
-              </div>
-
-              <p className="operate-description">{active.description}</p>
-
-              {/* Stats */}
-              <div className="operate-stats">
-                {active.stats.map((stat, i) => (
-                  <div className="operate-stat-item" key={i}>
-                    <img
-                      src={stat.icon}
-                      alt={stat.label}
-                      className="operate-stat-icon"
-                    />
-                    <span className="operate-stat-value">{stat.value}</span>
-                    <span className="operate-stat-label">{stat.label}</span>
+                {/* CONTENT CARD */}
+                <div className="homeSec4-content">
+                  {/* TABS */}
+                  <div className="homeSec4-tabs">
+                    {hubs.map((hub) => (
+                      <button
+                        key={hub.id}
+                        className={`homeSec4-tab ${
+                          activeHub === hub.id ? "homeSec4-tab-active" : ""
+                        }`}
+                        onClick={() => setActiveHub(hub.id)}
+                      >
+                        {hub.tabLabel}
+                      </button>
+                    ))}
                   </div>
-                ))}
+                  <span className="homeSec4-region">
+                    {activeData.regionLabel}
+                  </span>
+
+                  <div className="homeSec4-country-wrap">
+                    <img
+                      src={activeData.flag}
+                      alt={activeData.countryName}
+                      className="homeSec4-flag"
+                    />
+
+                    <h3 className="homeSec4-country">
+                      {activeData.countryName}
+                    </h3>
+                  </div>
+
+                  <p className="homeSec4-desc">{activeData.description}</p>
+
+                  {/* STATS */}
+                  <div className="homeSec4-stats">
+                    {activeData.stats.map((item, index) => (
+                      <div className="homeSec4-stat-card" key={index}>
+                        <img
+                          src={item.icon}
+                          alt={item.label}
+                          className="homeSec4-stat-icon"
+                        />
+
+                        <h4>{item.value}</h4>
+
+                        <span>{item.label}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
 
-          {/* Right: World Map */}
-          <div className="operate-map-wrap">
-            <img src={WorldMap} alt="World Map" className="operate-world-map" />
+            {/* RIGHT MAP */}
+            <div className="col-12 col-lg-7">
+              <div className="homeSec4-map-wrapper">
+                {/* MAP INNER */}
+                <div
+                  className="homeSec4-map-inner"
+                  style={{
+                    transform: `
+                      scale(${activeData.mapPosition.scale})
+                      translate(${activeData.mapPosition.translateX},
+                      ${activeData.mapPosition.translateY})
+                    `,
+                  }}
+                >
+                  <img
+                    src={WorldMap}
+                    alt="World Map"
+                    className="homeSec4-map"
+                  />
 
-            {/* Map Pins */}
-            {locations.map((loc, i) => (
-              <button
-                key={loc.id}
-                className={`operate-map-pin ${activeIndex === i ? "active" : ""}`}
-                style={{ left: loc.pinX, top: loc.pinY }}
-                onClick={() => setActiveIndex(i)}
-                title={loc.countryName}
-              >
-                <img src={loc.flag} alt={loc.countryName} />
-              </button>
-            ))}
+                  {/* ACTIVE PIN ONLY */}
+                  <button
+                    className="homeSec4-pin homeSec4-pin-active"
+                    style={{
+                      top: activeData.pin.top,
+                      left: activeData.pin.left,
+                    }}
+                  >
+                    <img src={LocationPin} alt={activeData.countryName} />
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
   );
 }
-
-export default HomeSec4;

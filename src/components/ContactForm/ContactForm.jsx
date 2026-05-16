@@ -52,7 +52,11 @@ const shippingMethods = [
 
 function ContactForm() {
   const location = useLocation();
+  const [cargoOpen, setCargoOpen] = useState(false);
+const [shippingOpen, setShippingOpen] = useState(false);
+const [activeSelect, setActiveSelect] = useState(null);
   const isContactPage = location.pathname === "/contact";
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -69,61 +73,82 @@ function ContactForm() {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setFormData((prev) => ({ ...prev, [name]: value }));
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
     console.log("Form submitted:", formData);
-    // Add your submit logic here
   };
 
   return (
-    <section className={isContactPage ? "contact-section section-padding" : "contact-section section-padding pt-0"}>
+   <section
+  id="contact-form-section"
+  className={
+    isContactPage
+      ? "contact-section section-padding"
+      : "contact-section section-padding pt-0"
+  }
+>
       <div className="container">
         <div className="row g-5">
-          {/* Left: Info + Map */}
+          {/* LEFT SIDE */}
           <div className="col-lg-6 col-md-12">
             <div className="contact-left">
               <h2 className="section-title contact-title">
-                <span className="title-bar">|</span> Let's Move Your Cargo,
-                Together
+                <span className="title-bar">|</span>
+                Let's Move Your Cargo, Together
               </h2>
+
               <p className="contact-subtitle">
                 Our logistics specialists will respond within one business day
                 to discuss your shipment, charter or supply-chain program.
               </p>
 
-              {/* Contact Cards Grid */}
+              {/* CONTACT CARDS */}
               <div className="contact-cards-grid">
                 {contactCards.map((card, index) => (
                   <div className="contact-card" key={index}>
                     <div className="contact-card-icon">
                       <img src={card.icon} alt={card.alt} />
                     </div>
+
                     <div className="contact-card-text">
-                      <span className="contact-card-label">{card.label}</span>
-                      <span className="contact-card-value">{card.value}</span>
+                      <span className="contact-card-label">
+                        {card.label}
+                      </span>
+
+                      <span className="contact-card-value">
+                        {card.value}
+                      </span>
                     </div>
                   </div>
                 ))}
               </div>
 
-              {/* Map */}
+              {/* MAP */}
               <div className="contact-map">
                 <img src={ContactMap} alt="Operations Map" />
               </div>
             </div>
           </div>
 
-          {/* Right: Inquiry Form */}
+          {/* RIGHT SIDE */}
           <div className="col-lg-6 col-md-12">
             <div className="contact-form-wrap">
               <h3 className="form-heading">Send an inquiry</h3>
-              <p className="form-subheading">We respond within one business day.</p>
+
+              <p className="form-subheading">
+                We respond within one business day.
+              </p>
 
               <form className="contact-form" onSubmit={handleSubmit}>
-                {/* Row 1 */}
+                {/* ROW 1 */}
                 <div className="form-row">
                   <div className="form-group">
                     <input
@@ -135,6 +160,7 @@ function ContactForm() {
                       required
                     />
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
@@ -147,7 +173,7 @@ function ContactForm() {
                   </div>
                 </div>
 
-                {/* Row 2 */}
+                {/* ROW 2 */}
                 <div className="form-row">
                   <div className="form-group">
                     <input
@@ -159,6 +185,7 @@ function ContactForm() {
                       required
                     />
                   </div>
+
                   <div className="form-group">
                     <input
                       type="tel"
@@ -171,7 +198,7 @@ function ContactForm() {
                   </div>
                 </div>
 
-                {/* Row 3 — Company full width */}
+                {/* COMPANY */}
                 <div className="form-group form-group-full">
                   <input
                     type="text"
@@ -183,7 +210,7 @@ function ContactForm() {
                   />
                 </div>
 
-                {/* Row 4 */}
+                {/* ROW 4 */}
                 <div className="form-row">
                   <div className="form-group">
                     <input
@@ -195,6 +222,7 @@ function ContactForm() {
                       required
                     />
                   </div>
+
                   <div className="form-group">
                     <input
                       type="text"
@@ -207,25 +235,31 @@ function ContactForm() {
                   </div>
                 </div>
 
-                {/* Row 5 */}
+                {/* ROW 5 */}
                 <div className="form-row">
-                  <div className="form-group">
-                    <select
-                      name="cargoType"
-                      value={formData.cargoType}
-                      onChange={handleChange}
-                      required
-                    >
-                      <option value="" disabled>
-                        Cargo type*
-                      </option>
-                      {cargoTypes.map((type) => (
-                        <option key={type} value={type}>
-                          {type}
-                        </option>
-                      ))}
-                    </select>
-                  </div>
+      <div className={`form-group select-group ${cargoOpen ? "select-open" : ""}`}>
+  <select
+    name="cargoType"
+    value={formData.cargoType}
+    onChange={(e) => {
+      handleChange(e);
+      setCargoOpen(false);
+    }}
+    onClick={() => setCargoOpen((prev) => !prev)}
+    onBlur={() => setCargoOpen(false)}
+    required
+  >
+    <option value="" disabled>
+      Cargo type*
+    </option>
+
+    {cargoTypes.map((type) => (
+      <option key={type} value={type}>
+        {type}
+      </option>
+    ))}
+  </select>
+</div>
                   <div className="form-group">
                     <input
                       type="text"
@@ -238,26 +272,36 @@ function ContactForm() {
                   </div>
                 </div>
 
-                {/* Row 6 — Shipping method full width */}
-                <div className="form-group form-group-full">
-                  <select
-                    name="shippingMethod"
-                    value={formData.shippingMethod}
-                    onChange={handleChange}
-                    required
-                  >
-                    <option value="" disabled>
-                      Shipping method*
-                    </option>
-                    {shippingMethods.map((method) => (
-                      <option key={method} value={method}>
-                        {method}
-                      </option>
-                    ))}
-                  </select>
-                </div>
+                {/* SHIPPING METHOD */}
+          <div
+  className={`form-group form-group-full select-group ${
+    shippingOpen ? "select-open" : ""
+  }`}
+>
+  <select
+    name="shippingMethod"
+    value={formData.shippingMethod}
+    onChange={(e) => {
+      handleChange(e);
+      setShippingOpen(false);
+    }}
+    onClick={() => setShippingOpen((prev) => !prev)}
+    onBlur={() => setShippingOpen(false)}
+    required
+  >
+    <option value="" disabled>
+      Shipping method*
+    </option>
 
-                {/* Row 7 — Textarea */}
+    {shippingMethods.map((method) => (
+      <option key={method} value={method}>
+        {method}
+      </option>
+    ))}
+  </select>
+</div>
+
+                {/* MESSAGE */}
                 <div className="form-group form-group-full">
                   <textarea
                     name="message"
@@ -268,7 +312,10 @@ function ContactForm() {
                   />
                 </div>
 
-                <button type="submit" className="common-btn contact-submit-btn">
+                <button
+                  type="submit"
+                  className="common-btn contact-submit-btn"
+                >
                   Send Inquiry
                 </button>
               </form>

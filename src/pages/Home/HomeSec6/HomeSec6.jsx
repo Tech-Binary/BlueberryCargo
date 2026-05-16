@@ -7,6 +7,16 @@ function HomeSec6({ data, title, desc, newClass }) {
   const location = useLocation();
 
   const isAboutPage = location.pathname === "/about" || location.pathname === "/network";
+  const handleQuoteClick = () => {
+  const section = document.getElementById("contact-form-section");
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+    });
+  }
+};
   return (
     <section className="cta-section">
       {/* Top: Full-width banner image */}
@@ -32,7 +42,12 @@ function HomeSec6({ data, title, desc, newClass }) {
                 Tell us about your shipment and our team will get <br />
                 back to you with a tailored solution.
               </p>
-              <button className="cta-quote-btn">Request a Quote</button>
+           <button
+  className="cta-quote-btn"
+  onClick={handleQuoteClick}
+>
+  Request a Quote
+</button>
             </div>
 
 
