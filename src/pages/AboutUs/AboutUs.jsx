@@ -6,6 +6,7 @@ import AboutSec4 from "./AboutSec4/AboutSec4";
 import AboutSec5 from "./AboutSec5/AboutSec5";
 import CustomBanner from "../../components/CustomBanner/CustomBanner";
 import AboutSec3 from "./AboutSec3/AboutSec3";
+import Footer from "../../components/Footer";
 
 function AboutUs() {
 
@@ -42,6 +43,7 @@ function AboutUs() {
       <AboutSec4 />
       <HomeSec6 data={features} />
       <AboutSec5 />
+      <Footer/>
     </>
   );
 }
