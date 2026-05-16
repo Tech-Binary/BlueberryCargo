@@ -3,26 +3,49 @@ import ctaBanner from "../../../assets/Images/cta-banner.jpg";
 import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
 import { useLocation } from "react-router-dom";
 
-function HomeSec6({ data, title, desc, newClass }) {
+function HomeSec6({
+  data,
+  title,
+  desc,
+  title2,
+  desc2,
+  newClass,
+}) {
   const location = useLocation();
 
-  const isAboutPage = location.pathname === "/about" || location.pathname === "/network";
-  const handleQuoteClick = () => {
-  const section = document.getElementById("contact-form-section");
+  const isAboutPage =
+    location.pathname === "/about" ||
+    location.pathname === "/network";
 
-  if (section) {
-    section.scrollIntoView({
-      behavior: "smooth",
-      block: "start",
-    });
-  }
-};
+  const handleQuoteClick = () => {
+    // HOME PAGE
+    if (location.pathname === "/") {
+      const section = document.getElementById(
+        "contact-form-section"
+      );
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    } else {
+      // OTHER PAGES
+      window.location.href = "/contact";
+    }
+  };
+
   return (
     <section className="cta-section">
       {/* Top: Full-width banner image */}
-      {/* Conditional Rendering */}
       {isAboutPage ? (
-        <AboutSec3 data={data} title={title} desc={desc} newClass={newClass} />
+        <AboutSec3
+          data={data}
+          title={title}
+          desc={desc}
+          newClass={newClass}
+        />
       ) : (
         <div className="cta-banner-image">
           <img src={ctaBanner} alt="Cargo Port" />
@@ -33,24 +56,31 @@ function HomeSec6({ data, title, desc, newClass }) {
       <div className="cta-content-strip">
         <div className="container">
           <div className="cta-inner">
-            {/* Left: Text */}
             <div className="cta-text">
               <h2 className="cta-heading">
-                Ready To Move Your Cargo <br /> Across Africa?
+                {title2 &&
+                  title2
+                    ?.toLowerCase()
+                    .split(" ")
+                    .map(
+                      (word) =>
+                        word.charAt(0).toUpperCase() +
+                        word.slice(1)
+                    )
+                    .join(" ")}
               </h2>
+
               <p className="cta-description">
-                Tell us about your shipment and our team will get <br />
-                back to you with a tailored solution.
+                {desc2}
               </p>
-           <button
-  className="cta-quote-btn"
-  onClick={handleQuoteClick}
->
-  Request a Quote
-</button>
+
+              <button
+                className="cta-quote-btn"
+                onClick={handleQuoteClick}
+              >
+                Request a Quote
+              </button>
             </div>
-
-
           </div>
         </div>
       </div>

@@ -11,7 +11,7 @@ import CorporateIcon from "../../../assets/Icons/freight-icon.png";
 const clients = [
   {
     image: FreightImg,
-    icon: FreightIcon,
+    icon: "/images/Freight-icon.svg",
     title: "Freight Forwarders",
     description:
       "A backend partner with African expertise and charter access when you need it.",
@@ -20,7 +20,7 @@ const clients = [
   },
   {
     image: CargoImg,
-    icon: CargoAgentIcon,
+    icon: "/images/Cargo-icon.svg",
     title: "Cargo Agents",
     description:
       "A backend partner with African expertise and charter access when you need it.",
@@ -29,7 +29,7 @@ const clients = [
   },
   {
     image: LogisticsImg,
-    icon: LogisticsIcon,
+    icon: "/images/Logistics-icon.svg",
     title: "Logistics Companies",
     description:
       "A backend partner with African expertise and charter access when you need it.",
@@ -38,7 +38,7 @@ const clients = [
   },
   {
     image: CorporateImg,
-    icon: CorporateIcon,
+    icon: "/images/Corporate-icon.svg",
     title: "Corporate Clients",
     description:
       "A backend partner with African expertise and charter access when you need it.",

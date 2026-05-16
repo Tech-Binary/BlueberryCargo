@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from "../assets/logo/logo.svg";
-
+import { useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 
@@ -19,7 +20,6 @@ function Navbar() {
     {
       id: 3,
       label: "SERVICES",
-      path: "/services",
       dropdown: true,
       submenu: [
         {
@@ -45,11 +45,15 @@ function Navbar() {
       path: "/contact",
     },
   ];
+  const location = useLocation();
 
+  const isServiceActive =
+    location.pathname === "/charter-plane-services" ||
+    location.pathname === "/cargo-services";
   return (
     <nav className="navbar navbar-expand-lg custom-navbar">
       <div className="container">
-        
+
         {/* Logo */}
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="Blueberry Cargo" className="logo" />
@@ -73,42 +77,51 @@ function Navbar() {
           <ul className="navbar-nav mx-auto custom-navbar-nav">
             {navbarLinks.map((item) => (
               <li
-                className={`nav-item custom-nav-item ${
-                  item.dropdown ? "dropdown" : ""
-                }`}
+                className={`nav-item custom-nav-item ${item.dropdown ? "dropdown" : ""}`}
                 key={item.id}
               >
-                <Link
-                  className="nav-link custom-nav-link"
-                  to={item.path}
-                >
-                  {item.label}
+                {item.dropdown ? (
+                  <>
+                    <div
+                      className={`nav-link custom-nav-link ${isServiceActive ? "active" : ""
+                        }`}
+                    >
+                      {item.label}
+                      <MdOutlineKeyboardArrowDown className="dropdown-icon" />
+                    </div>
 
-                  {item.dropdown && (
-                    <MdOutlineKeyboardArrowDown className="dropdown-icon" />
-                  )}
-                </Link>
-
-                {/* Dropdown Menu */}
-                {item.dropdown && (
-                  <ul className="dropdown-menu custom-dropdown-menu">
-                    {item.submenu.map((subItem) => (
-                      <li key={subItem.id}>
-                        <Link
-                          className="dropdown-item"
-                          to={subItem.path}
-                        >
-                          {subItem.label}
-                        </Link>
-                      </li>
-                    ))}
-                  </ul>
+                    {/* ✅ ADD THIS BACK */}
+                    <ul className="dropdown-menu custom-dropdown-menu">
+                      {item.submenu.map((subItem) => (
+                        <li key={subItem.id}>
+                          <NavLink
+                            to={subItem.path}
+                            className={({ isActive }) =>
+                              `dropdown-item ${isActive ? "active" : ""}`
+                            }
+                          >
+                            {subItem.label}
+                          </NavLink>
+                        </li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  <NavLink
+                    to={item.path}
+                    className={({ isActive }) =>
+                      `nav-link custom-nav-link ${isActive ? "active" : ""}`
+                    }
+                  >
+                    {item.label}
+                  </NavLink>
                 )}
               </li>
             ))}
           </ul>
 
-          <button className="common-btn">
+          <button className="common-btn"
+           onClick={() => window.location.href = "/contact"}>
             Get a Quote
           </button>
         </div>

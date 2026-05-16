@@ -13,12 +13,14 @@ const contactCards = [
     label: "Email",
     value: "Info@blueberrycargo.com",
     alt: "Email Icon",
+    link: "mailto:Info@blueberrycargo.com",
   },
   {
     icon: PhoneIcon,
     label: "Phone",
     value: "+233 (0) 302 000 000",
     alt: "Phone Icon",
+    link: "tel:+233302000000",
   },
   {
     icon: OpsIcon,
@@ -31,6 +33,7 @@ const contactCards = [
     label: "Support",
     value: "24/7 Operations Desk",
     alt: "Support Icon",
+    link: "mailto:support@blueberrycargo.com",
   },
 ];
 
@@ -53,8 +56,8 @@ const shippingMethods = [
 function ContactForm() {
   const location = useLocation();
   const [cargoOpen, setCargoOpen] = useState(false);
-const [shippingOpen, setShippingOpen] = useState(false);
-const [activeSelect, setActiveSelect] = useState(null);
+  const [shippingOpen, setShippingOpen] = useState(false);
+  const [activeSelect, setActiveSelect] = useState(null);
   const isContactPage = location.pathname === "/contact";
 
   const [formData, setFormData] = useState({
@@ -87,14 +90,14 @@ const [activeSelect, setActiveSelect] = useState(null);
   };
 
   return (
-   <section
-  id="contact-form-section"
-  className={
-    isContactPage
-      ? "contact-section section-padding"
-      : "contact-section section-padding pt-0"
-  }
->
+    <section
+      id="contact-form-section contact-form"
+      className={
+        isContactPage
+          ? "contact-section section-padding"
+          : "contact-section section-padding pt-0"
+      }
+    >
       <div className="container">
         <div className="row g-5">
           {/* LEFT SIDE */}
@@ -110,8 +113,8 @@ const [activeSelect, setActiveSelect] = useState(null);
                 to discuss your shipment, charter or supply-chain program.
               </p>
 
-              {/* CONTACT CARDS */}
-              <div className="contact-cards-grid">
+              {/* Contact Cards Grid */}
+              {/* <div className="contact-cards-grid">
                 {contactCards.map((card, index) => (
                   <div className="contact-card" key={index}>
                     <div className="contact-card-icon">
@@ -129,6 +132,25 @@ const [activeSelect, setActiveSelect] = useState(null);
                     </div>
                   </div>
                 ))}
+              </div> */}
+              <div className="contact-cards-grid">
+                {contactCards.map((card, index) => (
+                  <a
+                    href={card.link}
+                    className="contact-card"
+                    key={index}
+                    style={{ textDecoration: "none" }}
+                  >
+                    <div className="contact-card-icon">
+                      <img src={card.icon} alt={card.alt} />
+                    </div>
+
+                    <div className="contact-card-text">
+                      <span className="contact-card-label">{card.label}</span>
+                      <span className="contact-card-value">{card.value}</span>
+                    </div>
+                  </a>
+                ))}
               </div>
 
               {/* MAP */}
@@ -142,7 +164,6 @@ const [activeSelect, setActiveSelect] = useState(null);
           <div className="col-lg-6 col-md-12">
             <div className="contact-form-wrap">
               <h3 className="form-heading">Send an inquiry</h3>
-
               <p className="form-subheading">
                 We respond within one business day.
               </p>
@@ -237,29 +258,31 @@ const [activeSelect, setActiveSelect] = useState(null);
 
                 {/* ROW 5 */}
                 <div className="form-row">
-      <div className={`form-group select-group ${cargoOpen ? "select-open" : ""}`}>
-  <select
-    name="cargoType"
-    value={formData.cargoType}
-    onChange={(e) => {
-      handleChange(e);
-      setCargoOpen(false);
-    }}
-    onClick={() => setCargoOpen((prev) => !prev)}
-    onBlur={() => setCargoOpen(false)}
-    required
-  >
-    <option value="" disabled>
-      Cargo type*
-    </option>
+                  <div
+                    className={`form-group select-group ${cargoOpen ? "select-open" : ""}`}
+                  >
+                    <select
+                      name="cargoType"
+                      value={formData.cargoType}
+                      onChange={(e) => {
+                        handleChange(e);
+                        setCargoOpen(false);
+                      }}
+                      onClick={() => setCargoOpen((prev) => !prev)}
+                      onBlur={() => setCargoOpen(false)}
+                      required
+                    >
+                      <option value="" disabled>
+                        Cargo type*
+                      </option>
 
-    {cargoTypes.map((type) => (
-      <option key={type} value={type}>
-        {type}
-      </option>
-    ))}
-  </select>
-</div>
+                      {cargoTypes.map((type) => (
+                        <option key={type} value={type}>
+                          {type}
+                        </option>
+                      ))}
+                    </select>
+                  </div>
                   <div className="form-group">
                     <input
                       type="text"
@@ -273,33 +296,33 @@ const [activeSelect, setActiveSelect] = useState(null);
                 </div>
 
                 {/* SHIPPING METHOD */}
-          <div
-  className={`form-group form-group-full select-group ${
-    shippingOpen ? "select-open" : ""
-  }`}
->
-  <select
-    name="shippingMethod"
-    value={formData.shippingMethod}
-    onChange={(e) => {
-      handleChange(e);
-      setShippingOpen(false);
-    }}
-    onClick={() => setShippingOpen((prev) => !prev)}
-    onBlur={() => setShippingOpen(false)}
-    required
-  >
-    <option value="" disabled>
-      Shipping method*
-    </option>
+                <div
+                  className={`form-group form-group-full select-group ${
+                    shippingOpen ? "select-open" : ""
+                  }`}
+                >
+                  <select
+                    name="shippingMethod"
+                    value={formData.shippingMethod}
+                    onChange={(e) => {
+                      handleChange(e);
+                      setShippingOpen(false);
+                    }}
+                    onClick={() => setShippingOpen((prev) => !prev)}
+                    onBlur={() => setShippingOpen(false)}
+                    required
+                  >
+                    <option value="" disabled>
+                      Shipping method*
+                    </option>
 
-    {shippingMethods.map((method) => (
-      <option key={method} value={method}>
-        {method}
-      </option>
-    ))}
-  </select>
-</div>
+                    {shippingMethods.map((method) => (
+                      <option key={method} value={method}>
+                        {method}
+                      </option>
+                    ))}
+                  </select>
+                </div>
 
                 {/* MESSAGE */}
                 <div className="form-group form-group-full">
@@ -312,10 +335,7 @@ const [activeSelect, setActiveSelect] = useState(null);
                   />
                 </div>
 
-                <button
-                  type="submit"
-                  className="common-btn contact-submit-btn"
-                >
+                <button type="submit" className="common-btn contact-submit-btn">
                   Send Inquiry
                 </button>
               </form>
