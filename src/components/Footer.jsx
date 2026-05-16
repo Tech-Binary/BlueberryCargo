@@ -35,7 +35,7 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/services">Services</Link></li>
-              <li><Link to="/operations">Operations</Link></li>
+              <li><Link to="/network">Operations</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -55,9 +55,9 @@ function Footer() {
           <div className="col-lg-3 mb-4">
             <h5>Operations</h5>
             <ul>
-              <li>Madagascar</li>
-              <li>Ghana</li>
-              <li>Indian Ocean</li>
+              <li><Link to="/network">Madagascar</Link></li>
+              <li><Link to="/network">Ghana</Link></li>
+              <li><Link to="/network">Indian Ocean</Link></li>
             </ul>
           </div>
 
