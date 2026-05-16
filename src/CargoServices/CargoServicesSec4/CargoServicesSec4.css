@@ -1,0 +1,341 @@
+/* CargoServicesSec4.css */
+
+.cargo-services-sec4 {
+  background: #ffffff;
+  overflow: hidden;
+}
+
+/* ==============================
+   MAIN WRAPPER
+============================== */
+.charter-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+/* ==============================
+   LEFT CONTENT
+============================== */
+.charter-content {
+  width: 50%;
+}
+
+/* ==============================
+   FEATURE CARDS
+============================== */
+.charter-card-row {
+  margin-bottom: 28px;
+}
+
+.charter-small-card {
+  background: #f5f8fa;
+  border: 1px solid #dce2ea;
+  border-radius: 4px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.charter-small-card:hover {
+  transform: translateY(-4px);
+}
+
+.charter-icon-box {
+  width: 60px;
+  height: 60px;
+  min-width: 60px;
+  background: #eaedf2;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.charter-icon-box img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+.charter-small-card h5 {
+  font-size: 16px;
+  color: #102566;
+  margin-bottom: 4px;
+  font-weight: 600;
+}
+
+.charter-small-card p {
+  font-size: 14px;
+  color: #686868;
+  line-height: 1.3;
+  margin-bottom: 0 !important;
+}
+
+/* ==============================
+   CTA BUTTONS
+============================== */
+.charter-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.charter-btn-primary {
+  background-color: #E69C24 !important;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 26px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.25s ease;
+}
+
+.charter-btn-primary:hover {
+  background-color: #E69C24;
+  color: #ffffff;
+}
+
+.charter-btn-link {
+  background: transparent;
+  color: #285D80;
+  border: none;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  padding: 0;
+  transition: color 0.2s ease;
+}
+
+.charter-btn-link:hover {
+  color: #e8a020;
+}
+
+/* ==============================
+   RIGHT IMAGE
+============================== */
+.charter-image-wrapper {
+  width: 50%;
+  position: relative;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.charter-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  min-height: 340px;
+}
+
+/* ==============================
+   STATS OVERLAY
+============================== */
+.charter-stats-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  padding: 18px 22px;
+  gap: 0;
+}
+
+.charter-overlay-label {
+  color: #ffff;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1.4;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.charter-overlay-divider {
+  width: 1px;
+  height: 38px;
+  background:#ffffff;
+  margin: 0 18px;
+  /* flex-shrink: 0; */
+}
+
+.charter-overlay-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+
+.charter-stat-number {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.1;
+}
+
+.charter-stat-text {
+  font-size: 12px;
+  color: #ffff;
+  text-align: center;
+  margin-top: 3px;
+  line-height: 1.2;
+}
+
+.charter-overlay-sep {
+  width: 1px;
+  height: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  flex-shrink: 0;
+}
+/* =========================================
+   ALT LAYOUT FOR /charter-plane-services
+========================================= */
+
+.cargo-layout-alt {
+  align-items: center;
+}
+
+/* SIMPLE BULLET LIST */
+
+.cargo-list-wrapper {
+  margin-bottom: 30px;
+}
+
+.cargo-list-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 4px;
+}
+
+.cargo-list-dot {
+  width: 10px;
+  height: 10px;
+  min-width: 10px;
+  border-radius: 50%;
+  background: #285d80;
+  margin-top: 7px;
+}
+
+.cargo-list-item p {
+  margin: 0;
+  color: #6B7280;
+   font-weight: 500;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.cargo-list-item strong {
+  color: #6B7280;
+  font-weight: 600;
+}
+
+/* SMALLER IMAGE FOR ALT VERSION */
+
+.cargo-layout-alt .charter-image-wrapper img {
+  min-height: 420px;
+  max-height: 420px;
+}
+
+/* SMALLER OVERLAY TEXT */
+
+.cargo-layout-alt .charter-overlay-label {
+  font-size: 14px;
+}
+/* ==============================
+   RESPONSIVE
+============================== */
+@media (max-width: 991px) {
+  .charter-wrapper {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .charter-content,
+  .charter-image-wrapper {
+    width: 100%;
+  }
+
+  .charter-image-wrapper img {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 767px) {
+  .charter-small-card {
+    padding: 14px;
+  }
+
+  .charter-small-card h5 {
+    font-size: 15px;
+  }
+
+  .charter-icon-box {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+  }
+
+  .charter-icon-box img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .charter-stats-overlay {
+    padding: 14px 16px;
+  }
+
+  .charter-overlay-label {
+    font-size: 10px;
+  }
+
+  .charter-stat-number {
+    font-size: 18px;
+  }
+
+  .charter-stat-text {
+    font-size: 10px;
+  }
+
+  .charter-image-wrapper img {
+    min-height: 260px;
+  }
+}
+
+@media (max-width: 575px) {
+  .charter-cta-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .charter-btn-primary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .charter-overlay-divider {
+    margin: 0 10px;
+  }
+
+  .charter-stat-number {
+    font-size: 16px;
+  }
+
+  .charter-overlay-label {
+    font-size: 9px;
+  }
+}

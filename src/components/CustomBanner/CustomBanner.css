@@ -1,12 +1,17 @@
 .CustomBanner-banner {
     position: relative;
     width: 100%;
-    height: 64vh;
+    min-height: 64vh;
     overflow: hidden;
-    background-size: cover;
-    background-position: center;
-}
 
+    background-size: contain;   /* shows full image */
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .banner-title-bar {
     width: 6px;
     background: var(--primary-color);
@@ -16,14 +21,15 @@
 }
 
 .banner-title {
-    font-size: 55px;
+    font-size: 51px;
     margin-bottom: 5px;
     line-height: 100%;
 }
 
 .CustomBanner-description {
     margin-bottom: 0;
-    font-size: 20px;
+    font-size: 19px;
+    line-height: 1.2;
 }
 
 /* Banner Image */

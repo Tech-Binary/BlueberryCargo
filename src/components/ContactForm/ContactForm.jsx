@@ -79,7 +79,7 @@ function ContactForm() {
   };
 
   return (
-    <section className={isContactPage ? "contact-section section-padding" : "contact-section section-padding pt-0"}>
+    <section className={isContactPage ? "contact-section section-padding" : "contact-section section-padding pt-0"} id="contact-form">
       <div className="container">
         <div className="row g-5">
           {/* Left: Info + Map */}

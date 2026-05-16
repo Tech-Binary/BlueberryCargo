@@ -41,9 +41,10 @@ function AboutUs() {
       <AboutSec2 />
       <HomeSec3 />
       <AboutSec4 />
-      <HomeSec6 data={features} />
+      <HomeSec6 data={features} title2="Ready to move your cargo across Africa?"
+        desc2="Tell us about your shipment and our team will get back to you with a tailored solution." />
       <AboutSec5 />
-      <Footer/>
+      <Footer />
     </>
   );
 }
