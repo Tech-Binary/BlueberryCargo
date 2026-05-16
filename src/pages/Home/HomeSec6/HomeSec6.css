@@ -1,7 +1,9 @@
 /* =========================
    HOME SEC 5 — CTA BANNER
 ========================= */
-
+#contact-form-section {
+  scroll-margin-top: 70px;
+}
 .cta-section {
   width: 100%;
   overflow: hidden;

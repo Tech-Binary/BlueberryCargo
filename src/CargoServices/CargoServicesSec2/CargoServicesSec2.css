@@ -154,9 +154,6 @@
     font-size: 44px;
   }
 
-  .cargo-service-image img {
-    height: 400px;
-  }
 }
 
 @media (max-width: 991px) {
@@ -190,9 +187,6 @@
     right: 0;
   }
 
-  .cargo-service-image img {
-    height: 360px;
-  }
 }
 
 @media (max-width: 767px) {
@@ -226,9 +220,6 @@
     min-width: unset;
   }
 
-  .cargo-service-image img {
-    height: 300px;
-  }
 
   .cargo-number {
     font-size: 54px;
@@ -236,9 +227,7 @@
 }
 
 @media (max-width: 575px) {
-  .cargo-service-image img {
-    height: 240px;
-  }
+
 
   .cargo-service-title {
     font-size: 26px;
