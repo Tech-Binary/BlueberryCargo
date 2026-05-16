@@ -73,9 +73,9 @@ const ContactFaq = () => {
   const isNetworkPage = location.pathname === "/network";
 
   return (
-    <section className="faq-section section-padding" style={{ backgroundColor: isNetworkPage ? "" : "#f8f8f8" }}>
+    <section className="faq-section section-padding" style={{ backgroundColor: isNetworkPage ? "" : "#f8f8f8", paddingTop: isNetworkPage ? "0px" : "" }}>
       <div className="faq-container container">
-        
+
         {/* Top Content */}
         <div className="faq-top">
           <div className="faq-heading">
@@ -107,34 +107,34 @@ const ContactFaq = () => {
         </div>
 
         {/* FAQ Questions */}
-        
-<div className="faq-questions">
-  
-  <div className="faq-column">
-    {faqData.slice(0, 4).map((item, index) => (
-      <FAQItem
-        key={index}
-        item={item}
-        index={index}
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
-      />
-    ))}
-  </div>
 
-  <div className="faq-column">
-    {faqData.slice(4, 8).map((item, index) => (
-      <FAQItem
-        key={index + 4}
-        item={item}
-        index={index + 4}
-        activeIndex={activeIndex}
-        setActiveIndex={setActiveIndex}
-      />
-    ))}
-  </div>
+        <div className="faq-questions">
 
-</div>
+          <div className="faq-column">
+            {faqData.slice(0, 4).map((item, index) => (
+              <FAQItem
+                key={index}
+                item={item}
+                index={index}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+              />
+            ))}
+          </div>
+
+          <div className="faq-column">
+            {faqData.slice(4, 8).map((item, index) => (
+              <FAQItem
+                key={index + 4}
+                item={item}
+                index={index + 4}
+                activeIndex={activeIndex}
+                setActiveIndex={setActiveIndex}
+              />
+            ))}
+          </div>
+
+        </div>
       </div>
     </section>
   );

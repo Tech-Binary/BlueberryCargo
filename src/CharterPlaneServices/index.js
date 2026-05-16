@@ -15,11 +15,11 @@ function CharterPlaneServices() {
         desc="When standard freight lanes can't deliver on time — put a dedicated aircraft at your command. Full capacity, custom routing, zero compromise across Africa's most critical corridors."
       />
 
-      <CargoServicesSec1/>
-<CargoServicesSec2/>
-<CargoServicesSec3/>
-<CargoServicesSec4/>
-      <Footer/>
+      <CargoServicesSec1 />
+      <CargoServicesSec2 />
+      <CargoServicesSec3 />
+      <CargoServicesSec4 />
+      <Footer />
     </>
   );
 }

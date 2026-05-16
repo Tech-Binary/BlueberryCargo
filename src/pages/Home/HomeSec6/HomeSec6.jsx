@@ -3,7 +3,7 @@ import ctaBanner from "../../../assets/Images/cta-banner.jpg";
 import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
 import { useLocation } from "react-router-dom";
 
-function HomeSec6({ data, title, desc, newClass }) {
+function HomeSec6({ data, title, desc, title2, desc2, newClass }) {
   const location = useLocation();
 
   const isAboutPage = location.pathname === "/about" || location.pathname === "/network";
@@ -26,11 +26,13 @@ function HomeSec6({ data, title, desc, newClass }) {
             {/* Left: Text */}
             <div className="cta-text">
               <h2 className="cta-heading">
-                Ready To Move Your Cargo <br /> Across Africa?
+                {title2 && title2?.toLowerCase()
+                  .split(" ")
+                  .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+                  .join(" ")}
               </h2>
               <p className="cta-description">
-                Tell us about your shipment and our team will get <br />
-                back to you with a tailored solution.
+                {desc2}
               </p>
               <button className="cta-quote-btn">Request a Quote</button>
             </div>
