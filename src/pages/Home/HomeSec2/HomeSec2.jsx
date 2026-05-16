@@ -49,7 +49,7 @@ const servicesData = {
   "Charter Plane": [
     {
       image: CharterImg1,
-      icon: CharterIcon1,
+      icon: "/images/cargo-icon1.png",
       title: "Full Aircraft Charter",
       description:
         "Dedicated aircraft solutions for time-sensitive or oversized cargo, fully managed from booking to touchdown.",
@@ -57,7 +57,7 @@ const servicesData = {
     },
     {
       image: CharterImg2,
-      icon: CharterIcon2,
+      icon: "/images/cargo-icon2.png",
       title: "Part Charter Solutions",
       description:
         "Flexible part-charter options for smaller consignments requiring speed and direct routing across Africa.",
@@ -65,7 +65,7 @@ const servicesData = {
     },
     {
       image: CharterImg3,
-      icon: CharterIcon3,
+      icon: "/images/cargo-icon3.png",
       title: "Charter Coordination",
       description:
         "End-to-end charter coordination including permits, ground handling, and real-time flight tracking for your shipment.",
@@ -109,7 +109,10 @@ function HomeSec2() {
             </div>
           </div>
 
-          <a href="/services" className="services-explore-link">
+          <a
+            href={activeTab === "Cargo" ? "cargo-services" : "/charter-plane-services"}
+            className="services-explore-link"
+          >
             Explore More
           </a>
         </div>
@@ -142,7 +145,11 @@ function HomeSec2() {
                       </span>
                     ))}
                   </div>
-                    <img className="service-icon-badge" src={service.icon} alt={service.title} />
+                  <img
+                    className="service-icon-badge"
+                    src={service.icon}
+                    alt={service.title}
+                  />
                 </div>
               </div>
             </div>

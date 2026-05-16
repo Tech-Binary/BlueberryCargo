@@ -120,7 +120,8 @@ function Navbar() {
             ))}
           </ul>
 
-          <button className="common-btn">
+          <button className="common-btn"
+           onClick={() => window.location.href = "/contact"}>
             Get a Quote
           </button>
         </div>

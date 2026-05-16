@@ -123,7 +123,9 @@ function CargoServicesSec4() {
   const sectionData = isCharterPage
     ? standardCargoData
     : charterSectionData;
-
+  const sectionLinks = isCharterPage
+    ? "/cargo-services"
+    : "/charter-plane-services";
   return (
     <section className="cargo-services-sec4 section-padding">
       <div className="container">
@@ -190,11 +192,13 @@ function CargoServicesSec4() {
 
             {/* CTA */}
             <div className="charter-cta-row">
-              <button className="charter-btn-primary">
+              <button className="charter-btn-primary"
+            onClick={() => window.location.href = sectionLinks}>
                 {sectionData.primaryBtn}
               </button>
 
-              <button className="charter-btn-link">
+              <button className="charter-btn-link"
+              onClick={() => window.location.href = "/contact"}>
                 {sectionData.secondaryBtn}
               </button>
             </div>
