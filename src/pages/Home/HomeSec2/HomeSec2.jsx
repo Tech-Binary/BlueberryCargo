@@ -109,7 +109,10 @@ function HomeSec2() {
             </div>
           </div>
 
-          <a href="/services" className="services-explore-link">
+          <a
+            href={activeTab === "Cargo" ? "cargo-services" : "/charter-plane-services"}
+            className="services-explore-link"
+          >
             Explore More
           </a>
         </div>
@@ -142,7 +145,11 @@ function HomeSec2() {
                       </span>
                     ))}
                   </div>
-                    <img className="service-icon-badge" src={service.icon} alt={service.title} />
+                  <img
+                    className="service-icon-badge"
+                    src={service.icon}
+                    alt={service.title}
+                  />
                 </div>
               </div>
             </div>

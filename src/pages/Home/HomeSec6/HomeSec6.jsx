@@ -32,7 +32,8 @@ function HomeSec6({ data, title, desc, newClass }) {
                 Tell us about your shipment and our team will get <br />
                 back to you with a tailored solution.
               </p>
-              <button className="cta-quote-btn">Request a Quote</button>
+              <button className="cta-quote-btn"
+               onClick={() => window.location.href = "/contact"}>Request a Quote</button>
             </div>
 
 

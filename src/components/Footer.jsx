@@ -44,9 +44,9 @@ function Footer() {
           <div className="col-lg-3 mb-4">
             <h5>Our Service</h5>
             <ul>
-              <li>Cargo Handling</li>
-              <li>Freight Forwarding</li>
-              <li>Charter</li>
+              <li><Link to="/cargo-services">Cargo Handling</Link></li>
+              <li> Freight Forwarding</li>
+              <li> <Link to = "/charter-plane-services">Charter</Link></li>
               <li>Time Sensitive</li>
             </ul>
           </div>
