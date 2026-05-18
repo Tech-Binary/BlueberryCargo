@@ -148,9 +148,9 @@ function CargoServicesSec1() {
       {/* Content */}
       <div className="cps-content-wrapper">
         <div className="container">
-          <div className="row align-items-center cps-content">
+          <div className="row align-items-center cps-content mobile-reverse">
             {/* Left Image */}
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12 cargo-service-sec1-left">
               <div className="cps-image-block">
                 <img
                   src={pageData.image}
@@ -160,7 +160,7 @@ function CargoServicesSec1() {
             </div>
 
             {/* Right Content */}
-            <div className="col-lg-6 col-md-12">
+            <div className="col-lg-6 col-md-12 cargo-service-sec1-right ">
               <div className="cps-text-block">
                 <div className="cps-heading-wrapper">
                   <h2 className="section-title about-title">

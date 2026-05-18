@@ -149,11 +149,21 @@
    RESPONSIVE
 ========================= */
 
-@media (max-width: 1199px) {
+@media (max-width: 1024px) {
   .cargo-service-title {
     font-size: 44px;
   }
-
+.cargo-service-image {
+    width: 100% !important;
+    position: relative;
+    margin-top: 55px;
+}
+.cargo-service-content {
+    width: 100% !important;
+}
+.cargo-service-wrapper {
+  display: block;
+}
 }
 
 @media (max-width: 991px) {
@@ -189,7 +199,7 @@
 
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   .cargo-service-wrapper {
     margin-bottom: 55px;
   }
@@ -216,7 +226,7 @@
   }
 
   .cargo-stat-box {
-    width: 100%;
+    width: 48%;
     min-width: unset;
   }
 

@@ -105,7 +105,7 @@ export default function HomeSec4() {
         <div className="homeSec4-wrapper">
           <div className="row align-items-center">
             {/* LEFT CONTENT */}
-            <div className="col-12 col-lg-5">
+            <div className="col-12 col-lg-5 left-content--main">
               <div className="homeSec4-left">
                 <h2 className="homeSec4-title">Where We Operate</h2>
 
@@ -164,7 +164,7 @@ export default function HomeSec4() {
             </div>
 
             {/* RIGHT MAP */}
-            <div className="col-12 col-lg-7">
+            <div className="col-12 col-lg-7 right-content-main">
               <div className="homeSec4-map-wrapper">
                 {/* MAP INNER */}
                 <div

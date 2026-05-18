@@ -227,18 +227,30 @@
 @media (max-width: 1199px) {
 
   .homeSec4-title {
-    font-size: 36px;
+    font-size: 31px;
   }
 
   .homeSec4-country {
-    font-size: 34px;
+    font-size: 31px;
   }
-
+.homeSec4-flag{
+  width: 28px;
+  height: 28px;
+}
   .homeSec4-map-wrapper {
     height: 560px;
   }
 }
 
+@media (max-width:1024px) {
+  .left-content--main{
+    width: 100% !important;
+  }
+  .right-content-main{
+    width: 100% !important;
+    margin-top: 25px !important;
+  }
+}
 @media (max-width: 991px) {
 
   .homeSec4-left {
