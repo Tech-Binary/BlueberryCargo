@@ -105,7 +105,24 @@ function CargoServicesSec3() {
     location.pathname === "/charter-plane-services"
       ? charterPlaneJourneyData
       : defaultCargoJourneyData;
+  const handleQuoteClick = () => {
+    // HOME PAGE
+    if (location.pathname === "/") {
+      const section = document.getElementById(
+        "contact-form-section"
+      );
 
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    } else {
+      // OTHER PAGES
+      window.location.href = "/contact";
+    }
+  };
   return (
     <>
       <section className="cargo-services-sec3 section-padding">
@@ -165,7 +182,8 @@ function CargoServicesSec3() {
                 Tell us about your shipment and our team will get <br />
                 back to you with a tailored solution.
               </p>
-              <button className="cta-quote-btn">Request a Quote</button>
+             
+              <button className="cta-quote-btn"    onClick={handleQuoteClick}>Request a Quote</button>
             </div>
 
 

@@ -122,6 +122,59 @@
 /* =========================
    RESPONSIVE
 ========================= */
+/* =========================
+   1024px RESPONSIVE
+========================= */
+
+@media (max-width: 1024px) {
+
+  .about-content {
+    padding-left: 0px;
+  
+  }
+  .mobile-reverse{
+    flex-direction: column-reverse;
+  }
+.About-content-main{
+  width: 100% !important;
+}
+.about-image-main{
+  width: 100% !important;
+}
+  .about-title {
+    font-size: 36px;
+    line-height: 1.2;
+  }
+
+  .about-description {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .about-image-grid {
+    height: 320px;
+  }
+
+  .about-features {
+    gap: 16px;
+  }
+
+  .about-feature-item {
+    width: 220px;
+    height: 120px;
+    padding: 12px;
+  }
+
+  .feature-icon-wrap {
+    width: 54px;
+    height: 54px;
+    padding: 12px;
+  }
+
+  .feature-label {
+    font-size: 16px;
+  }
+}
 
 @media (max-width: 991px) {
   .about-content {
@@ -150,4 +203,9 @@
   .about-features {
     gap: 24px;
   }
+}
+@media (max-width: 526px) {
+     .about-feature-item {
+        width: 100%;
+     }
 }

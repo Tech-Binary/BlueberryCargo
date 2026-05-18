@@ -10,9 +10,9 @@ function HomeSec1() {
   return (
     <section className="about-section section-padding">
       <div className="container">
-        <div className="row align-items-center g-4">
+        <div className="row align-items-center g-4 mobile-reverse">
           {/* Left: Image Grid */}
-          <div className="col-lg-5 col-md-12">
+          <div className="col-lg-5 col-md-12 about-image-main">
             <div className="about-image-grid">
               <div className="about-img-tall">
                 <img src={aboutImg1} alt="Cargo loading" />
@@ -29,7 +29,7 @@ function HomeSec1() {
           </div>
 
           {/* Right: Content */}
-          <div className="col-lg-7 col-md-12">
+          <div className="col-lg-7 col-md-12 About-content-main">
             <div className="about-content">
               <h2 className="section-title about-title">
                 <span className="title-bar">|</span> About Us

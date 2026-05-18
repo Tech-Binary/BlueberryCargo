@@ -91,7 +91,7 @@ function ContactForm() {
 
   return (
     <section
-      id="contact-form-section contact-form"
+      id="contact-form-section"
       className={
         isContactPage
           ? "contact-section section-padding"

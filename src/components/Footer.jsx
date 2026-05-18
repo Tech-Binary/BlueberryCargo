@@ -15,7 +15,7 @@ function Footer() {
         <div className="row">
 
           {/* Logo Section */}
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <Link to="/">
               <img src={logo} alt="Footer Logo" className="footer-logo" />
             </Link>
@@ -29,7 +29,7 @@ function Footer() {
           </div>
 
           {/* Quick Links */}
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <h5>Quick Links</h5>
             <ul>
               <li><Link to="/">Home</Link></li>
@@ -41,7 +41,7 @@ function Footer() {
           </div>
 
           {/* Services */}
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <h5>Our Service</h5>
             <ul>
               <li><Link to="/cargo-services">Cargo Handling</Link></li>
@@ -52,7 +52,7 @@ function Footer() {
           </div>
 
           {/* Operations */}
-          <div className="col-lg-3 mb-4">
+          <div className="col-md-3 mb-4">
             <h5>Operations</h5>
             <ul>
               <li><Link to="/network">Madagascar</Link></li>
