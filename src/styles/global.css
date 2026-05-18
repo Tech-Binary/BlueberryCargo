@@ -164,20 +164,15 @@ ul {
   background: transparent;
   border: 1px solid #0f172a;
 }
-@media (min-width: 1400px) {
-  .container,
-  .container-sm,
-  .container-md,
-  .container-lg,
-  .container-xl,
-  .container-xxl {
-    max-width: 1460px !important;
-  }
-}
+
 /* =========================
    RESPONSIVE
 ========================= */
-
+@media (max-width: 1024px) {
+.section-title{
+  font-size: 31px;
+}
+}
 @media (max-width: 991px) {
   .section-padding {
     padding: 60px 0;
