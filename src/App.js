@@ -18,7 +18,7 @@ function ScrollToTop() {
     if (pathname === "/contact") {
       // wait for DOM render
       setTimeout(() => {
-        const el = document.getElementById("contact-form");
+        const el = document.getElementById("contact-form-section");
         if (el) {
           el.scrollIntoView({ behavior: "smooth" });
         }

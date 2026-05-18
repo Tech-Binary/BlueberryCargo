@@ -4,7 +4,8 @@
     min-height: 64vh;
     overflow: hidden;
 
-    background-size: contain;   /* shows full image */
+    background-size: cover;
+    /* shows full image */
     background-position: center;
     background-repeat: no-repeat;
 
@@ -12,6 +13,7 @@
     align-items: center;
     justify-content: center;
 }
+
 .banner-title-bar {
     width: 6px;
     background: var(--primary-color);
@@ -80,7 +82,7 @@
         height: 650px;
     }
 
-       .CustomBanner-content {
+    .CustomBanner-content {
         padding-top: 20px;
         margin-left: 20px;
     }
