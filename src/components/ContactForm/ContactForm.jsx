@@ -297,9 +297,8 @@ function ContactForm() {
 
                 {/* SHIPPING METHOD */}
                 <div
-                  className={`form-group form-group-full select-group ${
-                    shippingOpen ? "select-open" : ""
-                  }`}
+                  className={`form-group form-group-full select-group ${shippingOpen ? "select-open" : ""
+                    }`}
                 >
                   <select
                     name="shippingMethod"
