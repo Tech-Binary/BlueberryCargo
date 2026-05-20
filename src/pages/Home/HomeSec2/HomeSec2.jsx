@@ -80,7 +80,9 @@ function HomeSec2() {
   const [activeTab, setActiveTab] = useState("Cargo");
 
   return (
-    <section className="services-section section-padding">
+    <section 
+    id="services-section"
+    className="services-section section-padding">
       <div className="container">
         {/* Header */}
         <div className="services-header">

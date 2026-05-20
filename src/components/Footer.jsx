@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom";
-
 import logo from "../assets/logo/footer-logo.svg";
 import fbIcon from "../assets/Icons/FB.png";
 import xIcon from "../assets/Icons/Twitter.png";
 import pinIcon from "../assets/Icons/Pinterest.png";
 import igIcon from "../assets/Icons/Insta.png";
-
 import "../styles/footer.css";
 
 function Footer() {
