@@ -32,11 +32,25 @@ function HeroBanner() {
             </p>
 
             <div className="d-flex gap-3 mt-4 flex-wrap">
-              <button className="common-btn"
-               onClick={() => window.location.href = "/contact"}>Request A Quote</button>
+              <button
+                className="common-btn"
+                onClick={() => (window.location.href = "/contact")}
+              >
+                Request A Quote
+              </button>
 
-              <button className="explore-btn"
-               onClick={() => window.location.href = "/services"}>Explore Services</button>
+              <button
+                className="explore-btn"
+                onClick={() => {
+                  const section = document.getElementById("services-section");
+
+                  section?.scrollIntoView({
+                    behavior: "smooth",
+                  });
+                }}
+              >
+                Explore Services
+              </button>
             </div>
           </div>
         </div>
