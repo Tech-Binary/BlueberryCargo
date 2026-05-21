@@ -1,75 +1,121 @@
 import "../HomeSec1/HomeSec1.css";
-import aboutImg1 from "../../../assets/Images/about-1.png";
-import aboutImg2 from "../../../assets/Images/about-2.png";
-import aboutImg3 from "../../../assets/Images/about-3.png";
-import IndustryIcon from "../../../assets/Icons/industry-expertise.png";
-import GlobalIcon from "../../../assets/Icons/global-network.png";
-import ReliableIcon from "../../../assets/Icons/reliable-operations.png";
+
 
 function HomeSec1() {
   return (
     <section className="about-section section-padding">
       <div className="container">
-        <div className="row align-items-center g-4 mobile-reverse">
-          {/* Left: Image Grid */}
-          <div className="col-lg-5 col-md-12 about-image-main">
-            <div className="about-image-grid">
-              <div className="about-img-tall">
-                <img src={aboutImg1} alt="Cargo loading" />
-              </div>
-              <div className="about-img-stack">
-                <div className="about-img-small">
-                  <img src={aboutImg2} alt="Aircraft on runway" />
-                </div>
-                <div className="about-img-small">
-                  <img src={aboutImg3} alt="Business team" />
-                </div>
-              </div>
+
+        <div className="row align-items-stretch g-lg-5 g-4 mobile-reverse">
+
+          {/* LEFT IMAGE */}
+          <div className="col-lg-6 col-md-12 about-image-main">
+
+            <div className="about-single-image">
+              <img src="/images/aboutus.png" alt="About Us" />
             </div>
+
           </div>
 
-          {/* Right: Content */}
-          <div className="col-lg-7 col-md-12 About-content-main">
+          {/* RIGHT CONTENT */}
+          <div className="col-lg-6 col-md-12 about-content-main">
+
             <div className="about-content">
-              <h2 className="section-title about-title">
-                <span className="title-bar">|</span> About Us
+
+              {/* TAG */}
+              <div className="homeSec5-tag">
+                ABOUT US
+              </div>
+
+              {/* HEADING */}
+              <h2 className="about-heading">
+                Delivering <span>Trust.</span>
               </h2>
+
+              <h2 className="about-heading">
+                <span>Delivering</span> More.
+              </h2>
+
+              {/* DESCRIPTION */}
               <p className="about-description">
-                Blueberry Cargo is a trusted provider of cargo and charter
-                logistics solutions, built to support businesses with
-                efficiency, reliability, and precision. Operating strategically
-                across Madagascar and Ghana, we connect global trade routes
-                with strong regional expertise. From complex logistics planning
-                to seamless execution, our solutions are designed to ensure
-                timely deliveries, secure handling, and complete visibility. We
-                empower businesses to move faster, operate smarter, and scale
-                confidently across international markets.
+                <strong>Blueberry Cargo</strong> is a trusted provider of cargo
+                and charter logistics solutions, built to support businesses
+                with efficiency, reliability, and precision. Operating
+                strategically across <strong>Madagascar and Ghana</strong>, we
+                connect global trade routes with strong regional expertise.
+                From complex logistics planning seamless execution, our
+                solutions are designed to ensure timely deliveries, secure
+                handling & complete visibility. We empower businesses to move
+                faster, operate smarter, and scale confidently across
+                international markets.
               </p>
 
-              {/* Feature Icons */}
+              {/* FEATURES */}
               <div className="about-features">
+
+                {/* ITEM 1 */}
                 <div className="about-feature-item">
+
                   <div className="feature-icon-wrap">
-                    <img src={IndustryIcon} alt="Industry Expertise" />
+                    <img
+                      src="/images/IndustryIcon.svg"
+                      alt="Industry Expertise"
+                    />
                   </div>
-                  <p className="feature-label">Industry Expertise</p>
+
+                  <p className="feature-label">
+                    Industry <br />
+                    Expertise
+                  </p>
+
                 </div>
+
+                <div className="about-feature-divider"></div>
+
+                {/* ITEM 2 */}
                 <div className="about-feature-item">
+
                   <div className="feature-icon-wrap">
-                    <img src={GlobalIcon} alt="Global Network" />
+                    <img
+                      src="/images/GlobalIcon.svg"
+                      alt="Global Network"
+                    />
                   </div>
-                  <p className="feature-label">Global Network</p>
+
+                  <p className="feature-label">
+                    Global <br />
+                    Network
+                  </p>
+
                 </div>
+
+                <div className="about-feature-divider"></div>
+
+                {/* ITEM 3 */}
                 <div className="about-feature-item">
+
                   <div className="feature-icon-wrap">
-                    <img src={ReliableIcon} alt="Reliable Operations" />
+                    <img
+                      src="/images/ReliableIcon.svg"
+                      alt="Reliable Operations"
+                    />
                   </div>
-                  <p className="feature-label">Reliable Operations</p>
+
+                  <p className="feature-label">
+                    Reliable <br />
+                    Operations
+                  </p>
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
     </section>
   );
