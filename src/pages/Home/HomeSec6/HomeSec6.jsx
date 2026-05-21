@@ -2,6 +2,7 @@ import "../HomeSec6/HomeSec6.css";
 import ctaBanner from "../../../assets/Images/cta-banner.jpg";
 import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
 import { useLocation } from "react-router-dom";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 function HomeSec6({
   data,
@@ -74,12 +75,16 @@ function HomeSec6({
                 {desc2}
               </p>
 
-              <button
-                className="cta-quote-btn"
-                onClick={handleQuoteClick}
-              >
-                Request a Quote
-              </button>
+            <button
+  className="cta-quote-btn"
+  onClick={handleQuoteClick}
+>
+  <span>Request a Quote</span>
+
+  <div className="cta-quote-icon">
+    <HiArrowNarrowRight />
+  </div>
+</button>
             </div>
           </div>
         </div>

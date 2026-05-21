@@ -44,7 +44,7 @@
   align-items: center;
   gap: 14px;
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 16px;
   padding: 16px 18px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
@@ -59,7 +59,7 @@
   width: 44px;
   height: 44px;
   background-color: #19325c;
-  border-radius: 4px;
+  border-radius: 16px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,8 +81,8 @@
 }
 
 .contact-card-label {
-  font-size: 13px;
-  font-weight: 700;
+  font-size: 14px;
+  font-weight: 600;
   color: #102566;
 }
 
@@ -101,6 +101,7 @@
   overflow: hidden;
   border: 1px solid #e5e7eb;
   margin-top: 56px;
+  padding: 4px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 
@@ -117,7 +118,7 @@
 
 .contact-form-wrap {
   background-color: #ffffff;
-  border-radius: 4px;
+  border-radius: 6.31px;
   padding: 26px 36px;
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
@@ -125,14 +126,14 @@
 .form-heading {
   font-family: "Myriad", sans-serif;
   font-size: 22px;
-  font-weight: 700;
-  color: var(--secondary-color);
+  font-weight: 600;
+  color: #282A2C;
   margin-bottom: 4px;
 }
 
 .form-subheading {
-  font-size: 13px;
-  color: var(--text-color);
+  font-size: 14px;
+  color:#060606;
   margin-bottom: 28px;
 }
 
@@ -168,7 +169,7 @@
   width: 100%;
   padding: 12px 14px;
   border: 1px solid #dde1e7;
-  border-radius: 6px;
+  border-radius: 3.16px;
   font-size: 14px;
   color: var(--secondary-color);
   background-color: #f9fafb;
@@ -257,7 +258,7 @@
   padding: 14px 24px;
   font-size: 16px;
   letter-spacing: 0.3px;
-  border-radius: 6px;
+  border-radius: 20px;
   margin-top: 4px;
   background-color: #e69c24 !important;
   border: none;
