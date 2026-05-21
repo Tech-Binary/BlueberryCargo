@@ -3,7 +3,8 @@
 ========================= */
 
 .about-section {
-  background-color: var(--white-color);
+      background-color: var(--white-color);
+    padding-top: 160px !important;
 }
 
 /* =========================

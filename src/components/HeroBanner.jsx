@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import heroImage from "../assets/banners/hero-banner.jpg";
 import AirPlane from "../assets/Icons/Airplan-icon.png";
 import "../styles/HeroBanner.css";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 function HeroBanner() {
   return (
@@ -22,8 +23,8 @@ function HeroBanner() {
             </div>
 
             <h1>
-              Moving Cargo <br />
-              Where Others Don't Go
+              Moving Cargo
+              Where Others  <span style={{ color: "#E9892C" }}>Don't Go</span>
             </h1>
 
             <p className="hero-description">
@@ -36,7 +37,9 @@ function HeroBanner() {
                 className="common-btn"
                 onClick={() => (window.location.href = "/contact")}
               >
-                Request A Quote
+                Request A Quote    <div className="home-quote-icon1">
+                  <HiArrowNarrowRight />
+                </div>
               </button>
 
               <button
@@ -49,8 +52,77 @@ function HeroBanner() {
                   });
                 }}
               >
-                Explore Services
+                Explore Services    <div className="home-quote-icon2">
+                  <HiArrowNarrowRight />
+                </div>
               </button>
+            </div>
+
+            {/* TRUST BADGES */}
+            <div className="hero-badges">
+              <div className="hero-badge-item">
+                <img src="/images/home-icon1.svg" alt="Global Standards" />
+                <span>Global Standards</span>
+              </div>
+
+              <div className="hero-divider"></div>
+
+              <div className="hero-badge-item">
+                <img src="/images/home-icon2.svg" alt="Tracking" />
+                <span>Real-Time Tracking</span>
+              </div>
+
+              <div className="hero-divider"></div>
+
+              <div className="hero-badge-item">
+                <img src="/images/home-icon3.svg" alt="Secure" />
+                <span>Secure & Reliable</span>
+              </div>
+            </div>
+
+            {/* STATS BAR */}
+            <div className="hero-stats-wrapper">
+              <div className="hero-stats">
+
+                <div className="hero-stat-item">
+                  <img src="/images/home2-icon1.svg" alt="" />
+                  <div>
+                    <h3>10+</h3>
+                    <p>Years of Excellence</p>
+                  </div>
+                </div>
+
+                <div className="hero-stat-divider"></div>
+
+                <div className="hero-stat-item">
+                  <img src="/images/home2-icon2.svg" alt="" />
+                  <div>
+                    <h3>50+</h3>
+                    <p>Global Destinations</p>
+                  </div>
+                </div>
+
+                <div className="hero-stat-divider"></div>
+
+                <div className="hero-stat-item">
+                  <img src="/images/home2-icon3.svg" alt="" />
+                  <div>
+                    <h3>24/7</h3>
+                    <p>Support & Tracking</p>
+                  </div>
+                </div>
+
+                <div className="hero-stat-divider"></div>
+
+                <div className="hero-stat-item">
+                  <img src="/images/home2-icon4.svg" alt="" />
+                  <div>
+                    <h3>100%</h3>
+                    <p>Commitment to Safety</p>
+                  </div>
+                </div>
+
+              </div>
             </div>
           </div>
         </div>
