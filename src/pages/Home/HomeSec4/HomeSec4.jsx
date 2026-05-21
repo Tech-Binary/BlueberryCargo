@@ -10,7 +10,8 @@ import RouteIcon from "../../../assets/Icons/routes-icon.svg";
 import CapacityIcon from "../../../assets/Icons/capacity-icon.svg";
 import PartnerIcon from "../../../assets/Icons/partners-icon.svg";
 
-import LocationPin from "../../../assets/Icons/loca-ghanna.svg";
+import GhanaPin from "../../../assets/Icons/loca-ghanna.svg";
+import MadagascarPin from "../../../assets/Icons/loca-madaga.svg";
 
 const hubs = [
   {
@@ -42,14 +43,9 @@ const hubs = [
     ],
 
     pin: {
-      top: "61%",
-      left: "47%",
-    },
-
-    mapPosition: {
-      scale: 1.22,
-      translateX: "8%",
-      translateY: "0%",
+      top: "47%",
+      left: "54%",
+      icon: GhanaPin,
     },
   },
 
@@ -82,14 +78,9 @@ const hubs = [
     ],
 
     pin: {
-      top: "75%",
-      left: "60%",
-    },
-
-    mapPosition: {
-      scale: 1.22,
-      translateX: "-8%",
-      translateY: "0%",
+      top: "66%",
+      left: "72%",
+      icon: MadagascarPin,
     },
   },
 ];
@@ -104,12 +95,15 @@ export default function HomeSec4() {
       <div className="container">
         <div className="homeSec4-wrapper">
           <div className="row align-items-center">
-            {/* LEFT CONTENT */}
-            <div className="col-12 col-lg-5 left-content--main">
+            {/* LEFT */}
+            <div className="col-lg-5">
               <div className="homeSec4-left">
-                <h2 className="homeSec4-title">Where We Operate</h2>
+                {/* TITLE */}
+                <h2 className="homeSec4-title">
+                  Where We <span>Operate</span>
+                </h2>
 
-                {/* CONTENT CARD */}
+                {/* CARD */}
                 <div className="homeSec4-content">
                   {/* TABS */}
                   <div className="homeSec4-tabs">
@@ -117,7 +111,9 @@ export default function HomeSec4() {
                       <button
                         key={hub.id}
                         className={`homeSec4-tab ${
-                          activeHub === hub.id ? "homeSec4-tab-active" : ""
+                          activeHub === hub.id
+                            ? "homeSec4-tab-active"
+                            : ""
                         }`}
                         onClick={() => setActiveHub(hub.id)}
                       >
@@ -125,10 +121,13 @@ export default function HomeSec4() {
                       </button>
                     ))}
                   </div>
+
+                  {/* REGION */}
                   <span className="homeSec4-region">
                     {activeData.regionLabel}
                   </span>
 
+                  {/* COUNTRY */}
                   <div className="homeSec4-country-wrap">
                     <img
                       src={activeData.flag}
@@ -141,7 +140,10 @@ export default function HomeSec4() {
                     </h3>
                   </div>
 
-                  <p className="homeSec4-desc">{activeData.description}</p>
+                  {/* DESC */}
+                  <p className="homeSec4-desc">
+                    {activeData.description}
+                  </p>
 
                   {/* STATS */}
                   <div className="homeSec4-stats">
@@ -164,36 +166,45 @@ export default function HomeSec4() {
             </div>
 
             {/* RIGHT MAP */}
-            <div className="col-12 col-lg-7 right-content-main">
+            <div className="col-lg-7">
               <div className="homeSec4-map-wrapper">
-                {/* MAP INNER */}
-                <div
-                  className="homeSec4-map-inner"
-                  style={{
-                    transform: `
-                      scale(${activeData.mapPosition.scale})
-                      translate(${activeData.mapPosition.translateX},
-                      ${activeData.mapPosition.translateY})
-                    `,
-                  }}
-                >
-                  <img
-                    src={WorldMap}
-                    alt="World Map"
-                    className="homeSec4-map"
-                  />
+                <img
+                  src={WorldMap}
+                  alt="World Map"
+                  className="homeSec4-map"
+                />
 
-                  {/* ACTIVE PIN ONLY */}
-                  <button
+                {/* GHANA PIN */}
+                {activeHub === "ghana" && (
+                  <div
                     className="homeSec4-pin homeSec4-pin-active"
                     style={{
-                      top: activeData.pin.top,
-                      left: activeData.pin.left,
+                      top: hubs[0].pin.top,
+                      left: hubs[0].pin.left,
                     }}
                   >
-                    <img src={LocationPin} alt={activeData.countryName} />
-                  </button>
-                </div>
+                    <img
+                      src={hubs[0].pin.icon}
+                      alt="Ghana"
+                    />
+                  </div>
+                )}
+
+                {/* MADAGASCAR PIN */}
+                {activeHub === "madagascar" && (
+                  <div
+                    className="homeSec4-pin homeSec4-pin-active"
+                    style={{
+                      top: hubs[1].pin.top,
+                      left: hubs[1].pin.left,
+                    }}
+                  >
+                    <img
+                      src={hubs[1].pin.icon}
+                      alt="Madagascar"
+                    />
+                  </div>
+                )}
               </div>
             </div>
           </div>

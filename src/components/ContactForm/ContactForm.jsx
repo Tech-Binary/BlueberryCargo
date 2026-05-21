@@ -103,9 +103,8 @@ function ContactForm() {
           {/* LEFT SIDE */}
           <div className="col-lg-6 col-md-12">
             <div className="contact-left">
-              <h2 className="section-title contact-title">
-                <span className="title-bar">|</span>
-                Let's Move Your Cargo, Together
+              <h2 className="section-title">
+                Let's Move Your <h2 className="span-class"> Cargo, Together</h2>
               </h2>
 
               <p className="contact-subtitle">
