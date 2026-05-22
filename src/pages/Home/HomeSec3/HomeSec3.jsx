@@ -1,33 +1,29 @@
 import "../HomeSec3/HomeSec3.css";
-import DeliveryIcon from "../../../assets/Icons/delivery-icon.png";
-import RegionalIcon from "../../../assets/Icons/regional-icon.png";
-import LogisticsIcon from "../../../assets/Icons/logistics-icon.png";
-import ScalableIcon from "../../../assets/Icons/scalable-icon.png";
 
 const features = [
   {
-    icon: DeliveryIcon,
+    icon: "/images/why-icon1.svg",
     title: "Reliable & On-Time Delivery",
     description:
       "We prioritize timely execution to ensure your cargo reaches its destination without delays.",
     alt: "Delivery Icon",
   },
   {
-    icon: RegionalIcon,
+    icon: "/images/why-icon2.svg",
     title: "Strong Regional Expertise",
     description:
       "With operations in Madagascar & Ghana, we understand local markets and logistics.",
     alt: "Regional Icon",
   },
   {
-    icon: LogisticsIcon,
+    icon: "/images/why-icon3.svg",
     title: "End-to-End Logistics Solutions",
     description:
       "From planning to delivery, we manage the complete cargo lifecycle seamlessly.",
     alt: "Logistics Icon",
   },
   {
-    icon: ScalableIcon,
+    icon: "/images/why-icon4.svg",
     title: "Flexible & Scalable Services",
     description:
       "Our solutions adapt to your business needs, small shipments or large-scale operations.",
@@ -40,9 +36,12 @@ function HomeSec3() {
     <section className="why-choose-section section-padding">
       <div className="container">
         {/* Header */}
+          {/* TOP TAG */}
+        <div className="homeSec5-tag" style={{backgroundColor:"#B3E0FF33", color:"white"}}>Our services</div>
+        {/* Header */}
         <div className="why-choose-header">
-          <h2 className="section-title why-choose-title">
-            <span className="title-bar">|</span> Why Choose Us
+          <h2 className="section-title" style={{color:"white"}}>
+            Smart <h2 className="span-class"> Logistic. </h2> Seamless <h2 className="span-class"> Deliveries. </h2>
           </h2>
           <p className="why-choose-description">
             Blueberry Cargo was built with a singular focus: to deliver

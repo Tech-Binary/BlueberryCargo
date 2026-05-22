@@ -18,28 +18,29 @@ import CargoIcon3 from "../../../assets/Icons/CargoIcon3.svg";
 import CharterIcon1 from "../../../assets/Icons/CargoIcon1.svg";
 import CharterIcon2 from "../../../assets/Icons/CargoIcon1.svg";
 import CharterIcon3 from "../../../assets/Icons/CargoIcon1.svg";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 const servicesData = {
   Cargo: [
     {
-      image: CargoImg1,
-      icon: "/images/cargo-icon1.png",
+      image: "/images/general-cargo1.png",
+      icon: "/images/general-icon1.svg",
       title: "General Cargo Handling",
       description:
         "Professional management of all cargo types with full documentation, warehousing, loading, and secure delivery support at every stage.",
       tags: ["B2B", "Warehousing", "All Cargo Types"],
     },
     {
-      image: CargoImg2,
-      icon: "/images/cargo-icon2.png",
+      image: "/images/general-cargo2.png",
+      icon: "/images/general-icon2.svg",
       title: "Fright Forwarding Solutions",
       description:
         "Seamless import and export freight management including customs clearance, documentation, and coordination with global shipping.",
       tags: ["Customs", "Global Network", "Import/Export"],
     },
     {
-      image: CargoImg3,
-      icon: "/images/cargo-icon3.png",
+      image: "/images/general-cargo3.png",
+      icon: "/images/general-icon3.svg",
       title: "End-to-End Logistics Support",
       description:
         "Complete supply chain solutions from origin to destination coordinating every touchpoint to ensure cargo arrives on time and intact.",
@@ -48,24 +49,24 @@ const servicesData = {
   ],
   "Charter Plane": [
     {
-      image: CharterImg1,
-      icon: "/images/cargo-icon1.png",
+      image: "/images/general-cargo1.png",
+      icon: "/images/general-icon1.svg",
       title: "Full Aircraft Charter",
       description:
         "Dedicated aircraft solutions for time-sensitive or oversized cargo, fully managed from booking to touchdown.",
       tags: ["Dedicated", "Time-Critical", "Oversized"],
     },
     {
-      image: CharterImg2,
-      icon: "/images/cargo-icon2.png",
+      image: "/images/general-cargo2.png",
+      icon: "/images/general-icon2.svg",
       title: "Part Charter Solutions",
       description:
         "Flexible part-charter options for smaller consignments requiring speed and direct routing across Africa.",
       tags: ["Flexible", "Cost-Effective", "Direct Routes"],
     },
     {
-      image: CharterImg3,
-      icon: "/images/cargo-icon3.png",
+      image: "/images/general-cargo3.png",
+      icon: "/images/general-icon3.svg",
       title: "Charter Coordination",
       description:
         "End-to-end charter coordination including permits, ground handling, and real-time flight tracking for your shipment.",
@@ -80,12 +81,16 @@ function HomeSec2() {
   const [activeTab, setActiveTab] = useState("Cargo");
 
   return (
-    <section className="services-section section-padding">
+    <section
+      id="services-section"
+      className="services-section section-padding">
       <div className="container">
+         {/* TOP TAG */}
+        <div className="homeSec5-tag">Our services</div>
         {/* Header */}
         <div className="services-header">
-          <h2 className="section-title services-title">
-            <span className="title-bar">|</span> Our Services
+          <h2 className="section-title">
+            Smart <h2 className="span-class"> Logistic. </h2> Seamless <h2 className="span-class"> Deliveries. </h2>
           </h2>
           <p className="services-description">
             From air cargo to charter solutions, we deliver efficient, secure,
@@ -113,7 +118,7 @@ function HomeSec2() {
             href={activeTab === "Cargo" ? "cargo-services" : "/charter-plane-services"}
             className="services-explore-link"
           >
-            Explore More
+            Explore More  <HiArrowNarrowRight />
           </a>
         </div>
 
@@ -144,6 +149,9 @@ function HomeSec2() {
                         {tag}
                       </span>
                     ))}
+                  </div>
+                  <div className="service-quote-icon">
+                    <HiArrowNarrowRight />
                   </div>
                   <img
                     className="service-icon-badge"

@@ -45,7 +45,7 @@ function AboutSec1() {
               </div>
 
               <div className="AboutSec1-button">
-                <a href="/services" className="primary-btn">
+                <a href="/charter-plane-services" className="primary-btn">
                   Explore Our Services
                 </a>
               </div>
