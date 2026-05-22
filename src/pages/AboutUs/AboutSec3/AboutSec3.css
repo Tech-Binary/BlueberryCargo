@@ -28,6 +28,7 @@
   height: 65px;
   border-radius: 50%;
   background-color: #285D80;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;

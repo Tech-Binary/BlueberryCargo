@@ -37,7 +37,6 @@ const team = [
 ];
 
 function AboutSec4() {
-  
   const settings = {
     dots: true,
     arrows: true,
@@ -72,14 +71,18 @@ function AboutSec4() {
   return (
     <section className="AboutSec4-section section-padding">
       <div className="container">
-        
         {/* Header */}
         <div className="AboutSec4-header">
-          <h2 className="section-title" style={{color:"#121212"}}>
-            <span className="title-bar">|</span> Our Team
+          <div className="homeSec5-tag">OUR TEAM</div>
+
+          {/* HEADING */}
+          <h2 className="section-title">
+            The <span className="span-class">People</span> Behind The Cargo{" "}
+            
           </h2>
           <p>
-            Experienced logistics professionals with deep African market knowledge and a shared commitment to operational excellence.
+            Experienced logistics professionals with deep African market
+            knowledge and a shared commitment to operational excellence.
           </p>
         </div>
 
@@ -88,7 +91,6 @@ function AboutSec4() {
           {team.map((item, index) => (
             <div key={index} className="slide-item">
               <div className="team-card">
-
                 <div className="team-img">
                   <img src={item.image} alt={item.name} />
                 </div>
@@ -98,12 +100,10 @@ function AboutSec4() {
                   <h4>{item.name}</h4>
                   <p>{item.desc}</p>
                 </div>
-
               </div>
             </div>
           ))}
         </Slider>
-
       </div>
     </section>
   );

@@ -89,7 +89,7 @@ textarea {
   font-size: 40px;
   line-height: 60px;
   color: var(--secondary-color);
-  font-weight: 600;
+  font-weight: 700;
   gap: 12px;
 }
 
@@ -97,7 +97,7 @@ textarea {
   font-size: 40px;
   line-height: 60px;
   color: #E9892C;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .common-btn {

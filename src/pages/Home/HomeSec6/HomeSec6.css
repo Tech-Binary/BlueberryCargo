@@ -78,12 +78,13 @@
   background: #eb8c2c;
   border: none;
   border-radius: 30px;
-  padding: 14px 14px 14px 14px;
+  padding: 14px 18px;
   display: inline-flex;
   align-items: center;
-  justify-content: space-between;
-  height: 48px;
-width: 164px;
+  gap: 12px;
+
+  width: fit-content;
+
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
