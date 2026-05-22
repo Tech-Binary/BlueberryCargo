@@ -90,7 +90,7 @@ function HomeSec2() {
         {/* Header */}
         <div className="services-header">
           <h2 className="section-title">
-            Smart <h2 className="span-class"> Logistic. </h2> Seamless <h2 className="span-class"> Deliveries. </h2>
+            Smart <span className="span-class"> Logistic. </span> Seamless <span className="span-class"> Deliveries. </span>
           </h2>
           <p className="services-description">
             From air cargo to charter solutions, we deliver efficient, secure,

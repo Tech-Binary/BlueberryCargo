@@ -144,6 +144,15 @@
   .why-choose-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .why-choose-card:not(:last-child) {
+    border-right: none;
+  }
+
+  .why-choose-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -169,4 +178,13 @@
   .why-choose-card {
     padding: 28px 20px;
   }
+}
+
+@media(max-width:576px) {
+  .why-choose-section .container {
+    border-radius: 0;
+  }
+      .why-choose-grid {
+        margin-top: 0;
+    }
 }
