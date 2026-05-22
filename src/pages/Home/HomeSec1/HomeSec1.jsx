@@ -28,12 +28,12 @@ function HomeSec1() {
               </div>
 
               {/* HEADING */}
-              <h2 className="about-heading">
-                Delivering <span>Trust.</span>
+              <h2 className="section-title">
+                Delivering <span className="span-class">Trust.</span>
               </h2>
 
-              <h2 className="about-heading">
-                <span>Delivering</span> More.
+              <h2 className="section-title">
+                <span className="span-class">Delivering</span> More.
               </h2>
 
               {/* DESCRIPTION */}

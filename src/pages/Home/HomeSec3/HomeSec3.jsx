@@ -41,7 +41,7 @@ function HomeSec3() {
         {/* Header */}
         <div className="why-choose-header">
           <h2 className="section-title" style={{color:"white"}}>
-            Smart <h2 className="span-class"> Logistic. </h2> Seamless <h2 className="span-class"> Deliveries. </h2>
+            Smart <span className="span-class"> Logistic. </span> Seamless <span className="span-class"> Deliveries. </span>
           </h2>
           <p className="why-choose-description">
             Blueberry Cargo was built with a singular focus: to deliver

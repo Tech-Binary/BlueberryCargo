@@ -89,8 +89,6 @@ textarea {
   font-size: 40px;
   line-height: 60px;
   color: var(--secondary-color);
-  display: flex;
-  align-items: center;
   font-weight: 600;
   gap: 12px;
 }
@@ -99,8 +97,6 @@ textarea {
   font-size: 40px;
   line-height: 60px;
   color: #E9892C;
-  display: flex;
-  align-items: center;
   font-weight: 700;
 }
 
@@ -204,10 +200,14 @@ ul {
     padding: 50px 0;
   }
 
-  .section-title {
-    font-size: 28px;
+ .span-class {
+         font-size: 28px;
+        line-height: normal;
   }
-
+    .section-title {
+              font-size: 28px;
+        line-height: normal;
+    }
   .slick-dots {
     bottom: -20px;
   }
