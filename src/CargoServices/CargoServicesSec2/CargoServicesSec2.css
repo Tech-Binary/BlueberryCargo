@@ -1,27 +1,175 @@
-/* CargoServicesSec2.css */
+/* =========================
+   SECTION
+========================= */
 
 .cargo-services-sec2 {
-  background: #ffffff;
+  background: #f8f9fb;
+  padding: 30px 0;
   overflow: hidden;
-  padding-top: 40px !important;
-  padding-bottom: 0px !important;
 }
+
+/* =========================
+   WRAPPER
+========================= */
 
 .cargo-service-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 50px;
-  margin-bottom: 85px;
+  gap: 70px;
+  margin-bottom: 110px;
+}
+
+.cargo-service-wrapper:last-child {
+  margin-bottom: 0;
 }
 
 .reverse-layout {
   flex-direction: row-reverse;
 }
 
+/* =========================
+   CONTENT
+========================= */
+
 .cargo-service-content {
   width: 50%;
 }
+
+.cargo-heading-wrap {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.cargo-heading-line {
+  width: 5px;
+  height: 54px;
+  background: #f28c28;
+  border-radius: 20px;
+  margin-top: 8px;
+}
+
+.cargo-service-title {
+  font-size: 58px;
+  line-height: 1.05;
+  font-weight: 700;
+  color: #102566;
+  margin: 0;
+  letter-spacing: -1px;
+}
+
+.cargo-highlight {
+  color: #f28c28;
+}
+
+.cargo-service-desc {
+  font-size: 20px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 38px;
+  max-width: 92%;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cargo-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 20px;
+}
+
+.cargo-small-card {
+  background: #F5F8FA;
+  border: 1px solid #D8E2F0;
+  border-radius: 30px;
+  padding: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  transition: 0.3s ease;
+}
+
+.cargo-small-card:hover {
+  transform: translateY(-4px);
+}
+
+.cargo-icon-box {
+  width: 70px;
+  height: 70px;
+  min-width: 70px;
+  background: #e9edf3;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cargo-icon-box img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+}
+
+.cargo-card-content h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #102566;
+  margin-bottom: 10px;
+  line-height: 100%;
+}
+
+.cargo-card-content p {
+  font-size: 14px;
+  font-weight:400;
+  line-height: 100%;
+  color: #686868;
+  margin: 0;
+}
+
+/* =========================
+   STATS
+========================= */
+
+.cargo-stats-wrapper {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.cargo-stat-box {
+  background: #fff;
+  border-radius: 16px;
+  padding: 22px 28px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  min-width: 260px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  border-left: 2px solid #f28c28;
+}
+
+.cargo-stat-box h3 {
+  font-size: 30px;
+  line-height: 1;
+  margin: 0;
+  color: #102566;
+  font-weight: 700;
+}
+
+.cargo-stat-box span {
+  font-size: 16px;
+  color: #313131;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/* =========================
+   IMAGE
+========================= */
 
 .cargo-service-image {
   width: 50%;
@@ -31,146 +179,81 @@
 .cargo-service-image img {
   width: 100%;
   object-fit: cover;
-  border-radius: 4px;
+  border-radius: 34px;
+  display: block;
 }
 
 .cargo-number {
   position: absolute;
-  top: -40px;
-  left: -25px;
+  top: -34px;
+  left: -34px;
+  width: 140px;
+  height: 110px;
+  background: #f8f9fb;
+  border-radius: 0 0 16px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-size: 82px;
   font-weight: 700;
-  color: #dbe4f1;
-  font-family: "Myriad", sans-serif;
+  color: #dce4f2;
   z-index: 2;
   line-height: 1;
 }
 
 .reverse-layout .cargo-number {
   left: auto;
-  right: -25px;
-}
-
-.cargo-service-title {
-  font-size: 54px;
-  color: #111827;
-  margin-bottom: 22px;
-  line-height: 1.1;
-}
-
-.cargo-service-desc {
-  font-size: 18px;
-  line-height: 1.9;
-  color: #6b7280;
-  margin-bottom: 35px;
-  max-width: 95%;
-}
-
-.cargo-card-row {
-  margin-bottom: 18px;
-}
-
-.cargo-small-card {
-  background: #F5F8FA;
-  border: 1px solid #dce2ea;
-  border-radius: 4px;
-  padding: 18px 18px;
-  display: flex;
-  align-items: flex-start;
-  gap: 16px;
-  height: 100%;
-  transition: 0.3s ease;
-}
-
-.cargo-small-card:hover {
-  transform: translateY(-4px);
-}
-
-.cargo-icon-box {
-  width: 60px;
-  height: 60px;
-  min-width: 60px;
-  background: #EAEDF2;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.cargo-icon-box img {
-  width: 30px;
-  height: 30px;
-  object-fit: contain;
-}
-
-.cargo-small-card h5 {
-  font-size: 18px;
-  color:#102566;
-  margin-bottom: 2px;
-}
-
-.cargo-small-card p {
-  font-size: 14px;
-  color: #686868;
-  line-height: 1.2;
-  margin-bottom: 0px !important;
-}
-
-.cargo-stats-wrapper {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.cargo-stat-box {
-    display: flex;
-    align-items: center;
-    gap:12px;
-  background: #ffffff;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
-  border-radius: 10px;
-  padding: 20px 24px;
-  min-width: 270px;
-  border-left: 2px solid var(--primary-color);
-}
-
-.cargo-stat-box h3 {
-  font-size: 30px;
-  color: #102566;
-}
-
-.cargo-stat-box span {
-  font-size: 16px;
-  color: #313131;
-  line-height: 24px;
+  right: -34px;
+  border-radius: 0 0 0 16px;
 }
 
 /* =========================
    RESPONSIVE
 ========================= */
 
-@media (max-width: 1024px) {
+@media (max-width: 1400px) {
+
   .cargo-service-title {
-    font-size: 44px;
+    font-size: 48px;
   }
-.cargo-service-image {
-    width: 100% !important;
-    position: relative;
-    margin-top: 55px;
+
+
 }
-.cargo-service-content {
-    width: 100% !important;
-}
-.cargo-service-wrapper {
-  display: block;
-}
+
+@media (max-width: 1199px) {
+
+  .cargo-service-wrapper {
+    gap: 45px;
+  }
+
+  .cargo-service-title {
+    font-size: 42px;
+  }
+
+  .cargo-service-desc {
+    font-size: 17px;
+  }
+
+  .cargo-icon-box {
+    width: 65px;
+    height: 65px;
+    min-width: 65px;
+  }
+
+  .cargo-stat-box {
+    min-width: 230px;
+  }
+
+
 }
 
 @media (max-width: 991px) {
+
   .cargo-service-wrapper,
   .reverse-layout {
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
+    margin-bottom: 80px;
   }
 
   .cargo-service-content,
@@ -184,82 +267,147 @@
 
   .cargo-service-desc {
     max-width: 100%;
-    font-size: 16px;
+  }
+
+  .cargo-service-image img {
+    height: auto;
   }
 
   .cargo-number {
-    font-size: 70px;
-    top: -28px;
-    left: 0;
+    top: -20px;
+    left: -10px;
+    width: 100px;
+    height: 80px;
+    font-size: 58px;
   }
 
   .reverse-layout .cargo-number {
-    right: 0;
+    right: -10px;
   }
-
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+  .cargo-services-sec2 {
+    padding: 55px 0;
+  }
+
   .cargo-service-wrapper {
-    margin-bottom: 55px;
+    margin-bottom: 70px;
+    gap: 35px;
+  }
+
+  .cargo-heading-wrap {
+    gap: 12px;
+    margin-bottom: 18px;
+  }
+
+  .cargo-heading-line {
+    width: 4px;
+    height: 34px;
+    margin-top: 3px;
   }
 
   .cargo-service-title {
-    font-size: 30px;
+    font-size: 28px;
+    line-height: 1.2;
   }
 
   .cargo-service-desc {
-    font-size: 15px;
-    line-height: 1.8;
+    font-size: 14px;
+    line-height: 1.7;
+    margin-bottom: 24px;
+  }
+
+  .cargo-cards-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
   }
 
   .cargo-small-card {
-    padding: 18px 16px;
-  }
-
-  .cargo-small-card h5 {
-    font-size: 17px;
-  }
-
-  .cargo-small-card p {
-    font-size: 14px;
-  }
-
-  .cargo-stat-box {
-    width: 48%;
-    min-width: unset;
-  }
-
-
-  .cargo-number {
-    font-size: 54px;
-  }
-}
-
-@media (max-width: 575px) {
-
-
-  .cargo-service-title {
-    font-size: 26px;
-  }
-
-  .cargo-number {
-    font-size: 44px;
-    top: -18px;
+    padding: 14px;
+    gap: 12px;
+    border-radius: 12px;
   }
 
   .cargo-icon-box {
     width: 42px;
     height: 42px;
     min-width: 42px;
+    border-radius: 10px;
   }
 
   .cargo-icon-box img {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .cargo-card-content h5 {
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+
+  .cargo-card-content p {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .cargo-stats-wrapper {
+    gap: 12px;
+  }
+
+  .cargo-stat-box {
+    flex: 1;
+    min-width: unset;
+    padding: 14px 16px;
+    border-radius: 12px;
+    gap: 8px;
   }
 
   .cargo-stat-box h3 {
     font-size: 28px;
+  }
+
+  .cargo-stat-box span {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .cargo-number {
+    width: 72px;
+    height: 62px;
+    font-size: 36px;
+    top: -12px;
+  }
+
+  .cargo-service-image img {
+    border-radius: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+
+  .cargo-cards-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .cargo-service-title {
+    font-size: 24px;
+  }
+
+  .cargo-service-desc {
+    font-size: 13px;
+  }
+
+  .cargo-small-card {
+    min-height: 110px;
+  }
+
+  .cargo-stat-box h3 {
+    font-size: 24px;
+  }
+
+  .cargo-stat-box span {
+    font-size: 10px;
   }
 }

@@ -54,7 +54,7 @@ function HomeSec6({ data, title, desc, title2, desc2, newClass }) {
 
               <p className="cta-description">{desc2}</p>
 
-              <button className="cta-quote-btn" onClick={handleQuoteClick}>
+              <button className="cta-quote-btn " onClick={handleQuoteClick}>
                 <span>Request a Quote</span>
 
                 <div className="cta-quote-icon">

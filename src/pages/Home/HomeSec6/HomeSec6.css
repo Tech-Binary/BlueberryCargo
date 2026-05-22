@@ -75,19 +75,21 @@
 ========================= */
 
 .cta-quote-btn {
-    background: #eb8c2c;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 20px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 15px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    cursor: pointer;
-    transition: all 0.3s ease;
+  background: #eb8c2c;
+  border: none;
+  border-radius: 30px;
+  padding: 14px 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  width: fit-content;
+
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 .cta-quote-btn span {

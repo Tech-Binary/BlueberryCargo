@@ -26,22 +26,20 @@ import Icon12 from "../../assets/Icons/doc-icon.png";
 function CargoServicesSec2() {
   const location = useLocation();
 
-  // CHECK URL
   const isCharterPage =
     location.pathname === "/charter-plane-services";
 
   // =========================
   // CHARTER PAGE DATA
   // =========================
+
   const charterServicesData = [
     {
       id: "01",
       title: "Aircraft Charter Solutions",
-
+      highlight: "Charter",
       description:
         "Exclusive access to purpose-configured freighter aircraft — on your schedule, to your destination. Whether a one-time lift or a recurring dedicated route, we match the right aircraft to your cargo specifications and get it moving without delay.",
-
-      // SAME IMAGE FOR NOW
       image: CargoImg1,
 
       stats: [
@@ -81,15 +79,11 @@ function CargoServicesSec2() {
 
     {
       id: "02",
-
       title: "Time-Sensitive Cargo Handling",
-
+      highlight: "Cargo",
       description:
         "When every hour matters, our time-critical cargo operations cut through delays and get your freight moving fast. From emergency AOG parts to perishable produce and life-saving medical supplies — we treat every urgent shipment as our highest priority.",
-
-      // SAME IMAGE FOR NOW
       image: CargoImg2,
-
       reverse: true,
 
       stats: [
@@ -129,13 +123,10 @@ function CargoServicesSec2() {
 
     {
       id: "03",
-
       title: "Customized Logistics Solutions",
-
+      highlight: "Logistics",
       description:
-        "No two operations are the same. We design bespoke logistics programs built around your cargo type, route constraints, regulatory environment, and commercial timelines — combining air charter with ground handling, customs, and last-mile delivery into one seamless managed solution.",
-
-      // SAME IMAGE FOR NOW
+        "No two operations are the same. We design bespoke logistics programs built around your cargo type, route constraints, regulatory environment, and commercial timelines.",
       image: CargoImg3,
 
       stats: [
@@ -158,17 +149,17 @@ function CargoServicesSec2() {
         {
           icon: Icon10,
           title: "Customs & Compliance",
-          text: "End-to-end regulatory management across all routes",
+          text: "End-to-end regulatory management",
         },
         {
           icon: Icon11,
           title: "Ground & Last Mile",
-          text: "Integrated trucking from apron to final destination",
+          text: "Integrated trucking & delivery services",
         },
         {
           icon: Icon12,
           title: "Dedicated Account Mgmt",
-          text: "A single point of contact managing your entire program",
+          text: "Single point of contact for your operations",
         },
       ],
     },
@@ -177,15 +168,14 @@ function CargoServicesSec2() {
   // =========================
   // DEFAULT CARGO PAGE DATA
   // =========================
+
   const cargoServicesData = [
     {
       id: "01",
-
       title: "General Cargo Handling",
-
+      highlight: "Cargo",
       description:
         "Professional management of all cargo types with full documentation, warehousing, loading, and secure delivery support at both cargo hubs. Our facilities are equipped to handle high-volume freight with precision and care.",
-
       image: CargoImg1,
 
       stats: [
@@ -225,59 +215,54 @@ function CargoServicesSec2() {
 
     {
       id: "02",
-
       title: "Freight Forwarding Solutions",
-
+      highlight: "Forwarding",
       description:
-        "Seamless import & export freight management with customized delivery routes and worldwide coordination. We optimize transit movements across continents securely and on-time.",
-
+        "Seamless import & export freight management with customized delivery routes and worldwide coordination.",
       image: CargoImg2,
-
       reverse: true,
 
       stats: [
         {
           number: "120+",
-          text: "Global Partners",
+          text: "Carrier Partner",
         },
         {
           number: "48h",
-          text: "Avg Clearance Time",
+          text: "Avg. Clearance Time",
         },
       ],
 
       cards: [
         {
           icon: Icon5,
-          title: "Global Forwarding",
-          text: "International freight routing solutions",
+          title: "Global Routing",
+          text: "Optimized multi-country freight paths",
         },
         {
           icon: Icon6,
           title: "Customs Clearance",
-          text: "Fast-track documentation & approvals",
+          text: "Full brokerage & compliance management",
         },
         {
           icon: Icon7,
           title: "Sea Freight",
-          text: "FCL & LCL ocean shipment services",
+          text: "FCL & LCL ocean freight solutions",
         },
         {
           icon: Icon8,
           title: "Live Tracking",
-          text: "Real-time visibility of your cargo",
+          text: "Real-time visibility from origin to destination",
         },
       ],
     },
 
     {
       id: "03",
-
-      title: "End-to-End Logistics Support",
-
+      title: "End-To-End Logistics Support",
+      highlight: "Logistics",
       description:
-        "Complete supply chain solutions designed to deliver efficiency and operational visibility from pickup to final delivery. We manage warehousing, transportation, and reporting seamlessly.",
-
+        "Complete supply chain solutions from origin to destination, delivering confidence across every transportation stage.",
       image: CargoImg3,
 
       stats: [
@@ -287,7 +272,7 @@ function CargoServicesSec2() {
         },
         {
           number: "24/7",
-          text: "Ops Support",
+          text: "Ops & Support",
         },
       ],
 
@@ -295,47 +280,33 @@ function CargoServicesSec2() {
         {
           icon: Icon9,
           title: "Supply Chain Mgmt",
-          text: "End-to-end freight coordination",
+          text: "End-to-end visibility & control",
         },
         {
           icon: Icon10,
           title: "Last-Mile Delivery",
-          text: "Reliable doorstep transportation",
+          text: "Ground distribution & final connections",
         },
         {
           icon: Icon11,
           title: "Cargo Insurance",
-          text: "Fully covered shipment protection",
+          text: "Risk-mitigation coverage for all cargo types",
         },
         {
           icon: Icon12,
           title: "Analytics & Reporting",
-          text: "Dashboard insights & monitoring",
+          text: "Data-driven logistics performance insights",
         },
       ],
     },
   ];
 
-  // SELECT DATA BASED ON URL
   const servicesData = isCharterPage
     ? charterServicesData
     : cargoServicesData;
 
-  // TAB IDS BASED ON URL
-  const TAB_IDS = isCharterPage
-    ? [
-        "aircraft-charter",
-        "cargo-handling",
-        "logistics",
-      ]
-    : [
-        "general-cargo",
-        "freight",
-        "logistics",
-      ];
-
   return (
-    <section className="cargo-services-sec2 section-padding">
+    <section className="cargo-services-sec2">
       <div className="container">
         {servicesData.map((item, index) => (
           <div
@@ -343,31 +314,37 @@ function CargoServicesSec2() {
               item.reverse ? "reverse-layout" : ""
             }`}
             key={index}
-            id={TAB_IDS[index]}
           >
             {/* CONTENT */}
             <div className="cargo-service-content">
-              <h2 className="section-title AboutSec1-title">
-                <span className="title-bar">|</span>
-                {item.title}
-              </h2>
 
-              <p className="AboutSec1-description">
+              <div className="cargo-heading-wrap">
+
+                <h2 className="section-title">
+                  {item.title.split(item.highlight)[0]}
+
+                  <h2 className="span-class">
+                    {item.highlight}
+                  </h2>
+
+                  {item.title.split(item.highlight)[1]}
+                </h2>
+              </div>
+
+              <p className="cps-description">
                 {item.description}
               </p>
 
-              <div className="row g-3 cargo-card-row">
+              <div className="cargo-cards-grid">
                 {item.cards.map((card, i) => (
-                  <div className="col-md-6" key={i}>
-                    <div className="cargo-small-card">
-                      <div className="cargo-icon-box">
-                        <img src={card.icon} alt="" />
-                      </div>
+                  <div className="cargo-small-card" key={i}>
+                    <div className="cargo-icon-box">
+                      <img src={card.icon} alt="" />
+                    </div>
 
-                      <div>
-                        <h5>{card.title}</h5>
-                        <p>{card.text}</p>
-                      </div>
+                    <div className="cargo-card-content">
+                      <h5>{card.title}</h5>
+                      <p>{card.text}</p>
                     </div>
                   </div>
                 ))}
@@ -385,6 +362,7 @@ function CargoServicesSec2() {
 
             {/* IMAGE */}
             <div className="cargo-service-image">
+
               <img src={item.image} alt="" />
             </div>
           </div>
