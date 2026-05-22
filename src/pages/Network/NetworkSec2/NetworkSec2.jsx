@@ -17,8 +17,8 @@ function NetworkSec2() {
                     {/* Right: Content */}
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec2-col-right">
                         <div className="NetworkSec2-content">
-                            <h2 className="section-title NetworkSec2-title">
-                                <span className="title-bar">|</span> Ghana operations
+                              <h2 className="section-title">
+                                <span className="span-class">Ghana</span>  operations
                             </h2>
                             <p className="NetworkSec2-description">
                                 Ghana is one of West Africa's most stable and accessible logistics markets — a natural hub for freight connecting the Gulf of Guinea to international trade corridors. Our Ghana operations provide freight forwarders and cargo agents with a reliable, knowledgeable ground partner.
@@ -36,7 +36,7 @@ function NetworkSec2() {
                                     ].map((d, index) => (
 
                                         <div className="NetworkSec2-feature-item">
-                                            <img src="/images/about-card-icon.svg" alt="Industry Expertise" />
+                                            <img src="/images/orange-arrow.svg" alt="Industry Expertise" />
                                             <p className="NetworkSec2-label">{d.text}</p>
                                         </div>
                                     ))

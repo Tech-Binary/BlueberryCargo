@@ -79,12 +79,13 @@ const ContactFaq = () => {
         {/* Top Content */}
         <div className="faq-top">
           <div className="faq-heading">
-            <h2 className="section-title faq-title">
-              <span className="title-bar">|</span> Frequently Asked Questions
-            </h2>
+              <h2 className="section-title">
+           Frequently Asked <span className="span-class">Questions</span>
+          </h2>
           </div>
 
           <div className="faq-info">
+            
             <p className="faq-subtext">
               Can't find what you're looking for? Our team is happy to answer
               any questions you have about our services, routes, or operations.

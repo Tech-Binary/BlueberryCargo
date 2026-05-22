@@ -1,18 +1,25 @@
 import "./AboutSec3.css";
 import { useLocation } from "react-router-dom";
 
-function AboutSec3({data, title, desc, newClass, marginClass}) {
-  
+function AboutSec3({ data, title, desc, newClass, marginClass }) {
+
   const location = useLocation();
 
   const isAboutPage = location.pathname === "/about";
+  const fullTitle = title || "Why Choose Blueberry Cargo";
+  const words = fullTitle.split(" ");
+
+  const firstPart = words.slice(0, -1).join(" ");
+  const secondPart =
+    words.slice(-1)[0].charAt(0).toUpperCase() +
+    words.slice(-1)[0].slice(1);
   return (
-    <section className={marginClass ? "section-padding" : "AboutSec3-choose-section section-padding"} style={{backgroundColor: "#F9F9F9" }}>
+    <section className={marginClass ? "section-padding" : "AboutSec3-choose-section section-padding"} style={{ backgroundColor: "#F9F9F9" }}>
       <div className="container">
         {/* Header */}
         <div className="AboutSec3-choose-header">
-          <h2 className="section-title AboutSec3-choose-title">
-            <span className="title-bar">|</span>  {title || "Why Choose Blueberry Cargo?"}
+          <h2 className="section-title">
+            {firstPart} <span className="span-class">{secondPart}</span>
           </h2>
           <p className="AboutSec3-choose-description">
             {desc || "Our operational standards and industry affiliations that give clients confidence in every shipment."}
