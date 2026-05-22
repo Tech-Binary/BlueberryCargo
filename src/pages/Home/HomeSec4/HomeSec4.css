@@ -1,5 +1,4 @@
 .homeSec4 {
-  background: #f8f8f8;
   padding: 90px 0;
   overflow: hidden;
 }
@@ -23,15 +22,19 @@
 .homeSec4-title span {
   color: #e69c24;
 }
+.homesec-4-title{
+  margin-bottom: 32px;
+}
 
 /* CARD */
 
 .homeSec4-content {
   background: #ffffff;
-  border-radius: 26px;
+  border-radius: 30px;
   padding: 28px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
   border-bottom: 3px solid #e69c24;
+  box-shadow: 
+    0px 0.79px 19.72px 3.94px rgba(52, 51, 51, 0.12);
 }
 
 /* =========================
@@ -41,18 +44,18 @@
 .homeSec4-tabs {
   display: flex;
   align-items: center;
-  background: #f1f3f5;
-  border-radius: 40px;
-  padding: 6px;
+  background: #E9E9E9;
+  border-radius: 20px;
+  padding: 0px;
   margin-bottom: 32px;
-  gap: 6px;
+  margin-top: 22px;
 }
 
 .homeSec4-tab {
   flex: 1;
   border: none;
-  background: transparent;
-  border-radius: 40px;
+  background: #E9E9E9;
+  border-radius: 20px;
   padding: 14px 18px;
   font-size: 13px;
   font-weight: 700;
@@ -97,11 +100,11 @@
 }
 
 .homeSec4-country {
-  font-size: 52px;
+  font-size: 40px;
   font-weight: 700;
   color: #111827;
   margin: 0;
-  line-height: 1;
+  line-height: 100%;
 }
 
 /* =========================
@@ -109,9 +112,10 @@
 ========================= */
 
 .homeSec4-desc {
-  font-size: 20px;
-  line-height: 1.7;
-  color: #667085;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19.72px;
+  color: #19325C;
   margin-bottom: 34px;
   max-width: 95%;
 }
@@ -128,28 +132,27 @@
 .homeSec4-stat-card {
   flex: 1;
   background: #edf7fa;
-  border-radius: 14px;
-  padding: 20px 12px;
+  border-radius: 16px;
+  padding: 14px 12px;
   text-align: center;
 }
 
 .homeSec4-stat-icon {
-  width: 42px;
-  height: 42px;
+  width: 40px;
+  height: 40px;
   object-fit: contain;
-  margin-bottom: 12px;
+  margin: 0 auto 4px;
+  display: block;
 }
-
 .homeSec4-stat-card h4 {
-  font-size: 32px;
+  font-size: 20px;
   font-weight: 700;
   color: #111827;
-  margin-bottom: 4px;
 }
 
 .homeSec4-stat-card span {
-  font-size: 15px;
-  color: #667085;
+  font-size: 16px;
+  color: #000000;
 }
 
 /* =========================

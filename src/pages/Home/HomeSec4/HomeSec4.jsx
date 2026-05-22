@@ -95,14 +95,15 @@ export default function HomeSec4() {
       <div className="container">
         <div className="homeSec4-wrapper">
           <div className="row align-items-center">
+               {/* TITLE */}
+                <h2 className="section-title homesec-4-title">
+                  Where We <h2 className="span-class">Operate</h2>
+                </h2>
+
             {/* LEFT */}
             <div className="col-lg-5">
               <div className="homeSec4-left">
-                {/* TITLE */}
-                <h2 className="homeSec4-title">
-                  Where We <span>Operate</span>
-                </h2>
-
+             
                 {/* CARD */}
                 <div className="homeSec4-content">
                   {/* TABS */}
