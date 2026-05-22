@@ -11,9 +11,12 @@ function AboutSec3({data, title, desc, newClass, marginClass}) {
       <div className="container">
         {/* Header */}
         <div className="AboutSec3-choose-header">
-          <h2 className="section-title AboutSec3-choose-title">
-            <span className="title-bar">|</span>  {title || "Why Choose Blueberry Cargo?"}
-          </h2>
+          <div className="homeSec5-tag">CERTIFICATES</div>
+
+        {/* HEADING */}
+        <h2 className="section-title">
+          Industry <span className="span-class">Expertise</span> & Certifications{" "}
+        </h2>
           <p className="AboutSec3-choose-description">
             {desc || "Our operational standards and industry affiliations that give clients confidence in every shipment."}
           </p>
