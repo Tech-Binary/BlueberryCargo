@@ -39,16 +39,15 @@ const ContactOperate = () => {
   return (
     <section className="operate" style={{backgroundImage: isNetworkPage ? "url(/images/network-bg.png)" : "none"}}>
       <div className="operate-section">
-        <div className="operate-header">
-          <h2>
-            <span></span> Where We Operate
+         <div className="homeSec5-tag">Where we operate</div>
+          <h2 className="section-title">
+            <span className="span-class">Empowering </span> Businesses Across <span className="span-class"> Industries</span>
           </h2>
 
           <p>
             Two active African markets with on-ground teams, established
             partners, and full cargo & charter capability.
           </p>
-        </div>
 
         <div className="operate-wrapper">
           {/* LEFT IMAGE */}
