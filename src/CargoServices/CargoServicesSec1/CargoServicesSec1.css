@@ -1,10 +1,10 @@
 .cps-sec1 {
   width: 100%;
-  font-family: "Segoe UI", sans-serif;
+  overflow: hidden;
 }
 
 /* =========================
-   Tabs
+   TABS
 ========================= */
 
 .cps-tabs-wrapper {
@@ -52,16 +52,16 @@
   bottom: 0;
   height: 3px;
   background: #f0a320;
-  border-radius: 10px;
+  border-radius: 20px;
 }
 
 /* =========================
-   Main Content
+   CONTENT
 ========================= */
 
 .cps-content-wrapper {
-  padding: 70px 0;
-  background-color: #F5F8FA;
+  background: #f5f8fa;
+  padding: 30px 0;
 }
 
 .cps-content {
@@ -69,7 +69,7 @@
 }
 
 /* =========================
-   Image
+   LEFT IMAGE
 ========================= */
 
 .cps-image-block {
@@ -79,125 +79,161 @@
 .cps-image-block img {
   width: 100%;
   object-fit: cover;
-  border-radius: 6px;
+  border-radius: 30px;
   display: block;
 }
 
 /* =========================
-   Text
+   RIGHT CONTENT
 ========================= */
 
 .cps-text-block {
-  padding-left: 20px;
+  padding-left: 70px;
+  max-width: 680px;
 }
 
-.cps-heading-wrapper {
-  display: flex;
+.cps-badge {
+  display: inline-flex;
   align-items: center;
-  gap: 14px;
-}
-
-.cps-heading-bar {
-  width: 4px;
-  height: 38px;
-  background: #f0a320;
-  border-radius: 10px;
-  flex-shrink: 0;
+  justify-content: center;
+  background: #efe2c7;
+  color: #000;
+  padding: 8px 18px;
+  border-radius: 40px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
 }
 
 .cps-heading {
   margin: 0;
-  font-size: 44px;
-  line-height: 1.2;
+  color: #17315c;
+  font-size: 39px;
+  line-height: 48px;
   font-weight: 700;
-  color: #14284b;
+  margin-bottom: 18px;
+}
+
+.cps-heading span {
+  color: #ea8d24;
 }
 
 .cps-description {
-      color: var(--text-color);
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 26px;
+    color: #6b7280;
+    font-size: 17px;
+    margin-bottom: 22px;
+    line-height: 22px;
 }
-
-/* =========================
-   Features
-========================= */
 
 .cps-features {
   list-style: none;
   padding: 0;
-  margin: 32px 0 0;
+  margin: 0;
 }
 
 .cps-feature-item {
   display: flex;
   align-items: flex-start;
   gap: 14px;
-  margin-bottom: 9px;
+  margin-bottom: 10px;
 }
 
 .tick-icon {
-  width: 17px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   flex-shrink: 0;
-  margin-top: 2px;
+  margin-top: 4px;
 }
 
 .cps-feature-item span {
-  font-size: 16px;
-  line-height: 1.4;
-  color: #6B7280;
-  font-weight: 500;
+    color: #6B7280;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-bottom: 0px;
 }
 
 /* =========================
-   Responsive
+   BUTTON
 ========================= */
-@media (max-width: 1024px) {
-.cargo-service-sec1-left{
-  width: 100% !important;
+
+.cta-margin-top{
+  margin-top: 20px;
 }
-.cargo-service-sec1-right{
-  width: 100% !important;
-}
-}
-@media (max-width: 1199px) {
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1399px) {
 
   .cps-heading {
-    font-size: 36px;
+    font-size: 50px;
   }
 
   .cps-image-block img {
-    height: 500px;
+    height: 680px;
+  }
+}
+
+@media (max-width: 1199px) {
+
+  .cps-heading {
+    font-size: 42px;
+  }
+
+  .cps-text-block {
+    padding-left: 40px;
+  }
+
+  .cps-image-block img {
+    height: 580px;
+  }
+}
+
+@media (max-width: 1024px) {
+
+  .cargo-service-sec1-left,
+  .cargo-service-sec1-right {
+    width: 100% !important;
   }
 }
 
 @media (max-width: 991px) {
 
   .cps-content-wrapper {
-    padding: 50px 0;
+    padding: 70px 0;
   }
 
   .cps-text-block {
     padding-left: 0;
+    max-width: 100%;
   }
 
   .cps-heading {
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .cps-image-block img {
-    height: 420px;
+    height: 500px;
   }
 
   .cps-description {
     font-size: 15px;
     line-height: 1.8;
   }
+
+  .cps-feature-item span {
+    font-size: 15px;
+  }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+  .cps-content-wrapper {
+    padding: 55px 0;
+  }
 
   .cps-tab {
     padding: 16px 18px;
@@ -205,22 +241,36 @@
   }
 
   .cps-heading {
-    font-size: 28px;
-  }
-
-  .cps-heading-bar {
-    height: 30px;
+    font-size: 30px;
+    line-height: 1.2;
   }
 
   .cps-image-block img {
-    height: 320px;
+    height: 380px;
+    border-radius: 24px;
+  }
+
+  .cps-description {
+    font-size: 14px;
+    line-height: 1.8;
+  }
+
+  .cps-feature-item {
+    gap: 12px;
+    margin-bottom: 14px;
   }
 
   .cps-feature-item span {
     font-size: 14px;
   }
 
-  .cps-description {
+  .tick-icon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .cps-btn {
+    padding: 14px 24px;
     font-size: 14px;
   }
 }
@@ -228,18 +278,29 @@
 @media (max-width: 575px) {
 
   .cps-content-wrapper {
-    padding: 40px 0;
+    padding: 45px 0;
   }
 
   .cps-heading {
-    font-size: 24px;
+    font-size: 26px;
   }
 
   .cps-image-block img {
-    height: 260px;
+    height: 300px;
+    border-radius: 20px;
   }
 
   .cps-tab {
     padding: 14px 16px;
+  }
+
+  .cps-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .cps-badge {
+    font-size: 10px;
+    padding: 7px 15px;
   }
 }

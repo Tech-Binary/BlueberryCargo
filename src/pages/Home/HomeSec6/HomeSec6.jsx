@@ -41,12 +41,7 @@ function HomeSec6({
     <section className="cta-section">
       {/* Top: Full-width banner image */}
       {isAboutPage ? (
-        <AboutSec3
-          data={data}
-          title={title}
-          desc={desc}
-          newClass={newClass}
-        />
+        <AboutSec3 data={data} title={title} desc={desc} newClass={newClass} />
       ) : (
         <div className="cta-banner-image">
           <img src={ctaBanner} alt="Cargo Port" />
@@ -63,28 +58,19 @@ function HomeSec6({
                   title2
                     ?.toLowerCase()
                     .split(" ")
-                    .map(
-                      (word) =>
-                        word.charAt(0).toUpperCase() +
-                        word.slice(1)
-                    )
+                    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
                     .join(" ")}
               </h2>
 
-              <p className="cta-description">
-                {desc2}
-              </p>
+              <p className="cta-description">{desc2}</p>
 
-            <button
-  className="cta-quote-btn"
-  onClick={handleQuoteClick}
->
-  <span>Request a Quote</span>
+              <button className="cta-quote-btn " onClick={handleQuoteClick}>
+                <span>Request a Quote</span>
 
-  <div className="cta-quote-icon">
-    <HiArrowNarrowRight />
-  </div>
-</button>
+                <div className="cta-quote-icon">
+                  <HiArrowNarrowRight />
+                </div>
+              </button>
             </div>
           </div>
         </div>
