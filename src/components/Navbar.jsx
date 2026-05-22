@@ -4,6 +4,7 @@ import logo from "../assets/logo/logo.svg";
 import { useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 function Navbar() {
   const navbarLinks = [
@@ -122,7 +123,9 @@ function Navbar() {
 
           <button className="common-btn"
            onClick={() => window.location.href = "/contact"}>
-            Get a Quote
+            Get a Quote  <div className="home-quote-icon1">
+                              <HiArrowNarrowRight />
+                            </div>
           </button>
         </div>
       </div>

@@ -51,35 +51,38 @@
   max-width: 520px;
   line-height: 1.2;
 }
+
 .home-quote-icon1 {
-    width: 26px;
-    height: 26px;
-    background: white;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #19325C;
-    font-size: 18px;
-    transition: all 0.3s ease;
+  width: 26px;
+  height: 26px;
+  background: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #19325C;
+  font-size: 18px;
+  transition: all 0.3s ease;
 }
+
 .home-quote-icon2 {
-    width: 26px;
-    height: 26px;
-    background: transparent;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #19325C;
-    font-size: 18px;
-    transition: all 0.3s ease;
-    border: 1px solid #19325C;
+  width: 26px;
+  height: 26px;
+  background: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #19325C;
+  font-size: 18px;
+  transition: all 0.3s ease;
+  border: 1px solid #19325C;
 }
+
 .explore-btn {
   background: transparent;
   border: 1px solid #285D80;
-     padding: 12px 22px;
+  padding: 12px 22px;
   font-weight: 600;
   border-radius: 30px;
   transition: 0.3s;
@@ -101,19 +104,20 @@
   background: transparent;
 
 }
+
 /* =========================
    TRUST BADGES
 ========================= */
 
 .hero-badges {
-    margin-top: 40px;
-    background: rgba(255, 255, 255, 0.92);
-    border-radius: 22px;
-    padding: 5px 10px;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    backdrop-filter: blur(10px);
+  margin-top: 40px;
+  background: #FFFFFFB2;
+  border-radius: 20px;
+  padding: 12px 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  backdrop-filter: blur(10px);
 }
 
 .hero-badge-item {
@@ -123,21 +127,21 @@
 }
 
 .hero-badge-item img {
-  width: 28px;
-  height: 28px;
+  width: 35px;
+  height: 35px;
   object-fit: contain;
 }
 
 .hero-badge-item span {
-    font-size: 14px;
-    font-weight: 500;
-    color: #19325C;
+  font-size: 14px;
+  font-weight: 500;
+  color: #060606;
 }
 
 .hero-divider {
   width: 1px;
-  height: 28px;
-  background: rgba(25, 50, 92, 0.25);
+  height: 25px;
+  background: #060606;
 }
 
 /* =========================
@@ -146,7 +150,7 @@
 
 .hero-stats-wrapper {
   position: absolute;
-    bottom: -120px;
+  bottom: -85px;
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
@@ -158,7 +162,7 @@
   margin: auto;
   background: #19325C;
   border-radius: 40px;
-    padding: 15px 30px;
+  padding: 30px 60px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -173,14 +177,14 @@
 }
 
 .hero-stat-item img {
-  width: 62px;
-  height: 62px;
+  width: 50px;
+  height: 50px;
   object-fit: contain;
 }
 
 .hero-stat-item h3 {
   color: white;
-      font-size: 30px;
+  font-size: 30px;
   font-weight: 800;
   line-height: 1;
   margin-bottom: 6px;
@@ -188,15 +192,15 @@
 
 .hero-stat-item p {
   color: white;
-     font-size: 16px;
+  font-size: 16px;
   margin: 0;
   font-weight: 500;
 }
 
 .hero-stat-divider {
   width: 1px;
-  height: 90px;
-  background: rgba(255, 255, 255, 0.3);
+  height: 60px;
+  background: #FFFFFF;
 }
 
 /* =========================
@@ -283,6 +287,7 @@
     font-size: 16px;
   }
 }
+
 /* Responsive */
 @media (max-width:1024px) {
   .hero-content {
