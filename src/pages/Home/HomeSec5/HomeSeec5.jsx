@@ -43,7 +43,7 @@ function HomeSec5() {
         {/* HEADING */}
         <h2 className="section-title">
           Trusted Logistics for Every{" "}
-          <h2 className="span-class">Supply Chain.</h2>
+          <span className="span-class">Supply Chain.</span>
         </h2>
 
         {/* DESCRIPTION */}
@@ -69,7 +69,7 @@ function HomeSec5() {
 
               {/* CONTENT */}
               <div className="homeSec5-content">
-            
+
                 <h4>{item.title}</h4>
 
                 <p>{item.description}</p>
