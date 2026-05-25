@@ -37,11 +37,11 @@ function HomeSec3() {
       <div className="container">
         {/* Header */}
           {/* TOP TAG */}
-        <div className="homeSec5-tag" style={{backgroundColor:"#B3E0FF33", color:"white"}}>Our services</div>
+        <div className="homeSec5-tag" style={{backgroundColor:"#B3E0FF33", color:"white"}}>WHY CHOOSE US</div>
         {/* Header */}
         <div className="why-choose-header">
           <h2 className="section-title" style={{color:"white"}}>
-            Smart <h2 className="span-class"> Logistic. </h2> Seamless <h2 className="span-class"> Deliveries. </h2>
+            Your <span className="span-class"> Cargo. </span> Our <span className="span-class"> Commitment. </span>
           </h2>
           <p className="why-choose-description">
             Blueberry Cargo was built with a singular focus: to deliver

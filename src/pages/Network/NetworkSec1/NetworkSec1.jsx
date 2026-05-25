@@ -7,8 +7,8 @@ function NetworkSec1() {
                     {/* Left: Image Grid */}
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec1-col-left">
                         <div className="NetworkSec1-content">
-                            <h2 className="section-title NetworkSec1-title">
-                                <span className="title-bar">|</span> Madagascar operations
+                            <h2 className="section-title">
+                                <span className="span-class">Madagascar</span>  operations
                             </h2>
                             <p className="NetworkSec1-description">
                                 Madagascar sits at one of the Indian Ocean's most strategically significant logistics positions — yet it remains underserved by global carriers. Blueberry Cargo has built genuine on-ground capability here, with established relationships across aviation, port, and customs operations.
@@ -26,7 +26,7 @@ function NetworkSec1() {
                                     ].map((d, index) => (
 
                                         <div className="NetworkSec1-feature-item">
-                                            <img src="/images/about-card-icon.svg" alt="Industry Expertise" />
+                                            <img src="/images/orange-arrow.svg" alt="Industry Expertise" />
                                             <p className="NetworkSec1-label">{d.text}</p>
                                         </div>
                                     ))

@@ -35,7 +35,6 @@ const testimonials = [
 ];
 
 function AboutSec5() {
-
   const renderStars = (rating) => {
     const stars = [];
 
@@ -43,7 +42,9 @@ function AboutSec5() {
       if (i <= Math.floor(rating)) {
         stars.push(<img key={i} src="/images/client-star.svg" alt="full" />);
       } else if (i === Math.ceil(rating) && rating % 1 !== 0) {
-        stars.push(<img key={i} src="/images/client-star-half.svg" alt="half" />);
+        stars.push(
+          <img key={i} src="/images/client-star-half.svg" alt="half" />,
+        );
       } else {
         stars.push(<img key={i} src="/images/star-empty.svg" alt="empty" />);
       }
@@ -86,11 +87,13 @@ function AboutSec5() {
   return (
     <section className="AboutSec5-section section-padding pt-0">
       <div className="container">
-
         {/* Header */}
         <div className="AboutSec5-header">
-          <h2 className="section-title" style={{ color: "#121212" }}>
-            <span className="title-bar">|</span> What Clients Say
+          <div className="homeSec5-tag">TESTIMONIAL</div>
+
+          {/* HEADING */}
+          <h2 className="section-title">
+            What <span className="span-class">Clients</span> Say{" "}
           </h2>
           <p>Trusted by freight professionals</p>
         </div>
@@ -100,7 +103,6 @@ function AboutSec5() {
           {testimonials.map((item, i) => (
             <div key={i} className="testimonial-slide">
               <div className="testimonial-card">
-
                 {/* TOP */}
                 <div className="testimonial-top">
                   <div>
@@ -121,12 +123,10 @@ function AboutSec5() {
 
                 {/* TEXT */}
                 <p className="testimonial-text">{item.desc}</p>
-
               </div>
             </div>
           ))}
         </Slider>
-
       </div>
     </section>
   );

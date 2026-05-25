@@ -4,26 +4,16 @@ import AboutSec3 from "../../AboutUs/AboutSec3/AboutSec3";
 import { useLocation } from "react-router-dom";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-function HomeSec6({
-  data,
-  title,
-  desc,
-  title2,
-  desc2,
-  newClass,
-}) {
+function HomeSec6({ data, title, desc, title2, desc2, newClass }) {
   const location = useLocation();
 
   const isAboutPage =
-    location.pathname === "/about" ||
-    location.pathname === "/network";
+    location.pathname === "/about" || location.pathname === "/network";
 
   const handleQuoteClick = () => {
     // HOME PAGE
     if (location.pathname === "/") {
-      const section = document.getElementById(
-        "contact-form-section"
-      );
+      const section = document.getElementById("contact-form-section");
 
       if (section) {
         section.scrollIntoView({
@@ -41,7 +31,13 @@ function HomeSec6({
     <section className="cta-section">
       {/* Top: Full-width banner image */}
       {isAboutPage ? (
-        <AboutSec3 data={data} title={title} desc={desc} newClass={newClass} />
+        <AboutSec3
+          data={data}
+          title={title}
+          desc={desc}
+          newClass={newClass}
+          tag={location.pathname === "/about" ? "CERTIFICATES" : null}
+        />
       ) : (
         <div className="cta-banner-image">
           <img src={ctaBanner} alt="Cargo Port" />
