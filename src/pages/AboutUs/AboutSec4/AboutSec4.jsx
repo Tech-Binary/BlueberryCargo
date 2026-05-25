@@ -28,12 +28,13 @@ const team = [
     name: "Courtney Henry",
     desc: "Specialist in aircraft charter logistics with deep relationships across African aviation and time-sensitive cargo.",
   },
-  {
-    image: "/images/team2.png",
-    role: "Founder",
-    name: "Guy Hawkins",
-    desc: "Specialist in aircraft charter logistics with deep relationships across African aviation and time-sensitive cargo.",
-  },
+//   {
+//     image: "/images/team2.png",
+//     role: "Founder",
+//     name: "Guy Hawkins",
+//     desc: "Specialist in aircraft charter logistics with deep relationships across African aviation and time-sensitive cargo.",
+//   },
+// ];
 ];
 
 function AboutSec4() {
