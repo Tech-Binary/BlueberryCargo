@@ -129,14 +129,14 @@ function CargoServicesSec3() {
       <section className="cargo-services-sec3 section-padding">
         <div className="container">
           <div className="cargo-sec3-heading-wrapper">
-            <h2 className="section-title">
+           <h2 className="section-title">
   {location.pathname === "/charter-plane-services" ? (
     <>
-      From <h2 className="span-class ">Enquiry</h2> to Airborne
+      From <span className="span-class">Enquiry</span> to Airborne
     </>
   ) : (
     <>
-      Your <h2 className="span-class">Cargo's</h2> Journey With Us
+      Your <span className="span-class">Cargo's</span> Journey With Us
     </>
   )}
 </h2>

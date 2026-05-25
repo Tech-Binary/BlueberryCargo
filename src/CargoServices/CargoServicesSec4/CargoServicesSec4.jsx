@@ -8,7 +8,6 @@ import "../CargoServicesSec4/CargoServicesSec4.css";
 import CharterImg from "../../assets/Images/charter-plane.png";
 
 // OPTIONAL FUTURE IMAGE
-// (keep same image for now)
 import CargoImg from "../../assets/Images/charter-plane.png";
 
 // Icons
@@ -25,6 +24,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const charterSectionData = {
   heading: "Need a Charter Plane Instead?",
+
   description:
     "When cargo timelines are critical or standard freight routes won't cut it — our Charter Plane service puts a dedicated aircraft at your disposal. Full flexibility, total control, zero compromise.",
 
@@ -67,10 +67,7 @@ const charterSectionData = {
 
 /* =========================================
    STANDARD CARGO DATA
-   (/charter-plane-services)
 ========================================= */
-const TICK_ICON_SRC =
-  "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23285D80'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23285D80'/%3E%3Cpath d='M7 12.5l3.5 3.5 6.5-7' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E";
 
 const standardCargoData = {
   heading: "Need Standard Cargo Instead?",
@@ -78,8 +75,6 @@ const standardCargoData = {
   description:
     "When timelines are flexible and volume is the priority, our full Cargo service offers cost-effective solutions across our Madagascar and Ghana networks — including freight forwarding, warehousing, and end-to-end logistics.",
 
-  // KEEP SAME IMAGE PATH FOR NOW
-  // Easily change later
   image: CargoImg,
 
   cards: [
@@ -116,37 +111,56 @@ function CargoServicesSec4() {
   const location = useLocation();
 
   /* =========================================
-     CONDITION BASED ON URL
+     URL CONDITION
   ========================================= */
 
-  const isCharterPage = location.pathname === "/charter-plane-services";
+  const isCargoPage = location.pathname === "/cargo-services";
 
-  const sectionData = isCharterPage ? standardCargoData : charterSectionData;
-  const sectionLinks = isCharterPage
-    ? "/cargo-services"
-    : "/charter-plane-services";
+  const sectionData = isCargoPage
+    ? charterSectionData
+    : standardCargoData;
+
+  const sectionLinks = isCargoPage
+    ? "/charter-plane-services"
+    : "/cargo-services";
+
   return (
     <section className="cargo-services-sec4 section-padding">
       <div className="container">
         <div
           className={`charter-wrapper ${
-            isCharterPage ? "cargo-layout-alt" : ""
+            isCargoPage ? "" : "cargo-layout-alt"
           }`}
         >
           {/* LEFT CONTENT */}
           <div className="charter-content">
             <div className="homeSec5-tag">NEED A CARGO?</div>
 
+            {/* =========================================
+                DYNAMIC TITLE
+            ========================================= */}
+
             <h2 className="section-title">
-              Need Standard <h2 className="span-class">Cargo</h2> Instead?
+              {isCargoPage ? (
+                <>
+                  Need a <span className="span-class">Charter Plane</span>{" "}
+                  Instead?
+                </>
+              ) : (
+                <>
+                  Need Standard <span className="span-class">Cargo</span>{" "}
+                  Instead?
+                </>
+              )}
             </h2>
+
             <p className="cps-description">{sectionData.description}</p>
 
             {/* =========================================
-                DEFAULT GRID CARDS
+                CARD DESIGN FOR CARGO PAGE
             ========================================= */}
 
-            {!isCharterPage && (
+            {isCargoPage && (
               <div className="row g-3 charter-card-row">
                 {sectionData.cards.map((card, i) => (
                   <div className="col-md-6" key={i}>
@@ -166,14 +180,18 @@ function CargoServicesSec4() {
             )}
 
             {/* =========================================
-                SIMPLE LIST FOR /charter-plane-services
+                LIST DESIGN FOR OTHER PAGES
             ========================================= */}
 
-            {isCharterPage && (
+            {!isCargoPage && (
               <div className="cargo-list-wrapper">
                 {sectionData.cards.map((card, i) => (
                   <div className="cps-feature-item" key={i}>
-                    <img src={TICK_ICON_SRC} alt="tick" className="tick-icon" />
+                    <img
+                      src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23285D80'%3E%3Ccircle cx='12' cy='12' r='12' fill='%23285D80'/%3E%3Cpath d='M7 12.5l3.5 3.5 6.5-7' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E"
+                      alt="tick"
+                      className="tick-icon"
+                    />
 
                     <p>
                       {card.title} — {card.text}
@@ -190,7 +208,8 @@ function CargoServicesSec4() {
                 onClick={() => (window.location.href = sectionLinks)}
               >
                 {sectionData.primaryBtn}
-                  <div className="cta-quote-icon">
+
+                <div className="cta-quote-icon">
                   <HiArrowNarrowRight />
                 </div>
               </button>
@@ -200,6 +219,7 @@ function CargoServicesSec4() {
                 onClick={() => (window.location.href = "/contact")}
               >
                 {sectionData.secondaryBtn}
+
                 <div className="cta-quote-icon-cargo">
                   <HiArrowNarrowRight />
                 </div>
@@ -227,9 +247,13 @@ function CargoServicesSec4() {
               {sectionData.stats.map((stat, i) => (
                 <React.Fragment key={i}>
                   <div className="charter-overlay-stat">
-                    <span className="charter-stat-number">{stat.number}</span>
+                    <span className="charter-stat-number">
+                      {stat.number}
+                    </span>
 
-                    <span className="charter-stat-text">{stat.text}</span>
+                    <span className="charter-stat-text">
+                      {stat.text}
+                    </span>
                   </div>
 
                   {i < sectionData.stats.length - 1 && (
