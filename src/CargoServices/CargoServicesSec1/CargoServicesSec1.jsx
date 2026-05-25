@@ -100,18 +100,19 @@ function CargoServicesSec1() {
         ],
       };
 
-  const handleTabClick = (tabId) => {
-    setActiveTab(tabId);
+const handleTabClick = (tabId) => {
+  setActiveTab(tabId);
 
-    if (tabId === "overview") {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
+  if (tabId === "overview") {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
 
-      return;
-    }
+    return;
+  }
 
+  setTimeout(() => {
     const target = document.getElementById(tabId);
 
     if (target) {
@@ -125,14 +126,15 @@ function CargoServicesSec1() {
         behavior: "smooth",
       });
     }
-  };
+  }, 100);
+};
 
   return (
-    <section className="cps-sec1">
+    <section className="cps-sec1 ">
 
       {/* ================= TABS ================= */}
 
-      <div className="cps-tabs-wrapper">
+      <div className="cps-tabs-wrapper ">
         <div className="container">
           <nav className="cps-tabs">
 
@@ -154,7 +156,7 @@ function CargoServicesSec1() {
 
       {/* ================= CONTENT ================= */}
 
-      <div className="cps-content-wrapper">
+      <div className="cps-content-wrapper section-padding">
         <div className="container">
 
           <div className="row align-items-center cps-content">

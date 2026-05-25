@@ -35,11 +35,15 @@ function CargoServicesSec2() {
 
   const charterServicesData = [
     {
+      sectionId: "aircraft-charter",
+
       id: "01",
       title: "Aircraft Charter Solutions",
       highlight: "Charter",
+
       description:
         "Exclusive access to purpose-configured freighter aircraft — on your schedule, to your destination. Whether a one-time lift or a recurring dedicated route, we match the right aircraft to your cargo specifications and get it moving without delay.",
+
       image: CargoImg1,
 
       stats: [
@@ -78,11 +82,15 @@ function CargoServicesSec2() {
     },
 
     {
+      sectionId: "cargo-handling",
+
       id: "02",
       title: "Time-Sensitive Cargo Handling",
       highlight: "Cargo",
+
       description:
         "When every hour matters, our time-critical cargo operations cut through delays and get your freight moving fast. From emergency AOG parts to perishable produce and life-saving medical supplies — we treat every urgent shipment as our highest priority.",
+
       image: CargoImg2,
       reverse: true,
 
@@ -122,11 +130,15 @@ function CargoServicesSec2() {
     },
 
     {
+      sectionId: "logistics",
+
       id: "03",
       title: "Customized Logistics Solutions",
       highlight: "Logistics",
+
       description:
         "No two operations are the same. We design bespoke logistics programs built around your cargo type, route constraints, regulatory environment, and commercial timelines.",
+
       image: CargoImg3,
 
       stats: [
@@ -171,11 +183,15 @@ function CargoServicesSec2() {
 
   const cargoServicesData = [
     {
+      sectionId: "general-cargo",
+
       id: "01",
       title: "General Cargo Handling",
       highlight: "Cargo",
+
       description:
         "Professional management of all cargo types with full documentation, warehousing, loading, and secure delivery support at both cargo hubs. Our facilities are equipped to handle high-volume freight with precision and care.",
+
       image: CargoImg1,
 
       stats: [
@@ -214,11 +230,15 @@ function CargoServicesSec2() {
     },
 
     {
+      sectionId: "freight",
+
       id: "02",
       title: "Freight Forwarding Solutions",
       highlight: "Forwarding",
+
       description:
         "Seamless import & export freight management with customized delivery routes and worldwide coordination.",
+
       image: CargoImg2,
       reverse: true,
 
@@ -258,11 +278,15 @@ function CargoServicesSec2() {
     },
 
     {
+      sectionId: "logistics",
+
       id: "03",
       title: "End-To-End Logistics Support",
       highlight: "Logistics",
+
       description:
         "Complete supply chain solutions from origin to destination, delivering confidence across every transportation stage.",
+
       image: CargoImg3,
 
       stats: [
@@ -306,25 +330,36 @@ function CargoServicesSec2() {
     : cargoServicesData;
 
   return (
-    <section className="cargo-services-sec2">
+    <section className="cargo-services-sec2 section-padding">
       <div className="container">
-        {servicesData.map((item, index) => (
+
+        {servicesData.map((item) => (
+
           <div
+            id={item.sectionId}
+            key={item.sectionId}
             className={`cargo-service-wrapper ${
               item.reverse ? "reverse-layout" : ""
             }`}
-            key={index}
           >
+
             {/* CONTENT */}
+
             <div className="cargo-service-content">
 
               <div className="cargo-heading-wrap">
 
-               <h2 className="section-title">
-  {item.title.split(item.highlight)[0].trim()}
-  <span className="span-class"> {item.highlight} </span>
-  {item.title.split(item.highlight)[1].trim()}
-</h2>
+                <h2 className="section-title">
+                  {item.title.split(item.highlight)[0].trim()}
+
+                  <span className="span-class">
+                    {" "}
+                    {item.highlight}{" "}
+                  </span>
+
+                  {item.title.split(item.highlight)[1].trim()}
+                </h2>
+
               </div>
 
               <p className="cps-description">
@@ -332,8 +367,11 @@ function CargoServicesSec2() {
               </p>
 
               <div className="cargo-cards-grid">
+
                 {item.cards.map((card, i) => (
+
                   <div className="cargo-small-card" key={i}>
+
                     <div className="cargo-icon-box">
                       <img src={card.icon} alt="" />
                     </div>
@@ -342,27 +380,38 @@ function CargoServicesSec2() {
                       <h5>{card.title}</h5>
                       <p>{card.text}</p>
                     </div>
+
                   </div>
+
                 ))}
+
               </div>
 
               <div className="cargo-stats-wrapper">
+
                 {item.stats.map((stat, i) => (
+
                   <div className="cargo-stat-box" key={i}>
                     <h3>{stat.number}</h3>
                     <span>{stat.text}</span>
                   </div>
+
                 ))}
+
               </div>
+
             </div>
 
             {/* IMAGE */}
-            <div className="cargo-service-image">
 
+            <div className="cargo-service-image">
               <img src={item.image} alt="" />
             </div>
+
           </div>
+
         ))}
+
       </div>
     </section>
   );

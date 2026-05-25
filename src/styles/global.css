@@ -183,6 +183,10 @@ ul {
   .section-title {
     font-size: 31px;
   }
+  .span-class{
+    font-size: 31px;
+
+  }
 }
 
 @media (max-width: 991px) {
@@ -191,6 +195,9 @@ ul {
   }
 
   .section-title {
+    font-size: 34px;
+  }
+  .span-class {
     font-size: 34px;
   }
 }

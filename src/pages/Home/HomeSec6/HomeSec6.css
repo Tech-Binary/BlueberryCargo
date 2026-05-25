@@ -127,18 +127,16 @@
 
 @media (max-width: 576px) {
   .cta-quote-btn {
-    min-width: 100%;
-    height: 74px;
+  
     padding: 12px 14px 12px 24px;
     font-size: 18px;
     gap: 18px;
   }
 
   .cta-quote-icon {
-    width: 46px;
-    height: 46px;
-    min-width: 46px;
-    font-size: 22px;
+    width: 26px;
+    height: 26px;
+    font-size: 18px;
   }
 }
 /* Right: Container Image */
@@ -196,8 +194,11 @@
 
   .cta-heading {
     font-size: 22px;
-  }
+        line-height: 25px;
 
+  }
+.cta-description {
+    font-size: 15px;}
   .cta-container-img {
     width: 200px;
   }

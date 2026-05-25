@@ -97,7 +97,7 @@ export default function HomeSec4() {
           <div className="row align-items-center">
                {/* TITLE */}
                 <h2 className="section-title homesec-4-title">
-                  Where We <h2 className="span-class">Operate</h2>
+                  Where We <span className="span-class">Operate</span>
                 </h2>
 
             {/* LEFT */}
