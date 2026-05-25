@@ -1,42 +1,64 @@
 import "./AboutSec3.css";
 import { useLocation } from "react-router-dom";
 
-function AboutSec3({ data, title, desc, newClass, marginClass }) {
-
+function AboutSec3({ data, title, desc, newClass, marginClass , tag}) {
   const location = useLocation();
 
-  const isAboutPage = location.pathname === "/about";
-  const fullTitle = title || "Why Choose Blueberry Cargo";
+  // const isAboutPage = location.pathname === "/about";
+  const fullTitle = title || "Industry Expertise & Certifications";
   const words = fullTitle.split(" ");
 
   const firstPart = words.slice(0, -1).join(" ");
   const secondPart =
-    words.slice(-1)[0].charAt(0).toUpperCase() +
-    words.slice(-1)[0].slice(1);
+    words.slice(-1)[0].charAt(0).toUpperCase() + words.slice(-1)[0].slice(1);
   return (
-    <section className={marginClass ? "section-padding" : "AboutSec3-choose-section section-padding"} style={{ backgroundColor: "#F9F9F9" }}>
+    <section
+      className={
+        marginClass
+          ? "section-padding"
+          : "AboutSec3-choose-section section-padding"
+      }
+      style={{ backgroundColor: "#F9F9F9" }}
+    >
       <div className="container">
         {/* Header */}
         <div className="AboutSec3-choose-header">
+          {tag && <div className="homeSec5-tag">{tag}</div>}
           <h2 className="section-title">
             {firstPart} <span className="span-class">{secondPart}</span>
           </h2>
           <p className="AboutSec3-choose-description">
-            {desc || "Our operational standards and industry affiliations that give clients confidence in every shipment."}
+            {desc ||
+              "Our operational standards and industry affiliations that give clients confidence in every shipment."}
           </p>
         </div>
 
         {/* Feature Cards */}
-        <div className={newClass ? "AboutSec3-choose-grid AboutSec3-choose-grid-new" : "AboutSec3-choose-grid"}>
+        <div
+          className={
+            newClass
+              ? "AboutSec3-choose-grid AboutSec3-choose-grid-new"
+              : "AboutSec3-choose-grid"
+          }
+        >
           {data?.map((feature, index) => (
-            <div className={newClass ? "AboutSec3-choose-card AboutSec3-choose-card-new" : "AboutSec3-choose-card"} key={index}>
+            <div
+              className={
+                newClass
+                  ? "AboutSec3-choose-card AboutSec3-choose-card-new"
+                  : "AboutSec3-choose-card"
+              }
+              key={index}
+            >
               <div className="AboutSec3-card-icon-wrap">
                 <div className="AboutSec3-box">
                   <img src={feature.icon} alt={feature.alt} />
                 </div>
               </div>
               <h4 className="AboutSec3-card-title">{feature.title}</h4>
-              <p className="AboutSec3-card-description">{feature.description}</p>
+              <p className="AboutSec3-card-description">
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

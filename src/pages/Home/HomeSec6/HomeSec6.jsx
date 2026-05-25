@@ -31,7 +31,13 @@ function HomeSec6({ data, title, desc, title2, desc2, newClass }) {
     <section className="cta-section">
       {/* Top: Full-width banner image */}
       {isAboutPage ? (
-        <AboutSec3 data={data} title={title} desc={desc} newClass={newClass} />
+        <AboutSec3
+          data={data}
+          title={title}
+          desc={desc}
+          newClass={newClass}
+          tag={location.pathname === "/about" ? "CERTIFICATES" : null}
+        />
       ) : (
         <div className="cta-banner-image">
           <img src={ctaBanner} alt="Cargo Port" />
