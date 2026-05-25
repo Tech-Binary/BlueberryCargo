@@ -43,8 +43,8 @@ const hubs = [
     ],
 
     pin: {
-      top: "47%",
-      left: "54%",
+      top: "62%",
+      left: "48%",
       icon: GhanaPin,
     },
   },
@@ -78,8 +78,8 @@ const hubs = [
     ],
 
     pin: {
-      top: "66%",
-      left: "72%",
+      top: "75%",
+      left: "60%",
       icon: MadagascarPin,
     },
   },
