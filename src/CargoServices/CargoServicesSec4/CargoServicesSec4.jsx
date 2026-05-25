@@ -16,6 +16,8 @@ import Icon1 from "../../assets/Icons/bulk-icon.png";
 import Icon2 from "../../assets/Icons/warehouse-icon.png";
 import Icon3 from "../../assets/Icons/aircargo-icon.png";
 import Icon4 from "../../assets/Icons/doc-icon.png";
+import Footer from "../../components/Footer";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 /* =========================================
    DEFAULT CHARTER DATA
@@ -117,12 +119,9 @@ function CargoServicesSec4() {
      CONDITION BASED ON URL
   ========================================= */
 
-  const isCharterPage =
-    location.pathname === "/charter-plane-services";
+  const isCharterPage = location.pathname === "/charter-plane-services";
 
-  const sectionData = isCharterPage
-    ? standardCargoData
-    : charterSectionData;
+  const sectionData = isCharterPage ? standardCargoData : charterSectionData;
   const sectionLinks = isCharterPage
     ? "/cargo-services"
     : "/charter-plane-services";
@@ -136,14 +135,12 @@ function CargoServicesSec4() {
         >
           {/* LEFT CONTENT */}
           <div className="charter-content">
-            <h2 className="section-title AboutSec1-title">
-              <span className="title-bar">|</span>
-              {sectionData.heading}
-            </h2>
+            <div className="homeSec5-tag">NEED A CARGO?</div>
 
-            <p className="AboutSec1-description">
-              {sectionData.description}
-            </p>
+            <h2 className="section-title">
+              Need Standard <h2 className="span-class">Cargo</h2> Instead?
+            </h2>
+            <p className="cps-description">{sectionData.description}</p>
 
             {/* =========================================
                 DEFAULT GRID CARDS
@@ -175,12 +172,8 @@ function CargoServicesSec4() {
             {isCharterPage && (
               <div className="cargo-list-wrapper">
                 {sectionData.cards.map((card, i) => (
-                  <div className="cargo-list-item" key={i}>
-                     <img
-                        src={TICK_ICON_SRC}
-                        alt="tick"
-                        className="tick-icon"
-                      />
+                  <div className="cps-feature-item" key={i}>
+                    <img src={TICK_ICON_SRC} alt="tick" className="tick-icon" />
 
                     <p>
                       {card.title} — {card.text}
@@ -192,14 +185,24 @@ function CargoServicesSec4() {
 
             {/* CTA */}
             <div className="charter-cta-row">
-              <button className="charter-btn-primary"
-            onClick={() => window.location.href = sectionLinks}>
+              <button
+                className="charter-btn-primary"
+                onClick={() => (window.location.href = sectionLinks)}
+              >
                 {sectionData.primaryBtn}
+                  <div className="cta-quote-icon">
+                  <HiArrowNarrowRight />
+                </div>
               </button>
 
-              <button className="charter-btn-link"
-              onClick={() => window.location.href = "/contact"}>
+              <button
+                className="charter-btn-outline"
+                onClick={() => (window.location.href = "/contact")}
+              >
                 {sectionData.secondaryBtn}
+                <div className="cta-quote-icon-cargo">
+                  <HiArrowNarrowRight />
+                </div>
               </button>
             </div>
           </div>
@@ -211,14 +214,12 @@ function CargoServicesSec4() {
             {/* STATS OVERLAY */}
             <div className="charter-stats-overlay">
               <div className="charter-overlay-label">
-                {sectionData.statsLabel
-                  .split("\n")
-                  .map((line, i) => (
-                    <React.Fragment key={i}>
-                      {line}
-                      <br />
-                    </React.Fragment>
-                  ))}
+                {sectionData.statsLabel.split("\n").map((line, i) => (
+                  <React.Fragment key={i}>
+                    {line}
+                    <br />
+                  </React.Fragment>
+                ))}
               </div>
 
               <div className="charter-overlay-divider" />
@@ -226,13 +227,9 @@ function CargoServicesSec4() {
               {sectionData.stats.map((stat, i) => (
                 <React.Fragment key={i}>
                   <div className="charter-overlay-stat">
-                    <span className="charter-stat-number">
-                      {stat.number}
-                    </span>
+                    <span className="charter-stat-number">{stat.number}</span>
 
-                    <span className="charter-stat-text">
-                      {stat.text}
-                    </span>
+                    <span className="charter-stat-text">{stat.text}</span>
                   </div>
 
                   {i < sectionData.stats.length - 1 && (

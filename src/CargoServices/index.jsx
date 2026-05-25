@@ -12,11 +12,10 @@ function CargoServices() {
         title="Moving Cargo Across Africa"
         desc="From the Indian Ocean to the Gulf of Guinea — precision-engineered freight operations delivering reliability at every mile of the journey."
       />
-
       <CargoServicesSec1 />
-<CargoServicesSec2/>
-<CargoServicesSec3/>
-<CargoServicesSec4/>
+      <CargoServicesSec2 />
+      <CargoServicesSec3 />
+      <CargoServicesSec4 />
       <Footer />
     </>
   );
