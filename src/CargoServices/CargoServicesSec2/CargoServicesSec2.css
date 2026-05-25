@@ -223,9 +223,27 @@
 @media (max-width: 1199px) {
 
   .cargo-service-wrapper {
-    gap: 45px;
+    gap: 15px;
   }
-
+.cargo-stats-wrapper {
+    display: flex;
+    gap: 24px;
+    flex-wrap:nowrap;
+}
+.cargo-stat-box span {
+    font-size: 14px;
+    line-height: 18px;
+}
+.cargo-stat-box h3 {
+    font-size: 26px;
+  
+}
+.cargo-stat-box {
+    background: #fff;
+    border-radius: 16px;
+    padding: 22px 18px;
+    display: flex;
+}
   .cargo-service-title {
     font-size: 42px;
   }

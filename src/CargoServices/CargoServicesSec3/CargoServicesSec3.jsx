@@ -84,8 +84,7 @@ const charterPlaneJourneyData = [
     id: 4,
     icon: StepIcon4, // You can change icon later
     title: "Cargo Loaded",
-    description:
-      "Ground crew handles acceptance, ULD build-up & documentation",
+    description: "Ground crew handles acceptance, ULD build-up & documentation",
     active: true,
   },
   {
@@ -109,9 +108,7 @@ function CargoServicesSec3() {
   const handleQuoteClick = () => {
     // HOME PAGE
     if (location.pathname === "/") {
-      const section = document.getElementById(
-        "contact-form-section"
-      );
+      const section = document.getElementById("contact-form-section");
 
       if (section) {
         section.scrollIntoView({
@@ -129,17 +126,18 @@ function CargoServicesSec3() {
       <section className="cargo-services-sec3 section-padding">
         <div className="container">
           <div className="cargo-sec3-heading-wrapper">
-           <h2 className="section-title">
-  {location.pathname === "/charter-plane-services" ? (
-    <>
-      From <span className="span-class">Enquiry</span> to Airborne
-    </>
-  ) : (
-    <>
-      Your <span className="span-class">Cargo's</span> Journey With Us
-    </>
-  )}
-</h2>
+            <h2 className="section-title">
+              {location.pathname === "/charter-plane-services" ? (
+                <>
+                  From <span className="span-class">Enquiry</span> to Airborne
+                </>
+              ) : (
+                <>
+                  Your <span className="span-class">Cargo's</span> Journey With
+                  Us
+                </>
+              )}
+            </h2>
           </div>
 
           <div className="cargo-journey-wrapper">
@@ -176,28 +174,26 @@ function CargoServicesSec3() {
           </div>
         </div>
       </section>
-       <div className="cargocta-content-strip container">
-          <div className="cargocta-inner">
-            {/* Left: Text */}
-            <div className="cta-text">
-              <h2 className="cta-heading">
-                Ready To Move Your Cargo <br /> Across Africa?
-              </h2>
-              <p className="cta-description">
-                Tell us about your shipment and our team will get <br />
-                back to you with a tailored solution.
-              </p>
-             <button className="cta-quote-btn " onClick={handleQuoteClick}>
-                          <span>Request a Quote</span>
-          
-                          <div className="cta-quote-icon">
-                            <HiArrowNarrowRight/>
-                          </div>
-                        </button>
-            </div>
+      <div className="cargocta-content-strip container">
+        <div className="cargocta-inner">
+          {/* Left: Text */}
+          <div className="cta-text">
+            <h2 className="cta-heading">
+              Ready To Move Your Cargo <br /> Across Africa?
+            </h2>
+            <p className="cta-description">
+              Tell us about your shipment and our team will get <br />
+              back to you with a tailored solution.
+            </p>
+            <button className="cta-quote-btn " onClick={handleQuoteClick}>
+              <span>Request a Quote</span>
 
-
+              <div className="cta-quote-icon">
+                <HiArrowNarrowRight />
+              </div>
+            </button>
           </div>
+        </div>
       </div>
     </>
   );

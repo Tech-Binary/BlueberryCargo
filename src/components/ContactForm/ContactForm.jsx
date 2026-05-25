@@ -104,7 +104,7 @@ function ContactForm() {
           <div className="col-lg-6 col-md-12">
             <div className="contact-left">
               <h2 className="section-title">
-                Let's Move Your <h2 className="span-class"> Cargo, Together</h2>
+                Let's Move Your <span className="span-class"> Cargo, Together</span>
               </h2>
 
               <p className="contact-subtitle">
