@@ -320,15 +320,11 @@ function CargoServicesSec2() {
 
               <div className="cargo-heading-wrap">
 
-                <h2 className="section-title">
-                  {item.title.split(item.highlight)[0]}
-
-                  <h2 className="span-class">
-                    {item.highlight}
-                  </h2>
-
-                  {item.title.split(item.highlight)[1]}
-                </h2>
+               <h2 className="section-title">
+  {item.title.split(item.highlight)[0].trim()}
+  <span className="span-class"> {item.highlight} </span>
+  {item.title.split(item.highlight)[1].trim()}
+</h2>
               </div>
 
               <p className="cps-description">
