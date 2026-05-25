@@ -8,6 +8,7 @@ import StepIcon2 from "../../assets/Icons/StepIcon2.png";
 import StepIcon3 from "../../assets/Icons/StepIcon3.png";
 import StepIcon4 from "../../assets/Icons/StepIcon4.png";
 import StepIcon5 from "../../assets/Icons/StepIcon5.png";
+import { HiArrowNarrowRight } from "react-icons/hi";
 
 /* DEFAULT DATA */
 const defaultCargoJourneyData = [
@@ -128,13 +129,17 @@ function CargoServicesSec3() {
       <section className="cargo-services-sec3 section-padding">
         <div className="container">
           <div className="cargo-sec3-heading-wrapper">
-            <h2 className="section-title cargo-sec3-title">
-              <span className="title-bar">|</span>
-
-              {location.pathname === "/charter-plane-services"
-                ? "From Enquiry to Airborne"
-                : "Your Cargo's Journey With Us"}
-            </h2>
+            <h2 className="section-title">
+  {location.pathname === "/charter-plane-services" ? (
+    <>
+      From <h2 className="span-class ">Enquiry</h2> to Airborne
+    </>
+  ) : (
+    <>
+      Your <h2 className="span-class">Cargo's</h2> Journey With Us
+    </>
+  )}
+</h2>
           </div>
 
           <div className="cargo-journey-wrapper">
@@ -182,8 +187,13 @@ function CargoServicesSec3() {
                 Tell us about your shipment and our team will get <br />
                 back to you with a tailored solution.
               </p>
-             
-              <button className="cta-quote-btn"    onClick={handleQuoteClick}>Request a Quote</button>
+             <button className="cta-quote-btn " onClick={handleQuoteClick}>
+                          <span>Request a Quote</span>
+          
+                          <div className="cta-quote-icon">
+                            <HiArrowNarrowRight/>
+                          </div>
+                        </button>
             </div>
 
 
