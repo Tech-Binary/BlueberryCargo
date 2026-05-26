@@ -47,7 +47,13 @@ function Navbar() {
     },
   ];
   const location = useLocation();
+  const closeNavbar = () => {
+    const navbar = document.getElementById("navbarContent");
 
+    if (navbar.classList.contains("show")) {
+      navbar.classList.remove("show");
+    }
+  };
   const isServiceActive =
     location.pathname === "/charter-plane-services" ||
     location.pathname === "/cargo-services";
@@ -97,6 +103,7 @@ function Navbar() {
                         <li key={subItem.id}>
                           <NavLink
                             to={subItem.path}
+                            onClick={closeNavbar}
                             className={({ isActive }) =>
                               `dropdown-item ${isActive ? "active" : ""}`
                             }
@@ -110,6 +117,7 @@ function Navbar() {
                 ) : (
                   <NavLink
                     to={item.path}
+                    onClick={closeNavbar}
                     className={({ isActive }) =>
                       `nav-link custom-nav-link ${isActive ? "active" : ""}`
                     }
@@ -122,10 +130,10 @@ function Navbar() {
           </ul>
 
           <button className="common-btn"
-           onClick={() => window.location.href = "/contact"}>
+            onClick={() => window.location.href = "/contact"}>
             Get a Quote  <div className="home-quote-icon1">
-                              <HiArrowNarrowRight />
-                            </div>
+              <HiArrowNarrowRight />
+            </div>
           </button>
         </div>
       </div>
