@@ -76,7 +76,7 @@
 .charter-small-card {
   background: #f5f8fa;
   border: 1px solid #dce2ea;
-  border-radius: 8px;
+  border-radius: 30px;
   padding: 18px;
   display: flex;
   align-items: flex-start;
@@ -94,7 +94,7 @@
   height: 60px;
   min-width: 60px;
   background: #eaedf2;
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
