@@ -85,7 +85,7 @@ function HomeSec2() {
       id="services-section"
       className="services-section section-padding">
       <div className="container">
-         {/* TOP TAG */}
+        {/* TOP TAG */}
         <div className="homeSec5-tag">Our services</div>
         {/* Header */}
         <div className="services-header">
@@ -150,9 +150,11 @@ function HomeSec2() {
                       </span>
                     ))}
                   </div>
-                  <div className="service-quote-icon">
+                  <a
+                    href={activeTab === "Cargo" ? "cargo-services" : "/charter-plane-services"}
+                    className="service-quote-icon">
                     <HiArrowNarrowRight />
-                  </div>
+                  </a>
                   <img
                     className="service-icon-badge"
                     src={service.icon}

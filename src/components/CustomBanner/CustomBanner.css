@@ -84,11 +84,14 @@
 
     .CustomBanner-content {
         padding-top: 20px;
-        margin-left: 20px;
     }
 
     .CustomBanner-content h1 {
         font-size: 38px;
+    }
+
+    .banner-title {
+        font-size: 40px;
     }
 
     .CustomBanner-description {
