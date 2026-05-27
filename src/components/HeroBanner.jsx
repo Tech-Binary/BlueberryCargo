@@ -1,4 +1,3 @@
-import Navbar from "./Navbar";
 import heroImage from "../assets/banners/hero-banner.jpg";
 import AirPlane from "../assets/Icons/Airplan-icon.png";
 import "../styles/HeroBanner.css";
@@ -7,8 +6,6 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 function HeroBanner() {
   return (
     <section className="hero-banner">
-      {/* Navbar Inside Banner */}
-      {/* <Navbar /> */}
 
       {/* Banner Image */}
       <img src={heroImage} alt="Cargo Banner" className="hero-image" />
