@@ -6,6 +6,7 @@ import Footer from "../../components/Footer";
 import CustomBanner from "../../components/CustomBanner/CustomBanner";
 import ContactFAQ from "./../ContactUs/ContactFAQ";
 import ContactOperate from "../ContactUs/ContactOperate";
+import ContactForm from "../../components/ContactForm/ContactForm"
 function Network() {
   const features = [
     {
@@ -88,13 +89,14 @@ function Network() {
         desc2="Tell us your route, cargo type, and timeline — our team will get back to you with a tailored solution within 24 hours."
       />
       <ContactFAQ />
-      <AboutSec3
+      <ContactForm/>
+      {/* <AboutSec3
      
         data={features}
         title="What We Handle"
         marginClass="true"
         desc="From standard general cargo to time-critical, oversized, and specialist freight — here's what our network can handle."
-      />
+      /> */}
       <Footer />
     </>
   );
