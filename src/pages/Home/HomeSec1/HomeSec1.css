@@ -207,6 +207,10 @@
     min-height: 340px;
   }
 
+  .about-content {
+    padding-left: 0;
+  }
+
   .about-features {
     margin-top: 30px;
   }
@@ -255,7 +259,7 @@
   .about-features {
     flex-direction: row;
     gap: 12px;
-            margin-top: 0px;
+    margin-top: 0px;
   }
 
   .about-feature-divider {
@@ -284,8 +288,9 @@
     font-size: 15px;
     line-height: 22px;
   }
-    .about-features {
-        padding: 9px;
-    }
-  
+
+  .about-features {
+    padding: 9px;
+  }
+
 }

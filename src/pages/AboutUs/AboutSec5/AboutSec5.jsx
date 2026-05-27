@@ -2,6 +2,7 @@ import "./AboutSec5.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import{ useEffect, useState } from "react";
 
 const testimonials = [
   {
@@ -52,36 +53,43 @@ function AboutSec5() {
 
     return stars;
   };
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+
+    const handleResize = () => {
+
+      if (window.innerWidth <= 576) {
+        setSlidesToShow(1);
+      }
+      else if (window.innerWidth <= 992) {
+        setSlidesToShow(2);
+      }
+      else if (window.innerWidth <= 1200) {
+        setSlidesToShow(3);
+      }
+      else {
+        setSlidesToShow(3);
+      }
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => window.removeEventListener("resize", handleResize);
+
+  }, []);
 
   const settings = {
     dots: true,
-    arrows: true,
+    arrows: false,
     infinite: true,
     autoplay: true,
     autoplaySpeed: 3000,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow,
     slidesToScroll: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 576,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
   };
 
   return (

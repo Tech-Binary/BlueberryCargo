@@ -348,12 +348,14 @@
   }
 
   .hero-stats-wrapper {
-          margin-top: 25px;
-        position: static;
+    margin-top: 25px;
+    position: static;
   }
-    .hero-stats {
-        width: 100%;
-    }
+
+  .hero-stats {
+    width: 100%;
+  }
+
   .hero-image {
     display: none;
   }
@@ -368,31 +370,55 @@
   }
 
   .hero-content {
-            padding-top: 0;
-        padding-bottom: 20px;
+    padding-top: 0;
+    padding-bottom: 20px;
   }
-.hero-stat-item img {
+
+  .hero-stat-item img {
     width: 40px;
     height: 40px;
 
-}
-    .hero-stat-item h3 {
-        font-size: 25px;
-    }
-        .hero-stat-item p {
-        font-size: 14px;
-    }
+  }
+
+  .hero-stat-item h3 {
+    font-size: 25px;
+  }
+
+  .hero-stat-item p {
+    font-size: 14px;
+  }
+
   .hero-content h1 {
     font-size: 34px;
     line-height: 1.1;
   }
-    .hero-stats {
-        padding: 20px;
-            gap: 20px;
-    }
+
+  .hero-stat-item {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+
+  .hero-stats {
+    padding: 20px;
+    gap: 0;
+    padding-bottom: 0;
+    flex-wrap: wrap;
+  }
+
   .hero-description {
     font-size: 15px;
     line-height: 1.4;
+  }
+
+  .hero-badge-item {
+    width: 50%;
+    margin-bottom: 15px;
+  }
+
+  .hero-badges {
+    flex-wrap: wrap;
+    gap: 0;
+    padding-bottom: 0;
   }
 }
 
