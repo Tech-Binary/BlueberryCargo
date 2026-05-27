@@ -45,11 +45,11 @@
 }
 
 .hero-description {
-  font-size: 18px;
+  font-size: 17px;
   color: #060606;
-  font-weight: 500;
-  max-width: 520px;
-  line-height: 1.2;
+  font-weight: 600;
+  max-width: 500px;
+  line-height: 25px;
 }
 
 .home-quote-icon1 {
@@ -112,7 +112,7 @@
 .hero-badges {
   margin-top: 40px;
   background: #FFFFFFB2;
-  border-radius: 20px;
+  border-radius: 22px;
   padding: 12px 12px;
   display: inline-flex;
   align-items: center;
@@ -160,7 +160,7 @@
   max-width: 1250px;
   margin: auto;
   background: #19325C;
-  border-radius: 40px;
+  border-radius: 44px;
   padding: 30px 60px;
   display: flex;
   justify-content: space-between;

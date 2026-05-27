@@ -80,7 +80,7 @@ const ContactFaq = () => {
         <div className="faq-top">
           <div className="faq-heading">
               <h2 className="section-title">
-           Frequently Asked <span className="span-class">Questions</span>
+           Frequently <br></br><span className="span-class"> Asked Questions</span>
           </h2>
           </div>
 

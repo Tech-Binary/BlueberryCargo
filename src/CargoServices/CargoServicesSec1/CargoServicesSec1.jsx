@@ -42,9 +42,8 @@ function CargoServicesSec1() {
 
         title: (
           <>
-            Africa's On-Demand <span>Air Charter</span>
-            <br />
-            Partner
+            Africa's On-Demand <span className="span-class">Air Charter
+            Partner</span>
           </>
         ),
 
@@ -83,7 +82,7 @@ function CargoServicesSec1() {
 
         title: (
           <>
-            Built For <span>Africa's</span> Trade Corridors
+            Built For Africa's <span className="span-class">Trade Corridors</span>
           </>
         ),
 
@@ -188,7 +187,7 @@ const handleTabClick = (tabId) => {
 
                 {/* HEADING */}
 
-                <h2 className="cps-heading">
+                <h2 className="section-title mb-3">
                   {pageData.title}
                 </h2>
 

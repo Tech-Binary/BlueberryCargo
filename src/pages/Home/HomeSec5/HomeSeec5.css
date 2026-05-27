@@ -3,7 +3,6 @@
 ========================= */
 
 .homeSec5 {
-  background: #f5f5f5;
   overflow: hidden;
 }
 
@@ -30,7 +29,9 @@
 
 /* DESCRIPTION */
 .homeSec5-description {
-  max-width: 1242px;
+  max-width: 1200px;
+  font-size: 17px ;
+  line-height: 25px;
 }
 
 /* GRID */
@@ -45,7 +46,7 @@
 .homeSec5-card {
   position: relative;
   overflow: hidden;
-  border-radius: 30px;
+  border-radius: 20px;
   height: 520px;
   cursor: pointer;
 }
