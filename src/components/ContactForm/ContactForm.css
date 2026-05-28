@@ -44,7 +44,7 @@
   align-items: center;
   gap: 14px;
   background-color: #ffffff;
-  border-radius: 16px;
+  border-radius: 3px;
   padding: 16px 18px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
@@ -59,7 +59,7 @@
   width: 44px;
   height: 44px;
   background-color: #19325c;
-  border-radius: 16px;
+  border-radius: 15px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,7 +97,7 @@
 ========================= */
 
 .contact-map {
-  border-radius: 4px;
+  border-radius: 3.16px;
   overflow: hidden;
   border: 1px solid #e5e7eb;
   margin-top: 56px;

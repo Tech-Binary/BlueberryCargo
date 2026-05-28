@@ -91,7 +91,7 @@ export default function HomeSec4() {
   const activeData = hubs.find((item) => item.id === activeHub);
 
   return (
-    <section className="homeSec4">
+    <section className="homeSec4 ">
       <div className="container">
         <div className="homeSec4-wrapper">
           <div className="row align-items-center">
@@ -207,6 +207,8 @@ export default function HomeSec4() {
                   </div>
                 )}
               </div>
+              <p className="bottom-map-text">From air cargo to charter solutions, we deliver efficient, secure, & scalable 
+logistics tailored to your business needs.</p>
             </div>
           </div>
         </div>
