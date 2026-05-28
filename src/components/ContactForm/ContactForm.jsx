@@ -99,7 +99,7 @@ function ContactForm() {
       }
     >
       <div className="container">
-        <div className="row g-5">
+        <div className="row">
           {/* LEFT SIDE */}
           <div className="col-lg-6 col-md-12">
             <div className="contact-left">

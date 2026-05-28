@@ -1,23 +1,5 @@
 import { useState } from "react";
 import "../HomeSec2/HomeSec2.css";
-
-// Cargo tab images
-import CargoImg1 from "../../../assets/Images/general-cargo.png";
-import CargoImg2 from "../../../assets/Images/freight-forwarding.png";
-import CargoImg3 from "../../../assets/Images/general-cargo.png";
-
-// Charter tab images
-import CharterImg1 from "../../../assets/Images/general-cargo.png";
-import CharterImg2 from "../../../assets/Images/general-cargo.png";
-import CharterImg3 from "../../../assets/Images/freight-forwarding.png";
-
-// Service icons
-import CargoIcon1 from "../../../assets/Icons/CargoIcon1.svg";
-import CargoIcon2 from "../../../assets/Icons/CargoIcon2.svg";
-import CargoIcon3 from "../../../assets/Icons/CargoIcon3.svg";
-import CharterIcon1 from "../../../assets/Icons/CargoIcon1.svg";
-import CharterIcon2 from "../../../assets/Icons/CargoIcon1.svg";
-import CharterIcon3 from "../../../assets/Icons/CargoIcon1.svg";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const servicesData = {
@@ -85,7 +67,7 @@ function HomeSec2() {
       id="services-section"
       className="services-section section-padding">
       <div className="container">
-         {/* TOP TAG */}
+        {/* TOP TAG */}
         <div className="homeSec5-tag">Our services</div>
         {/* Header */}
         <div className="services-header">
@@ -150,9 +132,11 @@ function HomeSec2() {
                       </span>
                     ))}
                   </div>
-                  <div className="service-quote-icon">
+                  <a
+                    href={activeTab === "Cargo" ? "cargo-services" : "/charter-plane-services"}
+                    className="service-quote-icon">
                     <HiArrowNarrowRight />
-                  </div>
+                  </a>
                   <img
                     className="service-icon-badge"
                     src={service.icon}
