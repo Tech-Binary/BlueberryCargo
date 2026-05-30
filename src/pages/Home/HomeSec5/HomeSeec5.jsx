@@ -8,25 +8,25 @@ import CorporateImg from "../../../assets/Images/corporate-clients.webp";
 
 const clients = [
   {
-    image: FreightImg,
+    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Freight%20Forwarders.webp",
     title: "Freight Forwarders",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: CargoImg,
+    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Cargo%20Agents.webp",
     title: "Cargo Agents",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: LogisticsImg,
+    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/logistics%20companies.webp",
     title: "Logistics Companies",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: CorporateImg,
+    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/corporate%20clients.webp",
     title: "Corporate Clients",
     description:
       "A backend partner with African expertise & charter access when you need it.",
