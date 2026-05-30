@@ -1,8 +1,8 @@
 import "../HomeSec5/HomeSeec5.css"
-import FreightImg from "../../../assets/Images/freight-forwarders.jpg";
-import CargoImg from "../../../assets/Images/cargo-agents.jpg";
-import LogisticsImg from "../../../assets/Images/logistics-companies.jpg";
-import CorporateImg from "../../../assets/Images/corporate-clients.png";
+import FreightImg from "../../../assets/Images/freight-forwarders.webp";
+import CargoImg from "../../../assets/Images/cargo-agents.webp";
+import LogisticsImg from "../../../assets/Images/logistics-companies.webp";
+import CorporateImg from "../../../assets/Images/corporate-clients.webp";
 
 
 
@@ -47,7 +47,7 @@ function HomeSec5() {
         </h2>
 
         {/* DESCRIPTION */}
-        <p className="contact-subtitle homeSec5-description ">
+        <p className="contact-subtitle homeSec5-description">
           Blueberry Cargo is a trusted provider of cargo and charter logistics
           solutions, built to support businesses with efficiency, reliability,
           and precision. Operating strategically across Madagascar and Ghana,
