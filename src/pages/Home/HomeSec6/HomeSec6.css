@@ -27,7 +27,7 @@
 /* Dark Blue Strip */
 .cta-content-strip {
   background-color: #1e3a5f;
-  background-image: url("../../../assets/Images/cta-containers.webp");
+  background-image: url("https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cta.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
