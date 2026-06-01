@@ -91,7 +91,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-      gap: 10px;
+  gap: 10px;
 }
 
 .airplan-icon {
@@ -397,11 +397,15 @@
   .hero-content button {
     max-width: 220px;
   }
- .hero-content button {
+
+  .hero-content button {
     min-width: 220px;
   }
+
   .explore-btn {
     padding: 10px 22px;
+    font-size: 14px;
+    letter-spacing: 0.5px;
   }
 
   .hero-stat-item {
