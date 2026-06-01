@@ -342,7 +342,7 @@
   .hero-banner {
     height: auto;
     min-height: 100vh;
-    background-image: url("./../../src/assets/banners/hero-banner.jpg");
+    background-image: url("./../../src/assets/banners/hero-banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

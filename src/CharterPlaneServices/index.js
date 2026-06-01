@@ -10,7 +10,7 @@ function CharterPlaneServices() {
   return (
     <>
       <CustomBanner
-        img="/images/about-banner.png"
+        img="/images/Banner-charter.webp"
         title="Charter a Plane Your Rules"
         desc="When standard freight lanes can't deliver on time — put a dedicated aircraft at your command. Full capacity, custom routing, zero compromise across Africa's most critical corridors."
       />

@@ -7,7 +7,7 @@ function ContactUs() {
   return (
     <>
       <CustomBanner
-        img="/images/contact-banner.png"
+        img="/images/contact-banner.webp"
         title="Get In Touch"
         desc="Our team responds within one business day. Whether it's a quote, a question, or an emergency shipment — we're ready."
       />

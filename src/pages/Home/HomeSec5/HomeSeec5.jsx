@@ -1,30 +1,30 @@
 import "../HomeSec5/HomeSeec5.css"
-import FreightImg from "../../../assets/Images/freight-forwarders.webp";
-import CargoImg from "../../../assets/Images/cargo-agents.webp";
-import LogisticsImg from "../../../assets/Images/logistics-companies.webp";
-import CorporateImg from "../../../assets/Images/corporate-clients.webp";
+import FreightImg from "../../../assets/Images/freight-forwarders.png";
+import CargoImg from "../../../assets/Images/cargo-agents.png";
+import LogisticsImg from "../../../assets/Images/logistics-companies.png";
+import CorporateImg from "../../../assets/Images/corporate-clients.png";
 
 const clients = [
   {
-    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Freight%20Forwarders.webp",
+    image: FreightImg,
     title: "Freight Forwarders",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Cargo%20Agents.webp",
+    image: CargoImg,
     title: "Cargo Agents",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/logistics%20companies.webp",
+    image: LogisticsImg,
     title: "Logistics Companies",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/corporate%20clients.webp",
+    image: CorporateImg,
     title: "Corporate Clients",
     description:
       "A backend partner with African expertise & charter access when you need it.",

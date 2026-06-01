@@ -9,7 +9,7 @@ function NetworkSec2() {
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec2-col-left">
                         <div className="NetworkSec2-image-grid">
                             <div className="NetworkSec2-img-tall">
-                                <img src="/images/network2.png" alt="Cargo loading" />
+                                <img src="/images/network2.webp" alt="Cargo loading" />
                             </div>
                         </div>
                     </div>

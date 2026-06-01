@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const servicesData = {
   Cargo: [
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/our%20service/General%20Cargo%20Handling.webp",
+      image: "/images/CargoImg1.webp",
       icon: "/images/general-icon1.svg",
       title: "General Cargo Handling",
       description:
@@ -13,7 +13,7 @@ const servicesData = {
       tags: ["B2B", "Warehousing", "All Cargo Types"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/our%20service/Fright%20Forwarding%20Solutions.webp",
+      image: "/images/CargoImg2.webp",
       icon: "/images/general-icon2.svg",
       title: "Fright Forwarding Solutions",
       description:
@@ -21,7 +21,7 @@ const servicesData = {
       tags: ["Customs", "Global Network", "Import/Export"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/our%20service/logistic%20support.webp",
+      image: "/images/CargoImg3.webp",
       icon: "/images/general-icon3.svg",
       title: "End-to-End Logistics Support",
       description:
@@ -31,7 +31,7 @@ const servicesData = {
   ],
   "Charter Plane": [
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/our%20service/Full%20Aircraft%20Charter.webp",
+      image: "/images/CargoImg4.webp",
       icon: "/images/general-icon1.svg",
       title: "Full Aircraft Charter",
       description:
@@ -39,7 +39,7 @@ const servicesData = {
       tags: ["Dedicated", "Time-Critical", "Oversized"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/our%20service/Part%20Charter%20Solutions.webp",
+      image: "/images/CargoImg5.webp",
       icon: "/images/general-icon2.svg",
       title: "Part Charter Solutions",
       description:
@@ -47,7 +47,7 @@ const servicesData = {
       tags: ["Flexible", "Cost-Effective", "Direct Routes"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/our%20service/Charter%20Coordination.webp",
+      image: "/images/CargoImg6.webp",
       icon: "/images/general-icon3.svg",
       title: "Charter Coordination",
       description:

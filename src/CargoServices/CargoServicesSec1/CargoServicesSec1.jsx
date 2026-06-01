@@ -3,6 +3,8 @@ import { useLocation } from "react-router-dom";
 import "./CargoServicesSec1.css";
 
 import cargoImage from "../../assets/Images/cargo-main.png";
+import charterImage from "../../assets/Images/charter-main.png";
+
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 const TICK_ICON_SRC =
@@ -38,7 +40,7 @@ function CargoServicesSec1() {
           },
         ],
 
-        image: cargoImage,
+        image: charterImage,
 
         title: (
           <>

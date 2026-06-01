@@ -73,7 +73,7 @@ function Network() {
   return (
     <>
       <CustomBanner
-        img="/images/network-banner.png"
+        img="/images/network-banner.webp"
         title="Our Operational Network"
         desc="Africa's critical cargo corridors, covered"
       />

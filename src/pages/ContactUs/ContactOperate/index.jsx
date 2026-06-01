@@ -51,9 +51,16 @@ const ContactOperate = () => {
 
         <div className="operate-wrapper">
           {/* LEFT IMAGE */}
-          <div className="operate-image">
-            <img src="/images/contractmap.png" alt="Africa logistics" />
-          </div>
+       <div className="operate-image">
+  <img
+    src={
+      location.pathname === "/network"
+        ? "/images/network-map.png"
+        : "/images/contractmap.png"
+    }
+    alt="Africa logistics"
+  />
+</div>
 
           {/* RIGHT CARDS */}
           <div className="operate-cards">

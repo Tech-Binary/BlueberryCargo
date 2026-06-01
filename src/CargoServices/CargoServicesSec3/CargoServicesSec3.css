@@ -98,7 +98,7 @@
     font-weight: 400;
 }
 .cargocta-content-strip{
-    background-image: url("https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/cta-new-banner.png");
+    background-image: url("../../assets/Images/cta-containers.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

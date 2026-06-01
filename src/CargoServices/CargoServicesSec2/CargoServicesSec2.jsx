@@ -7,6 +7,10 @@ import CargoImg1 from "../../assets/Images/cargo-service-1.jpg";
 import CargoImg2 from "../../assets/Images/cargo-service-2.jpg";
 import CargoImg3 from "../../assets/Images/cargo-service-3.jpg";
 
+import CharterImg1 from "../../assets/Images/charter-service-1.jpg";
+import CharterImg2 from "../../assets/Images/charter-service-2.jpg";
+import CharterImg3 from "../../assets/Images/charter-service-3.jpg";
+
 // Icons
 import Icon1 from "../../assets/Icons/bulk-icon.png";
 import Icon2 from "../../assets/Icons/warehouse-icon.png";
@@ -44,7 +48,7 @@ function CargoServicesSec2() {
       description:
         "Exclusive access to purpose-configured freighter aircraft — on your schedule, to your destination. Whether a one-time lift or a recurring dedicated route, we match the right aircraft to your cargo specifications and get it moving without delay.",
 
-      image: CargoImg1,
+      image: CharterImg1,
 
       stats: [
         {
@@ -91,7 +95,7 @@ function CargoServicesSec2() {
       description:
         "When every hour matters, our time-critical cargo operations cut through delays and get your freight moving fast. From emergency AOG parts to perishable produce and life-saving medical supplies — we treat every urgent shipment as our highest priority.",
 
-      image: CargoImg2,
+      image: CharterImg2,
       reverse: true,
 
       stats: [
@@ -139,7 +143,7 @@ function CargoServicesSec2() {
       description:
         "No two operations are the same. We design bespoke logistics programs built around your cargo type, route constraints, regulatory environment, and commercial timelines.",
 
-      image: CargoImg3,
+      image: CharterImg3,
 
       stats: [
         {
