@@ -68,10 +68,7 @@
 .homeSec5-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to top,
-      rgba(0, 0, 0, 0.88) 8%,
-      rgba(0, 0, 0, 0.45) 45%,
-      rgba(0, 0, 0, 0.05) 100%);
+background: linear-gradient(179.33deg, rgba(0, 0, 0, 0) 62.47%, rgba(0, 0, 0, 0.72) 91.29%);
 }
 
 /* CONTENT */
@@ -105,11 +102,11 @@
 
 /* TEXT */
 .homeSec5-content p {
-  font-size: 17px;
-  line-height: 23px;
-  font-weight: 600;
-  color: #FFBE55;
-  margin: 0;
+    font-size: 17px;
+    line-height: 23px;
+    font-weight: 500;
+    color: #FFBE55;
+    margin: 0;
 }
 
 /* =========================

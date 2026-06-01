@@ -26,17 +26,17 @@ const hubs = [
 
     stats: [
       {
-        icon: RouteIcon,
+        icon: "/images/op-icon1.svg",
         value: "32+",
         label: "Routes",
       },
       {
-        icon: CapacityIcon,
+        icon: "/images/op-icon2.svg",
         value: "850T",
         label: "Capacity",
       },
       {
-        icon: PartnerIcon,
+        icon: "/images/op-icon3.svg",
         value: "120+",
         label: "Partners",
       },
@@ -61,17 +61,17 @@ const hubs = [
 
     stats: [
       {
-        icon: RouteIcon,
+        icon: "/images/op-icon1.svg",
         value: "18+",
         label: "Routes",
       },
       {
-        icon: CapacityIcon,
+        icon: "/images/op-icon2.svg",
         value: "420T",
         label: "Capacity",
       },
       {
-        icon: PartnerIcon,
+        icon: "/images/op-icon3.svg",
         value: "65+",
         label: "Partners",
       },

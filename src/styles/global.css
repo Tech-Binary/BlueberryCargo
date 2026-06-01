@@ -61,14 +61,13 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, span {
   font-family: "Myriad";
   font-weight: 700;
   margin-bottom: 0;
 }
 
 p,
-span,
 li,
 a,
 button,
@@ -89,20 +88,21 @@ textarea {
   font-size: 40px;
   line-height: 50px;
   color: var(--secondary-color);
-  font-weight: 500;
+     font-weight: 600;
   gap: 12px;
 }
 
 .span-class {
-  font-size: 40px;
-  line-height: 50px;
-  color: #E9892C;
-  font-weight: 700;
+    font-size: 40px;
+    line-height: 50px;
+    color: #E9892C;
+    font-weight: 900;
 }
 
 .common-btn {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important;
+      letter-spacing: 1px;
   border: none;
   padding: 12px 24px;
   border-radius: 30px;
@@ -113,7 +113,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px;
+      gap: 10px;
 }
 
 .common-btn:hover {
@@ -183,7 +183,8 @@ ul {
   .section-title {
     font-size: 31px;
   }
-  .span-class{
+
+  .span-class {
     font-size: 31px;
 
   }
@@ -197,6 +198,7 @@ ul {
   .section-title {
     font-size: 34px;
   }
+
   .span-class {
     font-size: 34px;
   }
@@ -204,17 +206,19 @@ ul {
 
 @media (max-width: 900px) {
   .section-padding {
-    padding: 50px 0;
+    padding: 40px 0;
   }
 
- .span-class {
-         font-size: 28px;
-        line-height: normal;
+  .span-class {
+    font-size: 28px;
+    line-height: normal;
   }
-    .section-title {
-              font-size: 28px;
-        line-height: normal;
-    }
+
+  .section-title {
+    font-size: 28px;
+    line-height: normal;
+  }
+
   .slick-dots {
     bottom: -20px;
   }
@@ -227,6 +231,6 @@ ul {
 
 @media (max-width: 700px) {
   .section-padding {
-    padding: 30px 0;
+    padding: 20px 20px !important;
   }
 }
