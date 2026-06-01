@@ -4,8 +4,6 @@ import CargoImg from "../../../assets/Images/cargo-agents.webp";
 import LogisticsImg from "../../../assets/Images/logistics-companies.webp";
 import CorporateImg from "../../../assets/Images/corporate-clients.webp";
 
-
-
 const clients = [
   {
     image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Freight%20Forwarders.webp",

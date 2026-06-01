@@ -42,12 +42,13 @@
   font-weight: 600 !important;
   padding-left: 0px !important;
   padding-right: 0px !important;
-  margin: 0 14px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  letter-spacing: 0.5px;
+      margin: 0 20px;
+    letter-spacing: 0.5px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    letter-spacing: 1px;
   text-decoration: none;
 }
 

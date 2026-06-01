@@ -59,15 +59,14 @@
 }
 
 .content-card h3 {
-    font-size: 20px;
+     font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
     color: #111928;
-
 }
 
 .content-card p {
-    color: #000000;
+       color: #22252B;
 }
 
 /* ========================= */

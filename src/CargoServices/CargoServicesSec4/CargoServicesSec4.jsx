@@ -95,7 +95,7 @@ const standardCargoData = {
     },
   ],
 
-  statsLabel: "FULL SPECTRUM\nFREIGHT SOLUTIONS",
+  statsLabel: "When Speed Is Non-Negotiable",
 
   stats: [
     { number: "50K+", text: "Tons/Year" },

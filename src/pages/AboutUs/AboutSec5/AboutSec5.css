@@ -39,8 +39,9 @@
 
 /* ROLE */
 .role2 {
-  font-size: 12px;
-  color: #E69C24;
+      font-size: 14px;
+    letter-spacing: 0.5px;
+    color: #E9892C;
   text-transform: uppercase;
 }
 
@@ -56,16 +57,16 @@
 .rating {
   color: #111;
   margin-left: 8px;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 /* TEXT */
 .testimonial-text {
   margin-top: 15px;
-  color: #6B7280;
+  color: #060606;
   font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 0;
+  margin-bottom: 0;    opacity: 0.7;
 }
 
 /* SLIDE SPACING */
