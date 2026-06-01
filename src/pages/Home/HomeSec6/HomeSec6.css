@@ -6,7 +6,8 @@
 }
 .cta-section {
   width: 100%;
-  overflow: hidden;
+  position: relative;
+
 }
 
 /* Top Banner Image */
@@ -25,8 +26,10 @@
 }
 
 /* Dark Blue Strip */
+/* Dark Blue Strip */
 .cta-content-strip {
-  background-image: url("https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/cta-new-banner.png");
+  background-color: #1e3a5f;
+  background-image: url("../../../assets/Images/cta-containers.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
