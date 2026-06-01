@@ -6,15 +6,18 @@ function AboutSec2() {
 
     const content = {
         vision: {
+            img: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/about2-vision.webp",
             title:
                 "To Be Africa's Most Trusted Specialized Cargo Partner — Connecting Critical Markets Others Overlook",
             desc: `We see a future where African trade corridors are served with the same precision and reliability as any global logistics route. Blueberry Cargo exists to bridge that gap — building infrastructure, relationships, and capability that makes African freight seamless.`,
         },
         mission: {
+            img: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/about2-mission.webp",
             title: "Our Mission",
             desc: "To deliver dependable and specialized cargo solutions across Africa with precision, accountability, and deep regional expertise.",
         },
         values: {
+            img: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/about2-value.webp",
             title: "Our Values",
             desc: "Integrity, reliability, and commitment to excellence drive everything we do in connecting Africa’s critical markets.",
         },
@@ -61,7 +64,7 @@ function AboutSec2() {
                 </div>
 
                 {/* RIGHT CONTENT */}
-                <div className="AboutSec2-content">
+                <div className="AboutSec2-content" style={{ backgroundImage: `url(${content[activeTab].img})` }}>
                     <div className="content-card">
                         <h3>{content[activeTab].title}</h3>
                         <p>{content[activeTab].desc}</p>
