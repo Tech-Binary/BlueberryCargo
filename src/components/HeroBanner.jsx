@@ -1,4 +1,4 @@
-import heroImage from "../assets/banners/hero-banner.jpg";
+import heroImage from "../assets/banners/hero-banner.png";
 import AirPlane from "../assets/Icons/Airplan-icon.png";
 import "../styles/HeroBanner.css";
 import { HiArrowNarrowRight } from "react-icons/hi";
@@ -82,7 +82,7 @@ function HeroBanner() {
               <div className="hero-stats">
 
                 <div className="hero-stat-item">
-                  <img src="/images/home2-icon1.svg" alt="" />
+                  <img src="/images/home2-icon1.png" alt="" />
                   <div>
                     <h3>10+</h3>
                     <p>Years of Excellence</p>
@@ -92,7 +92,7 @@ function HeroBanner() {
                 <div className="hero-stat-divider"></div>
 
                 <div className="hero-stat-item">
-                  <img src="/images/home2-icon2.svg" alt="" />
+                  <img src="/images/home2-icon2.png" alt="" />
                   <div>
                     <h3>50+</h3>
                     <p>Global Destinations</p>
@@ -102,7 +102,7 @@ function HeroBanner() {
                 <div className="hero-stat-divider"></div>
 
                 <div className="hero-stat-item">
-                  <img src="/images/home2-icon3.svg" alt="" />
+                  <img src="/images/home2-icon3.png" alt="" />
                   <div>
                     <h3>24/7</h3>
                     <p>Support & Tracking</p>

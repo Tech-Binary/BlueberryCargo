@@ -77,16 +77,17 @@
   overflow: hidden;
   position: relative;
   color: white;
+
 }
 
 .why-choose-section .container {
-  position: relative;
-  z-index: 2;
-  background: linear-gradient(135deg, #0f2f63 0%, #1e5b89 100%);
+  background-image: url("../../../assets/Images/homesec3bgimg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-radius: 30px;
   padding: 40px;
 }
-
 .why-choose-title {
   color: #fff;
   font-size: 58px;
