@@ -113,7 +113,7 @@
 
 .homeSec4-desc {
   font-size: 16px;
-  font-weight: 600;
+      font-weight: 500;
   line-height: 19.72px;
   color: #19325C;
   margin-bottom: 34px;
@@ -148,18 +148,21 @@ color: #060606;
   width: 40px;
   height: 40px;
   object-fit: contain;
-  margin: 0 auto 4px;
+     margin: 0 auto 10px;
   display: block;
 }
 .homeSec4-stat-card h4 {
-  font-size: 20px;
-  font-weight: 700;
-  color: #111827;
+    font-size: 22px;
+    font-weight: 700;
+    color: #111827;
+    margin-bottom: -5px;
 }
 
 .homeSec4-stat-card span {
-  font-size: 16px;
-  color: #000000;
+     font-size: 16px;
+    color: #000000;
+    opacity: 0.6;
+    font-weight: 500;
 }
 
 /* =========================
@@ -313,4 +316,13 @@ color: #060606;
     width: 38px;
     height: 38px;
   }
+}
+
+@media(max-width: 600px){
+      .homeSec4 {
+        padding: 20px 0;
+    }
+    .homesec-4-title {
+    margin-bottom: 15px;
+}
 }

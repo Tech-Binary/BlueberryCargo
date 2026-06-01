@@ -253,8 +253,8 @@
   height: 100%;
   object-fit: cover;
   display: block;
-  border-radius: 30px;
-  min-height: 520px;
+  /* border-radius: 30px;
+  min-height: 520px; */
 }
 
 /* ==============================
@@ -268,19 +268,18 @@
   right: 0;
   display: flex;
   align-items: center;
-  padding: 22px 26px;
+     padding: 47px 48px;
   gap: 0;
 }
 
 .charter-overlay-label {
-  color: #ffffff;
-  font-size: 14px;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  line-height: 1.4;
-  white-space: nowrap;
-  flex-shrink: 0;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 300;
+    width: 23%;
+    /* text-transform: uppercase; */
+    letter-spacing: 0.04em;
+    line-height: 1.4;
 }
 
 .charter-overlay-divider {

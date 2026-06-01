@@ -9,7 +9,7 @@ function NetworkSec2() {
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec2-col-left">
                         <div className="NetworkSec2-image-grid">
                             <div className="NetworkSec2-img-tall">
-                                <img src="/images/network2.png" alt="Cargo loading" />
+                                <img src="/images/network2.webp" alt="Cargo loading" />
                             </div>
                         </div>
                     </div>
@@ -18,7 +18,7 @@ function NetworkSec2() {
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec2-col-right">
                         <div className="NetworkSec2-content">
                               <h2 className="section-title">
-                                <span className="span-class">Ghana</span>  operations
+                                <span className="span-class">Ghana</span>  Operations
                             </h2>
                             <p className="NetworkSec2-description">
                                 Ghana is one of West Africa's most stable and accessible logistics markets — a natural hub for freight connecting the Gulf of Guinea to international trade corridors. Our Ghana operations provide freight forwarders and cargo agents with a reliable, knowledgeable ground partner.

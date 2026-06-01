@@ -82,7 +82,6 @@ function HomeSec2() {
 
         {/* Tabs Row */}
         <div className="services-tabs-row">
-          <div className="service-tabs-main">
             <div className="services-tabs">
               {tabs.map((tab) => (
                 <button
@@ -94,7 +93,6 @@ function HomeSec2() {
                 </button>
               ))}
             </div>
-          </div>
 
           <a
             href={activeTab === "Cargo" ? "cargo-services" : "/charter-plane-services"}

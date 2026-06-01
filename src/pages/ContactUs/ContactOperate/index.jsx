@@ -19,17 +19,17 @@ const stats = [
   {
     number: "32+",
     label: "Routes",
-    icon: "/images/contacticon1.svg",
+    icon: "/images/op-icon1.svg",
   },
   {
     number: "850T",
     label: "Capacity",
-    icon: "/images/contacticon2.svg",
+    icon: "/images/op-icon2.svg",
   },
   {
     number: "120+",
     label: "Partners",
-    icon: "/images/contacticon3.svg",
+    icon: "/images/op-icon3.svg",
   },
 ];
 
@@ -44,16 +44,23 @@ const ContactOperate = () => {
             <span className="span-class">Empowering </span> Businesses Across <span className="span-class"> Industries</span>
           </h2>
 
-          <p>
+          <p className="mb-4">
             Two active African markets with on-ground teams, established
             partners, and full cargo & charter capability.
           </p>
 
         <div className="operate-wrapper">
           {/* LEFT IMAGE */}
-          <div className="operate-image">
-            <img src="/images/contractmap.png" alt="Africa logistics" />
-          </div>
+       <div className="operate-image">
+  <img
+    src={
+      location.pathname === "/network"
+        ? "/images/network-map.png"
+        : "/images/contractmap.png"
+    }
+    alt="Africa logistics"
+  />
+</div>
 
           {/* RIGHT CARDS */}
           <div className="operate-cards">

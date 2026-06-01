@@ -28,7 +28,6 @@
   height: 65px;
   border-radius: 50%;
   background-color: #285D80;
-  border-radius: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,7 +80,7 @@
 }
 
 .AboutSec3-card-icon-wrap img {
-  width: 30px;
+     width: 40px;
   height: auto;
   object-fit: contain;
 }
@@ -89,18 +88,19 @@
 .AboutSec3-card-title {
   font-family: "Myriad", sans-serif;
   font-size: 20px;
-  font-weight: 900;
+     font-weight: 700;
   color: #121212;
-  margin-bottom: 10px;
+     margin-bottom: 2px;
   line-height: 1.4;
 }
 
 .AboutSec3-card-description {
-  font-size: 15px;
-  color: #6B7280;
-  line-height: 1.2;
-  font-weight: 400;
-  margin: 0;
+     font-size: 15px;
+    color: #060606;
+    line-height: 1.5;
+    font-weight: 400;
+    margin: 0;
+    opacity: 0.8;
 }
 
 /* =========================

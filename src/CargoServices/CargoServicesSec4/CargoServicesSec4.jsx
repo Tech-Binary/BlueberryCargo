@@ -5,10 +5,10 @@ import { useLocation } from "react-router-dom";
 import "../CargoServicesSec4/CargoServicesSec4.css";
 
 // DEFAULT IMAGE
-import CharterImg from "../../assets/Images/charter-plane.png";
+import CargoImg from "../../assets/Images/charter-plane.jpg";
 
 // OPTIONAL FUTURE IMAGE
-import CargoImg from "../../assets/Images/charter-plane.png";
+import CharterImg from "../../assets/Images/chargo-plane.webp";
 
 // Icons
 import Icon1 from "../../assets/Icons/bulk-icon.png";
@@ -95,7 +95,7 @@ const standardCargoData = {
     },
   ],
 
-  statsLabel: "FULL SPECTRUM\nFREIGHT SOLUTIONS",
+  statsLabel: "When Speed Is Non-Negotiable",
 
   stats: [
     { number: "50K+", text: "Tons/Year" },

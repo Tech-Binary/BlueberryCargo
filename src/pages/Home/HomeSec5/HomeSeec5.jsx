@@ -1,10 +1,8 @@
 import "../HomeSec5/HomeSeec5.css"
-import FreightImg from "../../../assets/Images/freight-forwarders.webp";
-import CargoImg from "../../../assets/Images/cargo-agents.webp";
-import LogisticsImg from "../../../assets/Images/logistics-companies.webp";
-import CorporateImg from "../../../assets/Images/corporate-clients.webp";
-
-
+import FreightImg from "../../../assets/Images/freight-forwarders.png";
+import CargoImg from "../../../assets/Images/cargo-agents.png";
+import LogisticsImg from "../../../assets/Images/logistics-companies.png";
+import CorporateImg from "../../../assets/Images/corporate-clients.png";
 
 const clients = [
   {

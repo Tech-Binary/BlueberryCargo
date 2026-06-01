@@ -8,7 +8,7 @@ function NetworkSec1() {
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec1-col-left">
                         <div className="NetworkSec1-content">
                             <h2 className="section-title">
-                                <span className="span-class">Madagascar</span>  operations
+                                <span className="span-class">Madagascar</span>  Operations
                             </h2>
                             <p className="NetworkSec1-description">
                                 Madagascar sits at one of the Indian Ocean's most strategically significant logistics positions — yet it remains underserved by global carriers. Blueberry Cargo has built genuine on-ground capability here, with established relationships across aviation, port, and customs operations.
@@ -43,7 +43,7 @@ function NetworkSec1() {
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec1-col-right">
                         <div className="NetworkSec1-image-grid">
                             <div className="NetworkSec1-img-tall">
-                                <img src="/images/network1.png" alt="Cargo loading" />
+                                <img src="/images/network1.webp" alt="Cargo loading" />
                             </div>
                         </div>
                     </div>

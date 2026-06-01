@@ -132,9 +132,10 @@
 }
 
 .why-card-description {
-  color: white;
-  font-size: 13px;
-  line-height: 21.05px;
+     color: #ffffff;
+    font-size: 14px;
+    line-height: 21.05px;
+    opacity: 0.8;
 }
 
 /* =========================
