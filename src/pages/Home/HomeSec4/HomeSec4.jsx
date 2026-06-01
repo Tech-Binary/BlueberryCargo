@@ -10,8 +10,8 @@ import RouteIcon from "../../../assets/Icons/routes-icon.svg";
 import CapacityIcon from "../../../assets/Icons/capacity-icon.svg";
 import PartnerIcon from "../../../assets/Icons/partners-icon.svg";
 
-import GhanaPin from "../../../assets/Icons/loca-ghanna.svg";
-import MadagascarPin from "../../../assets/Icons/loca-madaga.svg";
+import GhanaPin from "../../../assets/Icons/loca-madaga.svg";
+import MadagascarPin from "../../../assets/Icons/loca-ghanna.svg";
 
 const hubs = [
   {
