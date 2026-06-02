@@ -4,7 +4,7 @@ import "./CustomBanner.css";
 function CustomBanner({img, title, desc}) {
     return (
         <section className="CustomBanner-banner" 
-        style={{backgroundImage: `linear-gradient(90deg, #1A1A1A -50%, rgba(26, 26, 26, 0.3) 100%), url(${img})`}}
+        style={{backgroundImage: `linear-gradient(90deg, rgba(26, 26, 26, 0.84) 0%, rgba(26, 26, 26, 0.252) 100%), url(${img})`}}
         >
             {/* Overlay Content */}
             <div className="CustomBanner-overlay">

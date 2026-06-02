@@ -1,11 +1,9 @@
 .CustomBanner-banner {
-    position: relative;
+       position: relative;
     width: 100%;
-    min-height: 64vh;
+    min-height: 85vh;
     overflow: hidden;
-
     background-size: cover;
-    /* shows full image */
     background-position: center;
     background-repeat: no-repeat;
 

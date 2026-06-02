@@ -61,7 +61,8 @@ h2,
 h3,
 h4,
 h5,
-h6, span {
+h6,
+span {
   font-family: "Myriad";
   font-weight: 700;
   margin-bottom: 0;
@@ -88,21 +89,26 @@ textarea {
   font-size: 40px;
   line-height: 50px;
   color: var(--secondary-color);
-     font-weight: 600;
+  font-weight: 600;
+  margin-bottom: 10px;
   gap: 12px;
 }
-
+.section-desc {
+    color: var(--text-color);
+    font-size: 17px;
+    margin-bottom: 0;
+}
 .span-class {
-    font-size: 40px;
-    line-height: 50px;
-    color: #E9892C;
-    font-weight: 900;
+  font-size: 40px;
+  line-height: 50px;
+  color: #E9892C;
+  font-weight: 900;
 }
 
 .common-btn {
   background-color: var(--primary-color) !important;
   color: var(--white-color) !important;
-      letter-spacing: 1px;
+  letter-spacing: 1px;
   border: none;
   padding: 12px 24px;
   border-radius: 30px;
@@ -113,7 +119,7 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
-      gap: 10px;
+  gap: 10px;
 }
 
 .common-btn:hover {
