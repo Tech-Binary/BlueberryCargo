@@ -43,7 +43,7 @@ function NetworkSec1() {
                     <div className="col-lg-6 col-md-12 mt-0 NetworkSec1-col-right">
                         <div className="NetworkSec1-image-grid">
                             <div className="NetworkSec1-img-tall">
-                                <img src="/images/network1.webp" alt="Cargo loading" />
+                                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/network-img1.webp" alt="Cargo loading" />
                             </div>
                         </div>
                     </div>
