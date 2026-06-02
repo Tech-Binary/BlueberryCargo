@@ -45,7 +45,7 @@ function HomeSec5() {
         </h2>
 
         {/* DESCRIPTION */}
-        <p className="contact-subtitle homeSec5-description">
+        <p className="contact-subtitle section-desc">
           Blueberry Cargo is a trusted provider of cargo and charter logistics
           solutions, built to support businesses with efficiency, reliability,
           and precision. Operating strategically across Madagascar and Ghana,

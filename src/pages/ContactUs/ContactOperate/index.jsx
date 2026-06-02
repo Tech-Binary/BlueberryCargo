@@ -44,7 +44,7 @@ const ContactOperate = () => {
           Empowering Businesses <span className="span-class"> Across Industries</span>
         </h2>
 
-        <p className="mb-4">
+        <p className=" section-desc mb-4">
           Two active African markets with on-ground teams, established
           partners, and full cargo & charter capability.
         </p>
