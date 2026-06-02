@@ -73,7 +73,7 @@ function Network() {
   return (
     <>
       <CustomBanner
-        img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/network-banner.webp"
+        img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/banners/Network%20Hero%20section.webp"
         title="Our Operational Network"
         desc="Africa's critical cargo corridors, covered"
       />

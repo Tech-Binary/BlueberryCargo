@@ -11,7 +11,7 @@ function AboutSec1() {
           <div className="col-lg-6 col-md-12 p-0 mt-0">
             <div className="AboutSec1-image-grid">
               <div className="AboutSec1-img-tall">
-                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/Who%20We%20Are.webp" alt="Cargo loading" />
+                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Group%201561300708.png" alt="Cargo loading" />
               </div>
             </div>
           </div>

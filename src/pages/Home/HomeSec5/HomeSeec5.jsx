@@ -6,25 +6,24 @@ import CorporateImg from "../../../assets/Images/corporate-clients.png";
 
 const clients = [
   {
-    image: FreightImg,
+    image: CorporateImg,
     title: "Freight Forwarders",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: CargoImg,
+     image: FreightImg,
     title: "Cargo Agents",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-    image: LogisticsImg,
+    image: CargoImg,
     title: "Logistics Companies",
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
-  {
-    image: CorporateImg,
+  {image: LogisticsImg,
     title: "Corporate Clients",
     description:
       "A backend partner with African expertise & charter access when you need it.",

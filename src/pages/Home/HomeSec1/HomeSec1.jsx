@@ -28,7 +28,7 @@ function HomeSec1() {
               </div>
 
               {/* HEADING */}
-              <h2 className="section-title">
+              <h2 className="section-title mb-0">
                 Delivering <span className="span-class">Trust.</span>
               </h2>
 

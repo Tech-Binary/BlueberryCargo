@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const servicesData = {
   Cargo: [
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home1.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%207.png",
       icon: "/images/general-icon1.svg",
       title: "General Cargo Handling",
       description:
@@ -13,7 +13,7 @@ const servicesData = {
       tags: ["B2B", "Warehousing", "All Cargo Types"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home2.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%209.png",
       icon: "/images/general-icon2.svg",
       title: "Fright Forwarding Solutions",
       description:
@@ -21,7 +21,7 @@ const servicesData = {
       tags: ["Customs", "Global Network", "Import/Export"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home3.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%2011.png",
       icon: "/images/general-icon3.svg",
       title: "End-to-End Logistics Support",
       description:
