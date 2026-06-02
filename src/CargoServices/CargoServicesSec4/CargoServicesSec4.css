@@ -270,8 +270,8 @@
   right: 0;
   display: flex;
   align-items: center;
-      justify-content: space-between;
-  padding: 47px 48px;
+  justify-content: space-between;
+  padding: 35px 48px;
   gap: 0;
 }
 
@@ -286,16 +286,16 @@
 }
 
 .charter-overlay-divider {
-     width: 1px;
-    height: 32px;
-    background: #ffffff;
+  width: 1px;
+  height: 32px;
+  background: #ffffff;
 }
 
 .charter-overlay-stat {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  align-items: center;
 }
 
 .charter-stat-number {
@@ -314,10 +314,10 @@
 }
 
 .charter-overlay-sep {
-    width: 1px;
-    height: 32px;
-    background: #FFFFFF;
-    flex-shrink: 0;
+  width: 1px;
+  height: 32px;
+  background: #FFFFFF;
+  flex-shrink: 0;
 }
 
 .cps-feature-item p {

@@ -95,7 +95,7 @@ function ContactForm() {
       className={
         isContactPage
           ? "contact-section section-padding"
-          : "contact-section section-padding pt-0"
+          : "contact-section section-padding"
       }
     >
       <div className="container">
@@ -107,7 +107,7 @@ function ContactForm() {
                 Let's Move Your <span className="span-class"> Cargo, Together</span>
               </h2>
 
-              <p className="contact-subtitle">
+              <p className="section-desc mb-4">
                 Our logistics specialists will respond within one business day
                 to discuss your shipment, charter or supply-chain program.
               </p>

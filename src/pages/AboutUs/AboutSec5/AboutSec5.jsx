@@ -103,7 +103,7 @@ function AboutSec5() {
           <h2 className="section-title">
             What <span className="span-class">Clients</span> Say{" "}
           </h2>
-          <p>Trusted by freight professionals</p>
+          <p className="section-desc mb-4">Trusted by freight professionals</p>
         </div>
 
         {/* Slider */}

@@ -27,7 +27,7 @@ function AboutSec3({ data, title, desc, newClass, marginClass , tag}) {
           <h2 className="section-title">
             {firstPart} <span className="span-class">{secondPart}</span>
           </h2>
-          <p className="AboutSec3-choose-description">
+          <p className="section-desc">
             {desc ||
               "Our operational standards and industry affiliations that give clients confidence in every shipment."}
           </p>

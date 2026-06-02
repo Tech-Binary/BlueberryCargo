@@ -12,7 +12,7 @@ const clients = [
       "A backend partner with African expertise & charter access when you need it.",
   },
   {
-     image: FreightImg,
+    image: "/images/home-new-img.png",
     title: "Cargo Agents",
     description:
       "A backend partner with African expertise & charter access when you need it.",
@@ -23,7 +23,8 @@ const clients = [
     description:
       "A backend partner with African expertise & charter access when you need it.",
   },
-  {image: LogisticsImg,
+  {
+    image: LogisticsImg,
     title: "Corporate Clients",
     description:
       "A backend partner with African expertise & charter access when you need it.",
@@ -44,7 +45,7 @@ function HomeSec5() {
         </h2>
 
         {/* DESCRIPTION */}
-        <p className="contact-subtitle homeSec5-description">
+        <p className="section-desc">
           Blueberry Cargo is a trusted provider of cargo and charter logistics
           solutions, built to support businesses with efficiency, reliability,
           and precision. Operating strategically across Madagascar and Ghana,
