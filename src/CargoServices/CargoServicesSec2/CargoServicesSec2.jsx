@@ -12,20 +12,20 @@ import CharterImg2 from "../../assets/Images/charter-service-2.jpg";
 import CharterImg3 from "../../assets/Images/charter-service-3.jpg";
 
 // Icons
-import Icon1 from "../../assets/Icons/bulk-icon.png";
-import Icon2 from "../../assets/Icons/warehouse-icon.png";
-import Icon3 from "../../assets/Icons/aircargo-icon.png";
-import Icon4 from "../../assets/Icons/doc-icon.png";
+import Icon1 from "../../assets/ServicesIcon/charterIcon1.svg";
+import Icon2 from "../../assets/ServicesIcon/charterIcon2.png";
+import Icon3 from "../../assets/ServicesIcon/charterIcon3.png";
+import Icon4 from "../../assets/ServicesIcon/charterIcon4.png";
 
-import Icon5 from "../../assets/Icons/bulk-icon.png";
-import Icon6 from "../../assets/Icons/warehouse-icon.png";
-import Icon7 from "../../assets/Icons/aircargo-icon.png";
-import Icon8 from "../../assets/Icons/doc-icon.png";
+import Icon5 from "../../assets/ServicesIcon/charterIcon5.png";
+import Icon6 from "../../assets/ServicesIcon/charterIcon6.png";
+import Icon7 from "../../assets/ServicesIcon/charterIcon7.png";
+import Icon8 from "../../assets/ServicesIcon/charterIcon8.png";
 
-import Icon9 from "../../assets/Icons/bulk-icon.png";
-import Icon10 from "../../assets/Icons/warehouse-icon.png";
-import Icon11 from "../../assets/Icons/aircargo-icon.png";
-import Icon12 from "../../assets/Icons/doc-icon.png";
+import Icon9 from "../../assets/ServicesIcon/charterIcon9.png";
+import Icon10 from "../../assets/ServicesIcon/charterIcon10.png";
+import Icon11 from "../../assets/ServicesIcon/charterIcon11.png";
+import Icon12 from "../../assets/ServicesIcon/charterIcon12.png";
 
 function CargoServicesSec2() {
   const location = useLocation();
