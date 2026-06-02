@@ -136,6 +136,12 @@
   color: var(--primary-color);
 }
 
+@media (max-width: 1200px){
+.custom-nav-link {
+    font-size: 15px !important;
+    margin: 0 8px;
+}
+}
 /* Mobile */
 
 @media (max-width: 991px) {
