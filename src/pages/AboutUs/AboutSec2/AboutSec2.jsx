@@ -6,7 +6,7 @@ function AboutSec2() {
 
     const content = {
         vision: {
-            img: "/images/OurVission.png",
+            img: "/images/OurVision.png",
             title:
                 "To Be Africa's Most Trusted Specialized Cargo Partner — Connecting Critical Markets Others Overlook",
             desc: `We see a future where African trade corridors are served with the same precision and reliability as any global logistics route. Blueberry Cargo exists to bridge that gap — building infrastructure, relationships, and capability that makes African freight seamless.`,
@@ -17,7 +17,7 @@ function AboutSec2() {
             desc: "To deliver dependable and specialized cargo solutions across Africa with precision, accountability, and deep regional expertise.",
         },
         values: {
-            img: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/about2-value.webp",
+            img: "/images/OurValues.png",
             title: "Our Values",
             desc: "Integrity, reliability, and commitment to excellence drive everything we do in connecting Africa’s critical markets.",
         },
