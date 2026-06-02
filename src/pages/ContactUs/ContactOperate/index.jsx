@@ -56,7 +56,7 @@ const ContactOperate = () => {
     src={
       location.pathname === "/network"
         ? "/images/network-map.png"
-        : "/images/contractmap.png"
+        : "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Rectangle%2034625325.png"
     }
     alt="Africa logistics"
   />
