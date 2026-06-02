@@ -28,7 +28,7 @@ const charterSectionData = {
   description:
     "When cargo timelines are critical or standard freight routes won't cut it — our Charter Plane service puts a dedicated aircraft at your disposal. Full flexibility, total control, zero compromise.",
 
-  image: CharterImg,
+  image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/cargo-img.webp",
 
   cards: [
     {
