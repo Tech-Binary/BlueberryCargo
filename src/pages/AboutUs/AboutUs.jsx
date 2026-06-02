@@ -35,7 +35,7 @@ function AboutUs() {
 
   return (
     <>
-      <CustomBanner img="/images/AboutUs-Banner.png" title="About Us" desc="Built to move Africa's most critical cargo" />
+      <CustomBanner img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/About%20Us.png" title="About Us" desc="Built to move Africa's most critical cargo" />
       <AboutSec1 />
       <AboutSec2 />
       <HomeSec3 />
