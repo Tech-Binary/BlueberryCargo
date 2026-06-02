@@ -74,7 +74,7 @@ function HomeSec2() {
           <h2 className="section-title">
             Smart <span className="span-class"> Logistic. </span> Seamless <span className="span-class"> Deliveries. </span>
           </h2>
-          <p className="services-description">
+          <p className="section-desc">
             From air cargo to charter solutions, we deliver efficient, secure,
             and scalable logistics tailored to your business needs.
           </p>
