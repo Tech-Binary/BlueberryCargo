@@ -12,20 +12,35 @@ import CharterImg2 from "../../assets/Images/charter-service-2.jpg";
 import CharterImg3 from "../../assets/Images/charter-service-3.jpg";
 
 // Icons
-import Icon1 from "../../assets/Icons/bulk-icon.png";
-import Icon2 from "../../assets/Icons/warehouse-icon.png";
-import Icon3 from "../../assets/Icons/aircargo-icon.png";
-import Icon4 from "../../assets/Icons/doc-icon.png";
+import Icon1 from "../../assets/ServicesIcon/charterIcon1.svg";
+import Icon2 from "../../assets/ServicesIcon/charterIcon2.png";
+import Icon3 from "../../assets/ServicesIcon/charterIcon3.png";
+import Icon4 from "../../assets/ServicesIcon/charterIcon4.png";
 
-import Icon5 from "../../assets/Icons/bulk-icon.png";
-import Icon6 from "../../assets/Icons/warehouse-icon.png";
-import Icon7 from "../../assets/Icons/aircargo-icon.png";
-import Icon8 from "../../assets/Icons/doc-icon.png";
+import Icon5 from "../../assets/ServicesIcon/charterIcon5.png";
+import Icon6 from "../../assets/ServicesIcon/charterIcon6.png";
+import Icon7 from "../../assets/ServicesIcon/charterIcon7.png";
+import Icon8 from "../../assets/ServicesIcon/charterIcon8.png";
 
-import Icon9 from "../../assets/Icons/bulk-icon.png";
-import Icon10 from "../../assets/Icons/warehouse-icon.png";
-import Icon11 from "../../assets/Icons/aircargo-icon.png";
-import Icon12 from "../../assets/Icons/doc-icon.png";
+import Icon9 from "../../assets/ServicesIcon/charterIcon9.png";
+import Icon10 from "../../assets/ServicesIcon/charterIcon10.png";
+import Icon11 from "../../assets/ServicesIcon/charterIcon11.png";
+import Icon12 from "../../assets/ServicesIcon/charterIcon12.png";
+
+import Icon13 from "../../assets/ServicesIcon/cargoIcon13.png";
+import Icon14 from "../../assets/ServicesIcon/cargoIcon14.png";
+import Icon15 from "../../assets/ServicesIcon/cargoIcon15.png";
+import Icon16 from "../../assets/ServicesIcon/charterIcon4.png";
+
+// import Icon17 from "../../assets/ServicesIcon/cargoIcon17.png";
+// import Icon18 from "../../assets/ServicesIcon/cargoIcon18.png";
+// import Icon19 from "../../assets/ServicesIcon/cargoIcon19.png";
+// import Icon20 from "../../assets/ServicesIcon/cargoIcon20.png";
+
+// import Icon21 from "../../assets/ServicesIcon/cargoIcon21.png";
+// import Icon22 from "../../assets/ServicesIcon/cargoIcon22.png";
+// import Icon23 from "../../assets/ServicesIcon/cargoIcon23.png";
+// import Icon24 from "../../assets/ServicesIcon/cargoIcon24.png";
 
 function CargoServicesSec2() {
   const location = useLocation();
@@ -211,22 +226,22 @@ function CargoServicesSec2() {
 
       cards: [
         {
-          icon: Icon1,
+          icon: Icon13,
           title: "Bulk & Break-Bulk",
           text: "Full & LCL container options for any volume",
         },
         {
-          icon: Icon2,
+          icon: Icon14,
           title: "Warehouse Storage",
           text: "Secure bonded warehousing at key hubs",
         },
         {
-          icon: Icon3,
+          icon: Icon15,
           title: "Air Cargo Ready",
           text: "IATA-certified acceptance & ULD build-up",
         },
         {
-          icon: Icon4,
+          icon: Icon16,
           title: "Documentation",
           text: "AWB, cargo manifests & compliance docs",
         },
@@ -259,22 +274,22 @@ function CargoServicesSec2() {
 
       cards: [
         {
-          icon: Icon5,
+          icon: Icon13,
           title: "Global Routing",
           text: "Optimized multi-country freight paths",
         },
         {
-          icon: Icon6,
+          icon: Icon14,
           title: "Customs Clearance",
           text: "Full brokerage & compliance management",
         },
         {
-          icon: Icon7,
+          icon: Icon15,
           title: "Sea Freight",
           text: "FCL & LCL ocean freight solutions",
         },
         {
-          icon: Icon8,
+          icon: Icon16,
           title: "Live Tracking",
           text: "Real-time visibility from origin to destination",
         },
@@ -306,22 +321,22 @@ function CargoServicesSec2() {
 
       cards: [
         {
-          icon: Icon9,
+          icon: Icon13,
           title: "Supply Chain Mgmt",
           text: "End-to-end visibility & control",
         },
         {
-          icon: Icon10,
+          icon: Icon14,
           title: "Last-Mile Delivery",
           text: "Ground distribution & final connections",
         },
         {
-          icon: Icon11,
+          icon: Icon15,
           title: "Cargo Insurance",
           text: "Risk-mitigation coverage for all cargo types",
         },
         {
-          icon: Icon12,
+          icon: Icon16,
           title: "Analytics & Reporting",
           text: "Data-driven logistics performance insights",
         },
