@@ -18,7 +18,7 @@ const contactCards = [
   {
     icon: PhoneIcon,
     label: "Phone",
-    value: "+233 256087173",
+    value: "+233 256087173 / 0540644112",
     alt: "Phone Icon",
     link: "tel:+233256087173",
   },
@@ -104,7 +104,8 @@ function ContactForm() {
           <div className="col-lg-6 col-md-12">
             <div className="contact-left">
               <h2 className="section-title">
-                Let's Move Your <span className="span-class"> Cargo, Together</span>
+                Let's Move Your{" "}
+                <span className="span-class"> Cargo, Together</span>
               </h2>
 
               <p className="section-desc mb-4">
@@ -153,17 +154,17 @@ function ContactForm() {
               </div>
 
               {/* MAP */}
-           <div className="contact-map">
-  <iframe
-    title="Madagascar Location"
-    src="https://maps.google.com/maps?q=Madagascar&t=&z=5&ie=UTF8&iwloc=&output=embed"
-    width="100%"
-    height="350"
-    style={{ border: 0 }}
-    allowFullScreen=""
-    loading="lazy"
-  ></iframe>
-</div>
+              <div className="contact-map">
+                <iframe
+                  title="Madagascar Location"
+                  src="https://maps.google.com/maps?q=Madagascar&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                  width="100%"
+                  height="350"
+                  style={{ border: 0 }}
+                  allowFullScreen=""
+                  loading="lazy"
+                ></iframe>
+              </div>
             </div>
           </div>
 
@@ -304,8 +305,9 @@ function ContactForm() {
 
                 {/* SHIPPING METHOD */}
                 <div
-                  className={`form-group form-group-full select-group ${shippingOpen ? "select-open" : ""
-                    }`}
+                  className={`form-group form-group-full select-group ${
+                    shippingOpen ? "select-open" : ""
+                  }`}
                 >
                   <select
                     name="shippingMethod"
