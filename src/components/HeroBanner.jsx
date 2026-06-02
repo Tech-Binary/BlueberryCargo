@@ -34,7 +34,7 @@ function HeroBanner() {
                 className="common-btn"
                 onClick={() => (window.location.href = "/contact")}
               >
-                Request A Quote    <div className="home-quote-icon1">
+                Request a Quote    <div className="home-quote-icon1">
                   <HiArrowNarrowRight />
                 </div>
               </button>
@@ -112,7 +112,7 @@ function HeroBanner() {
                 <div className="hero-stat-divider"></div>
 
                 <div className="hero-stat-item">
-                  <img src="/images/home2-icon4.svg" alt="" />
+                  <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Frame%20182.png" alt="" />
                   <div>
                     <h3>100%</h3>
                     <p>Commitment to Safety</p>

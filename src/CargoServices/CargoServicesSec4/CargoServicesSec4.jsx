@@ -28,7 +28,7 @@ const charterSectionData = {
   description:
     "When cargo timelines are critical or standard freight routes won't cut it — our Charter Plane service puts a dedicated aircraft at your disposal. Full flexibility, total control, zero compromise.",
 
-  image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/cargo-img.webp",
+  image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cargo-new2.png",
 
   cards: [
     {
@@ -53,7 +53,7 @@ const charterSectionData = {
     },
   ],
 
-  statsLabel: "WHEN SPEED IS\nNON-NEGOTIABLE",
+  statsLabel: "When Speed Is Non-Negotiable",
 
   stats: [
     { number: "24h", text: "Activation" },
@@ -67,7 +67,7 @@ const charterSectionData = {
 
 /* =========================================
    STANDARD CARGO DATA
-========================================= */
+   ====================================== */
 
 const standardCargoData = {
   heading: "Need Standard Cargo Instead?",
@@ -75,7 +75,7 @@ const standardCargoData = {
   description:
     "When timelines are flexible and volume is the priority, our full Cargo service offers cost-effective solutions across our Madagascar and Ghana networks — including freight forwarding, warehousing, and end-to-end logistics.",
 
-  image: CargoImg,
+  image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cargo-new.png",
 
   cards: [
     {
@@ -113,7 +113,7 @@ function CargoServicesSec4() {
   /* =========================================
      URL CONDITION
   ========================================= */
-
+     
   const isCargoPage = location.pathname === "/cargo-services";
 
   const sectionData = isCargoPage

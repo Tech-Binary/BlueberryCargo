@@ -6,7 +6,7 @@ function AboutSec2() {
 
     const content = {
         vision: {
-            img: "/images/OurVision.png",
+            img: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%2034625261.png",
             title:
                 "To Be Africa's Most Trusted Specialized Cargo Partner — Connecting Critical Markets Others Overlook",
             desc: `We see a future where African trade corridors are served with the same precision and reliability as any global logistics route. Blueberry Cargo exists to bridge that gap — building infrastructure, relationships, and capability that makes African freight seamless.`,

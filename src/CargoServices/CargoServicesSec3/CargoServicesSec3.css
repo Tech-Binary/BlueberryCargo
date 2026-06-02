@@ -15,10 +15,9 @@
   gap: 8px;
 }
 
-
 .cargo-journey-wrapper {
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
 }
 
 .cargo-step-col {
@@ -67,7 +66,7 @@
   font-weight: 400;
   line-height: 1.2;
   color: #060606;
-  max-width: 220px; 
+  max-width: 220px;
   margin: auto;
 }
 
@@ -75,9 +74,11 @@
   position: absolute;
   top: 35px;
   left: 58%;
-  width: 84%;   /* ← was 100%, causing overflow/clipping */
+  width: 84%;
+  /* ← was 100%, causing overflow/clipping */
   z-index: 1;
-  overflow: visible; /* ← add this */
+  overflow: visible;
+  /* ← add this */
 }
 
 .cargo-step-line span {
@@ -85,44 +86,49 @@
   width: 100%;
   border-top: 2px dashed #1E3A8A;
   position: relative;
-  overflow: visible; /* ← add this */
+  overflow: visible;
+  /* ← add this */
 }
 
 .cargo-step-line span::after {
-    content: "›";
-    position: absolute;
-    right: 81px;
-    top: -40px;
-    color: var(--primary-color);
-    font-size: 48px;
-    font-weight: 400;
+  content: "›";
+  position: absolute;
+  right: 81px;
+  top: -37px;
+  color: var(--primary-color);
+  font-size: 48px;
+  font-weight: 400;
 }
-.cargocta-content-strip{
-    background-image: url("../../assets/Images/cta-containers.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    padding: 48px 0;
-    position: relative;
-    bottom: 75px;
-    border-radius: 30px;
+
+.cargocta-content-strip {
+  background-image: url("../../assets/Images/cta-containers.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 48px 0;
+  position: relative;
+  bottom: 75px;
+  border-radius: 30px;
 }
-.cargocta-inner{
-        display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 32px;
-    margin-left: 48px;
+
+.cargocta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  margin-left: 48px;
 }
+
 /* odd arrows = primary color */
 .cargo-step-col:nth-child(odd) .cargo-step-line span::after {
-  color:#1E3A8A!important;
+  color: #1E3A8A !important;
 }
 
 /* even arrows = red */
 .cargo-step-col:nth-child(even) .cargo-step-line span::after {
   color: #F59E0B !important;
 }
+
 /* =========================
    RESPONSIVE
 ========================= */

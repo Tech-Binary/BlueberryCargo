@@ -43,7 +43,7 @@
 /* RIGHT SIDE */
 .AboutSec2-content {
     flex: 1;
-    background: url("./../../../../public/images/about-plane-bg.png") no-repeat center/cover;
+    background: no-repeat bottom/cover;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -53,30 +53,31 @@
 /* CARD */
 .content-card {
     background: #fff;
-    padding: 59px 80px;
-    border-radius: 0 8px 8px 0;
-    max-width: 660px;
+    padding: 71px 80px;
+    border-radius: 0 25px 25px 0;
+    width: 80%;
 }
 
 .content-card h3 {
-     font-size: 20px;
+    font-size: 20px;
     font-weight: 700;
     margin-bottom: 12px;
     color: #111928;
 }
 
 .content-card p {
-       color: #22252B;
+    color: #22252B;
 }
 
 /* ========================= */
 /* 📱 RESPONSIVE DESIGN */
 /* ========================= */
 @media(max-width: 1200px) {
- .AboutSec2-sidebar {
-    padding: 105px 0 0 50px;
+    .AboutSec2-sidebar {
+        padding: 105px 0 0 50px;
+    }
 }
-}
+
 @media (max-width: 992px) {
     .AboutSec2-wrapper {
         flex-direction: column;
@@ -116,9 +117,11 @@
     .AboutSec2-sidebar .arrow {
         display: none;
     }
+
     .tab {
         justify-content: center;
     }
+
     .content-card {
         padding: 20px;
     }
