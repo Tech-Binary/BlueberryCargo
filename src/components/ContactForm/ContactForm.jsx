@@ -18,9 +18,9 @@ const contactCards = [
   {
     icon: PhoneIcon,
     label: "Phone",
-    value: "+233 (0) 302 000 000",
+    value: "+233 256087173",
     alt: "Phone Icon",
-    link: "tel:+233302000000",
+    link: "tel:+233256087173",
   },
   {
     icon: OpsIcon,
@@ -153,9 +153,17 @@ function ContactForm() {
               </div>
 
               {/* MAP */}
-              <div className="contact-map">
-                <img src={ContactMap} alt="Operations Map" />
-              </div>
+           <div className="contact-map">
+  <iframe
+    title="Madagascar Location"
+    src="https://maps.google.com/maps?q=Madagascar&t=&z=5&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="350"
+    style={{ border: 0 }}
+    allowFullScreen=""
+    loading="lazy"
+  ></iframe>
+</div>
             </div>
           </div>
 
