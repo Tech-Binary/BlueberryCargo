@@ -85,10 +85,10 @@
 ========================= */
 
 .about-description {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.6;
       color: #22252B;
-  margin-top: 20px;
+  margin-top: 0px;
   margin-bottom: 28px;
   text-align: justify;
 }

@@ -5,7 +5,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 const servicesData = {
   Cargo: [
     {
-      image: "/images/CargoImg1.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home1.webp",
       icon: "/images/general-icon1.svg",
       title: "General Cargo Handling",
       description:
@@ -13,7 +13,7 @@ const servicesData = {
       tags: ["B2B", "Warehousing", "All Cargo Types"],
     },
     {
-      image: "/images/CargoImg2.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home2.webp",
       icon: "/images/general-icon2.svg",
       title: "Fright Forwarding Solutions",
       description:
@@ -21,7 +21,7 @@ const servicesData = {
       tags: ["Customs", "Global Network", "Import/Export"],
     },
     {
-      image: "/images/CargoImg3.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home3.webp",
       icon: "/images/general-icon3.svg",
       title: "End-to-End Logistics Support",
       description:
@@ -31,7 +31,7 @@ const servicesData = {
   ],
   "Charter Plane": [
     {
-      image: "/images/CargoImg4.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home4.webp",
       icon: "/images/general-icon1.svg",
       title: "Full Aircraft Charter",
       description:
@@ -39,7 +39,7 @@ const servicesData = {
       tags: ["Dedicated", "Time-Critical", "Oversized"],
     },
     {
-      image: "/images/CargoImg5.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home5.webp",
       icon: "/images/general-icon2.svg",
       title: "Part Charter Solutions",
       description:
@@ -47,7 +47,7 @@ const servicesData = {
       tags: ["Flexible", "Cost-Effective", "Direct Routes"],
     },
     {
-      image: "/images/CargoImg6.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home6.webp",
       icon: "/images/general-icon3.svg",
       title: "Charter Coordination",
       description:
@@ -74,7 +74,7 @@ function HomeSec2() {
           <h2 className="section-title">
             Smart <span className="span-class"> Logistic. </span> Seamless <span className="span-class"> Deliveries. </span>
           </h2>
-          <p className="services-description">
+          <p className="section-desc">
             From air cargo to charter solutions, we deliver efficient, secure,
             and scalable logistics tailored to your business needs.
           </p>

@@ -8,7 +8,7 @@ function CargoServices() {
   return (
     <>
       <CustomBanner
-        img="/images/Banner-cargo.webp"
+        img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Banner-cargo.webp"
         title="Moving Cargo Across Africa"
         desc="From the Indian Ocean to the Gulf of Guinea — precision-engineered freight operations delivering reliability at every mile of the journey."
       />

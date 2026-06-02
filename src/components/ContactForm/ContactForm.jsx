@@ -108,7 +108,7 @@ function ContactForm() {
                 <span className="span-class"> Cargo, Together</span>
               </h2>
 
-              <p className="contact-subtitle">
+              <p className="section-desc">
                 Our logistics specialists will respond within one business day
                 to discuss your shipment, charter or supply-chain program.
               </p>

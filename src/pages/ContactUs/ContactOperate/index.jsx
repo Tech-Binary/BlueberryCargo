@@ -37,30 +37,30 @@ const ContactOperate = () => {
   const location = useLocation();
   const isNetworkPage = location.pathname === "/network";
   return (
-    <section className="operate" style={{backgroundImage: isNetworkPage ? "url(/images/network-bg.png)" : "none"}}>
+    <section className="operate" style={{ backgroundImage: isNetworkPage ? "url(/images/network-bg.png)" : "none" }}>
       <div className="operate-section">
-         <div className="homeSec5-tag">Where we operate</div>
-          <h2 className="section-title">
-            <span className="span-class">Empowering </span> Businesses Across <span className="span-class"> Industries</span>
-          </h2>
+        <div className="homeSec5-tag">Where we operate</div>
+        <h2 className="section-title">
+          Empowering Businesses <span className="span-class"> Across Industries</span>
+        </h2>
 
-          <p className="mb-4">
-            Two active African markets with on-ground teams, established
-            partners, and full cargo & charter capability.
-          </p>
+        <p className=" section-desc mb-4">
+          Two active African markets with on-ground teams, established
+          partners, and full cargo & charter capability.
+        </p>
 
         <div className="operate-wrapper">
           {/* LEFT IMAGE */}
-       <div className="operate-image">
-  <img
-    src={
-      location.pathname === "/network"
-        ? "/images/network-map.png"
-        : "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Rectangle%2034625325.png"
-    }
-    alt="Africa logistics"
-  />
-</div>
+          <div className="operate-image">
+            <img
+              src={
+                location.pathname === "/network"
+                  ? "/images/network-map.png"
+                  : "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/who%20we%20serve/Rectangle%2034625325.png"
+              }
+              alt="Africa logistics"
+            />
+          </div>
 
           {/* RIGHT CARDS */}
           <div className="operate-cards">
@@ -80,7 +80,7 @@ const ContactOperate = () => {
                   <div className="stats-row">
                     {stats.map((stat, i) => (
                       <div className="stat-box" key={i}>
-                          <img className="stat-icon" src={stat.icon} alt={stat.label} />
+                        <img className="stat-icon" src={stat.icon} alt={stat.label} />
 
                         <div>
                           <h4>{stat.number}</h4>
