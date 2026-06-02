@@ -165,7 +165,7 @@
   background: #E9892C !important;
   color: #ffffff;
   border: none;
-  border-radius:30px;
+  border-radius: 30px;
   padding: 14px 18px;
   font-size: 18px;
   font-weight: 600;
@@ -208,19 +208,21 @@
   text-decoration: underline;
   text-underline-offset: 3px;
 }
+
 .cta-quote-icon-cargo {
-    width: 26px;
-    height: 26px;
-    background: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #000000;
-    font-size: 18px;
-    border: 1px solid #19325C;
-    transition: all 0.3s ease;
+  width: 26px;
+  height: 26px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  font-size: 18px;
+  border: 1px solid #19325C;
+  transition: all 0.3s ease;
 }
+
 .charter-btn-outline:hover {
   background: #17356a;
   color: #ffffff;
@@ -242,7 +244,7 @@
 ============================== */
 
 .charter-image-wrapper {
-  width: 50%;
+  width: 53%;
   position: relative;
   border-radius: 28px;
   overflow: hidden;
@@ -268,32 +270,32 @@
   right: 0;
   display: flex;
   align-items: center;
-     padding: 47px 48px;
+      justify-content: space-between;
+  padding: 47px 48px;
   gap: 0;
 }
 
 .charter-overlay-label {
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 300;
-    width: 23%;
-    /* text-transform: uppercase; */
-    letter-spacing: 0.04em;
-    line-height: 1.4;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  width: 23%;
+  /* text-transform: uppercase; */
+  letter-spacing: 0.04em;
+  line-height: 1.4;
 }
 
 .charter-overlay-divider {
-  width: 1px;
-  height: 42px;
-  background: #ffffff;
-  margin: 0 22px;
+     width: 1px;
+    height: 32px;
+    background: #ffffff;
 }
 
 .charter-overlay-stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    align-items: center;
 }
 
 .charter-stat-number {
@@ -312,18 +314,20 @@
 }
 
 .charter-overlay-sep {
-  width: 1px;
-  height: 32px;
-  background: rgba(255, 255, 255, 0.25);
-  flex-shrink: 0;
+    width: 1px;
+    height: 32px;
+    background: #FFFFFF;
+    flex-shrink: 0;
 }
+
 .cps-feature-item p {
-    color: #19325C;
-    font-size: 18px;
-    line-height: 22px;
-    font-weight: 600;
-    margin-bottom: 8px;
+  color: #19325C;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-bottom: 8px;
 }
+
 /* ==============================
    RESPONSIVE
 ============================== */
