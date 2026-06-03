@@ -42,24 +42,23 @@ function CargoServicesSec1() {
 
         image: charterImage,
 
-        title: (
-          <>
-            Africa's On-Demand <span className="span-class">Air Charter
-            Partner</span>
-          </>
-        ),
+     title: (
+  <>
+    Supporting Cargo Across <span className="span-class">African Markets</span>
+  </>
+),
 
-        description:
-          "Blueberry Cargo's Charter Plane service gives businesses direct, exclusive access to freighter aircraft — eliminating the constraints of scheduled cargo services. From one-time urgent shipments to recurring dedicated routes, we configure every charter around your specific operational needs.",
+description:
+  "Moving cargo across the continent often requires flexible aircraft access, specialized planning, and local expertise. Our Charter Plane Services help bridge these gaps, providing tailored flight solutions for businesses operating where timing, reliability, and reach matter most.",
 
-        features: [
-          "Full-aircraft and partial charter options available",
-          "Wet lease & ACMI arrangements for operators",
-          "Specialized cargo: oversized, hazmat, perishables, valuables",
-          "On-ground handling & customs coordination included",
-          "Dedicated mission coordinator per flight",
-          "Insurance & compliance fully managed",
-        ],
+features: [
+  "Full aircraft and part charter solutions for time-sensitive cargo",
+  "Aircraft sourcing across freighter fleets and international carriers",
+  "GDP-compliant charter solutions for pharmaceuticals, vaccines, and healthcare shipments",
+  "Access to remote destinations and underserved markets",
+  "End-to-end flight coordination, permits, and ground handling",
+  "Dedicated charter specialists overseeing every movement",
+],
       }
     : {
         badge: "ABOUT CARGO",
@@ -81,24 +80,23 @@ function CargoServicesSec1() {
         ],
 
         image: cargoImage,
+title: (
+  <>
+    Built Around African <span className="span-class">Cargo Networks</span>
+  </>
+),
 
-        title: (
-          <>
-            Built For Africa's <span className="span-class">Trade Corridors</span>
-          </>
-        ),
+description:
+  "Moving cargo across Africa often means dealing with different regulations, limited direct connections, varying infrastructure, and market-specific requirements. Blueberry Cargo helps businesses manage these challenges through cargo handling, freight forwarding, and logistics support delivered by teams on the ground across more than 35 countries. By combining local knowledge with established airline and logistics partnerships, we help keep freight moving efficiently across the continent's key trade markets.",
 
-        description:
-          "Blueberry Cargo delivers integrated cargo solutions spanning the Indian Ocean to the Gulf of Guinea. Our three core services work in concert to offer end-to-end coverage — from first-mile handling all the way through final delivery. Operating from strategic hubs in Madagascar and Ghana, we combine deep regional knowledge with global freight expertise to ensure your cargo moves faster, smarter, and with complete visibility.",
-
-        features: [
-          "Certified IATA cargo handling facilities",
-          "Real-time cargo tracking & visibility portal",
-          "Dedicated account management teams",
-          "Customs brokerage across all operated corridors",
-          "Temperature-controlled and specialized cargo options",
-          "24/7 operations & emergency support",
-        ],
+features: [
+  "Certified IATA cargo handling facilities",
+  "Real-time cargo tracking and visibility portal",
+  "Dedicated account management teams",
+  "Customs brokerage across operated corridors",
+  "Temperature-controlled and specialized cargo solutions",
+  "24/7 operations and emergency support",
+],
       };
 
 const handleTabClick = (tabId) => {
@@ -227,7 +225,7 @@ const handleTabClick = (tabId) => {
                 {/* BUTTON */}
 
               <button className="cta-quote-btn cta-margin-top" >
-                <span> Explore Our Services</span>
+                <span> Request a Solution</span>
 
                 <div className="cta-quote-icon">
                   <HiArrowNarrowRight/>

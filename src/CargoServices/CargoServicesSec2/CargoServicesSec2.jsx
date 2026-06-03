@@ -52,20 +52,20 @@ function CargoServicesSec2() {
   // CHARTER PAGE DATA
   // =========================
 
-  const charterServicesData = [
-    {
-      sectionId: "aircraft-charter",
+const charterServicesData = [
+  {
+    sectionId: "aircraft-charter",
 
-      id: "01",
-      title: "Aircraft Charter Solutions",
-      highlight: "Charter",
+    id: "01",
+    title: "Aircraft Charter Solutions",
+    highlight: "Charter",
 
-      description:
-        "Exclusive access to purpose-configured freighter aircraft — on your schedule, to your destination. Whether a one-time lift or a recurring dedicated route, we match the right aircraft to your cargo specifications and get it moving without delay.",
+    description:
+      "When cargo cannot depend on commercial schedules, dedicated aircraft provide the control and flexibility required. Our charter solutions support urgent movements, heavy-lift shipments, and complex logistics operations across key trade corridors.",
 
-      image: CharterImg1,
+    image: CharterImg1,
 
-      stats: [
+    stats: [
         {
           number: "80T",
           text: "Max Payload Capacity",
@@ -76,274 +76,274 @@ function CargoServicesSec2() {
         },
       ],
 
-      cards: [
-        {
-          icon: Icon1,
-          title: "Full & Part Charters",
-          text: "Book the whole aircraft or share capacity as needed",
-        },
-        {
-          icon: Icon2,
-          title: "Flexible Scheduling",
-          text: "Depart on your timeline — not a fixed timetable",
-        },
-        {
-          icon: Icon3,
-          title: "Any Cargo Type",
-          text: "Oversized, hazmat, perishables & high-value goods",
-        },
-        {
-          icon: Icon4,
-          title: "Recurring Programs",
-          text: "Weekly or monthly contracted charter routes",
-        },
-      ],
-    },
+    cards: [
+      {
+        icon: Icon1,
+        title: "Full & Part Charters",
+        text: "Flexible aircraft capacity aligned with cargo volumes.",
+      },
+      {
+        icon: Icon2,
+        title: "Flexible Flight Planning",
+        text: "Fly when cargo demands, not schedules dictate.",
+      },
+      {
+        icon: Icon3,
+        title: "Specialized Cargo",
+        text: "Pharma, perishables, dangerous goods, and high-value cargo.",
+      },
+      {
+        icon: Icon4,
+        title: "Remote Market Access",
+        text: "Serving mining sites, islands, and underserved destinations.",
+      },
+    ],
+  },
 
-    {
-      sectionId: "cargo-handling",
+  {
+    sectionId: "cargo-handling",
 
-      id: "02",
-      title: "Time-Sensitive Cargo Handling",
-      highlight: "Cargo",
+    id: "02",
+    title: "Time-Sensitive Cargo Handling",
+    highlight: "Cargo",
 
-      description:
-        "When every hour matters, our time-critical cargo operations cut through delays and get your freight moving fast. From emergency AOG parts to perishable produce and life-saving medical supplies — we treat every urgent shipment as our highest priority.",
+    description:
+      "Our time-sensitive logistics solutions are designed for urgent freight movements, emergency shipments, and priority cargo. They require rapid coordination, dedicated capacity, and continuous operational support across Africa and international markets.",
 
-      image: CharterImg2,
-      reverse: true,
+    image: CharterImg2,
+    reverse: true,
 
-      stats: [
-        {
-          number: "<4h",
-          text: "Emergency Activation",
-        },
-        {
-          number: "365d",
-          text: "Year-Round Ops",
-        },
-      ],
+    stats: [
+      {
+        number: "24/7",
+        text: "Emergency Response Desk",
+      },
+      {
+        number: "<4 Hours",
+        text: "Charter Activation Time",
+      },
+    ],
 
-      cards: [
-        {
-          icon: Icon5,
-          title: "24/7 Emergency Desk",
-          text: "Live operators ready to activate around the clock",
-        },
-        {
-          icon: Icon6,
-          title: "Sub-4h Activation",
-          text: "Aircraft sourced, confirmed & dispatched rapidly",
-        },
-        {
-          icon: Icon7,
-          title: "Cold Chain Integrity",
-          text: "Pharma, perishables & biologics handled with care",
-        },
-        {
-          icon: Icon8,
-          title: "AOG Parts Transport",
-          text: "Critical spares to any grounded aircraft location",
-        },
-      ],
-    },
+    cards: [
+      {
+        icon: Icon5,
+        title: "Around-the-Clock Support",
+        text: "Round-the-clock coordination for urgent cargo requirements.",
+      },
+      {
+        icon: Icon6,
+        title: "Rapid Charter Response",
+        text: "Aircraft sourcing and deployment for critical shipments.",
+      },
+      {
+        icon: Icon7,
+        title: "Cold Chain Logistics",
+        text: "Temperature-controlled handling for pharma and perishables.",
+      },
+      {
+        icon: Icon8,
+        title: "AOG & Critical Spares",
+        text: "Priority delivery for grounded aircraft components.",
+      },
+    ],
+  },
 
-    {
-      sectionId: "logistics",
+  {
+    sectionId: "logistics",
 
-      id: "03",
-      title: "Customized Logistics Solutions",
-      highlight: "Logistics",
+    id: "03",
+    title: "Customized Logistics Solutions",
+    highlight: "Logistics",
 
-      description:
-        "No two operations are the same. We design bespoke logistics programs built around your cargo type, route constraints, regulatory environment, and commercial timelines.",
+    description:
+      "We develop tailored logistics solutions based on shipment requirements, destination constraints, regulatory considerations, and delivery timelines.",
 
-      image: CharterImg3,
+    image: CharterImg3,
 
-      stats: [
-        {
-          number: "360°",
-          text: "Coverage Scope",
-        },
-        {
-          number: "1",
-          text: "Dedicated Contact",
-        },
-      ],
+    stats: [
+      {
+        number: "360°",
+        text: "Logistics Visibility",
+      },
+      {
+        number: "1",
+        text: "Dedicated Account Manager",
+      },
+    ],
 
-      cards: [
-        {
-          icon: Icon9,
-          title: "Bespoke Route Design",
-          text: "Custom air & multimodal solutions for any corridor",
-        },
-        {
-          icon: Icon10,
-          title: "Customs & Compliance",
-          text: "End-to-end regulatory management",
-        },
-        {
-          icon: Icon11,
-          title: "Ground & Last Mile",
-          text: "Integrated trucking & delivery services",
-        },
-        {
-          icon: Icon12,
-          title: "Dedicated Account Mgmt",
-          text: "Single point of contact for your operations",
-        },
-      ],
-    },
-  ];
-
-  // =========================
+    cards: [
+      {
+        icon: Icon9,
+        title: "Route & Capacity Planning",
+        text: "Optimized around cargo type and market conditions.",
+      },
+      {
+        icon: Icon10,
+        title: "Customs & Compliance",
+        text: "Managing permits, documentation, and local compliance.",
+      },
+      {
+        icon: Icon11,
+        title: "Multimodal Coordination",
+        text: "Air cargo integrated with onward ground transport.",
+      },
+      {
+        icon: Icon12,
+        title: "Dedicated Account Mgmt",
+        text: "One specialist overseeing the entire operation.",
+      },
+    ],
+  },
+];
+ // =========================
   // DEFAULT CARGO PAGE DATA
   // =========================
 
-  const cargoServicesData = [
-    {
-      sectionId: "general-cargo",
+const cargoServicesData = [
+  {
+    sectionId: "general-cargo",
 
-      id: "01",
-      title: "General Cargo Handling",
-      highlight: "Cargo",
+    id: "01",
+    title: "General Cargo Handling",
+    highlight: "Cargo",
 
-      description:
-        "Professional management of all cargo types with full documentation, warehousing, loading, and secure delivery support at both cargo hubs. Our facilities are equipped to handle high-volume freight with precision and care.",
+    description:
+      "Managing commercial freight requires consistency, visibility, and operational control at every stage. Our cargo handling teams coordinate cargo acceptance, storage, documentation, consolidation, and dispatch, ensuring shipments move efficiently through key African trade hubs.",
 
-      image: CargoImg1,
+    image: CargoImg1,
 
-      stats: [
-        {
-          number: "50K+",
-          text: "Tons Handled / Year",
-        },
-        {
-          number: "99.6%",
-          text: "Cargo Integrity Rate",
-        },
-      ],
+    stats: [
+      {
+        number: "50K+",
+        text: "Tons Handled Annually",
+      },
+      {
+        number: "99.6%",
+        text: "Cargo Integrity Rate",
+      },
+    ],
 
-      cards: [
-        {
-          icon: Icon13,
-          title: "Bulk & Break-Bulk",
-          text: "Full & LCL container options for any volume",
-        },
-        {
-          icon: Icon14,
-          title: "Warehouse Storage",
-          text: "Secure bonded warehousing at key hubs",
-        },
-        {
-          icon: Icon15,
-          title: "Air Cargo Ready",
-          text: "IATA-certified acceptance & ULD build-up",
-        },
-        {
-          icon: Icon16,
-          title: "Documentation",
-          text: "AWB, cargo manifests & compliance docs",
-        },
-      ],
-    },
+    cards: [
+      {
+        icon: Icon13,
+        title: "Bulk & Break-Bulk",
+        text: "Handling solutions for high-volume and specialized cargo.",
+      },
+      {
+        icon: Icon14,
+        title: "Warehouse Storage",
+        text: "Bonded warehousing and secure cargo holding.",
+      },
+      {
+        icon: Icon15,
+        title: "Air Cargo Ready",
+        text: "IATA-certified handling and cargo preparation.",
+      },
+      {
+        icon: Icon16,
+        title: "Documentation",
+        text: "AWBs, cargo manifests and customs documentation.",
+      },
+    ],
+  },
 
-    {
-      sectionId: "freight",
+  {
+    sectionId: "freight",
 
-      id: "02",
-      title: "Freight Forwarding Solutions",
-      highlight: "Forwarding",
+    id: "02",
+    title: "Freight Forwarding Solutions",
+    highlight: "Forwarding",
 
-      description:
-        "Seamless import & export freight management with customized delivery routes and worldwide coordination.",
+    description:
+      "Managing cargo bookings, customs clearance, and shipment movement through trusted carrier networks.",
 
-      image: CargoImg2,
-      reverse: true,
+    image: CargoImg2,
+    reverse: true,
 
-      stats: [
-        {
-          number: "120+",
-          text: "Carrier Partner",
-        },
-        {
-          number: "48h",
-          text: "Avg. Clearance Time",
-        },
-      ],
+    stats: [
+      {
+        number: "120+",
+        text: "Carrier Partners",
+      },
+      {
+        number: "48h",
+        text: "Average Clearance Time",
+      },
+    ],
 
-      cards: [
-        {
-          icon: Icon13,
-          title: "Global Routing",
-          text: "Optimized multi-country freight paths",
-        },
-        {
-          icon: Icon14,
-          title: "Customs Clearance",
-          text: "Full brokerage & compliance management",
-        },
-        {
-          icon: Icon15,
-          title: "Sea Freight",
-          text: "FCL & LCL ocean freight solutions",
-        },
-        {
-          icon: Icon16,
-          title: "Live Tracking",
-          text: "Real-time visibility from origin to destination",
-        },
-      ],
-    },
+    cards: [
+      {
+        icon: Icon13,
+        title: "Global Routing",
+        text: "Multi-country routing and carrier network coordination.",
+      },
+      {
+        icon: Icon14,
+        title: "Customs Clearance",
+        text: "Brokerage, permits and regulatory compliance support.",
+      },
+      {
+        icon: Icon15,
+        title: "Sea Freight",
+        text: "FCL, LCL and cross-border ocean freight.",
+      },
+      {
+        icon: Icon16,
+        title: "Live Tracking",
+        text: "End-to-end shipment visibility and status updates.",
+      },
+    ],
+  },
 
-    {
-      sectionId: "logistics",
+  {
+    sectionId: "logistics",
 
-      id: "03",
-      title: "End-To-End Logistics Support",
-      highlight: "Logistics",
+    id: "03",
+    title: "End-to-End Logistics Support",
+    highlight: "Logistics",
 
-      description:
-        "Complete supply chain solutions from origin to destination, delivering confidence across every transportation stage.",
+    description:
+      "Cargo movements rarely end when a flight lands. We coordinate warehousing, transportation, cargo visibility, and final delivery to help shipments move efficiently from origin to destination.",
 
-      image: CargoImg3,
+    image: CargoImg3,
 
-      stats: [
-        {
-          number: "360°",
-          text: "Coverage Scope",
-        },
-        {
-          number: "24/7",
-          text: "Ops & Support",
-        },
-      ],
+    stats: [
+      {
+        number: "360°",
+        text: "Supply Chain Coverage",
+      },
+      {
+        number: "24/7",
+        text: "Operational Monitoring",
+      },
+    ],
 
-      cards: [
-        {
-          icon: Icon13,
-          title: "Supply Chain Mgmt",
-          text: "End-to-end visibility & control",
-        },
-        {
-          icon: Icon14,
-          title: "Last-Mile Delivery",
-          text: "Ground distribution & final connections",
-        },
-        {
-          icon: Icon15,
-          title: "Cargo Insurance",
-          text: "Risk-mitigation coverage for all cargo types",
-        },
-        {
-          icon: Icon16,
-          title: "Analytics & Reporting",
-          text: "Data-driven logistics performance insights",
-        },
-      ],
-    },
-  ];
+    cards: [
+      {
+        icon: Icon13,
+        title: "Supply Chain Mgmt",
+        text: "Shipment planning, coordination and operational visibility.",
+      },
+      {
+        icon: Icon14,
+        title: "Last-Mile Delivery",
+        text: "Ground transport and destination delivery support.",
+      },
+      {
+        icon: Icon15,
+        title: "Cargo Insurance",
+        text: "Protection against transit and handling risks.",
+      },
+      {
+        icon: Icon16,
+        title: "Analytics & Reporting",
+        text: "Shipment performance and operational reporting.",
+      },
+    ],
+  },
+];
 
+ 
   const servicesData = isCharterPage
     ? charterServicesData
     : cargoServicesData;
