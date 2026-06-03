@@ -4,7 +4,9 @@ import CustomBanner from "../components/CustomBanner/CustomBanner";
 import CargoServicesSec2 from "./CargoServicesSec2/CargoServicesSec2";
 import CargoServicesSec3 from "./CargoServicesSec3/CargoServicesSec3";
 import CargoServicesSec4 from "./CargoServicesSec4/CargoServicesSec4";
+
 function CargoServices() {
+
   return (
     <>
       <CustomBanner

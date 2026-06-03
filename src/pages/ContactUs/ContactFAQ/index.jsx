@@ -5,44 +5,44 @@ import { useLocation } from "react-router-dom";
 
 const faqData = [
   {
-    question: "What regions does Blueberry Cargo operate in?",
+    question: "What markets does Blueberry Cargo serve?",
     answer:
-      "We operate across major international and domestic cargo routes worldwide.",
+      "Blueberry Cargo supports freight movements across Africa, the Middle East, and Asia, with operational coverage spanning more than 35 countries through regional teams, partner networks, and strategic cargo hubs.",
   },
   {
-    question: "How quickly can you arrange a charter flight?",
+    question: "What cargo services do you provide?",
     answer:
-      "Depending on availability, charter flights can be arranged within a few hours.",
+      "Our services include cargo handling, freight forwarding, end-to-end logistics support, aircraft charter solutions, customs coordination, and specialized cargo management for complex shipment requirements.",
   },
   {
-    question: "What types of cargo can you handle?",
+    question: "Can you arrange dedicated charter aircraft?",
     answer:
-      "We handle general cargo, dangerous goods, perishables, oversized freight, and more.",
+      "Yes. We provide full-aircraft and part-charter solutions for urgent, oversized, high-value, humanitarian, and time-sensitive cargo movements across Africa and international trade routes.",
   },
   {
-    question: "Do you provide door-to-door delivery?",
+    question: "Do you handle custom clearance and documentation?",
     answer:
-      "Yes, we offer complete door-to-door logistics solutions for clients.",
+      "Yes. Our teams support customs processes, cargo documentation, regulatory compliance, and shipment coordination to minimize delays and ensure smooth cargo movement.",
   },
   {
-    question: "How do I get a freight quote?",
+    question: "What type of specialized cargo can you handle?",
     answer:
-      "You can request a quote through our website or contact our support team directly.",
+      "We support perishables, pharmaceutical shipments, cold-chain cargo, high-value goods, dangerous goods, and heavy-lift cargo for sectors such as mining, energy, and infrastructure.",
   },
   {
-    question: "Can you handle customs clearance?",
+    question: "How do I request a quote for my shipment?",
     answer:
-      "Yes, we assist with customs documentation and clearance procedures.",
+      "Simply share your origin, destination, cargo dimensions, weight, commodity details, preferred timeline, and any special handling requirements. Our team will provide a tailored solution and quotation.",
   },
   {
-    question: "Is cargo insurance included in your services?",
+    question: "Does Blueberry Cargo handle last-mile delivery to remote African destinations?",
     answer:
-      "Insurance can be included based on shipment requirements and preferences.",
+      "Yes. Through our regional network and charter capabilities, we help businesses reach underserved airports, remote project locations, and challenging logistics markets across Africa.",
   },
   {
-    question: "What is your typical transit time?",
+    question: "Why choose Blueberry Cargo?",
     answer:
-      "Transit times vary depending on destination, cargo type, and shipping method.",
+      "Our strength lies in combining local market expertise, established regional partnerships, and cargo-focused operational support to help businesses navigate Africa's complex logistics environment with greater confidence.",
   },
 ];
 
