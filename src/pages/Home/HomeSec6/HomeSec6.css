@@ -130,7 +130,7 @@ color:white;
   .cta-quote-btn {
   
     padding: 12px 14px 12px 24px;
-    font-size: 18px;
+    font-size: 15px;
     gap: 18px;
   }
     .cta-content-strip {
@@ -174,7 +174,8 @@ color:white;
   }
 
   .cta-content-strip {
-    margin: 0 40px;
+          margin: 0 40px;
+        padding: 48px 20px 48px 20px;
   }
 
   .cta-container-img {
