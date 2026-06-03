@@ -38,7 +38,7 @@ function HomeSec1() {
 
               {/* DESCRIPTION */}
               <p className="about-description">
-                <strong>Blueberry Cargo</strong> & Charter Services helps airlines unlock cargo opportunities across <strong> Africa, the Middle East, and Asia</strong> through specialized GSA representation, aircraft charter services, and tailored cargo solutions. Operating across 35+ countries and backed by the Blueberry Group's aviation expertise, we connect global carriers with high-growth markets, combining local market knowledge, strong industry relationships, and revenue-focused strategies that drive long-term commercial success.
+                <strong>Blueberry Cargo</strong> & Charter Services helps airlines unlock cargo opportunities across <strong> Africa, the Middle East, and Asia</strong> through specialized GSA representation, aircraft charter services, and tailored cargo solutions. Operating across 35+ countries and backed by the Blueberry Group's aviation expertise, we connect global carriers with high-growth markets, combining local market knowledge, strong industry relationships, & revenue-focused strategies that drive long-term commercial success.
               </p>
 
               {/* FEATURES */}

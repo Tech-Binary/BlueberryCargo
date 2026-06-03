@@ -20,7 +20,7 @@ function HeroBanner() {
             </div>
 
             <h1>
-             Where Cargo Meets Continent’s Most <span style={{ color: "#E9892C" }}>Demanding Routes</span>
+             Where Cargo Meets  <span style={{ color: "#E9892C", fontWeight:"900" }}>Complex Routes</span>
             </h1>
 
             <p className="hero-description">

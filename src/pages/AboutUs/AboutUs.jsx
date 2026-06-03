@@ -35,7 +35,7 @@ function AboutUs() {
 
   return (
     <>
-      <CustomBanner img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/About%20Us.png" title="About Us" desc="Built for growth across Africa and beyond " />
+      <CustomBanner img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/About%20Us.png" title="About Us" desc="Delivering cargo handling, freight forwarding, charter aircraft solutions, and end-to-end logistics support across complex African trade corridors. " />
       <AboutSec1 />
       <AboutSec2 />
       <HomeSec3 />
