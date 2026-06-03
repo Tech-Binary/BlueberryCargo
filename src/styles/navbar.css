@@ -11,7 +11,7 @@
 }
 
 .logo {
-  width: 180px;
+  width: 230px;
 }
 
 /* Active nav link */
@@ -141,12 +141,13 @@
   color: var(--primary-color);
 }
 
-@media (max-width: 1200px){
-.custom-nav-link {
+@media (max-width: 1200px) {
+  .custom-nav-link {
     font-size: 15px !important;
     margin: 0 8px;
+  }
 }
-}
+
 /* Mobile */
 
 @media (max-width: 991px) {
@@ -162,9 +163,11 @@
     margin-top: 10px;
     border-radius: 10px;
   }
-.custom-navbar {
+
+  .custom-navbar {
     padding: 10px 0 !important;
-}
+  }
+
   .custom-nav-link {
     margin: 10px 0;
   }

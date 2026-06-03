@@ -75,7 +75,7 @@ function Network() {
       <CustomBanner
         img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/network-banner.png"
         title="Our Operational Network"
-        desc="Africa's critical cargo corridors, covered"
+        desc="Supporting cargo, charter, and logistics operations through established networks in Madagascar, Ghana, and strategic African markets."
       />
       <ContactOperate />
       <NetworkSec1 />
