@@ -23,16 +23,17 @@ function Navbar() {
       label: "SERVICES",
       dropdown: true,
       submenu: [
-        {
+         {
           id: 1,
-          label: "Charter Plane Services",
-          path: "/charter-plane-services",
-        },
-        {
-          id: 2,
           label: "Cargo Services",
           path: "/cargo-services",
         },
+        {
+          id: 2,
+          label: "Charter Plane Services",
+          path: "/charter-plane-services",
+        }
+       
       ],
     },
     {
