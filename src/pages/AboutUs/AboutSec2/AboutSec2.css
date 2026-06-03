@@ -101,7 +101,8 @@
     }
 
     .AboutSec2-content {
-        padding: 20px;
+                padding: 20px;
+        padding-left: 0;
     }
 
     .content-card {

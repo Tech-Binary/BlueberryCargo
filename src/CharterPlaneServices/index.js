@@ -11,8 +11,8 @@ function CharterPlaneServices() {
     <>
       <CustomBanner
         img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/Charter%20Services.png"
-        title="Charter a Plane Your Rules"
-        desc="When standard freight lanes can't deliver on time — put a dedicated aircraft at your command. Full capacity, custom routing, zero compromise across Africa's most critical corridors."
+        title="When Cargo Need Its Own Aircraft"
+        desc="When schedules, routes, or capacity become obstacles, our charter plane services provide dedicated aircraft tailored to your cargo requirements."
       />
       <CargoServicesSec1 />
       <CargoServicesSec2 />

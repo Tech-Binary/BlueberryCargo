@@ -104,7 +104,7 @@ function AboutSec5() {
       <div className="container">
         {/* Header */}
         <div className="AboutSec5-header">
-          <div className="homeSec5-tag">TESTIMONIAL</div>
+          <div className="homeSec5-tag">TESTIMONIALS </div>
 
           {/* HEADING */}
           <h2 className="section-title">

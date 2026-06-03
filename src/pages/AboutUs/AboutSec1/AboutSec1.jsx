@@ -56,7 +56,7 @@ function AboutSec1() {
                     text: "Capabilities spanning cargo operations and aircraft charter solutions. ",
                   },
                   {
-                    text: "Built on long-term partnerships with airlines & freight forwarders ",
+                    text: "Built on long-term partnerships with airlines & freight forwarders. ",
                   },
                   { text: "Helping partners expand reach and strengthen cargo performance. " },
                 ].map((d, index) => (

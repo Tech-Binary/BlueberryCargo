@@ -5,7 +5,7 @@
   padding: 25px 18px;
   border: 1px solid #eee;
   margin: 7px;
-  border: 1px solid #1212121A;
+  border: 1px solid #1212121a;
 }
 
 /* TOP ROW */
@@ -39,9 +39,9 @@
 
 /* ROLE */
 .role2 {
-      font-size: 14px;
-    letter-spacing: 0.5px;
-    color: #E9892C;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  color: #e9892c;
   text-transform: uppercase;
 }
 
@@ -66,7 +66,9 @@
   color: #060606;
   font-size: 14px;
   line-height: 1.6;
-  margin-bottom: 0;    opacity: 0.7;
+  margin-bottom: 0;
+  opacity: 0.7;
+  min-height: 90px;
 }
 
 /* SLIDE SPACING */
