@@ -5,44 +5,44 @@ import { useLocation } from "react-router-dom";
 
 const faqData = [
   {
-    question: "What markets does Blueberry Cargo serve?",
+    question: "What markets does Blueberry Cargo serve? ",
     answer:
-      "Blueberry Cargo supports freight movements across Africa, the Middle East, and Asia, with operational coverage spanning more than 35 countries through regional teams, partner networks, and strategic cargo hubs.",
+      "Blueberry Cargo supports freight movements across Africa, the Middle East, and Asia, with operational coverage spanning more than 35 countries through regional teams, partner networks, and strategic cargo hubs. ",
   },
   {
-    question: "What cargo services do you provide?",
+    question: "What cargo services do you provide? ",
     answer:
-      "Our services include cargo handling, freight forwarding, end-to-end logistics support, aircraft charter solutions, customs coordination, and specialized cargo management for complex shipment requirements.",
+      "Our services include cargo handling, freight forwarding, end-to-end logistics support, aircraft charter solutions, customs coordination, and specialized cargo management for complex shipment requirements. ",
   },
   {
-    question: "Can you arrange dedicated charter aircraft?",
+    question: "Can you arrange dedicated charter aircraft? ",
     answer:
-      "Yes. We provide full-aircraft and part-charter solutions for urgent, oversized, high-value, humanitarian, and time-sensitive cargo movements across Africa and international trade routes.",
+      "Yes. We provide full-aircraft and part-charter solutions for urgent, oversized, high-value, humanitarian, and time-sensitive cargo movements across Africa and international trade routes. ",
   },
   {
-    question: "Do you handle custom clearance and documentation?",
+    question: "Do you handle custom clearance and documentation? ",
     answer:
-      "Yes. Our teams support customs processes, cargo documentation, regulatory compliance, and shipment coordination to minimize delays and ensure smooth cargo movement.",
+      "Yes. Our teams support customs processes, cargo documentation, regulatory compliance, and shipment coordination to minimize delays and ensure smooth cargo movement. ",
   },
   {
-    question: "What type of specialized cargo can you handle?",
+    question: "What type of specialized cargo can you handle? ",
     answer:
-      "We support perishables, pharmaceutical shipments, cold-chain cargo, high-value goods, dangerous goods, and heavy-lift cargo for sectors such as mining, energy, and infrastructure.",
+      "We support perishables, pharmaceutical shipments, cold-chain cargo, high-value goods, dangerous goods, and heavy-lift cargo for sectors such as mining, energy, and infrastructure. ",
   },
   {
-    question: "How do I request a quote for my shipment?",
+    question: "How do I request a quote for my shipment? ",
     answer:
-      "Simply share your origin, destination, cargo dimensions, weight, commodity details, preferred timeline, and any special handling requirements. Our team will provide a tailored solution and quotation.",
+      "Simply share your origin, destination, cargo dimensions, weight, commodity details, preferred timeline, and any special handling requirements. Our team will provide a tailored solution and quotation. ",
   },
   {
     question: "Does Blueberry Cargo handle last-mile delivery to remote African destinations?",
     answer:
-      "Yes. Through our regional network and charter capabilities, we help businesses reach underserved airports, remote project locations, and challenging logistics markets across Africa.",
+      "Yes. Through our regional network and charter capabilities, we help businesses reach underserved airports, remote project locations, and challenging logistics markets across Africa. ",
   },
   {
     question: "Why choose Blueberry Cargo?",
     answer:
-      "Our strength lies in combining local market expertise, established regional partnerships, and cargo-focused operational support to help businesses navigate Africa's complex logistics environment with greater confidence.",
+      "Our strength lies in combining local market expertise, established regional partnerships, and cargo-focused operational support to help businesses navigate Africa's complex logistics environment with greater confidence. ",
   },
 ];
 

@@ -5,7 +5,7 @@ function AboutSec3({ data, title, desc, newClass, marginClass , tag}) {
   const location = useLocation();
 
   // const isAboutPage = location.pathname === "/about";
-  const fullTitle = title || "Industry Expertise & Certifications";
+  const fullTitle = title || "Trusted Standards for Global Cargo ";
   const words = fullTitle.split(" ");
 
   const firstPart = words.slice(0, -1).join(" ");
@@ -29,7 +29,7 @@ function AboutSec3({ data, title, desc, newClass, marginClass , tag}) {
           </h2>
           <p className="section-desc">
             {desc ||
-              "Our operational standards and industry affiliations that give clients confidence in every shipment."}
+              "Supported by internationally recognized certifications and industry affiliations that strengthen confidence in our capabilities. "}
           </p>
         </div>
 
