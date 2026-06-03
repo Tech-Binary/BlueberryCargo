@@ -7,25 +7,25 @@ const servicesData = {
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%207.png",
       icon: "/images/general-icon1.svg",
-      title: "General Cargo Handling",
+      title: "General Cargo Handling ",
       description:
-        "Professional management of all cargo types with full documentation, warehousing, loading, and secure delivery support at every stage.",
+        "Efficient management of commercial shipments, ensuring secure handling, smooth transit, and timely delivery across markets. ",
       tags: ["B2B", "Warehousing", "All Cargo Types"],
     },
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%209.png",
       icon: "/images/general-icon2.svg",
-      title: "Fright Forwarding Solutions",
+      title: "Freight Forwarding Solutions ",
       description:
-        "Seamless import and export freight management including customs clearance, documentation, and coordination with global shipping.",
+        "Customized freight planning, documentation, coordination, and routing support for seamless international cargo movement. ",
       tags: ["Customs", "Global Network", "Import/Export"],
     },
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%2011.png",
       icon: "/images/general-icon3.svg",
-      title: "End-to-End Logistics Support",
+      title: "End-to-End Logistics Support ",
       description:
-        "Complete supply chain solutions from origin to destination coordinating every touchpoint to ensure cargo arrives on time and intact.",
+        "Complete cargo oversight from origin to destination, including coordination, tracking, and operational support. ",
       tags: ["Supply Chain", "Full Visibility", "Tracking"],
     },
   ],
@@ -33,25 +33,25 @@ const servicesData = {
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home4.webp",
       icon: "/images/general-icon1.svg",
-      title: "Full Aircraft Charter",
+      title: "Full Aircraft Charter ",
       description:
-        "Dedicated aircraft solutions for time-sensitive or oversized cargo, fully managed from booking to touchdown.",
+        "Dedicated aircraft solutions for urgent, oversized, or high-volume cargo requiring complete capacity and scheduling control. ",
       tags: ["Dedicated", "Time-Critical", "Oversized"],
     },
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home5.webp",
       icon: "/images/general-icon2.svg",
-      title: "Part Charter Solutions",
+      title: " Part Charter Solutions ",
       description:
-        "Flexible part-charter options for smaller consignments requiring speed and direct routing across Africa.",
+        "Cost-effective shared aircraft capacity connecting key trade routes while maintaining flexibility and operational efficiency. ",
       tags: ["Flexible", "Cost-Effective", "Direct Routes"],
     },
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home6.webp",
       icon: "/images/general-icon3.svg",
-      title: "Charter Coordination",
+      title: "Charter Coordination ",
       description:
-        "End-to-end charter coordination including permits, ground handling, and real-time flight tracking for your shipment.",
+        "End-to-end charter planning, flight arrangements, permits, and operational support for seamless cargo movements. ",
       tags: ["Permits", "Ground Handling", "Tracking"],
     },
   ],
@@ -72,11 +72,10 @@ function HomeSec2() {
         {/* Header */}
         <div className="services-header">
           <h2 className="section-title">
-            Smart <span className="span-class"> Logistic. </span> Seamless <span className="span-class"> Deliveries. </span>
+            Bridging  <span className="span-class"> Markets  </span> Through  <span className="span-class"> Cargo </span>
           </h2>
           <p className="section-desc">
-            From air cargo to charter solutions, we deliver efficient, secure,
-            and scalable logistics tailored to your business needs.
+     Revenue-focused cargo solutions, helping airlines expand reach, optimize capacity, and strengthen market presence. 
           </p>
         </div>
 

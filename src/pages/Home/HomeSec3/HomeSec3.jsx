@@ -3,30 +3,30 @@ import "../HomeSec3/HomeSec3.css";
 const features = [
   {
     icon: "/images/why-icon1.svg",
-    title: "Reliable & On-Time Delivery",
+    title: "Aviation Industry Expertise ",
     description:
-      "We prioritize timely execution to ensure your cargo reaches its destination without delays.",
+      "Built by former airline and cargo professionals with experience in network planning, cargo sales, and aviation operations. ",
     alt: "Delivery Icon",
   },
   {
     icon: "/images/why-icon2.svg",
-    title: "Strong Regional Expertise",
+    title: "Pan-African Market Presence ",
     description:
-      "With operations in Madagascar & Ghana, we understand local markets and logistics.",
+      "Active across West, East, Central, and Southern Africa, supported by established local networks and expertise. ",
     alt: "Regional Icon",
   },
   {
     icon: "/images/why-icon3.svg",
-    title: "End-to-End Logistics Solutions",
+    title: "Revenue-Driven Approach ",
     description:
-      "From planning to delivery, we manage the complete cargo lifecycle seamlessly.",
+      "Focused on improving load factors and cargo revenue through proactive sales, pricing, and market intelligence. ",
     alt: "Logistics Icon",
   },
   {
     icon: "/images/why-icon4.svg",
-    title: "Flexible & Scalable Services",
+    title: "Long-Term Partnership ",
     description:
-      "Our solutions adapt to your business needs, small shipments or large-scale operations.",
+      "We work as an extension of your team, building sustainable relationships that support growth over time. ",
     alt: "Scalable Icon",
   },
 ];
@@ -41,14 +41,10 @@ function HomeSec3() {
         {/* Header */}
         <div className="why-choose-header">
           <h2 className="section-title" style={{color:"white"}}>
-            Your <span className="span-class"> Cargo. </span> Our <span className="span-class"> Commitment. </span>
+            Delivering  <span className="span-class"> Growth </span> Through  <span className="span-class"> Cargo </span>
           </h2>
           <p className="why-choose-description">
-            Blueberry Cargo was built with a singular focus: to deliver
-            dependable, specialized cargo and charter services across Africa's
-            most critical trade corridors. With active operations in Madagascar
-            and Ghana, we bring deep regional knowledge, established networks,
-            and the flexibility to move what others can't.
+         Growth happens when markets connect. Blueberry helps make those connections possible through cargo, charter, and aviation solutions designed for Africa's dynamic trade landscape. Backed by a presence in 35+ countries, we help businesses and airlines go further, faster, and with greater confidence. 
           </p>
         </div>
 

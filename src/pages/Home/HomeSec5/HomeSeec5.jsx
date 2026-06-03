@@ -9,25 +9,25 @@ const clients = [
     image: CorporateImg,
     title: "Freight Forwarders",
     description:
-      "A backend partner with African expertise & charter access when you need it.",
+      "Access additional cargo capacity, charter options, and regional support for shipments moving across African markets.",
   },
   {
     image: "/images/home-new-img.png",
     title: "Cargo Agents",
     description:
-      "A backend partner with African expertise & charter access when you need it.",
+      "Helping agents secure reliable cargo movement through strong airline relationships and regional market expertise.",
   },
   {
     image: CargoImg,
-    title: "Logistics Companies",
+    title: "Logistics Companies ",
     description:
-      "A backend partner with African expertise & charter access when you need it.",
+      "Expand your service capabilities with specialized cargo solutions, charter access, and on-ground regional coordination. ",
   },
   {
     image: LogisticsImg,
-    title: "Corporate Clients",
+    title: "Corporate Clients ",
     description:
-      "A backend partner with African expertise & charter access when you need it.",
+      "Managing complex cargo requirements for businesses operating across Africa, the Middle East, and Asia. ",
   },
 ];
 
@@ -40,16 +40,13 @@ function HomeSec5() {
 
         {/* HEADING */}
         <h2 className="section-title">
-          Trusted Logistics for Every{" "}
-          <span className="span-class">Supply Chain.</span>
+          Connecting Airlines Businesses and{" "}
+          <span className="span-class">Global Markets</span>
         </h2>
 
         {/* DESCRIPTION */}
         <p className="section-desc">
-          Blueberry Cargo is a trusted provider of cargo and charter logistics
-          solutions, built to support businesses with efficiency, reliability,
-          and precision. Operating strategically across Madagascar and Ghana,
-          we connect global trade routes with strong regional expertise.
+        From airline partners and logistics providers to mining, healthcare, and industrial sectors, we support organizations that depend on reliable cargo solutions across high-growth African markets. 
         </p>
 
         {/* CARDS */}

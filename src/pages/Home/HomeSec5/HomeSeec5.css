@@ -10,7 +10,7 @@
 .homeSec5-tag {
   display: inline-flex;
   align-items: center;
-    width: fit-content;
+  width: fit-content;
   justify-content: center;
   padding: 11px 25px;
   border-radius: 20px;
@@ -30,7 +30,7 @@
 /* DESCRIPTION */
 .homeSec5-description {
   max-width: 1200px;
-  font-size: 17px ;
+  font-size: 17px;
   line-height: 25px;
 }
 
@@ -68,7 +68,7 @@
 .homeSec5-overlay {
   position: absolute;
   inset: 0;
-background: linear-gradient(179.33deg, rgba(0, 0, 0, 0) 62.47%, rgba(0, 0, 0, 0.72) 91.29%);
+  background: linear-gradient(179.33deg, rgba(0, 0, 0, 0) 62.47%, rgba(0, 0, 0, 0.72) 91.29%);
 }
 
 /* CONTENT */
@@ -78,7 +78,12 @@ background: linear-gradient(179.33deg, rgba(0, 0, 0, 0) 62.47%, rgba(0, 0, 0, 0.
   text-align: center;
   z-index: 2;
   color: #fff;
-  padding: 10px;
+  position: absolute;
+  bottom: 28px;
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+  padding: 0px 16px;
 }
 
 /* ICON */
@@ -102,11 +107,11 @@ background: linear-gradient(179.33deg, rgba(0, 0, 0, 0) 62.47%, rgba(0, 0, 0, 0.
 
 /* TEXT */
 .homeSec5-content p {
-    font-size: 17px;
-    line-height: 23px;
-    font-weight: 500;
-    color: #FFBE55;
-    margin: 0;
+  font-size: 17px;
+  line-height: 23px;
+  font-weight: 500;
+  color: #FFBE55;
+  margin: 0;
 }
 
 /* =========================
