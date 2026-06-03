@@ -22,7 +22,7 @@ const hubs = [
     flag: GhanaFlag,
 
     description:
-      "Gateway for ECOWAS trade routes serving 400M+ consumers across West Africa.",
+      "Gateway to the ECOWAS region of 400+ million people, Ghana offers access to some of West Africa's fastest-growing trade markets. ",
 
     stats: [
       {
@@ -57,7 +57,7 @@ const hubs = [
     flag: MadagascarFlag,
 
     description:
-      "Strategic hub connecting Indian Ocean trade corridors and island markets.",
+      "Enabling efficient cargo connectivity between Africa, island economies, and key Indian Ocean trade corridors. ",
 
     stats: [
       {
@@ -97,7 +97,7 @@ export default function HomeSec4() {
           <div className="row align-items-center">
                {/* TITLE */}
                 <h2 className="section-title homesec-4-title">
-                  Where We <span className="span-class">Operate</span>
+                  Our Presence <span className="span-class"> Across Africa</span>
                 </h2>
 
             {/* LEFT */}
@@ -207,8 +207,7 @@ export default function HomeSec4() {
                   </div>
                 )}
               </div>
-              <p className="bottom-map-text">From air cargo to charter solutions, we deliver efficient, secure, & scalable 
-logistics tailored to your business needs.</p>
+              <p className="bottom-map-text">Strategically located in Ghana and Madagascar, our operational hubs provide access to major African trade routes and growing cargo opportunities across the continent. </p>
             </div>
           </div>
         </div>

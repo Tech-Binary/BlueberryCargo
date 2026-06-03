@@ -8,8 +8,8 @@ function ContactUs() {
     <>
       <CustomBanner
         img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/Contact%20us.png"
-        title="Get In Touch"
-        desc="Our team responds within one business day. Whether it's a quote, a question, or an emergency shipment — we're ready."
+        title="Reach Logistics Team "
+        desc="Share your cargo requirements, shipment details, or delivery concerns. Our team responds quickly with clear, reliable logistics support worldwide. "
       />
       <ContactForm />
       <ContactOperate />

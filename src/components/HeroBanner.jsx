@@ -15,18 +15,16 @@ function HeroBanner() {
         <div className="container">
           <div className="hero-content">
             <div className="d-flex">
-              <p className="small-text">AFRICA'S TRUSTED WING FOR CARGO</p>
+              <p className="small-text">AFRICA’S TRUSTED WING FOR CARGO MOVEMENT </p>
               <img alt="air-plan" src={AirPlane} className="airplan-icon"></img>
             </div>
 
             <h1>
-              Moving Cargo
-              Where Others  <span style={{ color: "#E9892C" }}>Don't Go</span>
+             Where Cargo Meets Continent’s Most <span style={{ color: "#E9892C" }}>Demanding Routes</span>
             </h1>
 
             <p className="hero-description">
-              From the Indian Ocean to the Gulf of Guinea — we orchestrate
-              complex freight operations with precision, speed and reliability.
+              Expert-led cross-border logistics, charter aircraft, project cargo, and time-critical freight management services in Africa. 
             </p>
 
             <div className="d-flex gap-3 mt-4 flex-wrap">
@@ -59,21 +57,21 @@ function HeroBanner() {
             <div className="hero-badges">
               <div className="hero-badge-item">
                 <img src="/images/home-icon1.svg" alt="Global Standards" />
-                <span>Global Standards</span>
+                <span>Africa-Wide Reach</span>
               </div>
 
               <div className="hero-divider"></div>
 
               <div className="hero-badge-item">
                 <img src="/images/home-icon2.svg" alt="Tracking" />
-                <span>Real-Time Tracking</span>
+                <span>Real-Time Visibility</span>
               </div>
 
               <div className="hero-divider"></div>
 
               <div className="hero-badge-item">
                 <img src="/images/home-icon3.svg" alt="Secure" />
-                <span>Secure & Reliable</span>
+                <span>Secure Operations</span>
               </div>
             </div>
 

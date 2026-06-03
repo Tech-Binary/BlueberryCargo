@@ -6,32 +6,39 @@ import{ useEffect, useState } from "react";
 
 const testimonials = [
   {
-    name: "Arlene McCoy",
-    role: "Founder",
+    name: "David Mensah",
+    role: "REGIONAL LOGISTICS MANAGER ",
     rating: 3.5,
     image: "/images/client1.png",
-    desc: "Blueberry Cargo handled a time-critical charter to Madagascar that no other operator would touch on our timeline. They delivered on time, with full communication throughout. They're now our go-to partner for all East Africa movements.",
+    desc: "Blueberry has been a dependable partner for our cargo movements across West Africa. Their local market knowledge and quick response times have helped us manage shipments more efficiently ",
   },
   {
-    name: "Eleanor Pena",
-    role: "Founder",
+    name: "Sarah Thompson ",
+    role: "FREIGHT OPERATIONS DIRECTOR ",
     rating: 4.8,
     image: "/images/client2.png",
-    desc: "Blueberry Cargo handled a time-critical charter to Madagascar that no other operator would touch on our timeline. They delivered on time, with full communication throughout. They're now our go-to partner for all East Africa movements.",
+    desc: "Finding reliable cargo support in emerging markets can be challenging. Blueberry's team consistently delivers practical solutions and keeps communication clear throughout the process.",
   },
   {
-    name: "Cameron Williamson",
-    role: "Founder",
+    name: "Ahmed Al Rashid ",
+    role: "CARGO DEVELOPMENT MANAGER ",
     rating: 2.5,
     image: "/images/client3.png",
-    desc: "Blueberry Cargo handled a time-critical charter to Madagascar that no other operator would touch on our timeline. They delivered on time, with full communication throughout. They're now our go-to partner for all East Africa movements.",
+    desc: "We've worked with several logistics providers over the years, but Blueberry stands out for its responsiveness and understanding of regional cargo requirements. ",
   },
   {
-    name: "Eleanor Pena",
-    role: "Founder",
+    name: "Michael Owusu ",
+    role: "SUPPLY CHAIN MANAGER ",
     rating: 3.5,
     image: "/images/client2.png",
-    desc: "Blueberry Cargo handled a time-critical charter to Madagascar that no other operator would touch on our timeline. They delivered on time, with full communication throughout. They're now our go-to partner for all East Africa movements.",
+    desc: "Their ability to coordinate cargo movements across multiple African markets has made a noticeable difference to our operations. The team is proactive, knowledgeable, and easy to work with. ",
+  },
+   {
+    name: "Grace Ndlovu  ",
+    role: "HEAD OF LOGISTICS & PROCUREMENT  ",
+    rating: 3.5,
+    image: "/images/client2.png",
+    desc: "Blueberry combines strong industry relationships with on-ground expertise. Their support has helped us navigate complex routes and maintain reliable cargo flow. ",
   },
 ];
 
@@ -97,13 +104,13 @@ function AboutSec5() {
       <div className="container">
         {/* Header */}
         <div className="AboutSec5-header">
-          <div className="homeSec5-tag">TESTIMONIAL</div>
+          <div className="homeSec5-tag">TESTIMONIALS </div>
 
           {/* HEADING */}
           <h2 className="section-title">
-            What <span className="span-class">Clients</span> Say{" "}
+           Words From Our <span className="span-class">Clients</span> {" "}
           </h2>
-          <p className="section-desc mb-4">Trusted by freight professionals</p>
+          <p className="section-desc mb-4">Feedback from trusted cargo partners </p>
         </div>
 
         {/* Slider */}

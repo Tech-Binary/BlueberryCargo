@@ -1,7 +1,6 @@
 import "./AboutSec1.css";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
-
 function AboutSec1() {
   return (
     <section className="AboutSec1-section section-padding">
@@ -11,7 +10,10 @@ function AboutSec1() {
           <div className="col-lg-6 col-md-12 p-0 mt-0">
             <div className="AboutSec1-image-grid">
               <div className="AboutSec1-img-tall">
-                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Group%201561300708.png" alt="Cargo loading" />
+                <img
+                  src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Group%201561300708.png"
+                  alt="Cargo loading"
+                />
               </div>
             </div>
           </div>
@@ -28,33 +30,35 @@ function AboutSec1() {
               </h2>
 
               <p className="AboutSec1-desc">
-                Blueberry Cargo was built with a singular focus: to deliver
-                dependable, specialized cargo and charter services across
-                Africa's most critical trade corridors. With active operations
-                in Madagascar and Ghana, we bring deep regional knowledge,
-                established networks, and the flexibility to move what others
-                can't.
+                Blueberry Cargo & Charter Services was created to bridge the gap
+                between global cargo demand and Africa's rapidly evolving trade
+                markets. As the dedicated cargo division of the Blueberry Group,
+                we combine aviation expertise, regional market knowledge, and
+                strong industry relationships to deliver cargo, charter, and
+                airline representation solutions across Africa, the Middle East,
+                and Asia.
               </p>
               <p className="AboutSec1-desc">
-                We serve freight forwarders, cargo agents, logistics companies,
-                and corporate clients who demand precision, accountability, and
-                a partner that truly knows the terrain. Every shipment we handle
-                is backed by on-ground expertise that global operators simply
-                can't replicate from a distance.
+                Operating across 35+ countries, we work closely with airlines,
+                freight forwarders, logistics providers, and businesses that
+                require more than transportation alone. Our role extends beyond
+                moving cargo; we help partners access new markets, overcome
+                operational challenges, and build stronger connections across
+                some of the world's most dynamic trade corridors.
               </p>
               {/* Feature Icons */}
               <div className="AboutSec1-features">
                 {[
                   {
-                    text: "Deep regional expertise across West and East Africa",
+                    text: "Extensive coverage across Africa, the Middle East, and Asia. ",
                   },
                   {
-                    text: "Established freight and charter networks on the ground",
+                    text: "Capabilities spanning cargo operations and aircraft charter solutions. ",
                   },
                   {
-                    text: "Single point of contact for the full cargo journey",
+                    text: "Built on long-term partnerships with airlines & freight forwarders. ",
                   },
-                  { text: "Backed by Blueberry Group infrastructure" },
+                  { text: "Helping partners expand reach and strengthen cargo performance. " },
                 ].map((d, index) => (
                   <div className="AboutSec1-feature-item">
                     <img
@@ -68,13 +72,12 @@ function AboutSec1() {
 
               <div className="AboutSec1-button">
                 <a href="/charter-plane-services" className="cta-quote-btn">
-                  Explore Our Services  <div className="cta-quote-icon">
-                  <HiArrowNarrowRight />
-                </div>
+                  Discover Our Solutions {" "}
+                  <div className="cta-quote-icon">
+                    <HiArrowNarrowRight />
+                  </div>
                 </a>
-                
               </div>
-             
             </div>
           </div>
         </div>

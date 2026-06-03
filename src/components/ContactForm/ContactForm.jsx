@@ -104,13 +104,12 @@ function ContactForm() {
           <div className="col-lg-6 col-md-12">
             <div className="contact-left">
               <h2 className="section-title">
-                Let's Move Your{" "}
-                <span className="span-class"> Cargo, Together</span>
+                Planning Your Next{" "}
+                <span className="span-class"> Cargo Movement?</span>
               </h2>
 
               <p className="section-desc mb-4">
-                Our logistics specialists will respond within one business day
-                to discuss your shipment, charter or supply-chain program.
+              From commercial freight to complex charter operations, we'll help you find the most effective route forward
               </p>
 
               {/* Contact Cards Grid */}
@@ -171,9 +170,9 @@ function ContactForm() {
           {/* RIGHT SIDE */}
           <div className="col-lg-6 col-md-12">
             <div className="contact-form-wrap">
-              <h3 className="form-heading">Send an inquiry</h3>
+              <h3 className="form-heading">Request a Cargo Solution </h3>
               <p className="form-subheading">
-                We respond within one business day.
+               Share your requirements and a cargo specialist will respond with tailored guidance within one business day. 
               </p>
 
               <form className="contact-form" onSubmit={handleSubmit}>

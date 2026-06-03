@@ -29,25 +29,16 @@ function HomeSec1() {
 
               {/* HEADING */}
               <h2 className="section-title mb-0">
-                Delivering <span className="span-class">Trust.</span>
+                Connecting  <span className="span-class">Africa’s</span>
               </h2>
 
               <h2 className="section-title">
-                <span className="span-class">Delivering</span> More.
+                <span className="span-class">Trade </span> Routes
               </h2>
 
               {/* DESCRIPTION */}
               <p className="about-description">
-                <strong>Blueberry Cargo</strong> is a trusted provider of cargo
-                and charter logistics solutions, built to support businesses
-                with efficiency, reliability, and precision. Operating
-                strategically across <strong>Madagascar and Ghana</strong>, we
-                connect global trade routes with strong regional expertise.
-                From complex logistics planning seamless execution, our
-                solutions are designed to ensure timely deliveries, secure
-                handling & complete visibility. We empower businesses to move
-                faster, operate smarter, and scale confidently across
-                international markets.
+                <strong>Blueberry Cargo</strong> & Charter Services helps airlines unlock cargo opportunities across <strong> Africa, the Middle East, and Asia</strong> through specialized GSA representation, aircraft charter services, and tailored cargo solutions. Operating across 35+ countries and backed by the Blueberry Group's aviation expertise, we connect global carriers with high-growth markets, combining local market knowledge, strong industry relationships, and revenue-focused strategies that drive long-term commercial success.
               </p>
 
               {/* FEATURES */}
@@ -64,8 +55,8 @@ function HomeSec1() {
                   </div>
 
                   <p className="feature-label">
-                    Industry <br />
-                    Expertise
+                    Airline <br />
+                     GSA Expertise 
                   </p>
 
                 </div>
@@ -83,8 +74,8 @@ function HomeSec1() {
                   </div>
 
                   <p className="feature-label">
-                    Global <br />
-                    Network
+                    35+ <br />
+                    Countries
                   </p>
 
                 </div>
@@ -102,8 +93,8 @@ function HomeSec1() {
                   </div>
 
                   <p className="feature-label">
-                    Reliable <br />
-                    Operations
+                    Revenue  <br />
+                    Specialists
                   </p>
 
                 </div>

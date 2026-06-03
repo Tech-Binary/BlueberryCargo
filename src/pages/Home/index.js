@@ -16,8 +16,8 @@ function Home() {
       <HomeSec3 />
       <HomeSec4 />
       <HomeSec5 />
-      <HomeSec6 title2="Ready to move your cargo across Africa?"
-        desc2="Tell us about your shipment and our team will get back to you with a tailored solution." />
+      <HomeSec6 title2="Ready To Reach New Markets Across Africa? "
+        desc2="Leverage our cargo expertise, airline partnerships, and regional presence to reach new opportunities. " />
       <ContactForm />
       <Footer />
 
