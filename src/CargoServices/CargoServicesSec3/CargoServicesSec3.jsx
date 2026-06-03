@@ -15,41 +15,41 @@ const defaultCargoJourneyData = [
   {
     id: 1,
     icon: StepIcon1,
-    title: "Request a Quote",
+    title: "Share Your Shipment",
     description:
-      "Submit your shipment details via our online form or dedicated account manager",
+      "Provide cargo details, destination, timelines, and handling requirements for planning and coordination.",
     active: false,
   },
   {
     id: 2,
     icon: StepIcon2,
-    title: "Route Planning",
+    title: "Transport Planning",
     description:
-      "Our specialists design the most efficient route for your specific cargo needs",
+      "Our specialists identify optimal routing, carrier options, and transport requirements.",
     active: true,
   },
   {
     id: 3,
     icon: StepIcon3,
-    title: "Cargo Pickup",
+    title: "Cargo Acceptance",
     description:
-      "Our ground teams collect, inspect, and prepare your freight for movement",
+      "Cargo is received, inspected, documented, and prepared for onward movement.",
     active: false,
   },
   {
     id: 4,
     icon: StepIcon4,
-    title: "In-Transit Care",
+    title: "In-Transit Visibility",
     description:
-      "Real-time monitoring with 24/7 status updates throughout the entire journey",
+      "Track shipment progress through key milestones with continuous operational updates.",
     active: true,
   },
   {
     id: 5,
     icon: StepIcon5,
-    title: "Final Delivery",
+    title: "Delivery & Handover",
     description:
-      "Confirmed delivery to destination with full documentation and sign-off",
+      "Final delivery coordinated with supporting documentation and confirmation.",
     active: false,
   },
 ];
@@ -58,41 +58,42 @@ const defaultCargoJourneyData = [
 const charterPlaneJourneyData = [
   {
     id: 1,
-    icon: StepIcon1, // You can change icon later
-    title: "Submit Request",
+    icon: StepIcon1,
+    title: "Share Requirements",
     description:
-      "Share origin, destination, cargo details & timeline via form or direct call",
+      "Provide cargo specifications, origin, destination, preferred timeline, and any special handling requirements.",
     active: false,
   },
   {
     id: 2,
-    icon: StepIcon2, // You can change icon later
-    title: "Aircraft Match",
+    icon: StepIcon2,
+    title: "Aircraft Sourcing",
     description:
-      "We source & confirm the best-fit aircraft type for your cargo and route",
+      "Identify suitable aircraft based on payload, destination, cargo type, and urgency.",
     active: true,
   },
   {
     id: 3,
-    icon: StepIcon3, // You can change icon later
-    title: "Quote & Confirm",
+    icon: StepIcon3,
+    title: "Charter Confirmation",
     description:
-      "Transparent pricing confirmed, flight plan filed, slots secured",
+      "Finalize aircraft allocation, commercial terms, flight schedule, and operational planning.",
     active: false,
   },
   {
     id: 4,
-    icon: StepIcon4, // You can change icon later
-    title: "Cargo Loaded",
-    description: "Ground crew handles acceptance, ULD build-up & documentation",
+    icon: StepIcon4,
+    title: "Operational Coordination",
+    description:
+      "Manage permits, ground handling, documentation, loading, and departure arrangements.",
     active: true,
   },
   {
     id: 5,
-    icon: StepIcon5, // You can change icon later
-    title: "Delivered",
+    icon: StepIcon5,
+    title: "Cargo Delivered",
     description:
-      "Destination handling arranged, customs cleared, cargo signed off",
+      "Coordinate destination handling, customs clearance, cargo release, and final handover.",
     active: false,
   },
 ];
@@ -128,8 +129,8 @@ function CargoServicesSec3() {
           <div className="cargo-sec3-heading-wrapper">
             <h2 className="section-title">
               {location.pathname === "/charter-plane-services" ? (
-                <>
-                  From <span className="span-class">Enquiry</span> to Airborne
+                <>  
+                  From <span className="span-class">Cargo</span> Brief to Delivery
                 </>
               ) : (
                 <>

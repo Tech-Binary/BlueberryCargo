@@ -26,34 +26,35 @@ const charterSectionData = {
   heading: "Need a Charter Plane Instead?",
 
   description:
-    "When cargo timelines are critical or standard freight routes won't cut it — our Charter Plane service puts a dedicated aircraft at your disposal. Full flexibility, total control, zero compromise.",
+    "Scheduled cargo services work for most shipments. But when deadlines are tight, destinations are challenging, or cargo requires exclusive capacity, our Charter Services provide direct aircraft access with greater flexibility and operational control.",
 
-  image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cargo-new2.png",
+  image:
+    "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cargo-new2.png",
 
   cards: [
     {
       icon: Icon1,
       title: "On-Demand Departures",
-      text: "Fly on your schedule, not ours",
+      text: "Fly according to cargo deadlines and priorities",
     },
     {
       icon: Icon2,
       title: "Full Aircraft Capacity",
-      text: "Maximum payload, zero sharing",
+      text: "Dedicated aircraft space without shared loads",
     },
     {
       icon: Icon3,
-      title: "Any African Destination",
-      text: "Access remote & underserved routes",
+      title: "Remote Destination Access",
+      text: "Reach underserved airports and project locations",
     },
     {
       icon: Icon4,
-      title: "Emergency & AOG Flights",
-      text: "24-hour activation for urgent needs",
+      title: "Emergency & AOG Support",
+      text: "Rapid aircraft deployment for urgent requirements",
     },
   ],
 
-  statsLabel: "When Speed Is Non-Negotiable",
+  statsLabel: "When Speed IsNon-Negotiable",
 
   stats: [
     { number: "24h", text: "Activation" },
@@ -61,8 +62,8 @@ const charterSectionData = {
     { number: "50+", text: "Destinations" },
   ],
 
-  primaryBtn: "View Charter Services",
-  secondaryBtn: "Talk to a Specialist",
+  primaryBtn: "Explore Charter Services",
+  secondaryBtn: "Speak with Charter Team",
 };
 
 /* =========================================
@@ -70,32 +71,34 @@ const charterSectionData = {
    ====================================== */
 
 const standardCargoData = {
-  heading: "Need Standard Cargo Instead?",
+  heading: "Looking Beyond Charter Solutions?",
 
   description:
-    "When timelines are flexible and volume is the priority, our full Cargo service offers cost-effective solutions across our Madagascar and Ghana networks — including freight forwarding, warehousing, and end-to-end logistics.",
+    "For routine freight movements, recurring shipments, and cost-sensitive cargo, our Cargo Services provide reliable access to regional and international networks, backed by freight forwarding expertise.",
 
-  image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cargo-new.png",
+  image:
+    "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/cargo-new.png",
 
   cards: [
     {
       icon: Icon1,
       title: "General Cargo Handling",
-      text: "bulk, break-bulk & air cargo",
+      text: "commercial, consolidated & bulk cargo",
     },
     {
       icon: Icon2,
       title: "Freight Forwarding Solutions",
-      text: "customs, routing & compliance",
+      text: "documentation, customs & routing",
     },
     {
       icon: Icon3,
       title: "End-to-End Logistics Support",
-      text: "supply chain & last mile",
+      text: "warehousing, transport & delivery",
     },
   ],
 
-  statsLabel: "When Speed Is Non-Negotiable",
+  // OLD DATA KEPT SAME
+  statsLabel: "When Speed IsNon-Negotiable",
 
   stats: [
     { number: "50K+", text: "Tons/Year" },
@@ -103,8 +106,8 @@ const standardCargoData = {
     { number: "3", text: "Services" },
   ],
 
-  primaryBtn: "View Cargo Services",
-  secondaryBtn: "Talk to a Specialist",
+  primaryBtn: "Explore Cargo Services",
+  secondaryBtn: "Speak with Cargo Team",
 };
 
 function CargoServicesSec4() {
@@ -134,7 +137,10 @@ function CargoServicesSec4() {
         >
           {/* LEFT CONTENT */}
           <div className="charter-content">
-            <div className="homeSec5-tag">NEED A CARGO?</div>
+            <div className="homeSec5-tag">{isCargoPage? (
+              <>SHIPMENT TOO URGENT?</>
+            ):(<>CARGO SOLUTIONS </>)
+              }</div>
 
             {/* =========================================
                 DYNAMIC TITLE
@@ -147,9 +153,8 @@ function CargoServicesSec4() {
                   Instead?
                 </>
               ) : (
-                <>
-                  Need Standard <span className="span-class">Cargo</span>{" "}
-                  Instead?
+                <>Looking Beyond<span className="span-class"> Charter</span> Solutions? 
+                 
                 </>
               )}
             </h2>
