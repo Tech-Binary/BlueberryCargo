@@ -8,18 +8,18 @@ function AboutSec2() {
         vision: {
             img: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Rectangle%2034625261.png",
             title:
-                "To Be Africa's Most Trusted Specialized Cargo Partner — Connecting Critical Markets Others Overlook",
-            desc: `We see a future where African trade corridors are served with the same precision and reliability as any global logistics route. Blueberry Cargo exists to bridge that gap — building infrastructure, relationships, and capability that makes African freight seamless.`,
+                "Shaping Africa’s Cargo Future ",
+            desc: `We envision an Africa where businesses, airlines, and markets are connected through stronger cargo networks, making trade more accessible, efficient, and commercially rewarding across the continent and beyond. `,
         },
         mission: {
             img: "/images/OurMission.png",
-            title: "Our Mission",
-            desc: "To deliver dependable and specialized cargo solutions across Africa with precision, accountability, and deep regional expertise.",
+            title: "Creating Connections That Move Trade ",
+            desc: "By combining aviation expertise, local market intelligence, and strategic partnerships, we help move cargo, expand networks, and open new opportunities across Africa and beyond. ",
         },
         values: {
             img: "/images/OurValues.png",
-            title: "Our Values",
-            desc: "Integrity, reliability, and commitment to excellence drive everything we do in connecting Africa’s critical markets.",
+            title: "Built on Partnership ",
+            desc: "We believe successful cargo operations are built on trust, accountability, and market understanding. That's why we focus on long-term relationships, transparent communication, and delivering on commitments, whether we're supporting an airline, a freight forwarder, or a business entering a new market. ",
         },
     };
 

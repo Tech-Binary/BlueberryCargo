@@ -21,18 +21,18 @@ function NetworkSec2() {
                                 <span className="span-class">Ghana</span>  Operations
                             </h2>
                             <p className="NetworkSec2-description">
-                                Ghana is one of West Africa's most stable and accessible logistics markets — a natural hub for freight connecting the Gulf of Guinea to international trade corridors. Our Ghana operations provide freight forwarders and cargo agents with a reliable, knowledgeable ground partner.
+                                Positioned on the Gulf of Guinea, Ghana serves as a natural entry and distribution point for West African trade. Our operations support cargo movements into neighbouring markets while providing airlines, freight forwarders, operational coordination, and access to one of Africa's most active commercial regions. 
                             </p>
 
                             {/* Feature Icons */}
                             <div className="NetworkSec2-features mb-3">
                                 {
-                                    [{ text: "Freight forwarding" },
-                                    { text: "Air cargo handling" },
-                                    { text: "Charter access" },
-                                    { text: "Customs support" },
-                                    { text: "Cargo agent network" },
-                                    { text: "Regional West Africa reach" },
+                                    [{ text: "Air Freight Handling" },
+                                    { text: "West Africa Forwarding" },
+                                    { text: "Dedicated Charter Access " },
+                                    { text: "Customs Compliance Support" },
+                                    { text: "Cargo Network Access" },
+                                    { text: "Regional Distribution Support" },
                                     ].map((d, index) => (
 
                                         <div className="NetworkSec2-feature-item">
