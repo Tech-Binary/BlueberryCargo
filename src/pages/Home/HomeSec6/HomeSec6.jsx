@@ -36,7 +36,7 @@ function HomeSec6({ data, title, desc, title2, desc2, newClass }) {
           title={title}
           desc={desc}
           newClass={newClass}
-          tag={location.pathname === "/about" ? "CERTIFICATES" : null}
+          tag={location.pathname === "/about" ? "CERTIFICATIONS " : null}
         />
       ) : (
         <div className="cta-banner-image">
