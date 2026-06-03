@@ -82,7 +82,7 @@ function Navbar() {
           className="collapse navbar-collapse custom-navbar-collapse"
           id="navbarContent"
         >
-          <ul className="navbar-nav  custom-navbar-nav">
+          <ul className="navbar-nav mx-auto custom-navbar-nav">
             {navbarLinks.map((item) => (
               <li
                 className={`nav-item custom-nav-item ${item.dropdown ? "dropdown" : ""}`}
