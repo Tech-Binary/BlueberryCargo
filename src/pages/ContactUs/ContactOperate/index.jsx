@@ -11,13 +11,13 @@ const locations = [
   {
     country: "Madagascar",
     flag: "/images/Madagascar.png",
-    desc: "Gateway for ECOWAS trade routes serving 400M+ consumers across West Africa.",
+    desc: "Strategic island logistics hub connecting Indian Ocean and East Africa trade lanes.",
   },
 ];
 
 const stats = [
   {
-    number: "32+",
+    number: "18+",
     label: "Routes",
     icon: "/images/op-icon1.svg",
   },
@@ -45,8 +45,7 @@ const ContactOperate = () => {
         </h2>
 
         <p className=" section-desc mb-4">
-          Two active African markets with on-ground teams, established
-          partners, and full cargo & charter capability.
+      On-ground presence in key African markets, supported by established partners and integrated cargo & charter capabilities. 
         </p>
 
         <div className="operate-wrapper">

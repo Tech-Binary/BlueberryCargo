@@ -82,9 +82,9 @@ function Network() {
       <NetworkSec2 />
       <HomeSec6
         data={features2}
-        title="Our ecosystem"
+        title="Cargo Ecosystem"
         newClass="true"
-        desc="The airlines, ground handlers, and freight agents that power our network in each market."
+        desc="The people, partners, and infrastructure that help keep cargo moving efficiently across Africa. "
         title2="Need to ship cargo to Madagascar or Ghana?"
         desc2="Tell us your route, cargo type, and timeline — our team will get back to you with a tailored solution within 24 hours."
       />

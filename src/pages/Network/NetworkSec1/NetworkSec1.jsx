@@ -11,18 +11,18 @@ function NetworkSec1() {
                                 <span className="span-class">Madagascar</span>  Operations
                             </h2>
                             <p className="NetworkSec1-description">
-                                Madagascar sits at one of the Indian Ocean's most strategically significant logistics positions — yet it remains underserved by global carriers. Blueberry Cargo has built genuine on-ground capability here, with established relationships across aviation, port, and customs operations.
+                               Limited airfreight capacity, island logistics challenges, and complex cargo movements require established relationships on the ground. Our Madagascar operations help bridge that gap, supporting freight forwarders, airlines, and businesses moving cargo between the Indian Ocean, mainland Africa, and international markets. 
                             </p>
 
                             {/* Feature Icons */}
                             <div className="NetworkSec1-features mb-3">
                                 {
-                                    [{ text: "General cargo handling" },
-                                    { text: "Freight forwarding" },
-                                    { text: "Aircraft charter services" },
-                                    { text: "End-to-end logistics" },
-                                    { text: "Customs clearance support" },
-                                    { text: "Oversized cargo handling" },
+                                    [{ text: "Air Cargo Handling " },
+                                    { text: "Regional Freight Forwarding " },
+                                    { text: "Remote Charter Support " },
+                                    { text: "Custom Documentation Support " },
+                                    { text: "Project Cargo Handling " },
+                                    { text: "End-to-End Logistics " },
                                     ].map((d, index) => (
 
                                         <div className="NetworkSec1-feature-item">
