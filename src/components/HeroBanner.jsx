@@ -8,7 +8,7 @@ function HeroBanner() {
     <section className="hero-banner">
 
       {/* Banner Image */}
-      <img src={heroImage} alt="Cargo Banner" className="hero-image" />
+      <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/network-new.png" alt="Cargo Banner" className="hero-image" />
 
       {/* Overlay Content */}
       <div className="hero-overlay">
