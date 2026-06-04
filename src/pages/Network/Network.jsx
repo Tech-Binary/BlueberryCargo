@@ -7,7 +7,9 @@ import CustomBanner from "../../components/CustomBanner/CustomBanner";
 import ContactFAQ from "./../ContactUs/ContactFAQ";
 import ContactOperate from "../ContactUs/ContactOperate";
 import ContactForm from "../../components/ContactForm/ContactForm"
+
 function Network() {
+
   const features = [
     {
       icon: "/images/network-icon1.svg",
@@ -73,7 +75,7 @@ function Network() {
   return (
     <>
       <CustomBanner
-        img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/network-banner.png"
+        img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/network-new.png"
         title="Our Operational Network"
         desc="Supporting cargo, charter, and logistics operations through established networks in Madagascar, Ghana, and strategic African markets."
       />
