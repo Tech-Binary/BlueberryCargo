@@ -84,18 +84,18 @@ const charterServicesData = [
       },
       {
         icon: Icon2,
-        title: "Flexible Flight Planning",
+        title: "Flexible Scheduling ",
         text: "Fly when cargo demands, not schedules dictate.",
       },
       {
         icon: Icon3,
-        title: "Specialized Cargo",
+        title: "Specialized Cargo ",
         text: "Pharma, perishables, dangerous goods, and high-value cargo.",
       },
       {
         icon: Icon4,
-        title: "Remote Market Access",
-        text: "Serving mining sites, islands, and underserved destinations.",
+        title: "Remote Market ",
+        text: "Serving mining sites and underserved destinations.",
       },
     ],
   },
@@ -116,34 +116,34 @@ const charterServicesData = [
     stats: [
       {
         number: "24/7",
-        text: "Emergency Response Desk",
+        text: "Charter Desk ",
       },
       {
-        number: "<4 Hours",
-        text: "Charter Activation Time",
+        number: "<4 Hrs ",
+        text: "Charter Activation Time ",
       },
     ],
 
     cards: [
       {
         icon: Icon5,
-        title: "Around-the-Clock Support",
-        text: "Round-the-clock coordination for urgent cargo requirements.",
+        title: "Emergency Support",
+        text: "Round-the-clock coordination for urgent cargo requirements",
       },
       {
         icon: Icon6,
-        title: "Rapid Charter Response",
-        text: "Aircraft sourcing and deployment for critical shipments.",
+        title: "Rapid Response",
+        text: "Aircraft sourcing and deployment for critical shipments",
       },
       {
         icon: Icon7,
         title: "Cold Chain Logistics",
-        text: "Temperature-controlled handling for pharma and perishables.",
+        text: "Temperature-controlled handling for pharma and perishables",
       },
       {
         icon: Icon8,
         title: "AOG & Critical Spares",
-        text: "Priority delivery for grounded aircraft components.",
+        text: "Priority delivery for grounded aircraft components",
       },
     ],
   },
@@ -174,22 +174,22 @@ const charterServicesData = [
     cards: [
       {
         icon: Icon9,
-        title: "Route & Capacity Planning",
+        title: "Route Planning ",
         text: "Optimized around cargo type and market conditions.",
       },
       {
         icon: Icon10,
-        title: "Customs & Compliance",
+        title: "Customs Support ",
         text: "Managing permits, documentation, and local compliance.",
       },
       {
         icon: Icon11,
-        title: "Multimodal Coordination",
+        title: "Freight Coordination ",
         text: "Air cargo integrated with onward ground transport.",
       },
       {
         icon: Icon12,
-        title: "Dedicated Account Mgmt",
+        title: "Account Manager ",
         text: "One specialist overseeing the entire operation.",
       },
     ],
