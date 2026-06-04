@@ -44,11 +44,11 @@
 }
 
 .hero-content h1 {
-    font-size: 62px;
-    line-height: 1.1;
-    margin-bottom: 20px;
-    color: #19325C;
-    font-weight: 900;
+  font-size: 62px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  color: #19325C;
+  font-weight: 900;
 }
 
 .hero-description {
@@ -243,6 +243,11 @@
     padding: 16px 20px;
   }
 
+  .hero-overlay .container {
+    margin-top: 50px;
+    margin-left: 50px;
+  }
+
   .hero-divider {
     display: none;
   }
@@ -266,6 +271,11 @@
     width: 100%;
     border-radius: 18px;
   }
+    .hero-overlay .container {
+        margin-top: 0;
+        margin-left: 0;
+        padding-bottom: 20px;
+    }
 
   .hero-badge-item {
     width: 100%;
@@ -374,9 +384,8 @@
 
   .hero-overlay {
     align-items: flex-start;
-    padding-top: 60px;
+    padding-top: 40px;
   }
-
   .hero-content {
     padding-top: 0;
     padding-bottom: 20px;
