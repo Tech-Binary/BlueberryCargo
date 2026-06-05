@@ -36,7 +36,7 @@
 }
 
 .small-text {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   letter-spacing: 2px;
   color: #000000;
@@ -320,7 +320,7 @@
     font-size: 44px;
     line-height: 1.1;
     margin-bottom: 20px;
-    color: #000000;
+    /* color: #000000; */
   }
 }
 
@@ -406,23 +406,41 @@
   }
 
   .hero-content h1 {
-    font-size: 34px;
+    font-size: 36px;
     line-height: 1.1;
+    margin-bottom: 12px;
   }
 
   .hero-content button {
-    max-width: 220px;
+    max-width: 155px;
   }
-
+  .home-quote-icon1 {
+    width: 22px;
+    height: 22px;
+  }
+  .home-quote-icon2 {
+    width: 22px;
+    height: 22px;
+  }
+  .explore-btn {
+    gap: 5px;
+  }
+/* 
   .hero-content button {
     min-width: 220px;
-  }
-
-  .explore-btn {
-    padding: 10px 22px;
-    font-size: 14px;
-    letter-spacing: 0.5px;
-  }
+  } */
+.small-text {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+ 
+}
+      .explore-btn {
+        padding: 10px 15px;
+        font-size: 12px;
+        letter-spacing: 0.5px;
+    }
 
   .hero-stat-item {
     width: 50%;
@@ -436,21 +454,29 @@
     flex-wrap: wrap;
   }
 
-  .hero-description {
-    font-size: 15px;
-    line-height: 1.4;
-  }
+    .hero-description {
+        font-size: 13px;
+        max-width: 316px;
+        line-height: 1.4;
+    }
 
   .hero-badge-item {
-    width: 50%;
+    width: 35%;
     margin-bottom: 15px;
   }
 
   .hero-badges {
-    flex-wrap: wrap;
+    flex-wrap:nowrap;
     gap: 0;
     padding-bottom: 0;
   }
+  .hero-badge-item span {
+    font-size: 12px;
+}
+.hero-badge-item img {
+    width: 30px;
+    height: 30px;
+}
 }
 
 @media (max-width: 320px) {
