@@ -4,7 +4,7 @@ import "../styles/HeroBanner.css";
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 function HeroBanner() {
-  return (
+  return (<>
     <section className="hero-banner">
 
       {/* Banner Image */}
@@ -20,11 +20,11 @@ function HeroBanner() {
             </div>
 
             <h1>
-             Where Cargo Meets  <span style={{ color: "#E9892C", fontWeight:"900" }}>Complex Routes</span>
+              Where Cargo Meets  <span style={{ color: "#E9892C", fontWeight: "900" }}>Complex Routes</span>
             </h1>
 
             <p className="hero-description">
-              Expert-led cross-border logistics, charter aircraft, project cargo, and time-critical freight management services in Africa. 
+              Expert-led cross-border logistics, charter aircraft, project cargo, and time-critical freight management services in Africa.
             </p>
 
             <div className="d-flex gap-3 mt-4 flex-wrap">
@@ -123,7 +123,51 @@ function HeroBanner() {
         </div>
       </div>
     </section>
-  );
+    {/* STATS BAR FOR MBOILE */}
+    <div className="hero-stats-wrapper2">
+      <div className="hero-stats">
+
+        <div className="hero-stat-item">
+          <img src="/images/home2-icon1.png" alt="" />
+          <div>
+            <h3>10+</h3>
+            <p>Years of Excellence</p>
+          </div>
+        </div>
+
+        <div className="hero-stat-divider"></div>
+
+        <div className="hero-stat-item">
+          <img src="/images/home2-icon2.png" alt="" />
+          <div>
+            <h3>50+</h3>
+            <p>Global Destinations</p>
+          </div>
+        </div>
+
+        <div className="hero-stat-divider"></div>
+
+        <div className="hero-stat-item">
+          <img src="/images/home2-icon3.png" alt="" />
+          <div>
+            <h3>24/7</h3>
+            <p>Support & Tracking</p>
+          </div>
+        </div>
+
+        <div className="hero-stat-divider"></div>
+
+        <div className="hero-stat-item">
+          <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Frame%20182.png" alt="" />
+          <div>
+            <h3>100%</h3>
+            <p>Commitment to Safety</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </>);
 }
 
 export default HeroBanner;
