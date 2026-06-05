@@ -117,7 +117,7 @@ function CargoServicesSec4() {
   /* =========================================
      URL CONDITION
   ========================================= */
-     
+
   const isCargoPage = location.pathname === "/cargo-services";
 
   const sectionData = isCargoPage
@@ -132,16 +132,15 @@ function CargoServicesSec4() {
     <section className="cargo-services-sec4 section-padding">
       <div className="container">
         <div
-          className={`charter-wrapper ${
-            isCargoPage ? "" : "cargo-layout-alt"
-          }`}
+          className={`charter-wrapper ${isCargoPage ? "" : "cargo-layout-alt"
+            }`}
         >
           {/* LEFT CONTENT */}
           <div className="charter-content">
-            <div className="homeSec5-tag">{isCargoPage? (
+            <div className="homeSec5-tag">{isCargoPage ? (
               <>SHIPMENT TOO URGENT?</>
-            ):(<>CARGO SOLUTIONS </>)
-              }</div>
+            ) : (<>CARGO SOLUTIONS </>)
+            }</div>
 
             {/* =========================================
                 DYNAMIC TITLE
@@ -154,8 +153,8 @@ function CargoServicesSec4() {
                   Instead?
                 </>
               ) : (
-                <>Looking Beyond<span className="span-class"> Charter</span> Solutions? 
-                 
+                <>Looking Beyond<span className="span-class"> Charter</span> Solutions?
+
                 </>
               )}
             </h2>

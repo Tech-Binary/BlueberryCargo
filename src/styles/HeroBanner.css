@@ -164,6 +164,11 @@
   z-index: 10;
 }
 
+.hero-stats-wrapper2 {
+  width: 100%;
+  display: none;
+}
+
 .hero-stats {
   max-width: 1250px;
   margin: auto;
@@ -271,11 +276,12 @@
     width: 100%;
     border-radius: 18px;
   }
-    .hero-overlay .container {
-        margin-top: 0;
-        margin-left: 0;
-        padding-bottom: 20px;
-    }
+
+  .hero-overlay .container {
+    margin-top: 0;
+    margin-left: 0;
+    padding-bottom: 20px;
+  }
 
   .hero-badge-item {
     width: 100%;
@@ -358,11 +364,14 @@
 
   .hero-banner {
     height: auto;
-    min-height: 100vh;
+    min-height: 80vh;
     background-image: url("./../../src/assets/banners/hero-banner.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .hero-stats-wrapper {
@@ -382,27 +391,33 @@
     position: static;
   }
 
+  .hero-stats-wrapper2 {
+    width: 100%;
+    display: flex;
+    padding: 20px;
+  }
+
   .hero-overlay {
     align-items: flex-start;
     padding-top: 40px;
   }
+
   .hero-content {
     padding-top: 0;
     padding-bottom: 20px;
   }
 
   .hero-stat-item img {
-    width: 40px;
-    height: 40px;
-
+    width: 35px;
+    height: 35px;
   }
 
   .hero-stat-item h3 {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .hero-stat-item p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .hero-content h1 {
@@ -414,37 +429,43 @@
   .hero-content button {
     max-width: 155px;
   }
+
   .home-quote-icon1 {
     width: 22px;
     height: 22px;
   }
+
   .home-quote-icon2 {
     width: 22px;
     height: 22px;
   }
+
   .explore-btn {
     gap: 5px;
   }
-/* 
+
+  /* 
   .hero-content button {
     min-width: 220px;
   } */
-.small-text {
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
- 
-}
-      .explore-btn {
-        padding: 10px 15px;
-        font-size: 12px;
-        letter-spacing: 0.5px;
-    }
+  .small-text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+
+  }
+
+  .explore-btn {
+    padding: 10px 15px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
 
   .hero-stat-item {
     width: 50%;
     margin-bottom: 30px;
+    gap: 12px;
   }
 
   .hero-stats {
@@ -454,29 +475,35 @@
     flex-wrap: wrap;
   }
 
-    .hero-description {
-        font-size: 13px;
-        max-width: 316px;
-        line-height: 1.4;
-    }
+  .hero-description {
+    font-size: 13px;
+    max-width: 316px;
+    line-height: 1.4;
+  }
 
   .hero-badge-item {
     width: 35%;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
   }
 
   .hero-badges {
-    flex-wrap:nowrap;
+    flex-wrap: nowrap;
     gap: 0;
-    padding-bottom: 0;
+    padding: 10px 10px;
   }
+
   .hero-badge-item span {
     font-size: 12px;
-}
-.hero-badge-item img {
-    width: 30px;
-    height: 30px;
-}
+  }
+
+  .hero-stats-wrapper {
+    display: none;
+  }
+
+  .hero-badge-item img {
+    width: 20px;
+    height: 20px;
+  }
 }
 
 @media (max-width: 320px) {
