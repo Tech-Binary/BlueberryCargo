@@ -101,13 +101,13 @@
   display: none;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 15px;
   top: 35px;
   background: #fff;
   border-radius: 15px !important;
-  padding: 10px 0;
+  padding: 45px 10px 20px 10px !important;
   border: none !important;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); */
   z-index: 999;
 }
 
@@ -121,12 +121,12 @@
 
 .custom-dropdown-menu .dropdown-item {
   padding: 8px 20px;
-  font-size: 14px;
+  font-size: 17px;
   color: #6B7280 !important;
   font-weight: 600;
   transition: 0.3s ease;
   border-radius: 15px !important;
-
+  font-family: 'Aptos';
 }
 
 .custom-dropdown-menu .dropdown-item.active,
