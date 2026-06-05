@@ -55,7 +55,7 @@ const charterSectionData = {
     },
   ],
 
-  statsLabel: "When Speed IsNon-Negotiable",
+  statsLabel: "When Speed Is Non-Negotiable",
 
   stats: [
     { number: "24h", text: "Activation" },
@@ -99,7 +99,7 @@ const standardCargoData = {
   ],
 
   // OLD DATA KEPT SAME
-  statsLabel: "When Speed IsNon-Negotiable",
+  statsLabel: "When Speed Is Non-Negotiable",
 
   stats: [
     { number: "50K+", text: "Tons/Year" },
