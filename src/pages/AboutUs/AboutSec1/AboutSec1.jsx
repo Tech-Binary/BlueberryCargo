@@ -11,7 +11,7 @@ function AboutSec1() {
             <div className="AboutSec1-image-grid">
               <div className="AboutSec1-img-tall">
                 <img
-                  src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/Group%201561300708.png"
+                  src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/abt-card-img.png"
                   alt="Cargo loading"
                 />
               </div>
