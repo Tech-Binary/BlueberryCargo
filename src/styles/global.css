@@ -101,7 +101,7 @@ textarea {
 .span-class {
   font-size: 40px;
   line-height: 50px;
-  color: #E9892C;
+  color: #E9892C !important;
   font-weight: 900;
 }
 
@@ -230,8 +230,9 @@ ul {
   }
 
   .common-btn {
-    padding: 10px 22px;
-    font-size: 14px;
+    padding: 10px 12px;
+    font-size: 12px;
+    gap: 5px;
   }
 }
 

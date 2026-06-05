@@ -5,12 +5,12 @@ function AboutSec3({ data, title, desc, newClass, marginClass , tag}) {
   const location = useLocation();
 
   // const isAboutPage = location.pathname === "/about";
-  const fullTitle = title || "Trusted Standards for Global Cargo ";
-  const words = fullTitle.split(" ");
+const fullTitle = title || "Trusted Standards for Global Cargo";
 
-  const firstPart = words.slice(0, -1).join(" ");
-  const secondPart =
-    words.slice(-1)[0].charAt(0).toUpperCase() + words.slice(-1)[0].slice(1);
+const words = fullTitle.trim().split(/\s+/);
+
+const secondPart = words.slice(-2).join(" ");
+const firstPart = words.slice(0, -2).join(" ");
   return (
     <section
       className={

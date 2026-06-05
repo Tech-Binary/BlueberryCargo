@@ -62,6 +62,7 @@
   color: #285d80;
   cursor: pointer;
   transition: all 0.3s ease;
+  letter-spacing: 1px;
 }
 
 .homeSec4-tab-active {
