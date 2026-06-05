@@ -11,11 +11,12 @@ import CargoImg from "../../assets/Images/charter-plane.jpg";
 import CharterImg from "../../assets/Images/chargo-plane.webp";
 
 // Icons
-import Icon1 from "../../assets/Icons/bulk-icon.png";
-import Icon2 from "../../assets/Icons/warehouse-icon.png";
-import Icon3 from "../../assets/Icons/aircargo-icon.png";
-import Icon4 from "../../assets/Icons/doc-icon.png";
-import Footer from "../../components/Footer";
+import Icon1 from "../../assets/ServicesIcon/Sec4Icon1.png";
+import Icon2 from "../../assets/ServicesIcon/Sec4Icon2.png";
+import Icon3 from "../../assets/ServicesIcon/Sec4Icon3.png";
+import Icon4 from "../../assets/ServicesIcon/Sec4Icon4.png";
+
+
 import { HiArrowNarrowRight } from "react-icons/hi";
 
 /* =========================================
