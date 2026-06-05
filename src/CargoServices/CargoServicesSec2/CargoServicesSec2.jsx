@@ -32,15 +32,15 @@ import Icon14 from "../../assets/ServicesIcon/cargoIcon14.png";
 import Icon15 from "../../assets/ServicesIcon/cargoIcon15.png";
 import Icon16 from "../../assets/ServicesIcon/charterIcon4.png";
 
-// import Icon17 from "../../assets/ServicesIcon/cargoIcon17.png";
-// import Icon18 from "../../assets/ServicesIcon/cargoIcon18.png";
-// import Icon19 from "../../assets/ServicesIcon/cargoIcon19.png";
-// import Icon20 from "../../assets/ServicesIcon/cargoIcon20.png";
+import Icon17 from "../../assets/ServicesIcon/cargoIcon17.png";
+import Icon18 from "../../assets/ServicesIcon/cargoIcon18.png";
+import Icon19 from "../../assets/ServicesIcon/cargoIcon19.png";
+import Icon20 from "../../assets/ServicesIcon/cargoIcon20.png";
 
-// import Icon21 from "../../assets/ServicesIcon/cargoIcon21.png";
-// import Icon22 from "../../assets/ServicesIcon/cargoIcon22.png";
-// import Icon23 from "../../assets/ServicesIcon/cargoIcon23.png";
-// import Icon24 from "../../assets/ServicesIcon/cargoIcon24.png";
+import Icon21 from "../../assets/ServicesIcon/cargoIcon21.png";
+import Icon22 from "../../assets/ServicesIcon/cargoIcon22.png";
+import Icon23 from "../../assets/ServicesIcon/cargoIcon23.png";
+import Icon24 from "../../assets/ServicesIcon/cargoIcon24.png";
 
 function CargoServicesSec2() {
   const location = useLocation();
@@ -273,22 +273,22 @@ const cargoServicesData = [
 
     cards: [
       {
-        icon: Icon13,
+        icon: Icon17,
         title: "Global Routing",
         text: "Multi-country routing and carrier network coordination.",
       },
       {
-        icon: Icon14,
+        icon: Icon18,
         title: "Customs Clearance",
         text: "Brokerage, permits and regulatory compliance support.",
       },
       {
-        icon: Icon15,
+        icon: Icon19,
         title: "Sea Freight",
         text: "FCL, LCL and cross-border ocean freight.",
       },
       {
-        icon: Icon16,
+        icon: Icon20,
         title: "Live Tracking",
         text: "End-to-end shipment visibility and status updates.",
       },
@@ -320,22 +320,22 @@ const cargoServicesData = [
 
     cards: [
       {
-        icon: Icon13,
+        icon: Icon21,
         title: "Supply Chain Mgmt",
         text: "Shipment planning, coordination and operational visibility.",
       },
       {
-        icon: Icon14,
+        icon: Icon22,
         title: "Last-Mile Delivery",
         text: "Ground transport and destination delivery support.",
       },
       {
-        icon: Icon15,
+        icon: Icon23,
         title: "Cargo Insurance",
         text: "Protection against transit and handling risks.",
       },
       {
-        icon: Icon16,
+        icon: Icon24,
         title: "Analytics & Reporting",
         text: "Shipment performance and operational reporting.",
       },
