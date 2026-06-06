@@ -7,31 +7,48 @@ const locations = [
     country: "Ghana",
     flag: "/images/Ghana.png",
     desc: "Gateway for ECOWAS trade routes serving 400M+ consumers across West Africa.",
+    stats: [
+      {
+        icon: "/images/op-icon1.svg",
+        number: "32+",
+        label: "Routes",
+      },
+      {
+        icon: "/images/op-icon2.svg",
+        number: "850T",
+        label: "Capacity",
+      },
+      {
+        icon: "/images/op-icon3.svg",
+        number: "120+",
+        label: "Partners",
+      },
+    ],
   },
   {
     country: "Madagascar",
     flag: "/images/Madagascar.png",
     desc: "Strategic island logistics hub connecting Indian Ocean and East Africa trade lanes.",
+    stats: [
+      {
+        icon: "/images/op-icon1.svg",
+        number: "18+",
+        label: "Routes",
+      },
+      {
+        icon: "/images/op-icon2.svg",
+        number: "420T",
+        label: "Capacity",
+      },
+      {
+        icon: "/images/op-icon3.svg",
+        number: "65+",
+        label: "Partners",
+      },
+    ],
   },
 ];
 
-const stats = [
-  {
-    number: "18+",
-    label: "Routes",
-    icon: "/images/op-icon1.svg",
-  },
-  {
-    number: "850T",
-    label: "Capacity",
-    icon: "/images/op-icon2.svg",
-  },
-  {
-    number: "120+",
-    label: "Partners",
-    icon: "/images/op-icon3.svg",
-  },
-];
 
 const ContactOperate = () => {
   const location = useLocation();
@@ -77,7 +94,7 @@ const ContactOperate = () => {
                   <p>{item.desc}</p>
 
                   <div className="stats-row">
-                    {stats.map((stat, i) => (
+                    {item.stats.map((stat, i) => (
                       <div className="stat-box" key={i}>
                         <img className="stat-icon" src={stat.icon} alt={stat.label} />
 

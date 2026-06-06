@@ -59,7 +59,8 @@ function ContactForm() {
   const [shippingOpen, setShippingOpen] = useState(false);
   const [activeSelect, setActiveSelect] = useState(null);
   const isContactPage = location.pathname === "/contact";
-
+  const isHomePage = location.pathname === "/";
+  const [successMsg, setSuccessMsg] = useState(false);
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
@@ -83,10 +84,57 @@ function ContactForm() {
     }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    console.log("Form submitted:", formData);
+    try {
+      const form = new FormData();
+
+      Object.keys(formData).forEach((key) => {
+        form.append(key, formData[key]);
+      });
+
+      form.append("_subject", "New Cargo Inquiry");
+      form.append("_captcha", "false");
+
+      const response = await fetch(
+        "https://formsubmit.co/ajax/info@blueberrycargo.com",
+        {
+          method: "POST",
+          headers: {
+            Accept: "application/json",
+          },
+          body: form,
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success === "true" || result.success) {
+        setSuccessMsg(true);
+
+        setFormData({
+          firstName: "",
+          lastName: "",
+          email: "",
+          phone: "",
+          company: "",
+          origin: "",
+          destination: "",
+          cargoType: "",
+          weight: "",
+          shippingMethod: "",
+          message: "",
+        });
+
+        setTimeout(() => {
+          setSuccessMsg(false);
+        }, 6000);
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send inquiry");
+    }
   };
 
   return (
@@ -95,7 +143,9 @@ function ContactForm() {
       className={
         isContactPage
           ? "contact-section section-padding"
-          : "contact-section section-padding"
+          : isHomePage
+            ? "contact-section section-padding pt-0"
+            : "contact-section section-padding"
       }
     >
       <div className="container">
@@ -109,7 +159,7 @@ function ContactForm() {
               </h2>
 
               <p className="section-desc mb-4">
-              From commercial freight to complex charter operations, we'll help you find the most effective route forward
+                From commercial freight to complex charter operations, we'll help you find the most effective route forward
               </p>
 
               {/* Contact Cards Grid */}
@@ -172,10 +222,13 @@ function ContactForm() {
             <div className="contact-form-wrap">
               <h3 className="form-heading">Request a Cargo Solution </h3>
               <p className="form-subheading">
-               Share your requirements and a cargo specialist will respond with tailored guidance within one business day. 
+                Share your requirements and a cargo specialist will respond with tailored guidance within one business day.
               </p>
 
-              <form className="contact-form" onSubmit={handleSubmit}>
+              <form
+                className="contact-form" onSubmit={handleSubmit}>
+                <input type="hidden" name="_subject" value="New Cargo Inquiry" />
+                <input type="hidden" name="_captcha" value="false" />
                 {/* ROW 1 */}
                 <div className="form-row">
                   <div className="form-group">
@@ -304,9 +357,8 @@ function ContactForm() {
 
                 {/* SHIPPING METHOD */}
                 <div
-                  className={`form-group form-group-full select-group ${
-                    shippingOpen ? "select-open" : ""
-                  }`}
+                  className={`form-group form-group-full select-group ${shippingOpen ? "select-open" : ""
+                    }`}
                 >
                   <select
                     name="shippingMethod"
@@ -341,7 +393,11 @@ function ContactForm() {
                     onChange={handleChange}
                   />
                 </div>
-
+                {successMsg && (
+                  <div className="form-success-msg">
+                    Inquiry submitted successfully!
+                  </div>
+                )}
                 <button type="submit" className="common-btn contact-submit-btn">
                   Send Inquiry
                 </button>

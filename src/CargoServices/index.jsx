@@ -11,8 +11,8 @@ function CargoServices() {
     <>
       <CustomBanner
         img="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-banners/Cargo%20services.png"
-        title="Moving Cargo Across Africa"
-        desc="From the Indian Ocean to the Gulf of Guinea — precision-engineered freight operations delivering reliability at every mile of the journey."
+        title="Connecting Africa Through Cargo "
+        desc="Moving freight across complex trade environments with local expertise, regional networks, and operational support spanning more than 35 countries. "
       />
       <CargoServicesSec1 />
       <CargoServicesSec2 />
