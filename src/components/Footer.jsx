@@ -7,7 +7,7 @@ import igIcon from "../assets/Icons/Insta.png";
 import "../styles/footer.css";
 
 function Footer() {
-  return ( 
+  return (
     <footer className="footer-section">
       <div className="container">
         <div className="row">
@@ -19,10 +19,15 @@ function Footer() {
             </Link>
 
             <div className="social-icons d-flex gap-2">
-              <img src={fbIcon} alt="Facebook" />
-              <img src={xIcon} alt="X" />
-              <img src={pinIcon} alt="Pinterest" />
-              <img src={igIcon} alt="Instagram" />
+              <a href="https://www.facebook.com/profile.php?id=61572109900898">
+                <img src={fbIcon} alt="Facebook" />
+              </a>
+              <a href="https://www.linkedin.com/company/114854102/admin/dashboard/">
+                <img src="/images/linkdin.png" alt="LinkedIn" />
+              </a>
+              <a href="https://www.instagram.com/p/DRWwtK5iKUa/?igsh=MmIzZWp1eXFoZHlk">
+                <img src={igIcon} alt="Instagram" />
+              </a>
             </div>
           </div>
 
@@ -44,7 +49,7 @@ function Footer() {
             <ul>
               <li><Link to="/cargo-services">Cargo Handling</Link></li>
               {/* <li> Freight Forwarding</li> */}
-              <li> <Link to = "/charter-plane-services">Charter</Link></li>
+              <li> <Link to="/charter-plane-services">Charter</Link></li>
               {/* <li>Time Sensitive</li> */}
             </ul>
           </div>
