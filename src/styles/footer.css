@@ -110,12 +110,24 @@
   background-color: #ffffff;
 }
 
+@media(max-width:600px) {
+  .footer-section-row {
+    justify-content: space-between !important;
+  }
+
+  .footer-section-row .col-md-3 {
+    width: 40% !important;
+  }
+}
+
 @media(max-width: 380px) {
   .policy-links span {
     font-size: 12px;
     font-weight: 500;
   }
-
+  .footer-section-row .col-md-3 {
+    width: 45% !important;
+  }
   .policy-links span:not(:last-child)::after {
     display: none;
   }

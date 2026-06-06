@@ -10,7 +10,7 @@ function Footer() {
   return (
     <footer className="footer-section">
       <div className="container">
-        <div className="row">
+        <div className="row footer-section-row">
 
           {/* Logo Section */}
           <div className="col-md-3 mb-4">
