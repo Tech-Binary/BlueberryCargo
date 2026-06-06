@@ -7,7 +7,7 @@ import igIcon from "../assets/Icons/Insta.png";
 import "../styles/footer.css";
 
 function Footer() {
-  return (
+  return ( 
     <footer className="footer-section">
       <div className="container">
         <div className="row">
@@ -33,7 +33,7 @@ function Footer() {
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/cargo-services">Services</Link></li>
-              <li><Link to="/network">Operations</Link></li>
+              <li><Link to="/network">Network</Link></li>
               <li><Link to="/contact">Contact Us</Link></li>
             </ul>
           </div>
@@ -43,9 +43,9 @@ function Footer() {
             <h5>Our Service</h5>
             <ul>
               <li><Link to="/cargo-services">Cargo Handling</Link></li>
-              <li> Freight Forwarding</li>
+              {/* <li> Freight Forwarding</li> */}
               <li> <Link to = "/charter-plane-services">Charter</Link></li>
-              <li>Time Sensitive</li>
+              {/* <li>Time Sensitive</li> */}
             </ul>
           </div>
 
@@ -63,16 +63,16 @@ function Footer() {
 
         <hr />
 
-        <div className="d-flex justify-content-between flex-wrap">
+        <div className="d-flex justify-content-center w-100 align-items-center">
           <p className="Reserved-right">
             © 2026 Blueberry Cargo. All rights reserved.
           </p>
 
-          <div className="d-flex gap-3 ploicy-tc policy-links">
+          {/* <div className="d-flex gap-3 ploicy-tc policy-links">
             <span>Privacy Policy</span>
             <span>Terms Of Service</span>
             <span>Cookie Policy</span>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>

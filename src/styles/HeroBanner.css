@@ -371,7 +371,7 @@
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
   }
 
   .hero-stats-wrapper {
@@ -404,7 +404,7 @@
 
   .hero-content {
     padding-top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 0px;
   }
 
   .hero-stat-item img {
