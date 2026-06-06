@@ -243,7 +243,7 @@
   border: 1px solid #e0e3e8;
   padding: 3px 12px;
   white-space: nowrap;
-  font-size: 14px;
+  font-size: 12px;
   font-family: "Aptos", sans-serif;
 }
 
@@ -301,5 +301,9 @@
 
   .service-card-img-wrap {
     height: 220px;
+  }
+  .service-tag {
+    font-size: 12px;
+    padding: 3px 9px;
   }
 }
