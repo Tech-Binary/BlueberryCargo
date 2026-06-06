@@ -332,9 +332,12 @@
 
 @media (max-width: 991px) {
 
-  .hero-banner {
-    /* height: auto; */
-  }
+.hero-banner {
+    height: 90vh;
+}
+    .hero-stats-wrapper {
+        bottom: -120px;
+    }
 
   .hero-content h1 {
     font-size: 48px;
@@ -364,14 +367,14 @@
 
   .hero-banner {
     height: auto;
-    min-height: 80vh;
+    min-height: 65vh;
     background-image: url("./../../src/assets/banners/hero-banner.png");
-    background-position: center;
+    background-position: left;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: end;
+    /* align-items: end; */
   }
 
   .hero-stats-wrapper {
@@ -421,7 +424,7 @@
   }
 
   .hero-content h1 {
-    font-size: 36px;
+    font-size: 38px;
     line-height: 1.1;
     margin-bottom: 12px;
   }
@@ -504,6 +507,9 @@
     width: 20px;
     height: 20px;
   }
+   /* .hero-badges {
+    margin-top: 163px;
+  } */
 }
 
 @media (max-width: 320px) {
@@ -512,12 +518,15 @@
   .explore-btn {
     width: 100%;
     padding: 10px 14px;
-    font-size: 14px;
+    font-size: 12px;
     text-align: center;
   }
 
   .hero-overlay {
     align-items: flex-start;
-    padding-top: 60px;
+    /* padding-top: 60px; */
   }
+  /* .hero-badges {
+    margin-top: 163px;
+  } */
 }
