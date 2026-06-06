@@ -31,7 +31,7 @@ const servicesData = {
   ],
   "Charter Plane": [
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home4.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/charter1.png",
       icon: "/images/general-icon1.svg",
       title: "Full Aircraft Charter ",
       description:
@@ -39,7 +39,7 @@ const servicesData = {
       tags: ["Dedicated", "Time-Critical", "Oversized"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home5.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/charter2.png",
       icon: "/images/general-icon2.svg",
       title: " Part Charter Solutions ",
       description:
@@ -47,7 +47,7 @@ const servicesData = {
       tags: ["Flexible", "Cost-Effective", "Direct Routes"],
     },
     {
-      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/new-images/home6.webp",
+      image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/charter3.png",
       icon: "/images/general-icon3.svg",
       title: "Charter Coordination ",
       description:
