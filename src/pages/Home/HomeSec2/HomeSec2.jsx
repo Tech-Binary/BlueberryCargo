@@ -32,7 +32,7 @@ const servicesData = {
   "Charter Plane": [
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/charter1.png",
-      icon: "/images/general-icon1.svg",
+      icon: "/images/chartericon1.svg",
       title: "Full Aircraft Charter ",
       description:
         "Dedicated aircraft solutions for urgent, oversized, or high-volume cargo requiring complete capacity and scheduling control. ",
@@ -40,7 +40,7 @@ const servicesData = {
     },
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/charter2.png",
-      icon: "/images/general-icon2.svg",
+      icon: "/images/chartericon2.svg",
       title: " Part Charter Solutions ",
       description:
         "Cost-effective shared aircraft capacity connecting key trade routes while maintaining flexibility and operational efficiency. ",
@@ -48,7 +48,7 @@ const servicesData = {
     },
     {
       image: "https://blueberrydatastorage.blob.core.windows.net/websitesdata/Cargo/charter3.png",
-      icon: "/images/general-icon3.svg",
+      icon: "/images/chartericon3.svg",
       title: "Charter Coordination ",
       description:
         "End-to-end charter planning, flight arrangements, permits, and operational support for seamless cargo movements. ",
