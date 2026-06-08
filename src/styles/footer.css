@@ -110,7 +110,7 @@
   background-color: #ffffff;
 }
 
-@media(max-width:600px) {
+@media(max-width:900px) {
   .footer-section-row {
     justify-content: space-between !important;
   }
