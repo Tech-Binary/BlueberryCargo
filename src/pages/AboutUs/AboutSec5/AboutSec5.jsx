@@ -2,43 +2,43 @@ import "./AboutSec5.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import{ useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const testimonials = [
   {
-    name: "David Mensah",
-    role: "REGIONAL LOGISTICS MANAGER ",
-    rating: 3.5,
-    image: "/images/client1.png",
-    desc: "Blueberry has been a dependable partner for our cargo movements across West Africa. Their local market knowledge and quick response times have helped us manage shipments more efficiently ",
+    name: "Michael Carter",
+    role: "SUPPLY CHAIN MANAGER",
+    rating: 4.9,
+    image: "/images/test-img1.jpg",
+    desc: "What impressed me most was how proactive the team was. They kept us updated at every stage and quickly resolved any issues that came up. It felt like working with an extension of our own logistics department rather than an external provider.",
   },
   {
-    name: "Sarah Thompson ",
-    role: "FREIGHT OPERATIONS DIRECTOR ",
+    name: "Jessica Morgan",
+    role: "INTERNATIONAL TRADE COORDINATOR",
     rating: 4.8,
-    image: "/images/client2.png",
-    desc: "Finding reliable cargo support in emerging markets can be challenging. Blueberry's team consistently delivers practical solutions and keeps communication clear throughout the process.",
+    image: "/images/test-img3.jpg",
+    desc: "We've partnered with several freight companies before, but the level of attention and support we received here was noticeably different. The team understands the challenges of global cargo movement and always provides practical solutions.",
   },
   {
-    name: "Ahmed Al Rashid ",
-    role: "CARGO DEVELOPMENT MANAGER ",
-    rating: 2.5,
-    image: "/images/client3.png",
-    desc: "We've worked with several logistics providers over the years, but Blueberry stands out for its responsiveness and understanding of regional cargo requirements. ",
+    name: "Daniel Owusu",
+    role: "OPERATIONS HEAD",
+    rating: 4.7,
+    image: "/images/test-img2.jpg",
+    desc: "Reliability is everything in logistics, and that's exactly what we've experienced. Shipments are handled professionally, communication is straightforward, and we always know the status of our cargo without having to chase for updates.",
   },
   {
-    name: "Michael Owusu ",
-    role: "SUPPLY CHAIN MANAGER ",
-    rating: 3.5,
-    image: "/images/client2.png",
-    desc: "Their ability to coordinate cargo movements across multiple African markets has made a noticeable difference to our operations. The team is proactive, knowledgeable, and easy to work with. ",
+    name: "Rebecca Hughes",
+    role: "PROCUREMENT & LOGISTICS MANAGER",
+    rating: 4.9,
+    image: "/images/test-img4.jpg",
+    desc: "Managing international shipments can be stressful, but working with this team has made the process much smoother. Their responsiveness and market knowledge have helped us avoid delays and keep operations running efficiently.",
   },
-   {
-    name: "Grace Ndlovu  ",
-    role: "HEAD OF LOGISTICS & PROCUREMENT  ",
-    rating: 3.5,
-    image: "/images/client2.png",
-    desc: "Blueberry combines strong industry relationships with on-ground expertise. Their support has helped us navigate complex routes and maintain reliable cargo flow. ",
+  {
+    name: "Omar Khalid",
+    role: "BUSINESS DEVELOPMENT DIRECTOR",
+    rating: 5.0,
+    image: "/images/test-img5.jpg",
+    desc: "We've built a strong working relationship over the past year because they consistently deliver on their commitments. The team is professional, transparent, and genuinely focused on helping clients succeed rather than simply moving cargo from one location to another.",
   },
 ];
 
@@ -108,7 +108,7 @@ function AboutSec5() {
 
           {/* HEADING */}
           <h2 className="section-title">
-           Words From Our <span className="span-class">Clients</span> {" "}
+            Words From Our <span className="span-class">Clients</span> {" "}
           </h2>
           <p className="section-desc mb-4">Feedback from trusted cargo partners </p>
         </div>
