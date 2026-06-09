@@ -11,7 +11,6 @@ function Footer() {
     <footer className="footer-section">
       <div className="container">
         <div className="row footer-section-row">
-
           {/* Logo Section */}
           <div className="col-md-3 mb-4">
             <Link to="/">
@@ -19,13 +18,25 @@ function Footer() {
             </Link>
 
             <div className="social-icons d-flex gap-2">
-              <a href="https://www.facebook.com/profile.php?id=61572109900898">
+              <a
+                href="https://www.facebook.com/profile.php?id=61572109900898"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={fbIcon} alt="Facebook" />
               </a>
-              <a href="https://www.linkedin.com/company/114854102/admin/dashboard/">
+              <a
+                href="https://www.linkedin.com/company/114854102/admin/dashboard/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src="/images/linkdin.png" alt="LinkedIn" />
               </a>
-              <a href="https://www.instagram.com/p/DRWwtK5iKUa/?igsh=MmIzZWp1eXFoZHlk">
+              <a
+                href="https://www.instagram.com/blueberrycargo/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <img src={igIcon} alt="Instagram" />
               </a>
             </div>
@@ -35,11 +46,21 @@ function Footer() {
           <div className="col-md-3 mb-4">
             <h5>Quick Links</h5>
             <ul>
-              <li><Link to="/">Home</Link></li>
-              <li><Link to="/about">About Us</Link></li>
-              <li><Link to="/cargo-services">Services</Link></li>
-              <li><Link to="/network">Network</Link></li>
-              <li><Link to="/contact">Contact Us</Link></li>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <Link to="/cargo-services">Services</Link>
+              </li>
+              <li>
+                <Link to="/network">Network</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact Us</Link>
+              </li>
             </ul>
           </div>
 
@@ -47,9 +68,14 @@ function Footer() {
           <div className="col-md-3 mb-4">
             <h5>Our Service</h5>
             <ul>
-              <li><Link to="/cargo-services">Cargo Handling</Link></li>
+              <li>
+                <Link to="/cargo-services">Cargo Handling</Link>
+              </li>
               {/* <li> Freight Forwarding</li> */}
-              <li> <Link to="/charter-plane-services">Charter</Link></li>
+              <li>
+                {" "}
+                <Link to="/charter-plane-services">Charter</Link>
+              </li>
               {/* <li>Time Sensitive</li> */}
             </ul>
           </div>
@@ -58,12 +84,14 @@ function Footer() {
           <div className="col-md-3 mb-4">
             <h5>Operations</h5>
             <ul>
-              <li><Link to="/network">Madagascar</Link></li>
-              <li><Link to="/network">Ghana</Link></li>
-              <li><Link to="/network">Indian Ocean</Link></li>
+              <li>
+                <Link to="/network">Madagascar</Link>
+              </li>
+              <li>
+                <Link to="/network">Ghana</Link>
+              </li>
             </ul>
           </div>
-
         </div>
 
         <hr />
