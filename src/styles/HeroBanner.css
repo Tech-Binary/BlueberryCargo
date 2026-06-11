@@ -244,7 +244,7 @@
 
   .hero-badges {
     /* flex-wrap: wrap; */
-    gap: 16px;
+    gap: 8px;
     padding: 16px 20px;
   }
 
@@ -294,9 +294,7 @@
     border-radius: 24px;
   } */
 
-  .hero-stat-item {
-    /* width: 100%; */
-  }
+ 
 
   .hero-stat-item h3 {
     font-size: 32px;
