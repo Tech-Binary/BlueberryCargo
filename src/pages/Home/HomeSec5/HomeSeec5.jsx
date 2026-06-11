@@ -1,4 +1,4 @@
-import "../HomeSec5/HomeSeec5.css"
+import "../HomeSec5/HomeSeec5.css";
 import FreightImg from "../../../assets/Images/freight-forwarders.png";
 import CargoImg from "../../../assets/Images/cargo-agents.png";
 import LogisticsImg from "../../../assets/Images/logistics-companies.png";
@@ -40,13 +40,16 @@ function HomeSec5() {
 
         {/* HEADING */}
         <h2 className="section-title">
-          Connecting Airlines Businesses and{" "}
-          <span className="span-class">Global Markets</span>
+          Connecting
+          <span className="span-class"> Trade</span> Through{" "}
+          <span className="span-class"> Logistics</span>
         </h2>
 
         {/* DESCRIPTION */}
         <p className="section-desc">
-        From airline partners and logistics providers to mining, healthcare, and industrial sectors, we support organizations that depend on reliable cargo solutions across high-growth African markets. 
+          From airline partners and logistics providers to mining, healthcare,
+          and industrial sectors, we support organizations that depend on
+          reliable cargo solutions across high-growth African markets.
         </p>
 
         {/* CARDS */}
@@ -64,7 +67,6 @@ function HomeSec5() {
 
               {/* CONTENT */}
               <div className="homeSec5-content">
-
                 <h4>{item.title}</h4>
 
                 <p>{item.description}</p>

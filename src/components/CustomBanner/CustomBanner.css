@@ -22,7 +22,7 @@
 .banner-title {
     font-size: 50px;
     margin-bottom: 5px;
-    line-height: 100%;
+    /* line-height: 100%; */
 }
 
 .CustomBanner-description {
