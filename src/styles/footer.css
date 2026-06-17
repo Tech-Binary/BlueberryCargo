@@ -96,6 +96,12 @@
   color: #fff;
   font-weight: 500;
 }
+.network-item {
+  display: flex;
+  flex-direction: column;
+}
+
+
 
 /* vertical line */
 .policy-links span:not(:last-child)::after {
