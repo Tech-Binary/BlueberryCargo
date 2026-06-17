@@ -6,10 +6,10 @@ import Footer from "../../components/Footer";
 import CustomBanner from "../../components/CustomBanner/CustomBanner";
 import ContactFAQ from "./../ContactUs/ContactFAQ";
 import ContactOperate from "../ContactUs/ContactOperate";
-import ContactForm from "../../components/ContactForm/ContactForm"
+import ContactForm from "../../components/ContactForm/ContactForm";
+import HomeSec7 from "../Home/HomeSec7/HomeSec7";
 
 function Network() {
-
   const features = [
     {
       icon: "/images/network-icon1.svg",
@@ -80,7 +80,9 @@ function Network() {
         desc="Supporting cargo, charter, and logistics operations through established networks in Madagascar, Ghana, and strategic African markets."
       />
       <ContactOperate />
+      <HomeSec7 />
       <NetworkSec1 />
+
       <NetworkSec2 />
       <HomeSec6
         data={features2}
@@ -91,7 +93,7 @@ function Network() {
         desc2="Tell us your route, cargo type, and timeline — our team will get back to you with a tailored solution within 24 hours."
       />
       <ContactFAQ />
-      <ContactForm/>
+      <ContactForm />
       {/* <AboutSec3
      
         data={features}

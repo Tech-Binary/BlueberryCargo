@@ -7,17 +7,21 @@ import HomeSec6 from "./HomeSec6/HomeSec6";
 import HomeSec1 from "./HomeSec1/HomeSec1";
 import HomeSec4 from "./HomeSec4/HomeSec4";
 import Footer from "../../components/Footer";
+import HomeSec7 from "./HomeSec7/HomeSec7";
 function Home() {
   return (
     <>
       <HeroBanner />
       <HomeSec1 />
+         <HomeSec7/>
       <HomeSec2 />
       <HomeSec3 />
       <HomeSec4 />
       <HomeSec5 />
       <HomeSec6 title2="Ready To Reach New Markets Across Africa? "
         desc2="Leverage our cargo expertise, airline partnerships, and regional presence to reach new opportunities. " />
+     
+
       <ContactForm />
       <Footer />
 
