@@ -1,0 +1,960 @@
+<!-- ============ PREBOUND HTML ============ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ProBond — Surety Insurance Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@1,600;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="page.css" />
+</head> 
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<body>
+
+    <!-- ============ HEADER ============ -->
+    <header class="header">
+        <div class="container navbar">
+
+            <div class="logo">
+                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Probond%20Logo%20New.png"
+                    alt="ProBond" />
+            </div>
+
+            <nav class="nav-links">
+                <a class="active" href="#">Home</a>
+                <a href="#">About Us</a>
+                <a href="#">FAQ</a>
+            </nav>
+
+            <div class="header-right">
+
+                <div class="email-box">
+                    <div class="email-icon">
+                        <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/mail-icon.png"
+                            alt="" icon />
+                    </div>
+
+                    <div>
+                        <span>Send an email</span>
+                        <p>info@probond.co.in</p>
+                    </div>
+                </div>
+
+                <a href="#" class="header-btn">
+                    Get a Quote
+                    <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                        class="common-arrow" />
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="container hero-grid">
+            <div class="hero-left">
+                <span class="pill"><span class="dot"></span>INSURANCE PROBONDS</span>
+                <h1 class="hero-title">
+                    Insurance Surety<br />
+                    Bonds, <span> Reimagined</span>
+                </h1>
+                <p class="hero-desc">
+                    Your bonding obligations are non-negotiable. Your working capital shouldn't be either.
+                    Insurance Surety Bonds help contractors, EPC firms, and infrastructure businesses fulfill
+                    every commitment — bid bonds, performance bonds, advance payment guarantees — without
+                    locking up cash or exhausting bank limits.
+                </p>
+                <p class="hero-strong">More bonding capacity. More bids. More projects won.</p>
+                <a href="#quote" class="btn btn-primary btn-lg">Get a Quote <img
+                        src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                        class="common-arrow" /></a>
+
+                <!-- Benefit chips -->
+                <div class="benefit-bar">
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/home-icon1.png" />
+                        </span>
+                        <span>Preserve Working Capital</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/home-icon2.png" />
+                        </span>
+                        <span>Fast Documentation</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/home-icon3.png" />
+                        </span>
+                        <span>Government Accepted</span>
+                    </div>
+                    <div class="benefit">
+                        <span class="benefit-icon">
+                            <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/home-icon4.png" />
+                        </span>
+                        <span>Secure Process</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quote form card -->
+            <aside class="quote-card" id="quote">
+                <div class="quote-label">
+                    <span class="dash"></span> GET A QUOTE
+                </div>
+                <h2 class="quote-title">Get Your Surety Bond Quote</h2>
+                <p class="quote-desc">
+                    Whether you're securing a bid, fulfilling a contract, releasing retention, or meeting a
+                    statutory obligation — tell us what you need. We'll find the right bond for it.
+                </p>
+
+                <form class="quote-form" onsubmit="event.preventDefault();">
+                    <div class="field">
+                        <label for="fullname">Full Name as per PAN<span class="req">*</span></label>
+                        <input id="fullname" type="text" placeholder="Enter your full name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email Address<span class="req">*</span></label>
+                        <input id="email" type="email" placeholder="Enter your email" />
+                    </div>
+                    <div class="field">
+                        <label for="phone">Phone Number<span class="req">*</span></label>
+                        <div class="phone-input">
+                            <span class="phone-prefix">+91 <svg viewBox="0 0 12 8" width="10" height="7">
+                                    <path d="M1 1l5 5 5-5" stroke="#333" stroke-width="1.5" fill="none"
+                                        stroke-linecap="round" />
+                                </svg></span>
+                            <input id="phone" type="tel" placeholder="Enter Phone Number" />
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Request Bond Quote
+                        <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                            class="common-arrow" /></button>
+                    <p class="protection">Your data is protected under ISO 27001 &amp; DPDP Act standards.</p>
+                </form>
+            </aside>
+        </div>
+
+
+    </section>
+
+    <!-- ============ INSURERS LOGOS ============ -->
+    <section class="logos-section">
+        <p class="section-eyebrow-line">WE WORK WITH MULTIPLE IRDA APPROVED INSURERS TO PROVIDE THE BEST SURETY BOND
+            SOLUTIONS.</p>
+
+        <marquee behavior="scroll" direction="left" scrollamount="6" class="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/BGIL-logo.gif"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/digit.svg"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/Indusind%20images.png"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/logo-153443161073-360.webp"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/logo-ls-26.jpg"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/lombard-brand-logo.webp"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/NIA_logo.png"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/NIC%20logo.svg"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/OIC%20download.png"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/rs-new-logo.png"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/SBI%20logo.svg"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/TataAigLogoNew.svg"
+                alt="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/UIIC%20images.jpg"
+                alt="">
+
+        </marquee>
+
+        <p class="section-eyebrow-line mt-80">KEY GOVERNMENT &amp; PSU ORGANIZATIONS ACCEPTING SURETY BONDS</p>
+
+        <marquee behavior="scroll" direction="right" scrollamount="6" class="">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/Airports_Authority_of_India_logo.svg"
+                alt="1">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/CPW%20logo1.gif"
+                alt="2">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/eil.png"
+                alt="3">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/gaill.png"
+                alt="4">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/gem-new-logo-v6.svg"
+                alt="5">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/Hindi_logo.gif"
+                alt="6">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/IRCTC-Color.png"
+                alt="7">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/NIC%20logo.svg"
+                alt="8">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/logo_0.svg"
+                alt="9">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/rs-new-logo.png"
+                alt="10">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/logo.png"
+                alt="11">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Insurance%20Company%20Logo/TataAigLogoNew.svg"
+                alt="12">
+
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/NHAI-Color.png"
+                alt="13">
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/NTPC%20logo.png"
+                alt="14" />
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/ongcLogo.jpg"
+                alt="15" />
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/RITES_green_logo.svg.png"
+                alt="16" />
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/SAIL.png"
+                alt="17" />
+            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/seci-logo.png"
+                alt="18" />
+        </marquee>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+        <div class="container about-grid">
+            <div class="about-images">
+                <img
+                    src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/card-img.png" />
+            </div>
+            <div class="about-content">
+                <div class="section-eyebrow"><span class="dash"></span> ABOUT PROBOND</div>
+                <h2 class="section-title">
+                    Empowering Modern Businesses<br />
+                    with <em>Smarter Surety</em> Solutions
+                </h2>
+                <p>
+                    Probond is brought to you by industry experts who have spent decades in the general
+                    insurance sector, both nationally and internationally. With extensive experience and
+                    expertise, we have access to both domestic insurers and international reinsurers through
+                    a strong global network of distribution partners and capacity providers.
+                </p>
+                <p>
+                    Probond is capable of delivering tailored insurance solutions not only across India but
+                    also internationally, supporting businesses undertaking projects overseas. Our reach
+                    extends across Africa, the Americas, Western and Eastern Europe, Central and West Asia,
+                    and the Far East (excluding Japan and China), enabling us to provide comprehensive
+                    insurance support wherever your projects take you.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">Know More About Probond <img
+                        src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                        class="common-arrow" /></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SOLUTIONS ============ -->
+    <section class="solutions">
+        <div class="container">
+            <div class="solutions-head">
+                <div>
+                    <div class="section-eyebrow"><span class="dash"></span> OUR SOLUTIONS</div>
+                    <h2 class="section-title">
+                        Comprehensive<br />
+                        <em>Bond Solutions</em> for Every Need
+                    </h2>
+                </div>
+                <a href="#" class="view-all">View All <img
+                        src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/arrow-icon.svg" /></a>
+            </div>
+
+            <div class="solutions-grid">
+                <article class="solution-card">
+                    <span class="sol-icon">
+                        <img
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/about-icon1.svg" />
+                    </span>
+                    <div>
+                        <h3>Bid Security Bond</h3>
+                        <p>Participate in tenders without locking capital. Replace EMD with a compliant insurance surety
+                            bond.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <span class="sol-icon">
+                        <img
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/about-icon2.svg" />
+                    </span>
+                    <div>
+                        <h3>Performance Guarantee Bond</h3>
+                        <p>Meet contractual security obligations efficiently. Protect your working capital throughout
+                            project execution.</p>
+                    </div>
+                </article>
+
+
+                <article class="solution-card">
+                    <span class="sol-icon">
+                        <img
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/about-icon3.svg" />
+                    </span>
+                    <div>
+                        <h3>Maintenance Bond</h3>
+                        <p>Meet contractual security obligations efficiently. Protect your working capital throughout
+                            project execution.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <span class="sol-icon">
+                        <img
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/about-icon4.svg" />
+                    </span>
+                    <div>
+                        <h3>Customized Bond Solutions</h3>
+                        <p>Meet contractual security obligations efficiently. Protect your working capital throughout
+                            project execution.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <span class="sol-icon">
+                        <img
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/about-icon5.svg" />
+                    </span>
+                    <div>
+                        <h3>Advance Payment Bond</h3>
+                        <p>Secure advance payments received from clients with a bond that protects both parties and
+                            unlocks capital.</p>
+                    </div>
+                </article>
+
+                <article class="solution-card">
+                    <span class="sol-icon">
+                        <img
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/about-icon6.svg" />
+                    </span>
+                    <div>
+                        <h3>Retention Money Bond</h3>
+                        <p>Release retention amounts earlier and reinvest into new projects with a fully compliant
+                            surety bond.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ WHY PROBOND ============ -->
+    <section class="why">
+        <div class="container">
+            <div class="section-eyebrow"><span class="dash"></span> WHY PROBOND?</div>
+            <h2 class="section-title">Why Businesses Choose <em>ProBond</em></h2>
+            <p class="why-sub">We simplify Insurance Surety Bonds with seamless underwriting and insurer coordination.
+            </p>
+
+            <div class="why-grid">
+                <article class="why-card">
+                    <img class="why-icon"
+                        src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/why-icon1.svg" />
+                    <h3>Quick Turnaround</h3>
+                    <p>Efficient processing and underwriting support with fast documentation assistance.</p>
+                </article>
+
+                <article class="why-card">
+                    <img class="why-icon"
+                        src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/why-icon2.svg" />
+                    <h3>Compliant Solutions</h3>
+                    <p>Structured through IRDAI-approved insurers — fully government-accepted.</p>
+                </article>
+
+                <article class="why-card">
+                    <img class="why-icon"
+                        src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/why-icon3.svg" />
+                    <h3>Dedicated Experts</h3>
+                    <p>Relationship support &amp; guidance throughout your bonding process.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ INDUSTRIES ============ -->
+    <section class="industries">
+        <div class="container">
+            <div class="industries-head">
+                <div>
+                    <div class="section-eyebrow"><span class="dash"></span> INDUSTRIES WE SERVE</div>
+                    <h2 class="section-title">
+                        Built for India's<br />
+                        <em>Infrastructure</em> &amp; Growth Sectors
+                    </h2>
+                </div>
+
+                <p class="why-sub" style="max-width: 400px; margin: 0;">
+                    From highways to renewable energy, government procurement to EPC contracts —
+                    we serve every sector that needs surety bond solutions.
+                </p>
+            </div>
+
+            <div class="swiper industriesSwiper">
+
+                <div class="swiper-wrapper">
+
+                    <div class="swiper-slide">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img
+                                    src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-img1.png">
+                            </div>
+                            <div class="industry-content">
+                                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-icon1.svg"
+                                    class="industry-icon">
+                                <h4>Roads & Highways</h4>
+                                <p>NHAI, NHDCL, MoRTH</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img
+                                    src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-img2.png">
+                            </div>
+                            <div class="industry-content">
+                                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-icon2.svg"
+                                    class="industry-icon">
+                                <h4>Power & Renewable Energy</h4>
+                                <p>Powergrid, SECI, Solar EPC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img
+                                    src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-img3.png">
+                            </div>
+                            <div class="industry-content">
+                                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-icon3.svg"
+                                    class="industry-icon">
+                                <h4>Oil & Gas</h4>
+                                <p>GAIL, ONGC, IOC</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img
+                                    src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-img4.png">
+                            </div>
+                            <div class="industry-content">
+                                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-icon4.svg"
+                                    class="industry-icon">
+                                <h4>Rail Infrastructure</h4>
+                                <p>Indian Railways, Metro</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="industry-card">
+                            <div class="industry-image">
+                                <img
+                                    src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-img1.png">
+                            </div>
+                            <div class="industry-content">
+                                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/slide-icon3.svg"
+                                    class="industry-icon">
+                                <h4>Manufacturing</h4>
+                                <p>Industrial Projects</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- /* ============ 4-STEP PROCESS ============ */ -->
+    <section class="process">
+        <div class="container">
+
+            <div class="section-eyebrow">
+                <span class="dash"></span>
+                HOW IT WORKS
+            </div>
+
+            <h2 class="process-title">
+                Simple 4-Step <span style="color: #ff3d77; font-style: italic;">Process</span>
+            </h2>
+
+            <p class="why-sub" style="color: #FFFFFF99;">
+                From document submission to bond issuance — our streamlined
+                workflow ensures fast, compliant delivery every time.
+            </p>
+
+            <div class="process-steps">
+
+                <div class="step-wrapper">
+                    <div style="display: flex; align-items: center; gap: 8px; width: 95%;" class="process-div">
+                        <div class="step-badge">Step 01</div>
+                        <span style="flex: 1;">
+                            <img class="step-arrow"
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/dash-arrow.png"
+                                alt="" aria-hidden="true" />
+                        </span>
+                    </div>
+
+                    <div class="process-card"
+                        style="background-image: url(https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Component.png);">
+                        <img class="process-icon"
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/step-icon1.svg"
+                            alt="">
+
+                        <h4>Submit Documents</h4>
+
+                        <p>
+                            Share basic information and required documents
+                            for underwriting review.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-wrapper">
+                    <div style="display: flex; align-items: center; gap: 8px; width: 95%;" class="process-div">
+                        <div class="step-badge">Step 02</div>
+                        <span style="flex: 1;">
+                            <img class="step-arrow"
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/dash-arrow.png"
+                                alt="" aria-hidden="true" />
+                        </span>
+                    </div>
+
+                    <div class="process-card"
+                        style="background-image: url(https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Component4.png);">
+                        <img class="process-icon"
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/step-icon1.svg"
+                            alt="">
+
+
+                        <h4>Underwriting Review</h4>
+
+                        <p>
+                            Our team evaluates financials and project
+                            requirements.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-wrapper">
+                    <div style="display: flex; align-items: center; gap: 8px; width: 95%;" class="process-div">
+                        <div class="step-badge">Step 03</div>
+                        <span style="flex: 1;">
+                            <img class="step-arrow"
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/dash-arrow.png"
+                                alt="" aria-hidden="true" />
+                        </span>
+                    </div>
+
+                    <div class="process-card"
+                        style="background-image: url(https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Component4.png);">
+                        <img class="process-icon"
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/step-icon1.svg"
+                            alt="">
+
+
+                        <h4>Approval Process</h4>
+
+                        <p>
+                            Get quick approval with complete compliance
+                            checks.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="step-wrapper">
+                    <div style="display: flex; align-items: center; gap: 8px; width: 95%;" class="process-div">
+                        <div class="step-badge">Step 04</div>
+                    </div>
+
+                    <div class="process-card last"
+                        style="background-image: url(https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Component5.png);">
+                        <img class="process-icon"
+                            src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/step-icon1.svg"
+                            alt="">
+
+
+                        <h4>Bond Issuance</h4>
+
+                        <p>
+                            Receive your surety bond and proceed with
+                            confidence.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ TRUST ============ -->
+    <section class="solutions">
+        <div class="container">
+            <div class="solutions-head">
+                <div>
+                    <div class="section-eyebrow"><span class="dash"></span> CERTIFICATION & STANDARDS</div>
+                    <h2 class="section-title">
+                        Built on Trust & <em>Compliance</em>
+                    </h2>
+                </div>
+            </div>
+            <div class="trust-grid">
+
+                <div class="trust-card">
+                    <div class="trust-logo">
+                        <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/trust1.png"
+                            alt="ISO 27001">
+                    </div>
+
+                    <h3>ISO 27001 Certified</h3>
+
+                    <p>
+                        Information Security Management System —
+                        your data is protected to international standards.
+                    </p>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-logo">
+                        <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/trust2.png"
+                            alt="DPDP">
+                    </div>
+
+                    <h3>DPDP Act Compliant</h3>
+
+                    <p>
+                        Compliant with India's Digital Personal Data
+                        Protection Act requirements.
+                    </p>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-logo">
+                        <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/trust3.png"
+                            alt="IRDAI">
+                    </div>
+
+                    <h3>IRDAI Authorized Agent</h3>
+
+                    <p>
+                        Authorized and regulated under IRDAI guidelines
+                        for insurance-related services.
+                    </p>
+                </div>
+
+                <div class="trust-card">
+                    <div class="trust-logo">
+                        <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/trust4.png"
+                            alt="Government">
+                    </div>
+
+                    <h3>Government Accepted</h3>
+
+                    <p>
+                        Accepted across government tenders,
+                        contracts and public procurement projects.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ============ CTA BANNER ============ -->
+    <section class="cta-banner">
+        <div class="container cta-inner">
+            <div>
+                <h2 class="section-title" style="color: white;">
+                    Ready to Secure
+                    Your Next <em>Big Project?</em>
+                </h2>
+                <p class="why-sub" style="color: #FFFFFF99;">
+                    Unlock capital efficiency with Insurance Surety Bonds designed for modern
+                    infrastructure businesses. Get your first quote in minutes.
+                </p>
+            </div>
+            <div style="display: flex; gap: 10px;">
+                <a href="#quote" class="btn btn-primary btn-lg" style="font-size: 14px;">Get a Quote
+                    <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                        class="common-arrow" />
+                </a>
+                <a href="#quote" class="btn btn-white btn-lg"
+                    style="font-size: 14px; font-weight: 500; color: white; background-color: transparent; border: 1px solid white;">Talk
+                    to an Expert</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq" id="faq">
+        <div class="container" style="display: flex; justify-content: space-between;">
+            <div style="width: 30%;">
+                <div class="section-eyebrow"><span class="dash"></span>FAQ</div>
+                <h2 class="section-title" style="margin-bottom: 30px;">Frequently
+                    Asked <em>Questions</em></h2>
+                <p class="why-sub">
+                    Everything you need to know about Insurance Surety
+                    Bonds and how ProBond works.
+                </p>
+                <a href="#quote" class="btn btn-primary btn-lg" style="font-size: 14px;">View All FAQs
+                    <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                        class="common-arrow" />
+                </a>
+            </div>
+
+            <div class="faq-list">
+                <details class="faq-item" open>
+                    <summary>What is an Insurance Surety Bond?<span class="faq-toggle"></span></summary>
+                    <p>An Insurance Surety Bond is a three-party agreement where an insurer guarantees the obligations
+                        of the contractor to the project owner — replacing the need for cash margins or bank guarantees.
+                    </p>
+                </details>
+                <details class="faq-item">
+                    <summary>Who can apply for a surety bond?<span class="faq-toggle"></span></summary>
+                    <p>Contractors, EPC firms, infrastructure businesses, and any organisation participating in
+                        government or PSU tenders can apply through ProBond.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>How long does the issuance process take?<span class="faq-toggle"></span></summary>
+                    <p>Most surety bonds are issued within 3 to 7 working days, depending on documentation and
+                        underwriting requirements.</p>
+                </details>
+                <details class="faq-item">
+                    <summary>Are surety bonds accepted by government bodies?<span class="faq-toggle"></span></summary>
+                    <p>Yes. Surety bonds issued by IRDAI-approved insurers are fully accepted by central and state
+                        government bodies, PSUs, and major procurement portals.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+        <div class="container">
+
+            <!-- CTA -->
+            <div style="display: flex; justify-content: space-between;" class="footer-cta-div">
+                <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-logo.svg"
+                    class="footer-logo">
+                <div class="footer-cta">
+
+                    <div>
+                        <h3>Secure Your Next Bond In Under 48 Hours.</h3>
+                        <p>
+                            Talk to a surety specialist. Free assessment,
+                            instant insurer mapping, zero obligation.
+                        </p>
+                    </div>
+
+                    <div class="footer-cta-buttons">
+                        <a href="#quote" class="btn btn-primary btn-lg" style="font-size: 14px;">View All FAQs
+                            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/common-arrow.svg"
+                                class="common-arrow" />
+                        </a>
+
+                        <a href="#" class="btn-outline">
+                            <img src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon7.svg"
+                                class="common-arrow" /> Talk to an Expert
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Footer Grid -->
+
+            <div class="footer-grid">
+
+                <div>
+                    <h4>QUICK LINKS</h4>
+
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Solutions</a></li>
+                        <li><a href="#">Industries</a></li>
+                        <li><a href="#">Process</a></li>
+                        <li><a href="#">FAQ's</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>OUR SERVICES</h4>
+
+                    <ul>
+                        <li><a href="#">Bid Security Bond</a></li>
+                        <li><a href="#">Performance Guarantee</a></li>
+                        <li><a href="#">Advance Payment Bond</a></li>
+                        <li><a href="#">Retention Money Bond</a></li>
+                        <li><a href="#">Maintenance Bond</a></li>
+                        <li><a href="#">Customised Bond Solutions</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4>INDUSTRIES WE SERVE</h4>
+
+                    <ul>
+                        <li>Roads & Highways</li>
+                        <li>Power & Renewables</li>
+                        <li>Oil & Gas</li>
+                        <li>Rail Infrastructure</li>
+                        <li>Construction & EPC</li>
+                        <li>Government Procurement</li>
+                    </ul>
+                </div>
+
+                <div>
+
+                    <h4>CONTACT</h4>
+
+                    <ul class="footer-contact">
+                        <li> <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon1.svg"
+                                class="common-arrow" /> New Delhi, India</li>
+                        <li> <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon2.svg"
+                                class="common-arrow" /> +91 98765 43210</li>
+                        <li> <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon3.svg"
+                                class="common-arrow" /> info@probond.co.in</li>
+                    </ul>
+
+                    <div class="social-icons">
+                        <a href="#"> <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon4.svg"
+                                class="common-arrow" /></a>
+                        <a href="#"> <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon5.svg"
+                                class="common-arrow" /></a>
+                        <a href="#"> <img
+                                src="https://blueberrydatastorage.blob.core.windows.net/websitesdata/Probound/Gov%20Company%20Logo/footer-icon.svg"
+                                class="common-arrow" /></a>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- Disclaimer -->
+
+            <div class="footer-disclaimer">
+
+                <p>
+                    <strong style="color: white;">Disclaimer:</strong>
+                     Probond is a tradename of Lotus Insurance and Financial Services Pvt Ltd which is an authorised
+                    IRDAI approved corporate agent working with various insurers. We also work in collaboration with
+                    other approved insurance intermediaries and licensed insurers.
+                </p>
+
+                <p>
+                    <strong style="color: white;">Privacy Declaration:</strong>
+                    We are committed to protecting your privacy. We collect, use and safeguard your personal information
+                    strictly for providing our services and improving user experience. We do not sell or share your
+                    information without your consent except as required by law.
+                </p>
+
+            </div>
+            <div style="display: flex; justify-content: space-between;" class="footer-disclaimer2">
+                <p>© 2026 ProBond.co.in · All rights reserved. </p>
+                <p> Insurance is a subject matter of solicitation</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const toggle = document.getElementById('mobileToggle');
+        const menu = document.getElementById('mobileMenu');
+        toggle && toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            toggle.classList.toggle('active');
+        });
+        const industriesSwiper = new Swiper(".industriesSwiper", {
+            loop: true,
+
+            slidesPerView: 4,
+            spaceBetween: 24,
+
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+
+            breakpoints: {
+                1200: {
+                    slidesPerView: 3,
+                },
+                900: {
+                    slidesPerView: 2,
+                },
+                600: {
+                    slidesPerView: 1,
+                },
+            }
+        });
+    </script>
+
+</body>
+
+</html>

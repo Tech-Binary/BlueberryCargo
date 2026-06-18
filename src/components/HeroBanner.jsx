@@ -2,8 +2,10 @@ import heroImage from "../assets/banners/hero-banner.png";
 import AirPlane from "../assets/Icons/Airplan-icon.png";
 import "../styles/HeroBanner.css";
 import { HiArrowNarrowRight } from "react-icons/hi";
-
+import { useState } from "react";
 function HeroBanner() {
+
+  const [lang, setLang] = useState("en");
   return (<>
     <section className="hero-banner">
 
@@ -13,7 +15,10 @@ function HeroBanner() {
       {/* Overlay Content */}
       <div className="hero-overlay">
         <div className="container">
-          <div className="hero-content">
+          <div
+            className={`hero-content ${lang === "fr" ? "navbar-fr" : "hero-content-en"
+              }`}
+          >
             <div className="d-flex">
               <p className="small-text">AFRICA’S TRUSTED WING FOR CARGO MOVEMENT </p>
               <img alt="air-plan" src={AirPlane} className="airplan-icon"></img>

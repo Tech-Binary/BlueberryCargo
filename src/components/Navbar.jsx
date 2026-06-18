@@ -5,8 +5,11 @@ import { useLocation } from "react-router-dom";
 import "../styles/navbar.css";
 import { MdOutlineKeyboardArrowDown } from "react-icons/md";
 import { HiArrowNarrowRight } from "react-icons/hi";
+import LanguageDropdown from "./LanguageDropdown";
+import { useState } from "react";
 
 function Navbar() {
+
   const navbarLinks = [
     {
       id: 1,
@@ -23,7 +26,7 @@ function Navbar() {
       label: "SERVICES",
       dropdown: true,
       submenu: [
-         {
+        {
           id: 1,
           label: "Cargo Services",
           path: "/cargo-services",
@@ -33,7 +36,7 @@ function Navbar() {
           label: "Charter Plane Services",
           path: "/charter-plane-services",
         }
-       
+
       ],
     },
     {
@@ -48,6 +51,7 @@ function Navbar() {
     },
   ];
   const location = useLocation();
+  const [lang, setLang] = useState("en");
   const closeNavbar = () => {
     const navbar = document.getElementById("navbarContent");
 
@@ -59,7 +63,10 @@ function Navbar() {
     location.pathname === "/charter-plane-services" ||
     location.pathname === "/cargo-services";
   return (
-    <nav className="navbar navbar-expand-lg custom-navbar">
+    <nav
+      className={`navbar navbar-expand-lg custom-navbar ${lang === "fr" ? "navbar-fr" : "navbar-en"
+        }`}
+    >
       <div className="container">
 
         {/* Logo */}
@@ -130,6 +137,7 @@ function Navbar() {
             ))}
           </ul>
 
+          <LanguageDropdown />
           <button className="common-btn"
             onClick={() => window.location.href = "/contact"}>
             Get a Quote  <div className="home-quote-icon1">
