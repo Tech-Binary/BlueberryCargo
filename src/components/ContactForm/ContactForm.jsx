@@ -206,7 +206,7 @@ function ContactForm() {
               <div className="contact-map">
                 <iframe
                   title="Madagascar Location"
-                  src="https://maps.google.com/maps?q=Madagascar&t=&z=5&ie=UTF8&iwloc=&output=embed"
+                src="https://maps.google.com/maps?q=UAE%20Office%3A%201210-1211%2C%20The%20Regal%20Tower%2C%20Business%20Bay%2C%20Dubai&t=&z=17&ie=UTF8&iwloc=&output=embed"
                   width="100%"
                   height="350"
                   style={{ border: 0 }}
