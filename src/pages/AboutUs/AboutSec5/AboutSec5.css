@@ -13,12 +13,14 @@
   display: flex;
   justify-content: space-between;
   align-items: start;
+  gap: 20px;
 }
 
 /* IMAGE */
 .client-img {
   width: 65px;
   height: 65px;
+  min-width: 65px;
   border-radius: 50%;
   overflow: hidden;
 }

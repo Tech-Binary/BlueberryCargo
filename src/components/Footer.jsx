@@ -86,6 +86,8 @@ function Footer() {
             <ul>
               <li>
                 <Link to="/network">Madagascar</Link>
+                <p></p>
+                  <p></p>
               </li>
               <li>
                 <Link to="/network">Ghana</Link>

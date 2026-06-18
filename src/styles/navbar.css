@@ -10,6 +10,66 @@
   box-shadow: 0px 1px 2px 0px #00000014;
 }
 
+.goog-te-banner-frame,
+.goog-te-gadget-icon {
+  display: none !important;
+}
+
+body {
+  top: 0 !important;
+}
+
+.goog-te-gadget {
+  font-size: 0 !important;
+}
+
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+.navbar-en .container {
+  max-width: 1400px
+}
+
+body {
+  top: 0 !important;
+}
+
+.skiptranslate {
+  display: none !important;
+}
+
+.lang-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 14px;
+  border-radius: 50px;
+  border: 1px solid #12121233;
+  background: #fff;
+  color: #060606;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-right: 15px;
+}
+
+.lang-btn::after {
+  display: none !important;
+  /* hide bootstrap arrow */
+}
+
+.lang-dropdown {
+  min-width: 160px;
+  border-radius: 12px;
+  padding: 8px;
+}
+
+.lang-dropdown .dropdown-item {
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
 .logo {
   width: 230px;
 }
