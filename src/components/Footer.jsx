@@ -5,6 +5,8 @@ import xIcon from "../assets/Icons/Twitter.png";
 import pinIcon from "../assets/Icons/Pinterest.png";
 import igIcon from "../assets/Icons/Insta.png";
 import "../styles/footer.css";
+import { MdEmail } from "react-icons/md";
+import { FaPhoneAlt } from "react-icons/fa";
 
 function Footer() {
   return (
@@ -82,15 +84,29 @@ function Footer() {
 
           {/* Operations */}
           <div className="col-md-3 mb-4">
-            <h5>Operations</h5>
+            <h5>Contact Details</h5>
             <ul>
-              <li>
+              <li className="network-item">
                 <Link to="/network">Madagascar</Link>
-                <p></p>
-                  <p></p>
+                <span className="network-address">
+                  <MdEmail className="network-icon" style={{fontSize:"14px"}} />
+                       acc.tnr@blueberrycargo.com
+                </span>
+                <span className="network-address">
+                  <FaPhoneAlt className="network-icon" style={{fontSize:"12px"}}/>
+                      +261 38 17 638 04</span>
               </li>
-              <li>
+
+              <li className="network-item">
                 <Link to="/network">Ghana</Link>
+                <span className="network-address">
+                  <MdEmail className="network-icon" style={{fontSize:"14px"}}/>
+                    acc.tnr@blueberrycargo.com
+                </span>
+                <span className="network-address">
+                  <FaPhoneAlt className="network-icon" style={{fontSize:"12px"}}/>
+                   +261 38 17 638 04
+                </span>
               </li>
             </ul>
           </div>
