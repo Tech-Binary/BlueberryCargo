@@ -10,9 +10,7 @@ function LanguageDropdown() {
 
     if (select) {
       select.value = language;
-      select.dispatchEvent(
-        new Event("change", { bubbles: true })
-      );
+      select.dispatchEvent(new Event("change", { bubbles: true }));
 
       setLang(language === "fr" ? "FRA" : "ENG");
     }
@@ -26,7 +24,7 @@ function LanguageDropdown() {
         data-bs-toggle="dropdown"
       >
         <FiGlobe />
-        <span>{lang}</span>
+        <span style={{ marginTop: "3px" }}>{lang}</span>
         <MdKeyboardArrowDown />
       </button>
 
