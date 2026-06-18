@@ -7,6 +7,7 @@ import igIcon from "../assets/Icons/Insta.png";
 import "../styles/footer.css";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
+import { IoLocationSharp } from "react-icons/io5";
 
 function Footer() {
   return (
@@ -89,23 +90,56 @@ function Footer() {
               <li className="network-item">
                 <Link to="/network">Madagascar</Link>
                 <span className="network-address">
-                  <MdEmail className="network-icon" style={{fontSize:"14px"}} />
-                       acc.tnr@blueberrycargo.com
+                  <MdEmail
+                    className="network-icon"
+                    style={{ fontSize: "14px" }}
+                  />
+                    acc.tnr@blueberrycargo.com
                 </span>
                 <span className="network-address">
-                  <FaPhoneAlt className="network-icon" style={{fontSize:"12px"}}/>
-                      +261 38 17 638 04</span>
+                  <FaPhoneAlt
+                    className="network-icon"
+                    style={{ fontSize: "12px" }}
+                  />
+                  +261 38 17 638 04
+                </span>
+                <span className="network-address d-flex gap-2">
+                  <IoLocationSharp
+                    className="network-icon"
+                 style={{ fontSize: "15px" , marginLeft:"5px", marginTop:"2px"}}
+                  />
+                  <span style={{fontWeight:"400"}}>
+                    {" "}
+                      Lot 20 F I Ambohitravao Talatamaty (enceinte score
+                    boutique 07) Antananarivo, Madagascar
+                  </span>
+                </span>
               </li>
 
               <li className="network-item">
                 <Link to="/network">Ghana</Link>
                 <span className="network-address">
-                  <MdEmail className="network-icon" style={{fontSize:"14px"}}/>
-                    acc.tnr@blueberrycargo.com
+                  <MdEmail
+                    className="network-icon"
+                    style={{ fontSize: "14px" }}
+                  />
+                    sales@blueberrycargo.com
                 </span>
                 <span className="network-address">
-                  <FaPhoneAlt className="network-icon" style={{fontSize:"12px"}}/>
-                   +261 38 17 638 04
+                  <FaPhoneAlt
+                    className="network-icon"
+                    style={{ fontSize: "12px" }}
+                  />
+                  +233 54 064 4112
+                </span>
+                <span className="network-address d-flex gap-2">
+                  <IoLocationSharp
+                    className="network-icon"
+                    style={{ fontSize: "15px" , marginLeft:"5px", marginTop:"2px"}}
+                  />
+                  <span style={{fontWeight:"400"}}>1st Floor GACC, Room No: 118 Building Cargo Village Airport
+                  Road Accra, Ghana, PMB50, Accra
+                    </span>
                 </span>
               </li>
             </ul>

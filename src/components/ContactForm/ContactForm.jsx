@@ -18,9 +18,9 @@ const contactCards = [
   {
     icon: PhoneIcon,
     label: "Phone",
-    value: "+233 256087173 / 0540644112",
+    value: "+971 47707355",
     alt: "Phone Icon",
-    link: "tel:+233256087173",
+    link: "tel:+971 47707355",
   },
   {
     icon: OpsIcon,
@@ -33,7 +33,7 @@ const contactCards = [
     label: "Support",
     value: "24/7 Operations Desk",
     alt: "Support Icon",
-    link: "mailto:support@blueberrycargo.com",
+    link: "mailto:sales@blueberrycargo.com",
   },
 ];
 
