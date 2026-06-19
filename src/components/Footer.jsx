@@ -110,7 +110,7 @@ function Footer() {
                   />
                   <span style={{fontWeight:"400"}}>
                     {" "}
-                      Lot 20 F I Ambohitravao Talatamaty (enceinte score
+                    Lot 20 F I Ambohitravao Talatamaty (enceinte score
                     boutique 07) Antananarivo, Madagascar
                   </span>
                 </span>
@@ -123,7 +123,7 @@ function Footer() {
                     className="network-icon"
                     style={{ fontSize: "14px" }}
                   />
-                    sales@blueberrycargo.com
+                  sales@blueberrycargo.com
                 </span>
                 <span className="network-address">
                   <FaPhoneAlt
