@@ -49,20 +49,26 @@ const locations = [
   },
 ];
 
-
 const ContactOperate = () => {
   const location = useLocation();
   const isNetworkPage = location.pathname === "/network";
   return (
-    <section className="operate" style={{ backgroundImage: isNetworkPage ? "url(/images/network-bg.png)" : "none" }}>
+    <section
+      className="operate"
+      style={{
+        backgroundImage: isNetworkPage ? "url(/images/network-bg.png)" : "none",
+      }}
+    >
       <div className="operate-section">
         <div className="homeSec5-tag">Where we operate</div>
         <h2 className="section-title">
-          Empowering Businesses <span className="span-class"> Across Industries</span>
+          Empowering Businesses{" "}
+          <span className="span-class"> Across Industries</span>
         </h2>
 
         <p className=" section-desc mb-4">
-      On-ground presence in key African markets, supported by established partners and integrated cargo & charter capabilities. 
+          On-ground presence in key African markets, supported by established
+          partners and integrated cargo & charter capabilities.
         </p>
 
         <div className="operate-wrapper">
@@ -79,6 +85,7 @@ const ContactOperate = () => {
           </div>
 
           {/* RIGHT CARDS */}
+
           <div className="operate-cards">
             {locations.map((item, index) => (
               <div className="country-card" key={index}>
@@ -96,7 +103,11 @@ const ContactOperate = () => {
                   <div className="stats-row">
                     {item.stats.map((stat, i) => (
                       <div className="stat-box" key={i}>
-                        <img className="stat-icon" src={stat.icon} alt={stat.label} />
+                        <img
+                          className="stat-icon"
+                          src={stat.icon}
+                          alt={stat.label}
+                        />
 
                         <div>
                           <h4>{stat.number}</h4>
