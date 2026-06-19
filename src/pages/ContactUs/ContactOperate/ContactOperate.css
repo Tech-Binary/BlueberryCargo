@@ -1,7 +1,7 @@
 .operate-section {
   width: 100%;
   background: #ffffff;
-      padding: 35px;
+  padding: 35px;
   box-sizing: border-box;
   box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
@@ -34,7 +34,6 @@
   width: 4px;
   height: 32px;
   background: #f4a019;
-
 }
 
 .operate-header p {
@@ -48,19 +47,19 @@
 /* ================= LAYOUT ================= */
 
 .operate-wrapper {
-    display: flex;
-    /* gap: 18px; */
-    align-items: stretch;
-    justify-content: space-around;
+  display: flex;
+  /* gap: 18px; */
+  align-items: stretch;
+  justify-content: space-around;
 }
 
 /* ================= LEFT IMAGE ================= */
 
 .operate-image {
-       width: 55%;
-    overflow: hidden;
-    border-radius: 30px;
-    height: 480px;
+  width: 55%;
+  overflow: hidden;
+  border-radius: 30px;
+  height: 480px;
 }
 
 .operate-image img {
@@ -73,11 +72,10 @@
 /* ================= RIGHT CARDS ================= */
 
 .operate-cards {
-      width: 40%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
 }
 
 /* ================= CARD ================= */
@@ -114,7 +112,7 @@
 }
 
 .country-top p {
-     font-size: 14px;
+  font-size: 14px;
   line-height: 1.7;
   color: rgba(18, 18, 18, 0.8);
   margin: 0 0 10px;
@@ -132,11 +130,11 @@
   flex: 1 1;
   border: 1px solid #ebebeb;
   border-radius: 12px;
-    padding: 10px 15px;
+  padding: 10px 15px;
   display: flex;
   align-items: center;
   gap: 20px;
-  background-color: #ECFAFC;
+  background-color: #ecfafc;
 }
 
 .stat-icon {
@@ -157,7 +155,11 @@
 
 .stat-box span {
   font-size: 10px;
-  color: #5D646F;
+  color: #5d646f;
+}
+.country-flag img{
+  border-radius: 50%;
+  border: 0.6px solid #12121224;
 }
 
 /*  RESPONSIVE  */
@@ -166,9 +168,9 @@
   .operate-header h2 {
     font-size: 34px;
   }
-.operate-image {
+  .operate-image {
     height: auto;
-}
+  }
   .country-top h3 {
     font-size: 22px;
   }
