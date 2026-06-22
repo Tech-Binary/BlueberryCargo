@@ -54,7 +54,7 @@ function CargoServicesSec1() {
         features: [
           "Full aircraft and part charter solutions for time-sensitive cargo",
           "Aircraft sourcing across freighter fleets and international carriers",
-          "GDP-compliant charter solutions for pharmaceuticals, vaccines, and healthcare shipments",
+          "GDP-compliant charter solutions for pharmaceuticals, vaccines etc.",
           "Access to remote destinations and underserved markets",
           "End-to-end flight coordination, permits, and ground handling",
           "Dedicated charter specialists overseeing every movement",
