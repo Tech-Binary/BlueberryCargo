@@ -30,21 +30,6 @@
   text-decoration: none;
 }
 
-.social-icons {
-  margin-top: 25px;
-}
-
-.social-icons img {
-  width: 34px;
-  height: 34px;
-  cursor: pointer !important;
-  transition: 0.3s;
-}
-
-.social-icons img:hover {
-  opacity: 0.7;
-}
-
 .footer-section h5 {
   color: #fff;
   margin-bottom: 38px;
@@ -67,6 +52,7 @@
 .footer-section ul li::before {
   content: "";
   display: inline-block;
+  flex-shrink: 0; /* prevent icon from squishing */
   width: 12px;
   height: 12px;
   background-image: url("../assets/Icons/Right-Vector.png");
@@ -74,44 +60,26 @@
   background-repeat: no-repeat;
 }
 
-.Reserved-right {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  color: #ffffff;
-}
 
-.ploicy-tc {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 22px;
-  cursor: pointer;
-  color: #ffffff;
-}
-
-.policy-links span {
-  position: relative;
-  padding-right: 15px;
-  color: #fff;
-  font-weight: 500;
-}
-.network-item {
+.social-icons {
+  margin-top: 25px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
-/* vertical line */
-.policy-links span:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  top: 30%;
-  margin-left: 15px;
-  transform: translateY(-50%);
-  width: 1px;
-  height: 18px;
-  /* adjust this */
-  background-color: #ffffff;
+.social-icons img {
+  width: 34px;
+  height: 34px;
+  cursor: pointer !important;
+  transition: opacity 0.3s;
 }
+
+.social-icons img:hover {
+  opacity: 0.7;
+}
+
+
 .contact-item {
   margin-bottom: 20px;
 }
@@ -119,19 +87,19 @@
 .contact-info {
   display: block;
   margin-top: 5px;
-  margin-left: 20px; /* optional indentation */
+  margin-left: 20px;
 }
 
 .contact-info div {
   display: block;
 }
 
-/* Network office items */
 .network-item {
   display: flex !important;
   flex-direction: column;
   align-items: flex-start !important;
   gap: 4px;
+  position: relative; 
 }
 
 .network-item::before {
@@ -158,34 +126,166 @@
   line-height: 1.5;
   font-family: "Aptos";
 }
+
 .network-icon {
-  /* margin-right: 3px; */
   width: 25px;
 }
+
+.Reserved-right {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.ploicy-tc {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.policy-links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 4px 0;
+}
+
+.policy-links span {
+  position: relative;
+  padding-right: 15px;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* vertical divider between policy links */
+.policy-links span:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 1px;
+  height: 14px;
+  background-color: #ffffff;
+}
+
+
+@media (max-width: 1024px) {
+  .footer-section {
+    padding: 60px 0 20px;
+  }
+
+  .footer-section h5 {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+}
+
 @media (max-width: 900px) {
   .footer-section-row {
     justify-content: space-between !important;
+    row-gap: 40px !important;
   }
 
+
   .footer-section-row .col-md-3 {
-    width: 40% !important;
+    width: 48% !important;
+  }
+
+  .footer-section-row .col-md-3:first-child {
+    /* width: 100% !important; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-logo {
+    width: 160px;
   }
 }
 
+@media (max-width: 600px) {
+  .footer-section {
+    padding: 50px 0 16px;
+  }
+
+  /* Stack to single column */
+  .footer-section-row .col-md-3 {
+    width: 100% !important;
+  }
+
+  .footer-section-row .col-md-3:first-child {
+    width: 100% !important;
+  }
+
+  .footer-logo {
+    width: 150px;
+  }
+
+  .footer-section h5 {
+    font-size: 16px;
+    margin-bottom: 28px;
+  }
+
+  .footer-section ul li {
+    font-size: 13px;
+  }
+
+  .network-address {
+    font-size: 12px;
+  }
+
+
+  .footer-bottom-bar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 10px;
+  }
+
+  .policy-links {
+    gap: 6px 0;
+  }
+}
+
+
 @media (max-width: 380px) {
+  .footer-section {
+    padding: 40px 0 14px;
+  }
+
+  .footer-logo {
+    width: 130px;
+  }
+
+  .footer-section ul li {
+    font-size: 12px;
+  }
+
   .policy-links span {
     font-size: 12px;
     font-weight: 500;
+    padding-right: 10px;
   }
-  .footer-section-row .col-md-3 {
-    width: 45% !important;
-  }
+
+
   .policy-links span:not(:last-child)::after {
     display: none;
+  }
+
+ 
+  .policy-links {
+    gap: 8px;
   }
 
   .ploicy-tc {
     justify-content: space-between;
     width: 100%;
+  }
+
+  .Reserved-right {
+    font-size: 12px;
   }
 }
